@@ -1,0 +1,18 @@
+pygments: true
+safe: false
+paginate: 6
+rdiscount:
+  extensions:
+    - autolink      # greedily urlify links
+    - footnotes     # footnotes
+    - smart         # typographic substitutions with SmartyPants
+scholar:
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
+
+  source: ./_biblio
+  bibliography: labnotebook.bib
+tag_page_layout: tag_page
+tag_page_dir: tag

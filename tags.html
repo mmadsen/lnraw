@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="span9">
+	<h2>Notes by Topic:</h2>
+	<ul>
+		{% for tag in site.tags %}
+			<li><a href="/tag/{{ tag[0] | uri_escape }}.html">{{ tag[0] }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
