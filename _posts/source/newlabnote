@@ -1,0 +1,8 @@
+#!/bin/sh
+
+datestring=`date "+%Y-%m-%d-"`
+filename="$datestring$1.Rmd"
+echo "Creating lab notebook post for: $filename"
+
+cp ~/Dropbox/Research/templates/labnotebook-post.Rmd $filename
+

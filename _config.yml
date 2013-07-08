@@ -1,11 +1,7 @@
+exclude: [ _posts/source ]
 pygments: true
 safe: false
 paginate: 6
-rdiscount:
-  extensions:
-    - autolink      # greedily urlify links
-    - footnotes     # footnotes
-    - smart         # typographic substitutions with SmartyPants
 scholar:
   style: apa
   locale: en
