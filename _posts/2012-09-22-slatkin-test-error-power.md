@@ -55,8 +55,3 @@ Since real populations are never "pure strategists" in terms of copying rules, n
 
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

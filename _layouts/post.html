@@ -3,5 +3,16 @@ layout: default
 ---
 <div class="span8">
   {{ content }}  
+
+
+<h3>Tagged</h3>
+<ul>
+{% for tag in page.tags %}
+<li><a href='/tag/{{ tag | url_encode }}.html'>{{ tag }}</a></li>
+{% endfor %}
+</ul>
+
+<p>Modified: {{ page.path | prepend:'_posts/' | git_modified | date_to_string }}</p>
+
 </div>
 

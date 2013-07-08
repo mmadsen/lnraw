@@ -72,8 +72,3 @@ This is related to separating scales, actually.  Think about Susskind's example 
 So the point here is simply that we have to watch our theory-building carefully and try not to have terms in the Hamiltonian which combine fast and slow things into the same term, this can make it hard to renormalize (I'm pretty sure, I'm inferring that given what I know at this stage of the game).  
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

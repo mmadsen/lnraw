@@ -33,8 +33,3 @@ Presentation slides: [available in various formats](http://figshare.com/articles
 
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

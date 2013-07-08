@@ -48,11 +48,6 @@ The result may not be able to make predictions about any specific assemblage, bu
 Richness itself is highly affected by time-averaging in palimpsests, evenness affected but less so.  What we need to study is the scaling of sets of richness and evenness values across groups of assemblages.  
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>
 
 
 

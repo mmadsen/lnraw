@@ -44,8 +44,3 @@ Recipes should create correlations between items, so the hard bit is determining
 
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

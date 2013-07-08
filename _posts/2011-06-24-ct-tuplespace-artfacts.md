@@ -42,8 +42,3 @@ We need three sets of observables:  stats on traits held by individuals, traits 
 
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

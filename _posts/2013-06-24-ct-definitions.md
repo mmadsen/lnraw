@@ -39,12 +39,3 @@ But we also want to recognize that while models of social learning always descri
 
 
 
-
-
-
-
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

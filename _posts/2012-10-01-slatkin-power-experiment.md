@@ -92,9 +92,3 @@ The original C code for Slatkin's monte carlo version required that the input da
 [Madsen's modified source code](https://github.com/mmadsen/SAA2012/tree/master/slatkin-source-modified)
 
 
-
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

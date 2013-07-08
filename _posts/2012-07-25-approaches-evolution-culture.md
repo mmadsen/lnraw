@@ -103,8 +103,4 @@ He describes a general debate in the social sciences: "whether culture can be tr
 * It is a statement that a naturalistic, scientific study of human behavior, or artifact production, etc., is naturally a mix of source and consequence theories once one accepts population thinking and variation as causal. The consequence theories start with population genetics-like diffusionist models and selection models, but really describe *what happens* when you put together a combination of processes. The source theories might be quite functionalist and space-like indeed, and encompass a lot of traditional types of anthropological theory -- the big difference being that most source theories in anthropology are essentialist and need revision for population thinking....
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>
+

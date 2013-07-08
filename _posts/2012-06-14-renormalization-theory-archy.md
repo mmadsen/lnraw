@@ -37,9 +37,3 @@ Finally, we observe the archaeological record through formal classifications of 
 
 I do not, in this research, actually use the formal apparatus of the “renormalization group” from physics.  Exploring that apparatus and its applicability would take me far afield from the concrete and useful contributions outlined above.  But RG theory and methods are never far from my mind, and after the dissertation is completed, I want to explore its utility in more detail. 
 
-
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

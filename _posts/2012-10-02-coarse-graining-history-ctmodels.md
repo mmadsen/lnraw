@@ -61,9 +61,3 @@ This kind of structured information has yet to be incorporated into our models, 
 
 
 
-
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

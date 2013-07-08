@@ -34,8 +34,3 @@ Several questions arise.
 SO, I need to examine the longer-term empirical studies, on measles, and look at how things synchronize when we look at longer spans of time (over a human lifetime).  
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

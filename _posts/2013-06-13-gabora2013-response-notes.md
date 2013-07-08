@@ -84,8 +84,3 @@ lorem ipsum sic dolor amet
 
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

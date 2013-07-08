@@ -42,9 +42,3 @@ But the deeper reason is that simple models of evolution (and cultural transmiss
 Perhaps.  There are certainly other ways to talk about this issue of theory structure, and those with less of a "physics fascination" than I will certainly prefer them.  I find physical theory a rich source of ideas, not about content, but about the conceptual structures we might use as we get beyond the "toy models" of our early explorations and try to build increasingly realistic theory about the evolution of culture.  
 
 
-
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

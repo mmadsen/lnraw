@@ -59,8 +59,3 @@ If detailed models of social learning are what we usually want to study, we need
 There are good reasons for assuming the latter, at least with fairly simple models of population structure and social learning.  Such models have much of the same mathematical structure as some of their physical counterparts, which isn't surprising since we construct simple models to be be tractable first, and realistic second.  
 
 
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>

@@ -51,10 +51,3 @@ Sources to Read
 * Sterelney, __The Evolved Apprentice__
 * Gabora's 2013 article and others
 
-
-
-Tagged
-------
-<div class="taglist">
-{{ page.tags | array_to_sentence_string }}
-</div>
