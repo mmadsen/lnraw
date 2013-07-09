@@ -14,7 +14,7 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 markdown: pandoc
 pandoc:
-  skip: false
-  flags: '--smart --bibliography /Users/mark/lnraw/_biblio/labnotebook.bib --mathjax'
-  outputs:
-    - html
+  extensions: 
+    - smart
+    - mathjax
+    - bibliography: /Users/mark/lnraw/_biblio/labnotebook.bib
