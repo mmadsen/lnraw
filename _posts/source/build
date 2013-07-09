@@ -1,5 +1,0 @@
-#!/bin/sh
-filename=`basename $1 .Rmd`
-./knit $1
-pandoc -s -S --biblio ../../_biblio/labnotebook.bib $filename.md -o $filename-parsed.md
-

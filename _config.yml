@@ -18,4 +18,3 @@ pandoc:
   flags: '--smart --bibliography /Users/mark/lnraw/_biblio/labnotebook.bib --mathjax'
   outputs:
     - html
-    - markdown   
