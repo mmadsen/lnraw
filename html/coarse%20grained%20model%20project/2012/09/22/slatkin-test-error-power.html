@@ -1,0 +1,33 @@
+<h2 id="page.title">{{ page.title }}</h2>
+<div class="publish_date">
+{{ page.date | date_to_string }}
+</div>
+
+
+<h2 id="power-analysis">Power Analysis</h2>
+<p><span class="math">\(H_o\)</span>: WF-IA</p>
+<p><span class="math">\(H_a\)</span>: Conformist model from Mesoudi and Lycett (i.e., prob <span class="math">\(c\)</span> of taking most common trait)</p>
+<p>Questions:</p>
+<ol style="list-style-type: decimal">
+<li>At what point does power decline below 50% as we adjust the conformism parameter <span class="math">\(c\)</span>? This would be a good measure of equifinality between the two models.</li>
+<li>How does power vary with time averaging duration? We might expect that TA in the case of conformism would give time for additional traits to accumulate and thus mimic the neutral distribution of traits under ESD. Under this circumstance, we’d expect power to decline. But if the frequencies of the very most common traits are simply reinforced by conformism, power would increase.<br /></li>
+<li>Finally, it would be good to recognize that the currently implemented conformism model is “extreme” in a sense, since it focuses conformity on only one trait at a time. This type of model should be the most easily distinguished from neutrality since even small conformist probabilities concentrate a lot of mass on the single most common trait at any given time, and that trait also has strong persistence in the population.<br /></li>
+<li>An intermediate, and possibly more realistic model of conformism in transmission is to overweight all traits whose frequency is greater than the mean, underweighting those lower than the mean, by some factor which is additive on top of their probability of being copied given frequency alone. I.e., a biased multinomial model. This would lead to concentrations of popular traits, certainly, but less concentration on single traits, and thus Slatkin tests would presumably have less power against such a model, compared to the Mesoudi-Lycett-style conformism model.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<p>Usual practice in archy usage today is to treat class frequencies from an assemblage as a sample of “individuals” which can be tested with the Slatkin/Ewens test.</p>
+<p>A quick look at Carl’s recollection of Belle Meade showed that individual collection units have a fairly wide variation in <span class="math">\(P_e\)</span> values, but all of the ones I checked fit within an <span class="math">\(\alpha = 0.05\)</span> test.</p>
+<p><strong>Precision and Variance of Slatkin Tests</strong></p>
+<ol style="list-style-type: decimal">
+<li>Within a single assemblage with multiple collections, what is the range of <span class="math">\(P_e\)</span> values? If we look at the empirical distribution of <span class="math">\(P_e\)</span> for Belle Meade collections, how well does it fit a Gaussian, and what is the CI?</li>
+<li>How does the mean value of the empirical distribution compare to the <span class="math">\(P_e\)</span> calculated on the aggregate assemblage?</li>
+</ol>
+<p><strong>Bootstrap Analysis of Assemblage</strong></p>
+<p>Treat aggregate assemblage as a sample and investigate behavior of bootstrap sampling for <span class="math">\(P_e\)</span>.</p>
+<p>Repeat bootstrap sampling on simulated data.</p>
+<ol style="list-style-type: decimal">
+<li>Range of <span class="math">\(n\)</span> sample sizes - how do <span class="math">\(P_e\)</span> vary with <span class="math">\(n\)</span> in a real assemblage?</li>
+<li>How do results compare between empirical distribution and simulated data?</li>
+</ol>
+<p><strong>Mixture Distributions</strong></p>
+<p>Since real populations are never “pure strategists” in terms of copying rules, none of our CT models actually can be a “true model.” Leaving aside other model features such as population structure for the moment, at a minimum, the true “data generating process” (DGP)</p>

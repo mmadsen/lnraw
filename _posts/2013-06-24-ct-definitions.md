@@ -14,17 +14,19 @@ category: "cultural transmission"
 
 ### Culture and Cultural Transmission ###
 
-> Mesoudi (2011): 
-> _Culture is information that is acquired from other individuals via social transmission mechanisms such as imitation, teaching, or language._"
+> Culture is information that is acquired from other individuals via social transmission mechanisms such as imitation, teaching, or language.
 
+[@mesoudi2011cultural] 
 
-> Richerson  and Boyd (2005):
-> _Culture is information capable of affecting individual's behavior that they acquire from other members of their species through taching, imitation, and other forms of social transmission._
+> Culture is information capable of affecting individual's behavior that they acquire from other members of their species through teaching, 
+> imitation, and other forms of social transmission.
 
+[@richerson2005not]
 
 ### CT Models ###
 
 Definition from my colloquium, that I adapted from William Harms's (2004) _Information and Meaning in Evolutionary Processes_:
+
 >Cultural transmission models describe the dynamics of the distribution of acquired behavioral traits and artifacts, with an emphasis on the role that imitation and population structure plays in shaping this dynamics.
 
 My point in the above is to differentiate between individual-level and population-level phenomena.  Our _models_ of cultural transmission are dynamical systems, and describe changes in statistical and distributional measures given a specific set of individual-level state variables and processes.  
