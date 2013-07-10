@@ -25,7 +25,7 @@ category: "cultural transmission"
 
 ### CT Models ###
 
-Definition from my colloquium, that I adapted from William Harms's (2004) _Information and Meaning in Evolutionary Processes_:
+Definition from my colloquium, that I adapted from William Harms's  _Information and Meaning in Evolutionary Processes_ [@harms2004information]:
 
 >Cultural transmission models describe the dynamics of the distribution of acquired behavioral traits and artifacts, with an emphasis on the role that imitation and population structure plays in shaping this dynamics.
 
@@ -39,5 +39,5 @@ But we also want to recognize that while models of social learning always descri
 
 > Cultural transmission models describe the distribution or history of behavioral traits and artifacts, given their acquisition through mechanisms of social learning, at a particular scale of observation.  
 
-
+### References Cited ###
 

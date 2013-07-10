@@ -12,18 +12,19 @@ category: "reading notes"
 {{ page.date | date_to_string }}
 </div>
 
+## [@hestone2003] Notes ##
 
-He and Stone (2003) analyze the conditions under which there is large scale "in phase" versus "anti-phase" synchronization between communities in a local metapopulation.  They don't really model the details of a complex network, in section 2 AFAIK they're randomly assigning links, which means that the intra-population network is going to be an ER graph.  
+He and Stone analyze the conditions under which there is large scale "in phase" versus "anti-phase" synchronization between communities in a local metapopulation [@hestone2003].  They don't really model the details of a complex network, in section 2 AFAIK they're randomly assigning links, which means that the intra-population network is going to be an ER graph.  
 
 They use a control parameter, the "link ratio," which measures the number of inter-population links over the number of intra-population links (or, the fraction of edges in the overall network which cross populations).  
 
-The order parameter is the phase difference between populations, where the "phase" of an infection is Pikovsky et al.'s (2001) equation for the phase of a time series, given parameters which seem to be various ordered "maxima" of the time series (NEED TO EXAMINE). 
+The order parameter is the phase difference between populations, where the "phase" of an infection is [@pikovsky2003synchronization] equation for the phase of a time series, given parameters which seem to be various ordered "maxima" of the time series (NEED TO EXAMINE). 
 
 This is starting to make sense in terms of how to calculate the "synchronization" of something like a spreading process which fundamentally isn't a strict oscillator (without dealing with the complications involved in a full chaotic oscillator model, or maybe it is....?)
 
 The basic conclusion here is that low levels of coupling (i.e., low LR) tend to lead to anti-phase synchronization, and high levels of coupling bring the population into strict synchronization.  In-phase synch gives an order parameter near zero, while strict anti-phase sync leads to an OP of pi.  
 
-## Connection to Seriation ##
+### Connection to Seriation ###
 
 Several questions arise.  
 
@@ -33,4 +34,5 @@ Several questions arise.
 
 SO, I need to examine the longer-term empirical studies, on measles, and look at how things synchronize when we look at longer spans of time (over a human lifetime).  
 
+### References Cited ###
 

@@ -13,7 +13,7 @@ category: "coarse grained model project"
 </div>
 
 
-Montgomery Slatkin (1994, 1996) proposed an "exact test" (in the sense of enumeration of exact probability for an observation) for neutrality of a sample of N individuals, in which K alleles are observed. The test calculates the probability of getting a sample of alleles "more extreme" than the observed data from the Ewens Sampling Formula (or Distribution). __By way of review, the ESD gives the distribution of alleles in a sample of fixed known size, from a population at quasi-stationary equilibrium, characterized by the Wright-Fisher infinite-alleles model or its close relations__. The Slatkin (or Ewens) exact test is two-tailed, and a sample can fall outside the chosen critical region (at a given alpha level) either by having too few rare alleles, or far too even a distribution.
+Montgomery Slatkin proposed an "exact test" (in the sense of enumeration of exact probability for an observation) for neutrality of a sample of N individuals, in which K alleles are observed [@slatkin1994exact; @slatkin1996correction]. The test calculates the probability of getting a sample of alleles "more extreme" than the observed data from the Ewens Sampling Formula (or Distribution). __By way of review, the ESD gives the distribution of alleles in a sample of fixed known size, from a population at quasi-stationary equilibrium, characterized by the Wright-Fisher infinite-alleles model or its close relations__. The Slatkin (or Ewens) exact test is two-tailed, and a sample can fall outside the chosen critical region (at a given alpha level) either by having too few rare alleles, or far too even a distribution.
 
 Since the Slatkin/Ewens test does not rely upon specific details of a genetic system, it is potentially ideal for testing neutrality in CT modeling. However, its statistical power against alternative models can be limited. Lansing et al. 2008 measured power against an alternative hypothesis of male dominance and non-random mating, for example.
 
@@ -31,7 +31,7 @@ Experimental Setup
 * Simulate populations of 2000 well-mixed individuals, at theta values of 0.5, 0.75, 1.0, 3.0, 5.0, 7.0, and 9.0.
 * Four levels of the "conformism factor" were simulated: 0.01, 0.005, 0.001, and 0.0005. This corresponds to 20, 10, 2, and 1 individual per generation (on average) exhibiting conformist copying. This is the "strength" of the conformist bias to transmission.
 * For each combination of parameters, 3 duplicate simulation runs were made, with different random seeds.
-* For each simulation run, the simulator ran for 30,000 steps. Data collection began after 10,000 steps to ensure that even with low innovation rates, the simulation was at quasi-stationary equilibrium. This is serious overkill for theta >= 1.0, but necessary for very low innovation rates since the mixing time can be long (and requires a full analysis given Watkins 2010, not just the simplified heuristic).
+* For each simulation run, the simulator ran for 30,000 steps. Data collection began after 10,000 steps to ensure that even with low innovation rates, the simulation was at quasi-stationary equilibrium. This is serious overkill for theta >= 1.0, but necessary for very low innovation rates since the mixing time can be long (and requires a full analysis given [@watkins2010], not just the simplified heuristic).
 * This yielded 20K independent data points for each of 3 runs per parameter combination, or 60K data points per parameter combination.
 * Time averaging windows were also calculated for trait counts, with the maximum window being 3000 generations, thus yielding 10 windows per simulation run, 20 windows for aggregation at 1500 generations, down to windows at 3 generations.
 * For each raw data point (all 60K per parameter combination), and for each time-averaging window, a sample of size 50 individuals was taken from the population, and their traits tabulated and recorded for input to the Slatkin Exact program.
@@ -90,5 +90,9 @@ Montgomery Slatkin's original C code: [CODE](http://ib.berkeley.edu/labs/slatkin
 The original C code for Slatkin's monte carlo version required that the input data be coded into the source, and then compiled anew for each data value. In order to automate doing many, many exact tests for this and related studies, I modified Slatkin's original program to take all input on the command line, and producing abbreviated output (there are several versions) to make scripting and integration into R easy. Code is at:
 
 [Madsen's modified source code](https://github.com/mmadsen/SAA2012/tree/master/slatkin-source-modified)
+
+### References Cited ###
+
+
 
 
