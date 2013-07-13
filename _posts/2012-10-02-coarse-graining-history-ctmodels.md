@@ -5,14 +5,6 @@ tags: [cultural transmission, coarse graining, renormalization, diachronic model
 category: "coarse grained model project"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
-
 By coarse-graining (CG) our CT models, we hope to construct models which can be used to extract observable predictions and thus testable hypotheses at particular scales.
 
 But it's important to keep in mind that the models we usually analyze are simple equilibrium processes (e.g., neutrality, conformism), and their behavior is usually highly convergent. It may not be strictly ergodic, since the exact equilibria of a full process may depend upon initial conditions, or the variants preserved, but unlabled observables (i.e., instead of the exact frequency distribution of variants, we can look at the frequency spectrum of unlabeled variants as Ewens 2004 does) will achieve equilibrium values.

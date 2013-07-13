@@ -5,12 +5,6 @@ tags: [evolution, evolutionary theory, cultural evolution, darwinian evolution]
 category: "evolutionary theory"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 
 ## Five Classical Approaches to the Evolution of Culture ##

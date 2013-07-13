@@ -5,12 +5,6 @@ tags: [cultural transmission, structured information, recipes]
 category: "structured information project"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 The bits of information that go into any real skill, behavior, or complex artifact display many types of semantic relationships.  What I'm interested in are _classes_ of relationships among those bits of information, where the classes affect the patterns of spreading, persistence, generative entrenchment, or openness to innovation for the bits of information.
 

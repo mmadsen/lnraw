@@ -5,12 +5,7 @@ tags: [cultural transmission, coarse graining, renormalization]
 category: "coarse grained model project"
 ---
 
-{{ page.title }}
-----------------
 
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 ## Relevance to Archaeology ##
 

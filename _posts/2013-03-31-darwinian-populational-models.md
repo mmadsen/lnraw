@@ -5,13 +5,6 @@ tags: [cultural transmission, philosophy of biology, evolutionary theory]
 category: "cultural transmission"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
 
 [@godfrey2009darwinian] uses a specific distinction between "Darwinian" explanations, and merely "populational" explanations, that is different than I'd always thought about [@Lewontin1974; @Lewontin1970], but is useful. And he questions whether cultural phenomena are uniformly subject to Darwinian explanations, or even populational ones.
 

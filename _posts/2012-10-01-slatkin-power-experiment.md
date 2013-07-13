@@ -5,14 +5,6 @@ tags: [cultural transmission, coarse graining, neutral model, conformist bias]
 category: "coarse grained model project"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
-
 Montgomery Slatkin proposed an "exact test" (in the sense of enumeration of exact probability for an observation) for neutrality of a sample of N individuals, in which K alleles are observed [@slatkin1994exact; @slatkin1996correction]. The test calculates the probability of getting a sample of alleles "more extreme" than the observed data from the Ewens Sampling Formula (or Distribution). __By way of review, the ESD gives the distribution of alleles in a sample of fixed known size, from a population at quasi-stationary equilibrium, characterized by the Wright-Fisher infinite-alleles model or its close relations__. The Slatkin (or Ewens) exact test is two-tailed, and a sample can fall outside the chosen critical region (at a given alpha level) either by having too few rare alleles, or far too even a distribution.
 
 Since the Slatkin/Ewens test does not rely upon specific details of a genetic system, it is potentially ideal for testing neutrality in CT modeling. However, its statistical power against alternative models can be limited. Lansing et al. 2008 measured power against an alternative hypothesis of male dominance and non-random mating, for example.

@@ -5,13 +5,6 @@ tags: [cultural transmission, experiments, neutral model, statistics]
 category: "coarse grained model project"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
 
 ## Power Analysis ##
 

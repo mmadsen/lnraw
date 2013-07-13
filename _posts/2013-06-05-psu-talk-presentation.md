@@ -5,13 +5,6 @@ tags: [cultural transmission, coarse graining, structured information, niche con
 category: "presentations"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
 
 I'm off to Portland State University tomorrow, to give a talk in their "First Thursday" series, at 4pm in Smith 296.  If you're in the neighborhood, please join us.  If not, here are links to the slides I'll be using, including the version with notes (which help with some of the minimalist image-based slides).  
 

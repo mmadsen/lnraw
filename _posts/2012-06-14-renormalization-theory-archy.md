@@ -5,12 +5,6 @@ tags: [coarse graining, dissertation, cultural transmission]
 category: "coarse grained model project"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 In general, my topic concerns the “renormalization” of cultural transmission models.  This terminology will probably be unfamiliar to anthropologists and social scientists, so I’m not going to emphasize the term or formal renormalization theory in upcoming publications or my dissertation, but it is absolutely what I’m studying.  I thought a blog post would be a good place to describe this concept, and its relationship to concepts more familiar to anthropologists.  
 

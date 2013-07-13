@@ -3,12 +3,6 @@ layout: post
 title: MathJax Test
 tags: [mathml, mathjax, administrative, jekyll, tools]
 ---
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus semper est vitae fermentum. Sed ac mollis dolor. Sed lacinia semper neque ut interdum. Integer lobortis sodales nisi, in egestas dui venenatis ac. Quisque iaculis posuere sapien, in elementum ligula laoreet vitae. Pellentesque bibendum consectetur elementum. Ut vel orci enim, sed vehicula lacus.
 

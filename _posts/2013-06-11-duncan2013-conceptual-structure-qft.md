@@ -5,12 +5,6 @@ tags: [reading notes, physics, philosophy of science, theory]
 category: "reading notes"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 ### Motivation ###
 

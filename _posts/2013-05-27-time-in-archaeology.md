@@ -5,14 +5,6 @@ tags: [reading notes, archaeology, metatheory]
 category: "Reading Notes"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
-
 
 ## Notes on [@holdaway2008time] ##
 

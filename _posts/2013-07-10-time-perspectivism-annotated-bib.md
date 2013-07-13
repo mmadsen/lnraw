@@ -5,12 +5,6 @@ tags: [reading notes, archaeology, time averaging, coarse graining, time perspec
 category: reading notes
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
 
 ### What is Time Perspectivism? ###
 (definition, Bailey, with some Binford etc)

@@ -5,13 +5,6 @@ tags: [cultural transmission, culture]
 category: "cultural transmission"
 ---
 
-{{ page.title }}
-----------------
-
-<div class="publish_date">
-{{ page.date | date_to_string }}
-</div>
-
 ### Culture and Cultural Transmission ###
 
 > Culture is information that is acquired from other individuals via social transmission mechanisms such as imitation, teaching, or language.
