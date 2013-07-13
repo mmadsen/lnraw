@@ -26,6 +26,13 @@ task :newnote, [:name] do |t, args|
 end
 
 
+desc 'Walk production site and insert into Greycite'
+task :greycite do 
+  
+end
+
+
+
 
 desc 'Check links for site already running on localhost:4000'
 task :check_links do
