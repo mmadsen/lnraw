@@ -2,19 +2,29 @@ exclude: [ _posts/source ]
 pygments: true
 safe: false
 paginate: 6
+
 scholar:
   style: apa
   locale: en
   sort_by: year
   order: descending
-
   source: ./_biblio
   bibliography: labnotebook.bib
+  
 tag_page_layout: tag_page
 tag_page_dir: tag
+
 markdown: pandoc
 pandoc:
   extensions: 
     - smart
     - mathjax
     - bibliography: /Users/mark/lnraw/_biblio/labnotebook.bib
+
+author:
+  name: Mark E. Madsen
+  givenName: Mark
+  familyName: Madsen
+  github: mmadsen
+url: notebook.madsenlab.org
+title: Lab Notebook for Mark E. Madsen

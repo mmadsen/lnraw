@@ -20,6 +20,13 @@ task :deploy => :build do
   sh 'lnbuild'
 end
 
+desc 'New labnotebook post from template'
+task :newnote, [:name] do |t, args|
+  sh 'newlabnote.sh #{args.name}'
+end
+
+
+
 desc 'Check links for site already running on localhost:4000'
 task :check_links do
   begin
@@ -55,5 +62,4 @@ def cleanup
 end
 
 def jekyll(opts = '')
-  sh 'jekyll ' + opts
-end
+  sh 'jekyll ' + opts end
