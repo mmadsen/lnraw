@@ -20,6 +20,7 @@ pandoc:
     - smart
     - mathjax
     - bibliography: /Users/mark/lnraw/_biblio/labnotebook.bib
+    
 
 author:
   name: Mark E. Madsen

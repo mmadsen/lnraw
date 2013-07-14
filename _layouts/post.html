@@ -3,17 +3,20 @@ layout: default
 ---
 <div class="span8">
   	<h2>{{ page.title }}</h2>
-	<div class="well well-small">
-	  <p class="text-info"><small>
-		<i class="icon-calendar"></i>&nbsp;Created: {{ page.date | date_to_string }}
-		<span style="margin-left: 50px">&nbsp;</span>
-		<i class="icon-calendar"></i>&nbsp;Modified: {{ page.path | prepend:'_posts/' | git_modified | date_to_string }}
-		<span style="margin-left: 50px"></span>
-		<i class="icon-book">&nbsp;</i>&nbsp;{% greycite_bib_link type: bib %}
-		<span style="margin-left: 50px"></span>
-		<i class="icon-book">&nbsp;</i>&nbsp;{% greycite_bib_link type: ris %}
-		</small></p>
-	</div>
+	
+
+		<p class="text-info">
+		<table class="table table-condensed">
+			<tr class="info">
+				<td><small><i class="icon-calendar"></i>&nbsp;Created: {{ page.date | date_to_string }}</small></td>
+				<td><small><i class="icon-calendar"></i>&nbsp;Modified: {{ page.path | prepend:'_posts/' | git_modified | date_to_string }}</small></td>
+				<td><small><i class="icon-book">&nbsp;</i>&nbsp;{% greycite_bib_link type: bib %}</small></td>
+				<td><small><i class="icon-book">&nbsp;</i>&nbsp;{% greycite_bib_link type: ris %}</small></td>
+				<td><small><a href="javascript:window.print()"><i class="icon-print"></i>&nbsp;Print</a></small></td>
+			</tr>
+		</table>
+		</p>
+
 
   	
 	

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Experiment - Statistical Power of Slatkin Exact vs Conformism 
-tags: [cultural transmission, coarse graining, neutral model, conformist bias]
+tags: [cultural transmission, coarse graining, neutral model, conformist bias, experiments]
 category: "coarse grained model project"
 ---
 
