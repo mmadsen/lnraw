@@ -28,9 +28,8 @@ end
 
 desc 'Walk production site and insert into Greycite'
 task :greycite do 
-  
+  sh 'greycite-walk.rb'  
 end
-
 
 
 
