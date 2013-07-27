@@ -33,11 +33,24 @@ It's complex to represent classifications of a different dimensionality than the
 
 Before that's available, I'll start by examining variation in the way we "cut up" dimensions into attributes/modes, with the assumption that classification dimensions are equivalent to chunks of transmitted information.  The difference will be that analytically we may chop a dimension of variation into different chunks than the original transmission of that variation did.   
 
+#### Number of Dimensions ####
+
+Dynamical systems, particularly those with interaction between agents/elements, are understood to have collective behavior which differs depending upon the dimensionality of the state space.  Thus, I'll study transmission in systems with 2, 3, 4, 6, and 8 dimensions of trait transmission, coarse-grained through classifications of identical dimensionality.  
+
+#### Number of Analyses Required ####
+
+This creates a fairly large analytic burden.  If we do 3 different models (e.g., unbiased, conformist, mixture), for a variety of different mutation rates, conformism rates, and population sizes, we should capture different sample sizes from each run of these models, and then also do those combinations for different dimensionalities.  For each of these combinations, there are obviously some number of replicates while we hold everything else constant.  This defines some number, $N_r$ of unique "simulation run sample sets."
+
+We would then analyze each of the $N_r$ against $N_d$ classifications, where $d$ denotes the trait dimensionality of each "SRSS."  We might also apply $N_{ta}$ levels of time averaging to all of this.  
+
+I should develop a Rmarkdown analysis of this, on the analogy of the seriation combinatorics note, to give me a good estimate of how many analytic data samples I'll end up with.  
+
+
 #### Uniform/Even Modes ####
 
 The first requirement is to aggregate variants into even-sized clusters.  An example of this in real analyses might be edge angles on stone tools, where a continuous variable is discretized, and archaeologists tend to discrete-ize fairly evenly. Many variables are represented by cutting a continuum into pieces relatively evenly.  
 
-At an abstract level, we represent this by chopping the available trait space into even-sized chunks, in this case by cutting MAXALLELES into 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 64 modes per dimension.  These are standardized across many simulation runs and classifications, so we need only construct and store these for a given MAXALLELES value, and can re-use them.  
+At an abstract level, we represent this by chopping the available trait space into even-sized chunks, in this case by cutting MAXALLELES into 2,3,4,6,8,12,16,32 modes per dimension.  These are standardized across many simulation runs and classifications, so we need only construct and store these for a given MAXALLELES value, and can re-use them.  
 
 #### Random Modes ####
 
