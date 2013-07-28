@@ -17,7 +17,11 @@ Starting from a random configuration of traits to individuals, the dynamics lead
 
 Which type of absorbing state is reached depends upon the values of $F$ and $q$, and the degree distribution of neighbor connections also affects the level of disorder in the system.  
 
-In general, the Axelrod model has been studied by simulation, although some mean-field and rigorous treatments do exist.    
+In general, the Axelrod model has been studied by simulation, although some mean-field and rigorous treatments do exist.  
+
+Through 2009, the best summary of work on the Axelrod model is given by Castellano et al. in their review in _Reviews of Modern Physics_ [@castellano2009statistical].  
+
+My bibliography of [Axelrod model references in BibTeX format](/biblio/axelrod-model.bib).
 
 
 ### Generalizing Axelrod ###

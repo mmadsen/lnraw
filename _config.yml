@@ -8,7 +8,7 @@ scholar:
   locale: en
   sort_by: year
   order: descending
-  source: ./_biblio
+  source: ./biblio
   bibliography: labnotebook.bib
   
 tag_page_layout: tag_page
@@ -19,7 +19,7 @@ pandoc:
   extensions: 
     - smart
     - mathjax
-    - bibliography: /Users/mark/lnraw/_biblio/labnotebook.bib
+    - bibliography: /Users/mark/lnraw/biblio/labnotebook.bib
     
 
 author:
