@@ -58,6 +58,13 @@ We can do this with real concepts and real semantics, using the [ConceptNet5](ht
 
 We can also do the "prerequisite" question above with ConceptNet.  
 
+### Publications and Venues ###
+
+
+The initial publication of the Semantic Axelrod model would be in the Mesoudi Project as a chapter, with a specific focus on Paleolithic patterns and implications.  
+
+We would then do a theoretical paper somewhere (possibly not in an archaeological journal), focusing more generally on the dynamics and behavior of Semantic Axelrod for general consumption by the CT and opinion dynamics community.  
+
 
 ### Bibliographic Notes ###
 
