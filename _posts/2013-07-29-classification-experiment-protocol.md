@@ -21,6 +21,14 @@ The purpose of this simulation model is to establish the formal relationship bet
 
 ### Experiment Outline ###
 
+#### Preparation Steps ####
+
+The only preparation needed is to initialize an experiment, by selecting a unique experiment name and registering it in the `experiment_tracking` database by running `initialize_experiment.py`.  The experiment name should be given on the command line as `--experiment EXPERIMENT` to all scripts.  
+
+
+The script `construct_classifications.py` builds the classifications that will be used in the analysis steps.  The script constructs two tables in collection `EXPERIMENT_configuration`.  
+
+The desired range of simulation parameters should be adjusted in `ctpy.__init__.py`.  **NOTE** It might have been a mistake to put these parameters into a python module, rather than configuration files, which could be named on a per experiment basis.  
 
 
 #### Simulation Steps ####
@@ -34,7 +42,9 @@ For the basic unbiased model with unbounded "always new" innovation (WF-IA), the
 1. Population size
 2. Innovation rate
 
-Other models such as conformism would add the conformism rate or bias level.  
+Other models such as conformism would add the conformism rate or bias levels to the list of simulation parameters.  
+
+Each simulation run stores raw samples of genotypes, and statistical measures, in a data collection called `EXPERIMENT_sim_rawdata`.    
 
 #### Data Reduction Steps ####
 
@@ -45,8 +55,15 @@ The following parameters will be handled by setting them to maximum values acros
 1. Sample size of individuals for statistics calculation
 2. Number of trait dimensions each individual possesses
 
-**NOTE** we can factor out trait dimensions in this way ONLY if we're using specific algorithms for copying and mutation.  In the unbiased case (WFIA), the simuPOP `RandomSelection` mating scheme copies a whole individual's genotype into the output population for the generation step.  And the `KAlleleMutator` applies the mutation rate to each locus independently (and can have specific mutation rates for each locus, if desired). These facts about the model code make it easy to factor out trait dimensions by subsampling.  IF, on the other hand, a CT model doesn't work this way, I may need to explicitly include `num_loci` in the simulation parameters Cartesian product.  
- 
+**NOTE** we can factor out trait dimensions in this way ONLY if we're using specific algorithms for copying and mutation.  In the unbiased case (WFIA), the simuPOP `RandomSelection` mating scheme copies a whole individual's genotype into the output population for the generation step.  And the `KAlleleMutator` applies the mutation rate to each locus independently (and can have specific mutation rates for each locus, if desired). These facts about the model code make it easy to factor out trait dimensions by subsampling.  IF, on the other hand, a CT model doesn't work this way, I may need to explicitly include `num_loci` in the simulation parameters Cartesian product. 
+
+Subsampling occurs as follows:
+
+1.  For a given `experiment_name`, we determine whether subsampling has previously occurred, by consulting the appropriate entry in `experiment_tracking`.  If subsampling has occurred, we exit.  
+2. Otherwise, we select all raw data samples from `individual_samples` in `EXPERIMENT_sim_raw`.
+3. For each data sample, we loop over the cartesian product of `DIMENSIONS_STUDIED` and `SAMPLE_SIZES_STUDIED` and for each combination, we construct a subsample of individuals with the specified number of loci.  
+4. The subsample is then inserted into `EXPERIMENT_sim_raw`, in the `individual_samples_fulldataset`.  This segregates the original simulation output from post-processed output, allowing re-analysis if bugs are discovered in the processing chain, or we want to post-process with different parameter values.  
+
 
 #### Analysis Steps ####
 

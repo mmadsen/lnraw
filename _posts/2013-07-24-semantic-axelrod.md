@@ -7,6 +7,13 @@ category: structured information project
 
 ### Background ###
 
+The most common way to describe different approaches to the study of cultural transmission is to examine lineages of researchers and the disciplinary influences that result in differences in models or research questions.  Another approach focuses upon the mathematical structure of models themselves, showing (for example) how neutral population genetic models share the same structure as the SIS model in epidemiology, and how both are examples of the contact process from mathematical probability theory.[^1]  
+
+Another way to understand the diversity of CT models and approaches is to look at the nature of the observable variables from the models we study. I propose that existing formal models differ in whether they 
+
+
+### Background ###
+
 "Cultural transmission" modeling is divided into a couple of main traditions, that differ mainly in the kinds of questions being asked. The tradition represented by Boyd and Richerson and derived from a mixture of theoretical population genetics and epidemiological modeling, tends to focus on the _statistical distribution of the content of CT given a mixture of processes_.  
 
 The tradition of "opinion dynamics," tend to be physically derived (e.g., from Ising and Potts models) and have been mainly studied by economists and physicists working on complex systems.  The major questions in opinion dynamics models have been, what factors influence the development of consensus versus disagreement, when does a population break up into islands of differing culture or opinion, and what are the statistical properties of such islands of agreement when they form?  
@@ -78,6 +85,9 @@ Excellent nonequilibrium model which coevolves social network with the opinion d
 
 
 
+
+[^1]:  Another good example is the ability to map the Axelrod model of cultural differentiation discussed here, 
+	to the q-state Potts model, which has rich connections to other spin models in statistical physics.  
 
 
 
