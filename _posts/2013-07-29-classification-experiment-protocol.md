@@ -62,15 +62,21 @@ Subsampling occurs as follows:
 1.  For a given `experiment_name`, we determine whether subsampling has previously occurred, by consulting the appropriate entry in `experiment_tracking`.  If subsampling has occurred, we exit.  
 2. Otherwise, we select all raw data samples from `individual_samples` in `EXPERIMENT_sim_raw`.
 3. For each data sample, we loop over the cartesian product of `DIMENSIONS_STUDIED` and `SAMPLE_SIZES_STUDIED` and for each combination, we construct a subsample of individuals with the specified number of loci.  
-4. The subsample is then inserted into `EXPERIMENT_sim_raw`, in the `individual_samples_fulldataset`.  This segregates the original simulation output from post-processed output, allowing re-analysis if bugs are discovered in the processing chain, or we want to post-process with different parameter values.  
+4. The subsample is then inserted into `EXPERIMENT_sim_raw`, in the `individual_samples_fulldataset`.  This segregates the original simulation output from post-processed output, allowing re-analysis if bugs are discovered in the processing chain, or we want to post-process with different parameter values. 
+5. When complete, `experiment_tracking` is updated to reflect completion of subsampling. 
 
 
 #### Analysis Steps ####
 
+**PREPARATION STAGE**
 
-
-
-
+1.  First check `experiment_tracking` to determine whether a given full dataset has been identified as to classes.  If so, exit.  
+2. For each classification in `EXPERIMENT_configuration`:
+3. Select all samples from `individual_samples_fulldataset` that have the same dimensionality as the classification.  
+4. Identify each individual genotype as to class membership, save in a list.
+5. Substitute the list of classes for the original genotypes into a copy of the individual sample record.
+6. Insert the finished sample to the collection `EXPERIMENT_samples_postclassification`.  This keeps the processed samples in addition to the original data.  
+7. Record completion in `experiment_tracking`.  
 
 
 ### References Cited ###
