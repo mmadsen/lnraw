@@ -22,6 +22,6 @@ Cleaned up my instances and resized the EBS volume to have 200GB to work with.  
 
 Overnight, the classification script generated about 12MM observations, and about 50GB in database, which means that database is going to overflow the EBS volume and stop.  So I killed the process, nuked the postclassification database, and stopped the instance.  I'm starting a second resize now.  
 
-Snapshot creating is underway.  Next step when I pick it up again is volume creation, swapout on the instance.
+Finishing resizing the new volume and snapshot, restarted classification at 10:40am on 8/11.  
 
 
