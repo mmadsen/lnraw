@@ -18,5 +18,10 @@ Am working on expanding and reattaching the EBS volume with the MongoDB database
 
 Cleaned up my instances and resized the EBS volume to have 200GB to work with.  This probably will be enough, but we'll see.  I ran the subsampling program and the raw data collection grew to about 19GB.  I started the classification script, which runs each classification serially, and it's going strong.  I expect it to generate about 42MM individual documents by the time it's done, and that could be a day or two.  
 
+**8/11/13** -- _Second Resizing_
+
+Overnight, the classification script generated about 12MM observations, and about 50GB in database, which means that database is going to overflow the EBS volume and stop.  So I killed the process, nuked the postclassification database, and stopped the instance.  I'm starting a second resize now.  
+
+Snapshot creating is underway.  Next step when I pick it up again is volume creation, swapout on the instance.
 
 
