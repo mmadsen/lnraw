@@ -7,22 +7,19 @@ category: structured information project
 
 ### Background ###
 
-The most common way to describe different approaches to the study of cultural transmission is to examine lineages of researchers and the disciplinary influences that result in differences in models or research questions.  Another approach focuses upon the mathematical structure of models themselves, showing (for example) how neutral population genetic models share the same structure as the SIS model in epidemiology, and how both are examples of the contact process from mathematical probability theory.[^1]  
+Micro-scale descriptions of cultural transmission are those which examine the population consequences of microscopic (often individual) scale rules or processes (as contrasted to macroscopic models such a reaction-diffusion or diffusion models, see Kandler et al. 2012 -- NEED REF).  Micro-scale models are often implemented as agent-based models, but need not be.  
 
-Another way to understand the diversity of CT models and approaches is to look at the nature of the observable variables from the models we study. I propose that existing formal models differ in whether they 
+Micro-scale models are useful despite often being analytically opaque and computationally intensive because they can model emergent properties, and potentially allow causal analysis of how properties at one scale emerge from individual level events.  
 
+That said, there is still considerable diversity in the kinds of phenomena that have been studied using micro-level CT models.  The most common modeling approach has been to treat the frequencies of abstract traits as observables, with copying and mutation rules serving as model analogs for cognitive or psychological processes.  This approach is concerned mainly with how the cognitive processes behind social learning generate distinctive _statistical distributions_ for any and every kind of cultural trait, regardless of what that trait is "about."  I call such models _rule-focused_ micro-scale CT models.  
 
-### Background ###
+Rule focused CT models were the obvious place to begin constructing formal models of CT.  Such models mirror the structure of theoretical population genetics, and epidemiology, where the core mathematical models are silent about the content of the "alleles" or "diseases" being transmitted.  
 
-"Cultural transmission" modeling is divided into a couple of main traditions, that differ mainly in the kinds of questions being asked. The tradition represented by Boyd and Richerson and derived from a mixture of theoretical population genetics and epidemiological modeling, tends to focus on the _statistical distribution of the content of CT given a mixture of processes_.  
+But we quickly run up against limits when we want to ask questions about how cultural evolution leads to why human groups might display certain kinds of substantive features.  Rule-focused models are silent about the content of what is being transmitted, just as population genetic models are silent about what kinds of phenotypes arise from a confluence of modeled "alleles."
 
-The tradition of "opinion dynamics," tend to be physically derived (e.g., from Ising and Potts models) and have been mainly studied by economists and physicists working on complex systems.  The major questions in opinion dynamics models have been, what factors influence the development of consensus versus disagreement, when does a population break up into islands of differing culture or opinion, and what are the statistical properties of such islands of agreement when they form?  
+What we need, in addition to rule-focused models, are _content-enabled_ models of cultural transmission, which allow us to represent traits that have intrinsic function, meaning, and relationships, and then examine the effect of social learning rules upon their abundance and distribution.  Such models represent an "evolutionary developmental theory" or "evo-devo" for cultural evolution. 
 
-I'd argue that these modeling traditions are complementary.  Archaeologists usually need to ask questions about the distribution of the _content_ resulting from CT processes, but the models derived from the population genetic tradition make it difficult to address population structure and differentiation, in a macroevolutionary context.  This is mainly driven by the "equilibrium" nature of models derived from population genetics. 
-
-I'm hoping that we can combine the nonequilibrium study of models like the Axelrod model of opinion/cultural dynamics, with a focus on the _content_ of cultural information being transmitted, and improve our understanding of how the fission and differentiation of cultural groups also influences the content and _history_ of material culture itself.  
-
-This is a tall order because in nearly every model of CT in existence, the information or traits being transmitted are simple markers or tokens, and bear no "meaning" themselves -- no "content" for us to study other than counting frequencies and looking at the shapes of distributions.  In this project, I propose to augment the Axelrod model with semantically meaningful traits, and observe the effects of cultural differentiation and consensus on the distribution of _meanings_ and _semantic relationships_ within and across populations.  
+Such models also help bridge the gap between rich narrative descriptions of cultural transmission and technological evolution [e.g., @sterelny2012evolved] and quantitative modeling and data analysis.  This is what my structured information project is about -- constructing the formal and analytical tools to start bridging that gap.  
 
 ### Mesoudi Project ###
 
@@ -82,13 +79,6 @@ My bibliography of [Axelrod model references in BibTeX format](/biblio/axelrod-m
 Excellent nonequilibrium model which coevolves social network with the opinion dynamics, showing self-organization into communities:  [@holme2006nonequilibrium].  Can we add semantics to this instead of the plain Axelrod?
 
 ### References Cited ###
-
-
-
-
-[^1]:  Another good example is the ability to map the Axelrod model of cultural differentiation discussed here, 
-	to the q-state Potts model, which has rich connections to other spin models in statistical physics.  
-
 
 
 
