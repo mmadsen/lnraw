@@ -25,3 +25,17 @@ Overnight, the classification script generated about 12MM observations, and abou
 Finishing resizing the new volume and snapshot, restarted classification at 10:40am on 8/11.  
 
 
+### Analysis ###
+
+
+Processing for analysis is going to involve some steps, given 42MM samples.  
+
+1.  Restart EC2 instance and get copy of param space, ensure we record it here (if different than the basic one in github).
+2.  Copy the database somewhere that I can analyze it.  Might have to live on the external TB drive just ordered, if I want to work on it via the laptop.  
+
+#### Preprocessing ####
+
+1.  The `individual_samples_classified` collection needs some basic post-processed statistics, like richness, and class count/freq. These operations are on a per-database-entry basis, and thus can be maximally parallelized via some architecture - Hadoop, Storm, etc.  
+2. Data frames then need to be created which have parameters for both simulation run and classification.  These should be `pandas` data frames, so we can easily move them to R.  
+
+
