@@ -7,7 +7,7 @@ category: structured information project
 
 ### Abstract Draft ###
 
-Cultural transmission models are coming to the fore in explaining long-term trends in the Paleolithic archaeological record. Hypotheses include the idea that increased diversity is due to relaxation of conformism, models for the effects of demographic expansion on cultural diversity, and the effects of extinction and recolonization in a metapopulation. In this paper, we focus upon the dynamics of social learning when traits have hierarchical relationships, and present a "semantic" version of the Axelrod model for cultural differentiation, examining the structure of traits across cultural domains, when "homophily" and "conformism" are interpreted as referring to content, not merely popularity.  
+Cultural transmission models are coming to the fore in explaining long-term trends in the Paleolithic archaeological record. Hypotheses include the idea that increased diversity is due to relaxation of conformism, models for the effects of demographic expansion on cultural diversity, and the effects of extinction and recolonization in a metapopulation. We present a complementary model, focusing upon the dynamics of social learning when traits have hierarchical relationships.  We introduce a "semantic" version of Axelrod's model for cultural differentiation, examining the structure of traits across cultural domains, when "homophily" and "conformism" are interpreted as referring to content, not merely popularity.  
 
 ### Background ###
 
