@@ -39,3 +39,12 @@ Processing for analysis is going to involve some steps, given 42MM samples.
 2. Data frames then need to be created which have parameters for both simulation run and classification.  These should be `pandas` data frames, so we can easily move them to R.  
 
 
+
+
+
+
+#### Statistics ####
+
+$\mathrm{IQV} = (\frac{k}{k-1}) (1 - \sum_{i=1}^k p_i^2 )$
+
+
