@@ -8,9 +8,7 @@ category: structured information project
 ### Abstract Draft ###
 
 Cultural transmission models are coming to the fore in explaining increases in the Paleolithic toolkit richness and diversity. Hypotheses include the idea that diversity increased due to relaxation of conformism, due to the effects of demographic expansion on cultural diversity, and the effects of extinction and recolonization in metapopulations. However, during the Paleolithic technologies increase in their complexity and interdependence, not simply type richness.  We introduce a version of the Axelrod model of cultural differentation, to describe social learning when knowledge acquisition requires prerequisites and background information.   We examine the conditions under which cumulative, regionalized  traditions develop in the model.   
-
-
- We introduce a "semantic" version of Axelrod's model for cultural differentiation, examining the distribution of traits when "homophily.  
+ 
 
 ### Background ###
 
