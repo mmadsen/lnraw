@@ -28,6 +28,8 @@ Notably, conformism and homophily are orthogonal to demographic and social netwo
 
 But this is still not a complete view of the components of cultural transmission.  What's missing is the _content_ of cultural information itself, and how that content interacts with social learning in various use contexts (or niches).  For example, some skills and information are _prerequisite_ to other skills or knowledge.  In the transmission sense of information [@bergstrom2011transmission], linked traits simply represent pleiotropy.  But one way in which cultural transmission differs from genetic transmission is that social learning can easily be dependent not just upon the choice of individuals with whom to exchange information (i.e., assortative mating), but upon the content of the information itself.  Boyd and Richerson long ago recognized such a process in their description of "direct bias" [@BR1985], but optimality evaluation of alternative traits hardly exhausts the possible space of "content sensitive" cultural transmission rules.  
 
+{Unfinished...}
 
+### References Cited ###
 
 
