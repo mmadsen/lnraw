@@ -5,6 +5,10 @@ tags: [SAA2014, axelrod model, structured information, cultural transmission]
 category: structured information project
 ---
 
+### Paper Title ###
+
+Cumulative technology evolution and the cultural transmission of structured knowledge:  the Semantic Axelrod Model
+
 ### Abstract Draft ###
 
 Cultural transmission models are coming to the fore in explaining increases in the Paleolithic toolkit richness and diversity. Hypotheses include the idea that diversity increased due to relaxation of conformism, due to the effects of demographic expansion on cultural diversity, and the effects of extinction and recolonization in metapopulations. However, during the Paleolithic technologies increase in their complexity and interdependence, not simply type richness.  We introduce a version of the Axelrod model of cultural differentation, to describe social learning when knowledge acquisition requires prerequisites and background information.   We examine the conditions under which cumulative, regionalized  traditions develop in the model.   
