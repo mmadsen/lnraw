@@ -13,7 +13,7 @@ Cultural Transmission of Structured Knowledge and Technological Complexity:  Axe
 
 Cultural transmission models are coming to the fore in explaining increases in the Paleolithic toolkit richness and diversity. Analyses suggest that diversity increased due to relaxation of conformism, due to the effects of demographic expansion on cultural diversity, and the effects of extinction and recolonization in metapopulations. During the Paleolithic, however, technologies increase not only in terms of diversity but also in their complexity and interdependence.  As Mesoudi and O'Brien (2008) have shown selection broadly favors social learning that is hierarchical and structured, rather than information which is piecemeal and independent. The addition of structured information acquisition potentially explains how the complexity of technology changes along with diversity.  Here, we introduce a variant of Axelrod's model of cultural differentiation, modified such that homophily and conformism refers to the content or "semantics" of traits, instead of simply their frequencies.  We examine the conditions under which structured suites of traits develop and differentiate in the model, which can represent the chains of prerequisites, "background" information, and local specializations characteristic of real technology traditions. Our results point to ways in which we can build more comprehensive explanations of the archaeological record of the Paleolithic as well as other cases of technological change. 
 
-
+(as submitted)
 
 
 
