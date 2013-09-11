@@ -7,7 +7,7 @@ category: structured information project
 
 ### Paper Title ###
 
-Cumulative technology evolution and the cultural transmission of structured knowledge:  the Semantic Axelrod Model
+Cultural Transmission of Structured Knowledge and Technological Complexity:  Axelrod's Model Extended
 
 ### Abstract Draft ###
 
