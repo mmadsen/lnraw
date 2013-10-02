@@ -8,26 +8,51 @@
 	"buffers":
 	[
 		{
+			"file": "_posts/2013-09-26-classification-experiment-data-cleaning.md",
+			"settings":
+			{
+				"buffer_size": 3714,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "_posts/2013-08-27-classification-research-questions.md",
 			"settings":
 			{
-				"buffer_size": 5871,
+				"buffer_size": 6330,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_layouts/default.html",
+			"file": "projects/coarsegraining/classification_experiment.html",
 			"settings":
 			{
-				"buffer_size": 9175,
+				"buffer_size": 539,
+				"line_ending": "Unix",
+				"name": "---"
+			}
+		},
+		{
+			"file": "blog.html",
+			"settings":
+			{
+				"buffer_size": 469,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "_posts/2013-09-30-medium-data.md",
 			"settings":
 			{
-				"buffer_size": 1455,
+				"buffer_size": 6689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "research.html",
+			"settings":
+			{
+				"buffer_size": 1407,
 				"line_ending": "Unix"
 			}
 		}
@@ -68,7 +93,9 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml"
@@ -89,6 +116,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"**",
 			"navbar",
 			"javascript",
 			"javascript\">try{Typekit.load();}catch(e){}</script>\n  <script type=\"text/javascript\" src=\"http://cdn"
@@ -109,24 +137,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2013-08-27-classification-research-questions.md",
+					"file": "_posts/2013-09-26-classification-experiment-data-cleaning.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5871,
+						"buffer_size": 3714,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2432,
-								2432
+								3713,
+								3713
 							]
 						],
 						"settings":
@@ -141,19 +169,76 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_layouts/default.html",
+					"file": "_posts/2013-08-27-classification-research-questions.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9175,
+						"buffer_size": 6330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6023,
-								6023
+								5320,
+								5320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "projects/coarsegraining/classification_experiment.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								479
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
 							]
 						],
 						"settings":
@@ -163,26 +248,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1652.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "index.html",
+					"buffer": 4,
+					"file": "_posts/2013-09-30-medium-data.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1455,
+						"buffer_size": 6689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1447,
-								1447
+								5930,
+								5930
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1033.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "research.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -250,11 +362,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/local-research/diss/experiments/classification/classification.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

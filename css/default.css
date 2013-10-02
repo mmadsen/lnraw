@@ -194,6 +194,11 @@ dark-orange #e39c1f
 	letter-spacing:-5px;
 }
 
+#post h2 {
+	font-size:1em;
+	letter-spacing:-3px;
+}
+
 #home h2 {
 border-bottom:1px solid #e5e5e5;
 color:#0383c9;

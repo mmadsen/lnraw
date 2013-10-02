@@ -42,19 +42,27 @@ Random partitions allow us to examine situations where archaeologists create dis
 
 Even partitions, on the other hand, should be a pure  "rescaling" of the quantitative relationships at the underlying "trait" level into the classification.  
 
-### Variables of Interest ###
+### Regressions ###
 
-In this simulation experiment, I seek to establish the nature of the following scaling relationships.  The ideal result would be an equation for each mapping, or at least a statistical model which describes how to predict each side from the other.  This need not just be predicting the RHS from the LHS, of course.  Commonly, we may want to understand the degree to which we can recover the nature of an underlying CT process (i.e., its individual and population level parameters) from data quantified through classifications of a given coarseness and mode type.  
+In this simulation experiment, I want to establish the nature of the following scaling relationships.  The ideal result would be an equation for each mapping, or at least a statistical model which describes how to predict each side from the other.   
 
-1.  **Mean Trait richness per dimension** $\leftrightarrow$ **Mean mode richness per dimension**
+1.  `Mean Trait richness per dimension` $\leftrightarrow$ `Mean mode richness per dimension`
 1. 	Fraction of filled classification space, as coarseness is altered [^1]
-1.  **Mean Trait evenness per dimension** $\leftrightarrow$ **Mean mode evenness per dimension**
-1.  **Mean Trait innovation rate** $\leftrightarrow$ **Mean mode or class innovation rate** [^2]
+1.  `Mean Trait evenness per dimension` $\leftrightarrow$ `Mean mode evenness per dimension`
+1.  `Mean Trait evenness across dimensions` $\leftrightarrow$ `Mean class evenness` [^3]
+1.  `Mean Trait innovation rate` $\leftrightarrow$ `Mean mode or class innovation rate` [^2]
+
+These relationships are conditioned by variables such as $\theta$, the combination of innovation rate and population size ($2N\mu$).  
+
+I also want to know how the method of breaking a dimension into classification modes (`EVEN` or `RANDOM`) affects the distribution of observable richness and evenness metrics.  The basic analysis here should be to do a curve fit for each observable, at specific mutation rates.  In particular, it'll be interesting to see how wide the confidence envelope around the `RANDOM` classifications is....
+
+
 
 [^1]: Since the underlying trait space is infinite (in theory, although the simulated trait space is finite but much larger than will be explored given the length of the simulation run and innovation rate), it's difficult to talk about how much "volume" is occupied in the trait space.  But there should be a measure here, since statistical physics has the same problem talking about volumes in phase space.  
 
 [^2]: The mean trait innovation rate is actually a *parameter* for each simulation run, and does not need to be measured.  But the mean rate at which novel *modes* or *classes* appear in the data set, *given* a particular underlying trait innovation rate, is important especially since it may represent one of the few ways of estimating innovation rates with only observable data.  
 
+[^3]: I measure evenness in two ways:  [Shannon entropy](http://en.wikipedia.org/wiki/Diversity_index) and the "Index of Qualitative Variation," [@wilcox1973indices].  
 
 
 
