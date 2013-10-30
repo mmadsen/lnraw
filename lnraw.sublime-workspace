@@ -8,51 +8,21 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2013-09-26-classification-experiment-data-cleaning.md",
+			"contents": "---\nlayout: post\ntitle: Dissertation Experiments - Metapopulation Models\ntags: [cultural transmission, coarse graining, simulation, ctpy, dissertation, experiments]\ncategory: coarse grained model project\n---\n\n### Goal ###\n\nI want to be able to observe standard CT processes (e.g., neutral, conformist, mixtures) in a regional \"metapopulation\" made up of connected subpopulations, keeping track both of raw traits, and viewing simulation results through classifications, as I did with a single population.  Additional observable quantities may come into play, in terms of the spread and reach of classes and traits through subpopulations.  \n\n### Requirements ###\n\n\n\n\n\n",
+			"file": "_posts/2013-10-22-metapopulation-models-diss.md",
+			"file_size": 219,
+			"file_write_time": 130269473110000000,
 			"settings":
 			{
-				"buffer_size": 3714,
+				"buffer_size": 667,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2013-08-27-classification-research-questions.md",
+			"file": "_posts/2013-10-23-semanticaxelrod-research-design.md",
 			"settings":
 			{
-				"buffer_size": 6330,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "projects/coarsegraining/classification_experiment.html",
-			"settings":
-			{
-				"buffer_size": 539,
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "blog.html",
-			"settings":
-			{
-				"buffer_size": 469,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2013-09-30-medium-data.md",
-			"settings":
-			{
-				"buffer_size": 6689,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "research.html",
-			"settings":
-			{
-				"buffer_size": 1407,
+				"buffer_size": 2660,
 				"line_ending": "Unix"
 			}
 		}
@@ -93,9 +63,21 @@
 	},
 	"file_history":
 	[
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-29-classification-experiment-protocol.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml"
@@ -137,24 +119,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2013-09-26-classification-experiment-data-cleaning.md",
+					"file": "_posts/2013-10-22-metapopulation-models-diss.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3714,
+						"buffer_size": 667,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3713,
-								3713
+								663,
+								663
 							]
 						],
 						"settings":
@@ -169,138 +151,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2013-08-27-classification-research-questions.md",
+					"file": "_posts/2013-10-23-semanticaxelrod-research-design.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6330,
+						"buffer_size": 2660,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5320,
-								5320
+								1358,
+								1358
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "projects/coarsegraining/classification_experiment.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 539,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								469,
-								479
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "blog.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								469,
-								469
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_posts/2013-09-30-medium-data.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6689,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5930,
-								5930
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1033.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "research.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -387,7 +255,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 422.0,
+	"side_bar_width": 359.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
