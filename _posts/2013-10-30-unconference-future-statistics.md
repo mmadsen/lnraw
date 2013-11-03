@@ -118,6 +118,7 @@ Data are not IID.  All the data we thought were IID, aren't.  At least with huma
 Sampling - recruitment strategies for large-scale experiments.  How do you avoid selection bias?  Respondent driven sampling creates biases.  
 
 Interference - treated nodes connected to nontreated nodes via complex network structures.  Treatments interfere with one another - hard to "separate" treatment groups.  A couple of approaches - design strategies, inference strategies.  Exposure models - base inference on the exposure model, but you have to assume that the exposure model is correct, and testing it is hard.  
+
 ### Hilary Mason ###
 
 Business and statistics

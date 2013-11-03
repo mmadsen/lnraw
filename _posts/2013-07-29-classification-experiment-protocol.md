@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Classification Experiment Protocol
-tags: [cultural transmission, classification, coarse graining, simulation, ctpy, dissertation, experiments]
+tags: [cultural transmission, classification, coarse graining, simulation, ctpy, dissertation, experiments, experiment-classification]
 category: coarse grained model project
 ---
 

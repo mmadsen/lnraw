@@ -22,6 +22,13 @@ Github Pages allows one to host straight HTML or Github-flavored Markdown, or Je
 
 So the solution is that I have _two_ Github repositories for the lab notebook.  One is the "source code" for the lab notebook, where I write posts and test formatting, and do everything "offline" -- I compile it using a Rakefile and it runs on localhost.   When I'm happy, I commit the changes to git, and then compile the finished site, which I then copy to a second Github repository for Github Pages, which contains only the finished HTML, CSS, Javascript, and other assets.  This repository, when pushed to Github, becomes the public website.  All of this is automated by a build script (i.e., Rakefile), of course, so when I check in a post to the "source" repository, it's a matter of moments before it's built, copied, checked in, and pushed live.  And both repositories are version controlled, so you have version-controlled source and production files.  Nice.  
 
+### Documentation ###
+
+* [Adding a Project](/doc/adding-project.html)
+* [Adding an Experiment](/doc/adding-experiment.html)
+
+
+
 ### Details ###
 
 The site uses Jekyll at whatever its current release is.  I only modify Jekyll by upgrading it, or adding plugins.  

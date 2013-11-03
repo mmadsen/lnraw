@@ -25,6 +25,22 @@
 				"buffer_size": 2660,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "_posts/2013-10-30-unconference-future-statistics.md",
+			"settings":
+			{
+				"buffer_size": 7473,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2011-01-11-he-and-stone.md",
+			"settings":
+			{
+				"buffer_size": 2533,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -119,7 +135,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -162,8 +178,62 @@
 						"selection":
 						[
 							[
-								1358,
-								1358
+								190,
+								190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2013-10-30-unconference-future-statistics.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6173,
+								6173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2185.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/2011-01-11-he-and-stone.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -235,7 +305,7 @@
 		[
 			[
 				"",
-				"~/local-research/diss/experiments/classification/classification.sublime-project"
+				"~/local-research/diss/experiments/experiment-classification/classification.sublime-project"
 			]
 		],
 		"width": 380.0

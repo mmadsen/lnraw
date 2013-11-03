@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Semantic Axelrod Model
-tags: [cultural transmission, structured information, axelrod model]
+tags: [cultural transmission, structured information, axelrod model, experiment-semanticaxelrod]
 category: structured information project
 ---
 
