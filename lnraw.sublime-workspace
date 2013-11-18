@@ -8,37 +8,10 @@
 	"buffers":
 	[
 		{
-			"contents": "---\nlayout: post\ntitle: Dissertation Experiments - Metapopulation Models\ntags: [cultural transmission, coarse graining, simulation, ctpy, dissertation, experiments]\ncategory: coarse grained model project\n---\n\n### Goal ###\n\nI want to be able to observe standard CT processes (e.g., neutral, conformist, mixtures) in a regional \"metapopulation\" made up of connected subpopulations, keeping track both of raw traits, and viewing simulation results through classifications, as I did with a single population.  Additional observable quantities may come into play, in terms of the spread and reach of classes and traits through subpopulations.  \n\n### Requirements ###\n\n\n\n\n\n",
-			"file": "_posts/2013-10-22-metapopulation-models-diss.md",
-			"file_size": 219,
-			"file_write_time": 130269473110000000,
+			"file": "_posts/2013-11-03-classification-eda.md",
 			"settings":
 			{
-				"buffer_size": 667,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2013-10-23-semanticaxelrod-research-design.md",
-			"settings":
-			{
-				"buffer_size": 2660,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2013-10-30-unconference-future-statistics.md",
-			"settings":
-			{
-				"buffer_size": 7473,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2011-01-11-he-and-stone.md",
-			"settings":
-			{
-				"buffer_size": 2533,
+				"buffer_size": 1410,
 				"line_ending": "Unix"
 			}
 		}
@@ -46,9 +19,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 367.0,
 		"selected_items":
 		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
 			[
 				"Pac",
 				"Package Control: Install Package"
@@ -58,7 +35,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -79,21 +56,38 @@
 	},
 	"file_history":
 	[
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Desktop/EDC-summit-notes.txt",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-22-metapopulation-models-diss.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-30-unconference-future-statistics.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-29-classification-experiment-protocol.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-03-classification-eda.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-23-semanticaxelrod-research-design.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-05-saa2014-abstract-draft.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-implementation.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-abstract-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semantic-ct-models-2007-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-24-semantic-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml"
@@ -135,105 +129,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2013-10-22-metapopulation-models-diss.md",
+					"file": "_posts/2013-11-03-classification-eda.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 667,
+						"buffer_size": 1410,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								663,
-								663
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2013-10-23-semanticaxelrod-research-design.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2660,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								190,
-								190
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_posts/2013-10-30-unconference-future-statistics.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7473,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6173,
-								6173
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2185.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_posts/2011-01-11-he-and-stone.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2533,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								1410,
+								1410
 							]
 						],
 						"settings":
@@ -255,7 +168,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
