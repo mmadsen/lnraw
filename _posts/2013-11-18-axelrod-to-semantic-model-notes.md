@@ -18,5 +18,15 @@ The next tasks revolve around the "trait model" we use, giving traits relational
 1.  Add structure to the traits themselves, in the form of a directed graph, and rules by which copying is possible given the presence of upstream prerequisites.  
 
 
+### Extensible Trait Lists ###
+
+Most cultural transmission models have followed the "loci and alleles" paradigm, where there is a fixed set of features (loci), which can have a limited or (practically speaking) unlimited number of alleles.  The simplest models, of course, have one feature/locus, and two possible traits.  
+
+Some CT models don't follow this pattern, and allow the accumulation of information over time.  This is what we want to model because in addition to population size and demographic structure, the growth of cultural knowledge (i.e., growth in `F` over time per person) is a key ingredient in long-term enrichment of the cultural endowment of human populations.  So it's essential to model unfixed `F`.  
+
+This means that copying rules can no longer be easily written as "pick a feature, copy the target agent's trait" -- which is how most CT models are written, as was the original Axelrod model for homophily.  
+
+### Information Structure ###
+
 
 
