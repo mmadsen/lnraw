@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing Semantic Axelrod in CTPy
-tags: [cultural transmission, structured information, axelrod model, simulation, ctpy, SAA 2014, experiment-semanticaxelrod]
+tags: [cultural transmission, structured information, axelrod model, simulation, ctpy, SAA 2014, blogarch, experiment-semanticaxelrod]
 category: structured information project
 ---
 
