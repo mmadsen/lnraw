@@ -3,19 +3,24 @@ layout: default
 ---
 <div class="span9">
 			<div class="hero-unit">
-				<img src="/images/madsenlabnotebook-smaller.png" class="img-responsive" alt="MadsenLab Notebook"/>
-				<p>I study the evolution of human culture, using the framework of Darwinian evolutionary theory.  
-					As an anthropologist, my focus is upon large-scale and long-term patterns in cultural change.  
-					My research projects focus upon the connection between micro-scale, individual level processes (such as social learning, strategic interaction, 
-					and the structure of technological knowledge), and their macroscopic and macroevolutionary results.</p>
+				<img src="/images/madsenlabnotebook-350px.png" class="img-responsive" alt="MadsenLab Notebook"/>
+				<p>I study the evolution of human culture, using the framework of Darwinian evolutionary theory.    
+					My research projects focus upon the connection between individual-level processes of social learning and strategic interaction, and their macroscopic and macroevolutionary results.</p>
 				<p>Welcome to my lab notebook.</p>
 			</div>
 	<div class="row-fluid">
-		
+		<div class="span9">
+			<h3>Recent Lab Notes</h3>
+  				<ul>
+    				{% for post in site.posts limit:5 %}
+      				<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
+    				{% endfor %}
+  				</ul>
+		</div>
 
 		
 
-	
+		<!--
 		<div class="span4">
 			<h2>Cultural Transmission</h2>
 			<p>Notes, essays, and manuscripts concerning cultural transmission theory, models, or methods.  Some of this material
@@ -32,6 +37,8 @@ layout: default
 			<p>Notes listed by tag or topic.</p>
 			<p><a class="btn" href="/tags.html">Notes &raquo;</a></p>
 		</div>
+		-->
+
 	</div>
 	
 </div>

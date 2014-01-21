@@ -8,18 +8,18 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2013-12-28-issues-with-tree-axelrod.md",
+			"file": "_posts/2014-01-11-semantic-axelrod-prerequisites.md",
 			"settings":
 			{
-				"buffer_size": 2520,
+				"buffer_size": 8167,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2014-01-11-semantic-axelrod-prerequisites.md",
+			"file": "_posts/2014-01-18-semantic-trait-graphs-and-symmetries.md",
 			"settings":
 			{
-				"buffer_size": 7992,
+				"buffer_size": 7032,
 				"line_ending": "Unix"
 			}
 		}
@@ -64,6 +64,11 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Desktop/graph.graphml",
+		"/Users/mark/Desktop/graph.gml",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-28-issues-with-tree-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-11-semantic-axelrod-prerequisites.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
 		"/Users/mark/Dropbox/Research/Notes/graph-orbits-in-GAP-grape.txt",
 		"/Users/mark/Dropbox/Research/manuscripts/papers/Encyclopedia-social-behavioral-sciences-2014/encyclopedia-soc-beh-sci-evolutionary-approaches.md",
@@ -111,7 +116,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -125,6 +130,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\n",
+			"\\\"",
 			"**",
 			"navbar",
 			"javascript",
@@ -151,19 +158,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2013-12-28-issues-with-tree-axelrod.md",
+					"file": "_posts/2014-01-11-semantic-axelrod-prerequisites.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2520,
+						"buffer_size": 8167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2518,
-								1989
+								5318,
+								5335
 							]
 						],
 						"settings":
@@ -172,7 +179,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 269.0,
+						"translation.y": 2043.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -180,19 +187,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2014-01-11-semantic-axelrod-prerequisites.md",
+					"file": "_posts/2014-01-18-semantic-trait-graphs-and-symmetries.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7992,
+						"buffer_size": 7032,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3564,
-								3592
+								1110,
+								1110
 							]
 						],
 						"settings":
@@ -200,7 +207,7 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1027.0,
+						"translation.y": 4.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
