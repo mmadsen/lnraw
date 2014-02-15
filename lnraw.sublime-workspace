@@ -64,6 +64,12 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/src/axelrod-ct/axelrod-graph-error.txt",
+		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
 		"/Users/mark/Desktop/graph.graphml",
 		"/Users/mark/Desktop/graph.gml",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory",
@@ -98,18 +104,13 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
 		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml"
@@ -198,8 +199,8 @@
 						"selection":
 						[
 							[
-								1110,
-								1110
+								503,
+								503
 							]
 						],
 						"settings":
