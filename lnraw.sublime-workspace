@@ -7,14 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2014-02-11-semantic-update-observables.md",
-			"settings":
-			{
-				"buffer_size": 1316,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,12 +48,15 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-02-11-semantic-update-observables.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-10-symmetries-multiple-tree-components.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/css/syntax.css",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-11-semantic-axelrod-prerequisites.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-18-semantic-trait-graphs-and-symmetries.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
 		"/Users/mark/src/axelrod-ct/axelrod-graph-error.txt",
 		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
 		"/Users/mark/Desktop/graph.graphml",
@@ -147,37 +142,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2014-02-11-semantic-update-observables.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1316,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1316,
-								1316
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
