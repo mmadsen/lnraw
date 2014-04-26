@@ -28,6 +28,22 @@
 				"buffer_size": 2088,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "_posts/2014-04-11-opalco-broadband-initiative.md",
+			"settings":
+			{
+				"buffer_size": 5252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2013-11-26-saablogging-why-i-blog.md",
+			"settings":
+			{
+				"buffer_size": 5039,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -165,7 +181,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -193,7 +209,7 @@
 						"translation.y": 17.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -209,8 +225,36 @@
 						"selection":
 						[
 							[
-								2086,
-								2086
+								0,
+								434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2014-04-11-opalco-broadband-initiative.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
 							]
 						],
 						"settings":
@@ -222,6 +266,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/2013-11-26-saablogging-why-i-blog.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -291,7 +363,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/projects/structuredinformation/semanticaxelrod/madsenlipo2014/semanticaxelrod.sublime-project"
+				"~/Dropbox/Research/projects/structuredinformation/madsenlipo2014/semanticaxelrod.sublime-project"
 			]
 		],
 		"width": 380.0
