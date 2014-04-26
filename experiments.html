@@ -5,6 +5,22 @@ tags: [experiments]
 ---
 <div class="span9">
 
+<h3>Identifiability of CT Mixtures Experiment</h3>
+
+<ul>
+{% for post in site.tags["experiment-ctmixture"] %}
+         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
+{% endfor %}
+</ul>
+
+<h3>Semantic Axelrod Experiment</h3>
+
+<ul>
+{% for post in site.tags["experiment-semanticaxelrod"] %}
+         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
+{% endfor %}
+</ul>
+
 
 <h3>Classification Experiment</h3>
 
@@ -15,13 +31,7 @@ tags: [experiments]
 </ul>
 
 
-<h3>Semantic Axelrod Experiment</h3>
 
-<ul>
-{% for post in site.tags["experiment-semanticaxelrod"] %}
-         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
-{% endfor %}
-</ul>
 
 
 
