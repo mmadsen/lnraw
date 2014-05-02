@@ -8,40 +8,18 @@
 	"buffers":
 	[
 		{
-			"contents": "---\nlayout: post\ntitle: TODO for Semantic Axelrod project\ntags: [SAA2014, axelrod model, structured information, cultural transmission, experiments,  experiment-semanticaxelrod]\ncategory: structured information project\n---\n\nUPDATE:  After finding a bug in the timing of innovation/mutation, I'm not using any of the previous data.  \n\n\n### Deprecated Simulation Runs ###\n\n#### SAA-5 -- server sa1 ####\n\nDesigned to allow comparison of innovation rate + learning/prereq vs just learning/prereq.  Learning rates are the same as saa-2, but a smaller set of trait spaces are examined (dropping the 4/4 pair). \n\n* Learning rate:  0.025, 0.05, 0.1, 0.2, 0.3, 0.4\n* Population size:  100 for all runs\n* Replications: 10\n* Trait trees:  8, 16\n* Branching factor:  3, 4, 6\n* Depth factor: 3, 4, 6\n* Max init traits: 8, 16\n* Innovation rate: 0.000025\n\n2160 total runs\n\n332 on the restart, Weds 3/26\n\n\n#### SAA-6 -- server sa5 ####\n\nIntended to get more samples for an overlap of SAA-5 and SAA-2.  Only the largest and smallest trait space sizes are used, but all the learning rates, and both mutation and no mutation cases.  For these parameter combinations, we will end up with 30 replications per param combo.  \n\n* Learning rate:  0.025, 0.05, 0.1, 0.2, 0.3, 0.4\n* Population size:  100 for all runs\n* Replications: 20\n* Trait trees:  4, 16\n* Branching factor:  3, 6\n* Depth factor: 3, 6\n* Max init traits: 8\n* Innovation rate: 0.000025, 0.0\n\n1920 total runs\n\n1190 runs at 6:45pm Weds 3/26\n\n#### SAA-9 -- server sa8 ####\n\nSAA-8 finished quickly, so I'm going to explore larger population sizes.  If I can examine the effects both of creating high-fidelity learning AND demography, that will be interesting.\n\n\n* Learning rate:  0.5, 0.6, 0.7, 0.8, 0.75, 0.85, 0.90, 0.95\n* Population size:  225, 400\n* Replications: 40\n* Trait trees:  4, 16\n* Branching factor:  3\n* Depth factor: 3\n* Max init traits: 8\n* Innovation rate: 0.000025, 0.0\n\n2560 runs\n\nStarted 8:35am Sunday 3/30\n\n\n### Simulations COMPLETED ###\n\n#### SAA-2 ####\n\n* Learning rate:  0.025, 0.05, 0.1, 0.2, 0.3, 0.4\n* Population size:  100 for all runs\n* Replications: 10\n* Trait trees:  4, 8, 16\n* Branching factor:  3, 4, 6\n* Depth factor: 3, 4, 6\n* Max init traits: 4, 8, 16\n\nData moved back to Kimura in `~/local-research/semanticaxelrod/rawdata/`\n\n\n#### SAA-3 -- server sa3  ####\n\nSmaller sample size experiment, duplicates learning rates and other param values from SAA-2\n\n* Population size:  49, 64\n\n**Completed early morning Thursday 3/20.**\n\n#### SAA-4 -- server sa4 ####\n\nLarger sample size experiment, duplicates other param values from SAA-2\n\n* Population size: 225, 400\n* Learning rate:  0.1, 0.2, 0.4\n\n4860 total runs\n\nKilled it, and used just the 2430 runs for popsize 225.\n\n\n#### SAA-7 -- server sa7 ####\n\nIntended to test whether graphs really do change at high learning rates -- testing whether learning\nenvironment really changes the cumulation of cultural information\n\n* Learning rate:  0.5, 0.6, 0.7, 0.8\n* Population size:  100 for all runs\n* Replications: 20\n* Trait trees:  4, 16\n* Branching factor:  3, 6\n* Depth factor: 3, 6\n* Max init traits: 8\n* Innovation rate: 0.000025, 0.0\n\n1280  total runs\n\n#### SAA-8 -- server sa8 ####\n\nGiven interesting phenomena at 0.7 and mainly 0.8 learning rates, I'm testing more of the high \nlearning rates.  The small state spaces are most sensitive because everything gets lost in the \nvastness of larger state spaces.  \n\n* Learning rate:  0.5, 0.6, 0.7, 0.8, 0.75, 0.85, 0.90, 0.95\n* Population size:  100 for all runs\n* Replications: 40\n* Trait trees:  4, 16\n* Branching factor:  3\n* Depth factor: 3\n* Max init traits: 8\n* Innovation rate: 0.000025, 0.0\n\n1280 runs\n\nStarted 9:50pm Sat 3/29\n\n\n\n\n### Code ###\n\n1. Finish the DOT export code so I can give it a file with ID's -- for getting, say, all of the graphs that have the same learning rate, or state-space configuration.  \n\n\n### Analyses ###\n\nFor finalized runs only:\n\n1. Symmetry at a given trait-space size, by learning rate\n1. Symmetry at a given trait-space size, by learning and innovation rate\n1. Symmetry at different population sizes\n\n### Graphs/Tables ###\n\nTBD\n\n### Documentation Bits ###\n\nCreating a movie from a bunch of DOT files works like this:\n\n```\nanalytics/export-traitgraph-to-graphviz.py --experiment saa-2 --action sample --ssize 100 --directory tmp\n\nfor d in `ls *.dot`; do ( dot -Tpng $d -o $d.png; echo \"$d.png 300\" >> build ); done\n\n~/bin/makeQuickTime.py build test.mov\n```\n\n\n\n",
-			"file": "_posts/2014-03-16-semantic-todo-list.md",
-			"file_size": 4534,
-			"file_write_time": 130406679640000000,
+			"file": "_posts/2014-04-26-semantic-next-steps.md",
 			"settings":
 			{
-				"buffer_size": 4468,
+				"buffer_size": 240,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "---\nlayout: post\ntitle: TODO for Semantic Axelrod project\ntags: [SAA2014, axelrod model, structured information, cultural transmission, experiments,  experiment-semanticaxelrod]\ncategory: structured information project\n---\n\n### Update ###\n\nA bug in the innovation code was causing innovations not to happen unless a copying event also happened.  I am scrapping previous data because even though the case $\\mu = 0.0$ might be alright, \nI also think that we need to be comparing time slices, and the new data seem to have different mean \nvalues for some of the key measurables.  So I'm going to blast a new set of runs.  \n\nChanges:\n\n1.  Simulations run to 10 million ticks, regardless.  We sample from 6MM to 10MM ticks, every 1MM ticks taking a sample, giving us 5 samples per simulation run (to detect non-stationarity).\n\n2.  I record the timing of runs.  Currently, on my laptop and EC2 instances of type `C3.xlarge`, a run with 100 individuals takes 227 seconds, 225 individuals takes 293 seconds, and 400 individuals takes 372 seconds.  This will allow some predictability in completion times.  There is very little variation since we are doing 10MM ticks, regardless of the copying and innovation events involved.  \n\nA small test run with learning rates of `0.1` and `0.8` was encouraging, things look different for some observables and not others.  I think we're ready to go.  \n\nI also learned that the $r=6, h=6$ case for trait trees is simply too large to do automorphism group calculations upon.  \n\n\n### Production Experiments ###\n\nThe following will be divided into 6 different machines, 2 each for population sizes 100, 225, 400.  Each population size will finish at different times, and their server instances deactivated.  The anticipated range is between 4 (size 100) and 6.5 days (size 400)\n\n* Learning rate:  0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9\n* Population size:  100, 225, 400\n* Replications: 50\n* Trait trees:  4, 16\n* Branching factor:  3, 5\n* Depth factor: 3, 5\n* Max init traits: 4\n* Innovation rate: 0.0000, 0.00005, 0.0001\n\n\n### Experiment Log ###\n\n\n\n",
-			"file": "_posts/2014-04-02-simulation-runs-april.md",
-			"file_size": 2062,
-			"file_write_time": 130409502730000000,
+			"file": "_posts/2014-04-26-ct-mixture-experiment-design.md",
 			"settings":
 			{
-				"buffer_size": 2088,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2014-04-11-opalco-broadband-initiative.md",
-			"settings":
-			{
-				"buffer_size": 5252,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2013-11-26-saablogging-why-i-blog.md",
-			"settings":
-			{
-				"buffer_size": 5039,
+				"buffer_size": 2662,
 				"line_ending": "Unix"
 			}
 		}
@@ -86,6 +64,11 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-02-simulation-runs-april.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-16-semantic-todo-list.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-11-opalco-broadband-initiative.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-18-coarsegraining-structured-info.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-02-11-semantic-update-observables.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-10-symmetries-multiple-tree-components.md",
@@ -109,7 +92,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-11-semantic-trees-and-graphs.md",
 		"/Users/mark/Desktop/sax",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-18-axelrod-to-semantic-model-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-24-semantic-axelrod.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-07-structured-info-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semantic-ct-models-2007-notes.md",
@@ -131,7 +113,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
@@ -181,108 +162,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2014-03-16-semantic-todo-list.md",
+					"file": "_posts/2014-04-26-semantic-next-steps.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4468,
+						"buffer_size": 240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								840,
-								606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 17.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2014-04-02-simulation-runs-april.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2088,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								434
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_posts/2014-04-11-opalco-broadband-initiative.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								177,
-								177
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_posts/2013-11-26-saablogging-why-i-blog.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5039,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								240,
+								240
 							]
 						],
 						"settings":
@@ -294,6 +191,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2014-04-26-ct-mixture-experiment-design.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2658,
+								2658
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 41.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
