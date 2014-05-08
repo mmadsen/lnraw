@@ -11,7 +11,7 @@
 			"file": "_posts/2014-04-26-semantic-next-steps.md",
 			"settings":
 			{
-				"buffer_size": 240,
+				"buffer_size": 2090,
 				"line_ending": "Unix"
 			}
 		},
@@ -162,7 +162,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -171,15 +171,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 240,
+						"buffer_size": 2090,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								240,
-								240
+								2089,
+								2089
 							]
 						],
 						"settings":
@@ -190,7 +190,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -206,8 +206,8 @@
 						"selection":
 						[
 							[
-								2658,
-								2658
+								0,
+								557
 							]
 						],
 						"settings":
@@ -218,7 +218,7 @@
 						"translation.y": 41.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
