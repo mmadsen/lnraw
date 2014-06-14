@@ -31,7 +31,29 @@ All of the research code that I write is available on GitHub under open source l
 
 </dl>
 
-<p>Other software projects in my repository are specific to research projects.  Please see the README for each project.  Repositories starting with "experiment-" are generally analyses of data from specific simulation software (always located in a separate repository).  
+<p>Other software projects in my repository are specific to research projects.  Please see the README for each project.  Repositories starting with "<strong>experiment-</strong>" are generally analyses of data from specific simulation software (always located in a separate repository).  
 </p>
+
+
+<h3>Note about Microsoft Windows</h3>
+
+<p>
+None of the software projects at <a href="http://github.com/mmadsen">GitHub Repository</a> have been tested on Microsoft Windows.  There is no reason that all of it will not work, especially those projects which are written in pure Python, R, or Ruby. I can advise by email if you are having trouble, but I will not routinely be able to test each release or check-in on a Windows environment.  
+</p>
+
+<p>
+The main challenges in making one of the major simulation projects, such as <a href="https://github.com/mmadsen/axelrod-ct">Axelrod-CT</a>, are as follows:
+
+<ul>
+	<li>The usual care with specifying filesystem paths, although Python ought to handle this well by default if you specify paths in configuration files correctly.</li>
+	<li>You will need a command line C/C++ compiler environment to compile some dependencies.  Good options include <a href="http://www.mingw.org/">MinGW</a>, which I have not used, and <a href="https://www.cygwin.com/">Cygwin</a>, which I have (and found it excellent).  If you have Visual Studio installed, you can also use the native Microsoft compiler easily from the command line.  Simple "getting started" instructions can be found starting <a href="http://msdn.microsoft.com/en-us/library/bb384838.aspx">here</a> on MSDN.  </li>
+</ul>
+</p>
+
+<p>
+Otherwise, there are no obstacles to running any of the simulation models discussed here in a Windows environment, especially since all output is logged to a MongoDB database instance, available for free with a <a href="http://www.mongodb.org/downloads">Windows installer</a>.  
+</p>
+
+
 
 </div>
