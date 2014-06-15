@@ -1,11 +1,10 @@
 exclude: [ _posts/source ]
-pygments: true
+highlighter: pygments
 safe: false
 paginate: 6
 
 scholar:
   style: apa
-  locale: en
   sort_by: year
   order: descending
   source: ./biblio
@@ -14,7 +13,7 @@ scholar:
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-markdown: pandoc
+markdown: Pandoc
 pandoc:
   extensions: 
     - smart
