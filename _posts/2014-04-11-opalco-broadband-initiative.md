@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: Why I Support the OPALCO Board and the OPALCO Broadband Initiative 
 tags: [broadband, SJC, OPALCO]
 category: essays 

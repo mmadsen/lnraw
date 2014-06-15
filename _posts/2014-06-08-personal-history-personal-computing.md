@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: essay
 title: A Personal History of Personal Computing, 2014 Update
 tags: [computing, personal]
 category: essays
