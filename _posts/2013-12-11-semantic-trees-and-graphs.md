@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Semantic Axelrod with Concept Trees and Graphs
-tags: [SAA2014, axelrod model, structured information, cultural transmission, experiments,  experiment-semanticaxelrod]
+tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod]
 category: structured information project
 ---
 

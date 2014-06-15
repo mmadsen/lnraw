@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Classifications in CTPy (Part 2) --  Modeling Dimensionality, Performance
-tags: [cultural transmission, classification, coarse graining, simulation, ctpy]
+tags: [cultural transmission, classification, dissertation,coarse graining, simulation, ctpy]
 category: "coarse grained model project"
 ---
 

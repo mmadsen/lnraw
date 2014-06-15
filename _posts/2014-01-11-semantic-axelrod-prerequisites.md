@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tree Structured Axelrod for Knowledge Prerequisites
-tags: [SAA2014, axelrod model, structured information, cultural transmission, experiments,  experiment-semanticaxelrod]
+tags: [SAA2014, axelrod model, structured information, cultural transmission,dissertation, experiments,  experiment-semanticaxelrod]
 category: structured information project
 ---
 

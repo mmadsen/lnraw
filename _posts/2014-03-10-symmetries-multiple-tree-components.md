@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analysis of Symmetry Metrics for Forests of Balanced Trees
-tags: [SAA2014, axelrod model, structured information, cultural transmission, experiments,  experiment-semanticaxelrod, analysis]
+tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod, analysis]
 category: structured information project
 ---
 
