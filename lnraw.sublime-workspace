@@ -11,7 +11,7 @@
 			"file": "_posts/2014-06-08-personal-history-personal-computing.md",
 			"settings":
 			{
-				"buffer_size": 23226,
+				"buffer_size": 24281,
 				"line_ending": "Unix"
 			}
 		}
@@ -170,15 +170,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23226,
+						"buffer_size": 24281,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19757,
-								19764
+								19527,
+								19527
 							]
 						],
 						"settings":
@@ -186,7 +186,7 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6606.0,
+						"translation.y": 6642.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -259,7 +259,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/websites/lnraw/lnraw.sublime-project"
+				"~/Dropbox/Research/manuscripts/papers/2014-semantic-axelrod-model-class/2014semanticmodelclass.sublime-workspace"
 			]
 		],
 		"width": 380.0
