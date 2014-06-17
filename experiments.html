@@ -13,6 +13,14 @@ tags: [experiments]
 {% endfor %}
 </ul>
 
+<h3>Seriation and Coarse Grained CT Model Experiment</h3>
+
+<ul>
+{% for post in site.categories["experiment:experiment-seriationct"] %}
+         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
+{% endfor %}
+</ul>
+
 <h3>Structured Traits/Semantic Axelrod Experiment</h3>
 
 <ul>
