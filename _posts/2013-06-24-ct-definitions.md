@@ -3,6 +3,10 @@ layout: post
 title: Cultural Transmission - Definitions
 tags: [cultural transmission, culture]
 category: "cultural transmission"
+categories:
+- cultural transmission
+- theory
+- reading notes
 ---
 
 ### Culture and Cultural Transmission ###

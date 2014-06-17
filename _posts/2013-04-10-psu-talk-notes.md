@@ -2,7 +2,10 @@
 layout: post
 title: Portland State Univ. First Thursday Presentation Notes
 tags: [cultural transmission, dissertation, presentations]
-category: "presentations"
+categories:
+- cultural transmission
+- theory
+- presentations
 ---
 
 

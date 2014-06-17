@@ -2,7 +2,10 @@
 layout: post
 title: Madsen and Lipo 2007 - Beyond Beanbag Models of Cultural Transmission
 tags: [SAA2014, blogarch, cultural transmission, dissertation,structured information, archival papers, semantic models, experiment-semanticaxelrod]
-category: structured information project
+categories: 
+- project:structured information project
+- model:axelrod-ct
+- experiment:experiment-semanticaxelrod
 ---
 I really started looking at the idea of incorporating "meaning" or "structured information" into cultural transmission models back in 2003, when I was the co-founder and VP of Engineering for a software startup (Network Clarity).  I was reading everything I could get my hands on about the Semantic Web, description logics, and ways of doing deductive reasoning in a declarative manner (i.e., outside Prolog or pencil-and-paper predicate logic).  We were attempting to represent the common-sense knowledge that network engineers had about a properly configured, properly functioning network into rules which we could use to check router and firewall configurations at the semantic, not just syntactic level.  
 

@@ -2,7 +2,9 @@
 layout: post
 title: Open Problems in Structured Information Models
 tags: [cultural transmission, open problems, structured information]
-category: structured information project
+categories: 
+- project:structured information project
+- open problems
 ---
 
 This is mainly a placeholder for a long list of open questions that came to mind while working on our recent [semantic axelrod model](http://arxiv.org/abs/1404.5704) paper.  I'll organize it later.

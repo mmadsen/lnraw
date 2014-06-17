@@ -2,7 +2,9 @@
 layout: post
 title: Portland State University First Thursday -- Presentation Slides
 tags: [cultural transmission, coarse graining, structured information, niche construction, classification]
-category: "presentations"
+categories:
+- cultural transmission
+- presentations
 ---
 
 

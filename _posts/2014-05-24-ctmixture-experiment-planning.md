@@ -2,7 +2,10 @@
 layout: post
 title: Experiment Planning for CT Mixture Model
 tags: [cultural transmission, coarse graining, simulation, dissertation, experiments, experiment-ctmixture]
-category: coarse grained model project
+categories: 
+- project:coarse grained model project
+- model:ctmixtures
+- experiment:experiment-ctmixtures
 ---
 
 ### Planning:  CT Mixtures and Identifiability ###

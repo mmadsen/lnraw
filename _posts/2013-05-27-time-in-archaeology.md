@@ -2,7 +2,9 @@
 layout: post
 title: Holdaway and Wandsnider -- Time in Archaeology
 tags: [reading notes, archaeology, metatheory]
-category: "Reading Notes"
+categories:
+- theory
+- reading notes
 ---
 
 

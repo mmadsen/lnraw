@@ -2,7 +2,9 @@
 layout: post
 title: Experiment - Statistical Power of Slatkin Exact vs Conformism 
 tags: [cultural transmission, coarse graining, neutral model, dissertation,conformist bias, experiments]
-category: "coarse grained model project"
+categories: 
+- project:coarse grained model project
+- experiment:slatkin-power
 ---
 
 Montgomery Slatkin proposed an "exact test" (in the sense of enumeration of exact probability for an observation) for neutrality of a sample of N individuals, in which K alleles are observed [@slatkin1994exact; @slatkin1996correction]. The test calculates the probability of getting a sample of alleles "more extreme" than the observed data from the Ewens Sampling Formula (or Distribution). __By way of review, the ESD gives the distribution of alleles in a sample of fixed known size, from a population at quasi-stationary equilibrium, characterized by the Wright-Fisher infinite-alleles model or its close relations__. The Slatkin (or Ewens) exact test is two-tailed, and a sample can fall outside the chosen critical region (at a given alpha level) either by having too few rare alleles, or far too even a distribution.

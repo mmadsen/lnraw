@@ -2,7 +2,9 @@
 layout: post
 title: Renormalization and Archaeological Applications
 tags: [cultural transmission, coarse graining, renormalization]
-category: "coarse grained model project"
+categories: 
+- project:coarse grained model project
+- reading notes
 ---
 
 

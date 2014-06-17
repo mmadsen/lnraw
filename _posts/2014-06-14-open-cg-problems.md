@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Open Problems in Coarse Grained CT Theory
-tags: [coarse graining, cultural transmission, open problems]
-category: coarse grained model project
+tags: [coarse graining, cultural transmission, synchronization theory, open problems]
+categories: 
+- project:coarse grained model project
+- open problems
 ---
 
 ### Convergence and Basins of Attraction ###

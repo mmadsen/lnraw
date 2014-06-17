@@ -2,7 +2,10 @@
 layout: post
 title: Update on Tree Structure Models and Observable Variables
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod]
-category: structured information project
+categories: 
+- project:structured information project
+- model:axelrod-ct
+- experiment:experiment-semanticaxelrod
 ---
 
 ### Status: 2/11/14 ###

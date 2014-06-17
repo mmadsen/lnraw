@@ -2,7 +2,10 @@
 layout: post
 title: Issues with Tree Structured Axelrod
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod]
-category: structured information project
+categories: 
+- project:structured information project
+- model:axelrod-ct
+- experiment:experiment-semanticaxelrod
 ---
 
 ### Issues ###

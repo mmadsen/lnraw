@@ -2,7 +2,10 @@
 layout: post
 title: TODO for Semantic Axelrod project
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod]
-category: structured information project
+categories: 
+- project:structured information project
+- model:axelrod-ct
+- experiment:experiment-semanticaxelrod
 ---
 
 UPDATE:  After finding a bug in the timing of innovation/mutation, I'm not using any of the previous data.  

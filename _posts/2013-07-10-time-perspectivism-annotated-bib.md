@@ -2,7 +2,9 @@
 layout: post
 title: Time Perspectivism - An Annotated Bibliography
 tags: [reading notes, archaeology, time averaging, coarse graining, time perspectivism]
-category: reading notes
+categories: 
+- theory
+- reading notes
 ---
 
 

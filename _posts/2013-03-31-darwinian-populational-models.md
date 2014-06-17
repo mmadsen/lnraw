@@ -2,7 +2,10 @@
 layout: essay
 title: When are Darwinian and Populational Models Useful?
 tags: [cultural transmission, philosophy of biology, evolutionary theory]
-category: "essays"
+categories:
+- cultural transmission
+- theory
+- essays
 ---
 
 

@@ -2,7 +2,10 @@
 layout: post
 title: Duncan 2013 -- The Conceptual Framework of Quantum Field Theory
 tags: [reading notes, physics, philosophy of science, theory]
-category: "reading notes"
+categories:
+- physics
+- theory
+- reading notes
 ---
 
 

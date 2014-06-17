@@ -2,7 +2,10 @@
 layout: essay
 title: Notes on Gabora 2013 -- Selectionism versus communal exchange
 tags: [evolutionary theory, cultural evolution, natural selection]
-category: "essays"
+categories:
+- cultural transmission
+- theory
+- essays
 ---
 
 > This is a working draft, and sections may be incomplete.  6/15/13

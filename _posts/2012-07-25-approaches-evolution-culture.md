@@ -2,7 +2,9 @@
 layout: post
 title: Approaches to Explaining the Evolution of Human Culture
 tags: [evolution, evolutionary theory, cultural evolution, darwinian evolution]
-category: "evolutionary theory"
+categories: 
+- reading notes
+- theory
 ---
 
 

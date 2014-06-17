@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Notes on He and Stone 2003
-tags: [reading notes, synchronization theory]
-category: "reading notes"
+tags: [reading notes, coarse graining, synchronization theory]
+categories:
+- project:coarse grained model project
+- reading notes
 ---
 
 

@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: essay
 title: Coarse-Graining, History, and CT Models
 tags: [cultural transmission, coarse graining, renormalization,dissertation, diachronic models, history]
-category: "coarse grained model project"
+categories: 
+- project:coarse grained model project
+- essays
 ---
 
 By coarse-graining (CG) our CT models, we hope to construct models which can be used to extract observable predictions and thus testable hypotheses at particular scales.
