@@ -85,7 +85,13 @@ This helps me get the categories, tags, and layout right since they're important
 
 When I'm ready to push a note or some edits to the live website, the `Rakefile` in the source tree takes the following steps:
 
+1.  Changes to the local source tree are checked into Git, into the local repository.
+1.  The local source repository is pushed to Github (into the source version of the website), so we have a record of each change.
+1.  Jekyll then builds the new version of the static website, from the local source into a local "_site" directory, which contains the entire website.  
+1.  This built website is then copied to a directory which contains the "production" version of the website locally.
+1.  That production version is then checked into the "production" repository in Github, and pushed to Github.  This repository is my Github Pages repository, so anything I push there is served as a static website.
 
+That's it.  Takes about 60 seconds to push everything on a reasonably slow connection, and when I'm done both the source and the production site are version controlled.  I can go back to work locally at this point.  
 
 
 
