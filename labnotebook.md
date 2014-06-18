@@ -66,6 +66,12 @@ obvious "back" button.
 Each posting also has a series of tags, which are wholly optional.  These are often related to topics, and represent another way to see content, via the tag cloud (Notes by Tag).  
 
 
+Finally, the "byexperiment" page (and eventually, other lists) are all built from custom Liquid filter tags which can pull out and make nice lists
+of posts from experiments, models, or projects.  The source (and executable) for this Liquid filter is located in the `_plugins` directory.  At the 
+moment, the "bymodel" page is not fully automatic, because I put the Github repository links on each model.  
+
+
+
 
 ### Documentation ###
 
