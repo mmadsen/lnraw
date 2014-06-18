@@ -1,0 +1,29 @@
+---
+layout: default
+title:  Experiments
+---
+<div class="span9">
+
+{% assign explist = site.categories | categories_with_prefix: "experiment" %}
+
+
+{% for exp in explist %}
+<h3>{{ exp | strip_prefix_and_titleize_category }}</h3>
+
+<ul>
+	{% for post in site.categories[exp] %}
+         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
+	{% endfor %}
+</ul>
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
