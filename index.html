@@ -24,6 +24,11 @@ layout: default
          		<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
 				{% endfor %}
 			</ul>
+
+			<h3>GitHub Activity</h3>
+    		{% github_feed mmadsen, 5 %}
+
+
 		</div>
 	</div>
 	
