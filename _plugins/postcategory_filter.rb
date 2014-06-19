@@ -19,6 +19,15 @@ module Jekyll
 			filtered.sort
 		end
 
+		def get_project_category(categories)
+			project = ""
+
+			categories.each { |x| project = strip_prefix_and_titleize_category(x) if x.include? "project"}
+
+			project
+		end	
+
+
 
 		def strip_prefix_and_titleize_category(fullcategory)
 			prefix, sep, cat_name = fullcategory.rpartition(":")

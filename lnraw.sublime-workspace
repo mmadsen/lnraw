@@ -3,15 +3,27 @@
 	{
 		"selected_items":
 		[
+			[
+				"stri",
+				"strip_prefix_and_titleize_category"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "_posts/2014-06-08-personal-history-personal-computing.md",
+			"file": "_posts/2014-06-17-seriationct-requirements.md",
 			"settings":
 			{
-				"buffer_size": 24281,
+				"buffer_size": 2194,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_plugins/postcategory_filter.rb",
+			"settings":
+			{
+				"buffer_size": 824,
 				"line_ending": "Unix"
 			}
 		}
@@ -56,68 +68,98 @@
 	},
 	"file_history":
 	[
-		"/Users/mark/Dropbox/Research/websites/lnraw/lnraw.sublime-project",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-ct-mixture-experiment-design.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-05-24-ctmixture-experiment-planning.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_site/publications.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_site/categories.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-semantic-next-steps.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/software.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-02-simulation-runs-april.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-16-semantic-todo-list.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-11-opalco-broadband-initiative.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-18-coarsegraining-structured-info.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-02-11-semantic-update-observables.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-10-symmetries-multiple-tree-components.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/css/syntax.css",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-11-semantic-axelrod-prerequisites.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-18-semantic-trait-graphs-and-symmetries.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
-		"/Users/mark/src/axelrod-ct/axelrod-graph-error.txt",
+		"/Users/mark/Dropbox/Research/websites/lnraw/openproblems.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
-		"/Users/mark/Desktop/graph.graphml",
-		"/Users/mark/Desktop/graph.gml",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-28-issues-with-tree-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel_auto.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/byexperiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/postcategory_filter.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-06-24-ct-tuplespace-artfacts.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/nicheconstruction/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-ci-travis.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-17-seriationct-requirements.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
-		"/Users/mark/Dropbox/Research/Notes/graph-orbits-in-GAP-grape.txt",
-		"/Users/mark/Dropbox/Research/manuscripts/papers/Encyclopedia-social-behavioral-sciences-2014/encyclopedia-soc-beh-sci-evolutionary-approaches.md",
-		"/Users/mark/Desktop/meiland-deck-siding-comment.txt",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-11-semantic-trees-and-graphs.md",
-		"/Users/mark/Desktop/sax",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-18-axelrod-to-semantic-model-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-24-semantic-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-01-11-he-and-stone.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-02-23-renormalization.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-06-14-renormalization-theory-archy.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-07-25-approaches-evolution-culture.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-09-22-slatkin-test-error-power.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-01-slatkin-power-experiment.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-02-coarse-graining-history-ctmodels.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-04-10-psu-talk-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-05-27-time-in-archaeology.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-05-psu-talk-presentation.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-07-structured-info-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-13-gabora2013-response-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-11-duncan2013-conceptual-structure-qft.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-24-ct-definitions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-13-ctpy-classification-designs.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-20-ctpy-classifications-part2.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-24-semantic-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-29-classification-experiment-protocol.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semantic-ct-models-2007-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-abstract-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-implementation.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-05-saa2014-abstract-draft.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-23-semanticaxelrod-research-design.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-18-axelrod-to-semantic-model-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-11-semantic-trees-and-graphs.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-28-issues-with-tree-axelrod.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-11-semantic-axelrod-prerequisites.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-01-18-semantic-trait-graphs-and-symmetries.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-02-11-semantic-update-observables.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-10-symmetries-multiple-tree-components.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-16-semantic-todo-list.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/structuredinfo/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-05-24-ctmixture-experiment-planning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-structured-problems.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-cg-problems.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-03-classification-eda.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-18-coarsegraining-structured-info.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-02-simulation-runs-april.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-semantic-next-steps.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-ct-mixture-experiment-design.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-22-metapopulation-models-diss.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-08-personal-history-personal-computing.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/lnraw.sublime-project",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_site/publications.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_site/categories.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/software.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-11-opalco-broadband-initiative.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/css/syntax.css",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
+		"/Users/mark/src/axelrod-ct/axelrod-graph-error.txt",
+		"/Users/mark/Desktop/graph.graphml",
+		"/Users/mark/Desktop/graph.gml",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory",
+		"/Users/mark/Dropbox/Research/Notes/graph-orbits-in-GAP-grape.txt",
+		"/Users/mark/Dropbox/Research/manuscripts/papers/Encyclopedia-social-behavioral-sciences-2014/encyclopedia-soc-beh-sci-evolutionary-approaches.md",
+		"/Users/mark/Desktop/meiland-deck-siding-comment.txt",
+		"/Users/mark/Desktop/sax",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
 		"/Users/mark/Dropbox/Systematics in Prehistory - Scrivener/Draft/10 Science -53-.rtf",
 		"/Users/mark/Desktop/EDC-summit-notes.txt",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-22-metapopulation-models-diss.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-30-unconference-future-statistics.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-29-classification-experiment-protocol.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
 		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml"
@@ -161,24 +203,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2014-06-08-personal-history-personal-computing.md",
+					"file": "_posts/2014-06-17-seriationct-requirements.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24281,
+						"buffer_size": 2194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19527,
-								19527
+								272,
+								276
 							]
 						],
 						"settings":
@@ -186,7 +228,36 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6642.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_plugins/postcategory_filter.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								589,
+								589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -259,7 +330,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/manuscripts/papers/2014-semantic-axelrod-model-class/2014semanticmodelclass.sublime-workspace"
+				"~/Dropbox/Research/Dissertation Project/manuscripts/dissertation/draft.sublime-project"
 			]
 		],
 		"width": 380.0
