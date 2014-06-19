@@ -21,9 +21,7 @@ module Jekyll
 
 		def get_project_category(categories)
 			project = ""
-
 			categories.each { |x| project = strip_prefix_and_titleize_category(x) if x.include? "project"}
-
 			project
 		end	
 
