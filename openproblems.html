@@ -1,0 +1,37 @@
+---
+layout: default
+title:  Experiments
+---
+<div class="span9">
+
+
+
+
+<h3>Open Research Problems</h3>
+
+<table class="table table-condensed">
+{% for post in site.categories["open problems"] %}
+
+
+	<tr>
+	<td>{{post.categories | get_project_category }}</td>
+	<td>{{ post.date | date_to_string }}</td>
+	<td><a href="{{ post.url }}">{{post.title}}</a></td>
+	</tr>
+
+
+{% endfor %}
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
