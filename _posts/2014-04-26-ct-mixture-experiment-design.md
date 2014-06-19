@@ -3,7 +3,7 @@ layout: post
 title: Convergence of CT Rule Mixtures
 tags: [cultural transmission, coarse graining, simulation, dissertation, experiments, experiment-ctmixture]
 categories: 
-- project:coarse grained model project
+- project:coarse grained model
 - model:ctmixtures
 - experiment:experiment-ctmixtures
 ---

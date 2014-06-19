@@ -3,7 +3,7 @@ layout: essay
 title: Coarse-Graining, History, and CT Models
 tags: [cultural transmission, coarse graining, renormalization,dissertation, diachronic models, history]
 categories: 
-- project:coarse grained model project
+- project:coarse grained model
 - essays
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Requirements for SeriationCT Model
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation]
 categories: 
-- project:coarse grained model project
+- project:coarse grained model
 - model:seriationct
 - experiment:experiment-seriationct
 ---

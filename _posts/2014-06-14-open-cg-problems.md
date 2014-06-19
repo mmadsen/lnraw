@@ -3,7 +3,7 @@ layout: post
 title: Open Problems in Coarse Grained CT Theory
 tags: [coarse graining, cultural transmission, synchronization theory, open problems]
 categories: 
-- project:coarse grained model project
+- project:coarse grained model
 - open problems
 ---
 

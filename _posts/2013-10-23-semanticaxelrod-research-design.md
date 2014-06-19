@@ -3,7 +3,7 @@ layout: post
 title: Research Design for Semantic Axelrod Model
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod, blogarch]
 categories: 
-- project:structured information project
+- project:structured information
 - model:axelrod-ct
 - experiment:experiment-semanticaxelrod
 ---

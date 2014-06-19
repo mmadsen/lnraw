@@ -3,7 +3,7 @@ layout: post
 title: Madsen and Lipo 2007 - Beyond Beanbag Models of Cultural Transmission
 tags: [SAA2014, blogarch, cultural transmission, dissertation,structured information, archival papers, semantic models, experiment-semanticaxelrod]
 categories: 
-- project:structured information project
+- project:structured information
 - model:axelrod-ct
 - experiment:experiment-semanticaxelrod
 ---

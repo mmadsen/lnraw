@@ -3,7 +3,7 @@ layout: essay
 title: Renormalization Theory and Cultural Transmission in Archaeology
 tags: [coarse graining, dissertation, cultural transmission]
 categories: 
-- project:coarse grained model project
+- project:coarse grained model
 - essays
 ---
 

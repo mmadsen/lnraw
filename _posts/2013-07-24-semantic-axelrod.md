@@ -3,7 +3,7 @@ layout: post
 title: The Semantic Axelrod Model
 tags: [SAA2014, blogarch, cultural transmission, structured information,dissertation, axelrod model, experiment-semanticaxelrod]
 categories: 
-- project:structured information project
+- project:structured information
 - model:axelrod-ct
 - experiment:experiment-semanticaxelrod
 ---

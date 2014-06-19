@@ -3,7 +3,7 @@ layout: post
 title: Open Problems in Structured Information Models
 tags: [cultural transmission, open problems, structured information]
 categories: 
-- project:structured information project
+- project:structured information
 - open problems
 ---
 
