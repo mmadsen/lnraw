@@ -10,7 +10,6 @@ module Jekyll
 			filtered
 		end
 
-
 		def categories_with_prefix(categories, prefix)
 			filtered = []
 			for cat in categories.keys
@@ -21,11 +20,9 @@ module Jekyll
 
 		def get_project_category(categories)
 			project = ""
-			categories.each { |x| project = strip_prefix_and_titleize_category(x) if x.include? "project"}
+			categories.each { |x| project = strip_prefix_and_titleize_category(x) if x.include? "project"} 
 			project
 		end	
-
-
 
 		def strip_prefix_and_titleize_category(fullcategory)
 			prefix, sep, cat_name = fullcategory.rpartition(":")
