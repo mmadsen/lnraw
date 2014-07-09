@@ -24,7 +24,9 @@ What version 1.0 did not include is:
 
 ### Simulation Event Timing ###
 
-The following diagram shows how time averaging is integrated into the simulation event stream.  Time runs from top (start of simulation) to bottom (end of simulation).  In the center of the diagram is an interval, marked with a dotted vertical line, depicting the interval over which we track the survival of traits given [@kandler2013non].  
+The following diagram shows how time averaging is integrated into the simulation event stream.  Time runs from top (start of simulation) to bottom (end of simulation).  Between simulation start time and the start of sampling, the population is evolving from its initial condition to quasi-stationarity.  Sampling start time is calculated to occur at a multiple of the expected mixing time, to ensure that the population is at quasi-equilibrium.  
+
+In the center of the diagram is an interval, marked with a dotted vertical line, depicting the interval over which we track the survival of traits given [@kandler2013non].  
 
 Above this fixed interval, we take one sample (of duration 1 tick) to begin the survival analysis, and below the interval, a sample of duration 1 to complete it.  This sample is directly comparable to the analysis performed in Kandler and Shennan's paper (although run with Moran versus Wright-Fisher dynamics).
 
