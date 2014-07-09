@@ -28,13 +28,19 @@ date: 2013-05-28 00:00:00
 
 <h3><i class="icon-list"></i>&nbsp;Project Notes</h3>
 
-<ul class="posts">
+
+<table class="table table-condensed">
 {% for post in site.categories["project:niche construction"] %}
-         <li><a href="{{ post.url }}">{{ post.title }}</a>  <span class="index_publish_date">{{ post.date | date_to_string }}</span></li>
+
+
+	<tr>
+	<td>{{ post.date | date_to_string }}</td>
+	<td><a href="{{ post.url }}">{{post.title}}</a></td>
+	</tr>
+
+
 {% endfor %}
-</ul>
-
-
+</table>
 
 
 
