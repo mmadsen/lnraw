@@ -5,55 +5,30 @@ tags: [experiments]
 ---
 <div class="span9">
 
-<h3>Model:  SeriationCT</h3>
 
+{% assign modellist = site.categories | categories_with_prefix: "model:" %}
+
+
+{% for model in modellist %}
+<h3>{{ model | strip_prefix_and_titleize_category }}</h3>
 <p>
-<a href="https://github.com/mmadsen/seriationct">GitHub Repository</a>
+<a href="{{model | get_github_for_model }}">GitHub Repository</a>
 </p>
 
-<ul>
-{% for post in site.categories["model:seriationct"] %}
-         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
+<table class="table table-condensed">
+
+	{% for post in site.categories[model] %}
+
+		<tr>
+		<td>{{ post.date | date_to_string }}</td>
+		<td><a href="{{ post.url }}">{{post.title}}</a></td>
+		</tr>
+
+
+	{% endfor %}
+</table>
+
 {% endfor %}
-</ul>
-
-
-<h3>Model:  CTMixtures</h3>
-
-<p>
-<a href="https://github.com/mmadsen/ctmixtures">GitHub Repository</a>
-</p>
-
-<ul>
-{% for post in site.categories["model:ctmixtures"] %}
-         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
-{% endfor %}
-</ul>
-
-<h3>Model: Axelrod-CT</h3>
-
-<p>
-<a href="https://github.com/mmadsen/axelrod-ct">GitHub Repository</a>
-</p>
-
-<ul>
-{% for post in site.categories["model:axelrod-ct"] %}
-         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
-{% endfor %}
-</ul>
-
-
-<h3>Model:  CTPy</h3>
-
-<p>
-<a href="https://github.com/mmadsen/ctpy">GitHub Repository</a>
-</p>
-
-<ul>
-{% for post in site.categories["model:ctpy"] %}
-         <li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.date | date_to_string }}</li>
-{% endfor %}
-</ul>
 
 
 

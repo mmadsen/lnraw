@@ -3,13 +3,21 @@ require 'facets/string/titlecase'
 module Jekyll
 	module PostAndCategoryFilter
 
+		def get_github_for_model(model)
+			urls = {'model:seriationct' => 'https://github.com/mmadsen/seriationct',
+					'model:ctmixtures' => 'https://github.com/mmadsen/ctmixtures',
+					'model:axelrod-ct' => 'https://github.com/mmadsen/axelrod-ct',
+					'model:ctpy' => 'https://github.com/mmadsen/ctpy'}
+			url = urls[model]
+			url
+		end
 
 
-		def get_category_url(category)
+		def get_project_url(project)
 			urls = { 'project:coarse grained model' => '/projects/coarsegraining',
-						   'project:structured information' => '/projects/structuredinfo',
-						   'project:niche construction' => '/projects/nicheconstruction'}
-			url = urls[category]
+				     'project:structured information' => '/projects/structuredinfo',
+				     'project:niche construction' => '/projects/nicheconstruction'}
+			url = urls[project]
 			url
 		end
 
@@ -32,13 +40,13 @@ module Jekyll
 
 		def get_project_category(categories)
 			project = ""
-			categories.each { |x| project = strip_prefix_and_titleize_category(x) if x.include? "project"} 
+			categories.each { |x| project = strip_prefix_and_titleize_category(x) if x.include? "project:"} 
 			project
 		end	
 
 		def get_raw_project_category(categories)
 			project = ""
-			categories.each { |x| project = x if x.include? "project"}
+			categories.each { |x| project = x if x.include? "project:"}
 			project
 		end
 

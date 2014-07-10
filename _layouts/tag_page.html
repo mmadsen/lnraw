@@ -4,14 +4,20 @@ layout: default
 
 <div  class="span9">
 
-<h2>Tag: {{ page.tag }}</h2>
+<h2>Posts Tagged: "{{ page.tag }}"</h2>
 
-<ul class="posts">
+<table class="table table-condensed">
+
 	{% for post in page.posts %}
-		<li><span class="index_publish_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+		<tr>
+		<td>{{ post.date | date_to_string }}</td>
+		<td><a href="{{ post.url }}">{{post.title}}</a></td>
+		</tr>
+
+
 	{% endfor %}
-</ul>	
-	
+</table>
 	
 	
 </div>
