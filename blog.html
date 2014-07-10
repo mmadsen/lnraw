@@ -3,11 +3,19 @@ layout: project_layout
 tags: [essays, general writing, methodology]
 ---
   <h2>Essays</h2>
-  <ul class="posts">
-    {% for post in site.categories["essays"] %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <table class="table table-condensed">
+
+				{% for post in site.categories["essays"] %}
+
+					<tr>
+					<td>{{ post.date | date_to_string }}</td>
+					<td><a href="{{ post.url }}">{{post.title}}</a></td>
+					</tr>
+
+
+				{% endfor %}
+				</table>
+
 
   <div class="blankspace">
   <p>&nbsp;</p>
