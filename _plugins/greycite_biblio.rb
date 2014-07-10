@@ -47,7 +47,7 @@ module Jekyll
       page_partial_uri = context.environments.first["page"]["url"]
 
       site_uri = context.registers[:site].config['url']
-      full_url = "http://"
+      full_url = ""
       full_url << site_uri
       full_url << page_partial_uri
 
