@@ -25,5 +25,40 @@ These changes are reflected in the sequence of adjacency matrices below, by the 
 The full model is thus a sequence of tuples of the form $(t_0, A(t_0)) \ldots (t_i, A(t_i))$.  
 
 
+### Implementation ###
+
+One possibility is to go from some kind of specification (e.g., start with $N$ vertices, generate $M$ clusters with strong internal connectivity and weak connectivity between, at times $T_i \ldots T_j$ vary the strength of between cluster connections, ...) to a sequence of `numpy` arrays which represent weighted adjacency matrices.  
+
+The regional model would be characterized at any given time by a single `numpy` array, which represented the state of the metapopulation network at that time.  At a model tick where a new network model state is supposed to arrive, the new state is substituted, and the population model remapped to match.  The details for that remapping are as follows:
+
+1.  If a vertex is destroyed by a state change (detected by finding a zero on the diagonal for one of the demes/vertices), its agents are removed from the population and any edges between them and other neighbors removed.  
+
+1.  If a vertex is added by a state change (detected by finding a one on the diagonal for a deme/vertex that does not currently exist in the active population), a new deme (vertex) is created, and the population size for that deme is seeded by random sampling of a neighboring deme (chosen at random from those which the new deme is connected in the regional population matrix).
+
+1.  In order to determine connectivity changes (as opposed to new or lost vertices), we have to compare the new and old `numpy` arrays.  This is easily done using `numpy.equal()`, which produces an array of the same dimension filled with booleans that indicate positions which are equal.  In this case, we would find any instances of `False` in the upper diagonal portion of the array, and modify their weight.  
+
+1.  Modification of the "weight" between two vertices means changing the number of individuals who have edges between the two vertices.  This could be chosen at random.
+
+```{.python .numberLines}
+
+import numpy as np
+t1 = np.array([[1,1,1,0],[1,1,1,0],[1,1,1,1],[0,0,1,1]])
+t2 = np.array([[1,1,1,0],[1,1,3,0],[1,3,1,1],[0,0,1,1]])
+np.equal(t1,t2)
+
+ud = np.triu_indices(4)
+
+difference_t1_t2 = np.equal(t1,t2)
+difference_t1_t2[ud]
+
+```
+
+
+
+
+
+
+
+
 ### References Cited ###
 
