@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"url",
+				"url"
+			],
+			[
 				"stri",
 				"strip_prefix_and_titleize_category"
 			]
@@ -12,10 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2014-06-17-seriationct-requirements.md",
+			"file": "byexperiment.html",
 			"settings":
 			{
-				"buffer_size": 2194,
+				"buffer_size": 473,
 				"line_ending": "Unix"
 			}
 		},
@@ -23,7 +27,47 @@
 			"file": "_plugins/postcategory_filter.rb",
 			"settings":
 			{
-				"buffer_size": 824,
+				"buffer_size": 1569,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "software.html",
+			"settings":
+			{
+				"buffer_size": 4421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bymodel.html",
+			"settings":
+			{
+				"buffer_size": 593,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/tag_page.html",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "openproblems.html",
+			"settings":
+			{
+				"buffer_size": 503,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1636,
 				"line_ending": "Unix"
 			}
 		}
@@ -68,51 +112,49 @@
 	},
 	"file_history":
 	[
-		"/Users/mark/Dropbox/Research/websites/lnraw/openproblems.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/greycite_biblio.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rssgenerator.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel_auto.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/byexperiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-09-ctmixtures-timeaveraging.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/postcategory_filter.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-06-24-ct-tuplespace-artfacts.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_data/projects.yaml",
+		"/Users/mark/Dropbox/Research/websites/lnraw/openproblems.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/nicheconstruction/index.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-ci-travis.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/structuredinfo/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/.gitignore",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-09-semanticaxelrod-review-revisions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/ctmixtures-timeaveraging.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semantic-ct-models-2007-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-20-spatiotemporal-review.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-17-seriationct-requirements.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
+		"/Users/mark/Dropbox/Charitable/Seattle Arts and Lectures/analysis/donor-analysis/template.tex",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/publications.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-01-11-he-and-stone.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-02-23-renormalization.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-06-24-ct-tuplespace-artfacts.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-06-14-renormalization-theory-archy.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-07-25-approaches-evolution-culture.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-09-22-slatkin-test-error-power.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-01-slatkin-power-experiment.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-02-coarse-graining-history-ctmodels.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-04-10-psu-talk-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-05-27-time-in-archaeology.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-05-psu-talk-presentation.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-07-structured-info-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-13-gabora2013-response-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-11-duncan2013-conceptual-structure-qft.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-24-ct-definitions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-13-ctpy-classification-designs.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-20-ctpy-classifications-part2.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-24-semantic-axelrod.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-29-classification-experiment-protocol.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-09-classification-experiment-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semantic-ct-models-2007-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-abstract-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-implementation.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-05-saa2014-abstract-draft.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-23-semanticaxelrod-research-design.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-03-classification-eda.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-18-axelrod-to-semantic-model-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-11-semantic-trees-and-graphs.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-12-28-issues-with-tree-axelrod.md",
@@ -121,19 +163,33 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-02-11-semantic-update-observables.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-10-symmetries-multiple-tree-components.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-16-semantic-todo-list.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/projects/structuredinfo/index.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-05-24-ctmixture-experiment-planning.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-structured-problems.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-cg-problems.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-03-classification-eda.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-03-18-coarsegraining-structured-info.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-02-simulation-runs-april.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-semantic-next-steps.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-ct-mixture-experiment-design.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-26-semantic-next-steps.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-05-24-ctmixture-experiment-planning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-cg-problems.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-structured-problems.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel_auto.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/byexperiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-ci-travis.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-07-25-approaches-evolution-culture.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-04-10-psu-talk-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-05-27-time-in-archaeology.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-05-psu-talk-presentation.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-13-gabora2013-response-notes.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-11-duncan2013-conceptual-structure-qft.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-24-ct-definitions.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-22-metapopulation-models-diss.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/index.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-08-personal-history-personal-computing.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/lnraw.sublime-project",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_site/publications.html",
@@ -159,10 +215,8 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-30-unconference-future-statistics.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
-		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml"
+		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings"
 	],
 	"find":
 	{
@@ -203,35 +257,35 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2014-06-17-seriationct-requirements.md",
+					"file": "byexperiment.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2194,
+						"buffer_size": 473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								272,
-								276
+								445,
+								170
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -240,15 +294,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 824,
+						"buffer_size": 1569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								589,
-								589
+								690,
+								690
 							]
 						],
 						"settings":
@@ -260,7 +314,148 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "software.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bymodel.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								343,
+								343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_layouts/tag_page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "openproblems.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								832
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
