@@ -1,0 +1,33 @@
+---
+layout: default
+title:  All Notes by Date
+---
+<div class="span9">
+
+<h3>All Notes by Date</h3>
+
+<table class="table table-condensed">
+
+	{% for post in site.posts %}
+
+		<tr>
+		<td>{{ post.date | date_to_string }}</td>
+		<td><a href="{{ post.url }}">{{post.title}}</a></td>
+		</tr>
+
+
+	{% endfor %}
+</table>
+
+
+	
+
+
+
+
+
+
+
+
+
+
