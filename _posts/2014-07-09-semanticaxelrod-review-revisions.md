@@ -32,7 +32,7 @@ Note:  comments refer to double-spaced referee version.
 Note:  comments refer to single-spaced Arxiv.org version.
 
 
-1.  Eq. (2) on page 12 appears to be a distance measure.  Shouldn’t the probability of interaction be  $1 - J(A,B)$?  __Plan:  KA caught an error, but the probability shouldn't be $1 - J(A,B)$, but just $J(A,B)$ given that we want similiarity, not dissimilarity.  But the equation as printed is incorrect, it should be $J(A,B) = \frac{|A \cap B|}{|A \cup B|}$.__
+1.  **DONE**:  Eq. (2) on page 12 appears to be a distance measure.  Shouldn’t the probability of interaction be  $1 - J(A,B)$?  __Plan:  KA caught an error, but the probability shouldn't be $1 - J(A,B)$, but just $J(A,B)$ given that we want similiarity, not dissimilarity.  But the equation as printed is incorrect, it should be $J(A,B) = \frac{|A \cap B|}{|A \cup B|}$.__    
 
 1.  Fig. 5 reports important results, but is confusing because there are horizontal and vertical axes for each embedded figure as well as for the whole figure.  Perhaps one of the embedded figures could be presented separately and explained in detail.  __Plan:  Ken's right, this histogram matrix is doing too much work.  (a) Find a different way of capturing how the spread and centroid of distributions changes with design space size and prerequisite learning rate.  Much of the work here can be done by showing how regression slopes change, or?  (b) If I stay with histograms, perhaps show one first and thoroughly explain what it means.__
 
