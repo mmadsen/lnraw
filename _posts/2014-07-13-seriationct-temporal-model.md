@@ -37,7 +37,7 @@ The regional model would be characterized at any given time by a single `numpy` 
 
 1.  In order to determine connectivity changes (as opposed to new or lost vertices), we have to compare the new and old `numpy` arrays.  This is easily done using `numpy.equal()`, which produces an array of the same dimension filled with booleans that indicate positions which are equal.  In this case, we would find any instances of `False` in the upper diagonal portion of the array, and modify their weight.  
 
-1.  Modification of the "weight" between two vertices means changing the number of individuals who have edges between the two vertices.  This could be chosen at random.
+Modification of the "weight" between two vertices means changing the number of individuals who have edges between the two vertices.  This could be chosen at random.
 
 ```{.python .numberLines}
 
@@ -53,6 +53,37 @@ difference_t1_t2[ud]
 
 ```
 
+Changes to the upper-triangular portion of the matrix, __above__ the diagonal are thus indicative of changes in weight between two nodes.  We can find the indices of the demes for which this occurs easily:
+
+```{.python .numberLines}
+
+# t1 and t2 arrays as before
+# returns tuple where element 0 is a list of row coordinates
+# and element 1 is a list of column coordinates
+changed_edges = np.nonzero( np.triu( t2 - t1 ))
+```
+
+Changes to the existence of demes are modeled on the diagonal of the adjacency matrix.  In the following, deme 0 goes away, thus yielding a zero in the $0,0$ position of the adjacency matrix, and corresponding off-diagonal entries go to zero because edges are lost when a deme is removed (of course).  In contrast, between time steps 1 and 2, no demes enter or exit.  
+
+
+```{.python .numberLines}
+t3 = np.array([[0,0,0,0],[0,1,1,0],[0,1,1,3],[0,0,3,1]])
+
+np.nonzero(np.diagonal( t2 - t1 ))
+# result is (array([], dtype=int64),)
+
+np.nonzero(np.diagonal( t3 - t2 ))
+# result is (array([0]),)
+
+# subtracting the two arrays and accessing the diagonal element for index 0 
+# gives us the DIRECTION
+t3_t2 = t3 - t2
+t3_t2[0,0]  
+# answer is -1
+
+```
+
+A negative element on the diagonal of the differenced array indicates that the deme at that index is exiting the model at that time step.  A positive element on the diagonal thus indicates a new deme entering the model at that time step.  
 
 
 
