@@ -58,7 +58,10 @@ We can tell which edges change by looking at the nonzero elements of the upper t
 
     changed = t2 - t1
     changed_edges = np.nonzero(np.triu(changed))
+    # (array([0, 2]), array([1, 3]))
 ```
+
+`changed_edges` reports those elements which are different between the two matrices, in the upper triangular portion of the matrix.  We are mainly interested in off-diagonal elements at the moment.  The data structure is a tuple composed of two lists, the row and then the column coordinates.  This unusual structure is the reason for the use of `zip` in the enumeration below.  
 
 Weight changes to existing edges are simply the difference between the two matrix elements, already reflected in the `changed` matrix entry, and we can detect edges that go away entirely by a weight change which complete offsets the `t1` weight at `t2`.  If an edge goes away, we remove it.  If the weight changes, we alter the weight property for the edge
 
