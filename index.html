@@ -11,7 +11,24 @@ layout: default
 			-->
 	<div class="row-fluid">
 		<div class="span9">
-			<h3>Recent Notes</h3>
+
+		<h3>Recent Essays</h3>
+
+			<table class="table table-condensed">
+
+				{% for post in site.categories["essays"] limit:10 %}
+
+					<tr>
+					<td>{{ post.date | date_to_string }}</td>
+					<td><a href="{{ post.url }}">{{post.title}}</a></td>
+					</tr>
+
+
+				{% endfor %}
+				</table>
+
+
+			<h3>Recent Lab Notes</h3>
 
 				<table class="table table-condensed">
 				<tr>
@@ -33,20 +50,7 @@ layout: default
 				{% endfor %}
 				</table>
 
-			<h3>Recent Essays</h3>
-
-			<table class="table table-condensed">
-
-				{% for post in site.categories["essays"] limit:10 %}
-
-					<tr>
-					<td>{{ post.date | date_to_string }}</td>
-					<td><a href="{{ post.url }}">{{post.title}}</a></td>
-					</tr>
-
-
-				{% endfor %}
-				</table>
+			
 
 
 			<a href="http://github.com/mmadsen"><span class="mega-octicon octicon-mark-github"></span>&nbsp;&nbsp;Github Activity</a>
