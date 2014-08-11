@@ -15,6 +15,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2014-06-14-ci-travis.md",
+			"settings":
+			{
+				"buffer_size": 5506,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,9 +64,17 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/software.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/tools.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rssgenerator.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-13-seriationct-temporal-model.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-28-implementing-temporal-networks-in-python.md",
+		"/Users/mark/Dropbox/Research/Dissertation Project/models/wrightfisher-twoallele.R",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-17-eight-years-on-sanjuan.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-17-seriationct-requirements.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-13-seriationct-temporal-model.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-16-experiment-template-openscience.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/bio.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/openscience.html",
@@ -66,21 +82,16 @@
 		"/Users/mark/Dropbox/Research/templates/experiment-template/paper/paper.Rmd",
 		"/Users/mark/Dropbox/Research/templates/experiment-template/paper/xelatex-template.tex",
 		"/Users/mark/Dropbox/Research/templates/experiment-template/outline/outline.tex",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/allposts.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
 		"/Users/mark/Downloads/differencing numpy arrays.py",
-		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/openproblems.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/tag_page.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/byexperiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/postcategory_filter.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/software.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/greycite_biblio.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rssgenerator.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-09-ctmixtures-timeaveraging.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_data/projects.yaml",
@@ -190,6 +201,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"n",
+			"N",
 			"and",
 			"simply",
 			"model",
@@ -216,8 +229,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2014-06-14-ci-travis.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1820,
+								1102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
