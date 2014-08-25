@@ -14,13 +14,15 @@ The overall goal is to understand the degree to which samples of class or trait 
 
 ### An Approach to Equifinality ###
 
-A weak test of equifinality is to look at the empirical distribution of observable variables, and test their overlap across models and parameterizations.  This is an important measure of equifinality for situations where we have already published data, or no access to raw frequencies from which to calculate statistics.  
+A weak test of equifinality is to look at the empirical distribution of observable variables, and test their overlap across models and parameterizations.  This is an important measure of equifinality for situations where we have already published data, or no access to raw frequencies from which to calculate statistics.  Some work along these lines already exists with neutrality tests in [@madsen2012ta,@premo2014cultural,@Porcic2014-ta].  
 
-But the strongest examination of equifinality will come from treating model identification as a classification problem or GLM with multiple nominal outcomes.  This asks the question, how accurately can we predict the data generating process by a combination of observables used as predictors?  In general, equifinality is indicated by an inability to predict with confidence.  
+But the strongest examination of equifinality will come from treating model identification as a classification problem with multiple predictors.  Given all the observable statistics we can calculate or simulate from a given CT model, can we find any combination of the predictors that allows us to accurately predict the model class?  This allows us to include interactions between observables.  Even if these may not make sense in terms of the underlying diffusion theory, our job here is simply to find any accurate separation of the models.  
 
-In addition to allowing more sophisticated prediction models, we can use k-fold cross validation or simply separate training and test, to strongly estimate prediction accuracy.  
+Analysis options include SVM or logistic regression for a problem setup where we want to distinguish between two different "models."  In general, equifinality will be indicated by an inability to separate different models, even in the training data, even with free combinations of any and all predictors.  
 
-We can, for example, generate test data from the desired models (e.g., mixtures of copying rules) but with slightly different parameters for innovation or population size, to test prediction accuracy with a true out-of-sample test.  
+A good general experiment is to start with a two-class regression, and if we can accurately differentiate neutral versus heterogeneous models (as a group), then move on to distinguishing between specific heterogeneous models with multinomial LR or a GLM.  
+
+We can also generate test data from the desired models (e.g., mixtures of copying rules) but with slightly different parameters for innovation or population size, to test prediction accuracy with a true out-of-sample test.  
 
 ### Is Identifiability Improved If We Know (Some) Parameters? ###
 

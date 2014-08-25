@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2014-06-14-ci-travis.md",
-			"settings":
-			{
-				"buffer_size": 5506,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -64,6 +56,9 @@
 	},
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/Third-Party-Code/crema-2014-abc/example-run.log",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-10-ctmixtures-experiment-design.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-10-ctmixtures-observables-parameters.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/software.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/tools.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
@@ -229,37 +224,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2014-06-14-ci-travis.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1820,
-								1102
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
