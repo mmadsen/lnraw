@@ -15,13 +15,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2014-08-10-ctmixtures-experiment-design.md",
+			"settings":
+			{
+				"buffer_size": 3377,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 367.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"",
+				"Package Control: Upgrade Package"
+			],
 			[
 				"in",
 				"Package Control: Install Package"
@@ -29,13 +41,9 @@
 			[
 				"Pac",
 				"Package Control: Install Package"
-			],
-			[
-				"",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -224,8 +232,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2014-08-10-ctmixtures-experiment-design.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1063,
+								1063
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -293,7 +330,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/Dissertation Project/manuscripts/dissertation/madsen-dissertation.sublime-workspace"
+				"~/Dropbox/Research/projects/structuredinformation/madsenlipo2014/semanticaxelrod.sublime-project"
 			]
 		],
 		"width": 380.0
