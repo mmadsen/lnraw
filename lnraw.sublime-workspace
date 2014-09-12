@@ -22,6 +22,14 @@
 				"buffer_size": 4793,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "_posts/2014-09-10-my_evolutionary_narrative.md",
+			"settings":
+			{
+				"buffer_size": 6916,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -241,7 +249,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -257,8 +265,8 @@
 						"selection":
 						[
 							[
-								3571,
-								3571
+								2388,
+								2394
 							]
 						],
 						"settings":
@@ -266,7 +274,35 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 639.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2014-09-10-my_evolutionary_narrative.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5599,
+								5608
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 842.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
