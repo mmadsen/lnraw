@@ -16,7 +16,7 @@ layout: default
 
 			<table class="table table-condensed">
 
-				{% for post in site.categories["essays"] limit:10 %}
+				{% for post in site.categories["essays"] limit:5 %}
 
 					<tr>
 					<td>{{ post.date | date_to_string }}</td>
@@ -37,7 +37,7 @@ layout: default
 					<th>Title</th>
 				</tr>
 				{% assign nonessays = site.posts | posts_without_essays %}
-				{% for post in nonessays limit:10 | sort:'date' %}
+				{% for post in nonessays limit:15 | sort:'date' %}
 
 					{% assign category = post.categories | get_project_category %}
 					<tr>
