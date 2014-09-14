@@ -18,6 +18,16 @@ This note records the steps I took to get my computing cluster configuration wor
 
 Throughout, I'll try to highlight things to watch out for or issues/bugs I found, in **bold** type.  
 
+### Installation ###
+
+First, install StarCluster.  A slightly outdated version came with Anaconda python, so it's worth updating.  I had to install it from source to prevent some version conflicts, but you may be able to do:
+
+```{.shell}
+$ pip install --upgrade starcluster
+```
+
+If you encounter any errors whatsoever, download the source from MIT and just install it like any normal Python package.  
+
 ### Image Configuration ###
 
 The first task is to configure an AMI or machine image for your cluster nodes.  StarCluster provides a number of AMIs which are preconfigured with all of the StarCluster runtimes, Sun Open Grid Engine, and other components which StarCluster relies upon.  It is strongly recommended that you start with one of these AMIs.  
