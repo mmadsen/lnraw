@@ -37,3 +37,6 @@ The comparison here is for 1MM time steps, Kandler-Shennan trait survival interv
 | vCPUs per instance           | 4                                      | 4                                  |
 | Cost per instance/hour       | $0.21                                  | $0.21                              |
 |------------------------------|----------------------------------------|------------------------------------|
+
+The [spreadsheet containing the original analysis](https://github.com/mmadsen/experiment-ctmixtures/blob/master/explorations/timing-analysis.xlsx) is located on GitHub.  
+
