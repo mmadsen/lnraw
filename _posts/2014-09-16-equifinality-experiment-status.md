@@ -35,3 +35,8 @@ Each simulation run is given a random seed, which is saved with the simulation r
 
 Started the 400 jobs around 9:50am on 9/16.  Projecting a completion sometime on Saturday, but some of the conformist models are taking about 3 minutes, not 4.3, so the batch could be done sooner, will keep an eye on it to minimize cost.  
 
+#### Completion ####
+
+The runs consistently took a shorter time than my initial tests on an EC2 instance suggested, and close to the time on my laptop, so the total wall-clock time for the 40,000 runs was around 54.5 hours.  Execution costs were $120.00 almost exactly.  
+
+
