@@ -8,7 +8,7 @@ categories:
 - experiment:experiment-ctmixtures
 ---
 
-### Trial Run ###
+### Rough Test 1:  Population Data ###
 
 I'm not finished with the data export program yet, working out how to flatten multiple loci and other list/nested data structures.  This is particularly important since some elements are measured only once (e.g., configurations or classes) while others are measured on a per-locus basis.  At the same time, there's an element of feature selection and engineering occurring, which is happening via a trial random forest classification.  
 
@@ -45,11 +45,25 @@ First, it doesn't seem nearly as hard to tell neutral models from biased models,
 
 But second, some of the values are repeated in each row, since a row represents a locus, not a simulation run.  I should do further feature engineering and have only one row per simulation run in the data export, and use variables like min/max/median richness, entropy, etc.  This will apply to all multilocus data. 
 
-### Sampled and TA Export ###
 
-In the case of the sampled and TA'd data, I'll output single rows for each combination of simulation run, sample size, and TA duration, using summary statistics for multilocus elements, and the actual values for configuration/class data.  
 
-Each sample size and TA duration will then be analyzed against its counterparts, not mixed together.  
+### Rough Test 2:  More Variables and  ###
+
+I recoded the export script, and stopped exploding each locus into a data row.  Instead, for each primary predictor, I calculate min and max (e.g., min richness and max richness) across the number of loci present.  For a single locus simulation, obviously these will be the same value and we'd only use one of the two predictors and relabel them, but in `equifinality-1` we have 4 loci.  
+
+The random forest improves a little bit, but the overall pattern still looks the same.  
+
+But, the neutral data are worrying me.  In `equifinality-1` I used the "all loci" copying rule, and I'm also turning the single scaled innovation rate into a per-locus innovation rate.  I think there's an issue here somewhere.  Granted, with the Moran dynamics, I can't expect that the expected number of alleles will exactly match the Wright Fisher dynamics, but the observed numbers seem high.  Also, the distribution of Slatkin rest results seems skewed.  
+![equifinality-1 slatkin configuration distribution](/images/ctmixtures-equifinality-neutral.png)
+
+We have many different innovation rates represented here, but still, there should be many more values towards the center.
+
+I'm wondering about several possible sources of issues before I go any further:
+
+1.  Is the innovation rate algorithm working properly?
+1.  Is the all-locus copying the way to go?
+
+The distribution of theta values looks good, when I did a histogram.  
 
 
 ### Analysis Code ###
