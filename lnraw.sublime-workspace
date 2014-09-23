@@ -15,22 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2014-09-14-ctmixtures-cluster-setup.md",
-			"settings":
-			{
-				"buffer_size": 9542,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2014-09-15-ctmixtures-cost-analysis.md",
-			"settings":
-			{
-				"buffer_size": 2969,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -73,12 +57,20 @@
 	"expanded_folders":
 	[
 		"/Users/mark/Dropbox/Research/websites/lnraw",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts"
 	],
 	"file_history":
 	[
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-12-evolutionary-narratives-inference-model-selection.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-18-equifinality-initial-analysis.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/equifinality-initial-analysis.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-17-equifinality-data-export.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-16-equifinality-experiment-status.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-cluster-setup.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-15-ctmixtures-cost-analysis.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-12-evolutionary-narratives-inference-model-selection.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-job-execution.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-10-my_evolutionary_narrative.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-10-ctmixtures-experiment-design.md",
@@ -109,7 +101,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/openproblems.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/tag_page.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/byexperiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/postcategory_filter.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml",
@@ -199,12 +190,7 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
 		"/Users/mark/Dropbox/Systematics in Prehistory - Scrivener/Draft/10 Science -53-.rtf",
 		"/Users/mark/Desktop/EDC-summit-notes.txt",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-30-unconference-future-statistics.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/projects/coarsegraining/classification_experiment.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/css/default.css",
-		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.md"
 	],
 	"find":
 	{
@@ -250,65 +236,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2014-09-14-ctmixtures-cluster-setup.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9542,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2251,
-								2251
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2588.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2014-09-15-ctmixtures-cost-analysis.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2969,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2942,
-								2942
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 177.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -364,7 +293,7 @@
 		[
 			[
 				"",
-				"_posts/2013-08-27-classification-research-questions.md"
+				"bymodel.html"
 			]
 		],
 		"width": 0.0
