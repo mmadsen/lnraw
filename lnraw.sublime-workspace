@@ -15,6 +15,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2014-09-22-ctmixtures-model-calibration.md",
+			"settings":
+			{
+				"buffer_size": 4803,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -236,8 +244,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2014-09-22-ctmixtures-model-calibration.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4776,
+								4776
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 857.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -305,7 +342,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/projects/structuredinformation/madsenlipo2014/semanticaxelrod.sublime-project"
+				"~/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/ctmixtures.sublime-project"
 			]
 		],
 		"width": 380.0
