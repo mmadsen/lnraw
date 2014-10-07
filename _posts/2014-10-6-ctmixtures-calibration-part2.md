@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CTMixtures Equifinality - Calibration Part 2
+title: CTMixtures Equifinality - Calibration Experiment and Conclusions
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories: 
 - project:coarse grained model
@@ -46,11 +46,7 @@ plt + xlab("Scaled Innovation Rate") + ylab("Number of Traits at a Dimension/Loc
 ![Figure 3:  Observed richness versus predicted population richness per dimension/locus](/images/eq2s-richness-neutral-expectedk.png)
 
 
-### Analysis ###
-
-So, do I have an issue or not?  
-
-Possibilities:
+### Possible Causes ###
 
 1.  The neutral process is functioning just fine, and the distribution of richness is what you'd expect from a single locus copying process.  
 1.  The neutral process is functioning just fine, but the process hasn't washed out the initial level of variation and reached equilibrium by 1MM steps.  
@@ -59,6 +55,24 @@ Possibilities:
 The last seems unlikely given the spot-on distribution of Slatkin values on a per locus basis, but I'd like to have better calibration on how much variation to expect in this per-locus copying model, instead of the whole genome copying model. 
 
 I might need to convince myself that the rest of the machinery is working by doing some samples from the whole-traitset copying version of neutrality, because the abline ought to lay over the distribution in that case.   
+
+### Both Copying Models and Multiple Simulation Lengths ###
+
+Today, I looked at "all locus" versus "random locus" models, and also varied the maximum length of the simulation, doing "all locus" models for 4 and 8 million steps.  The results in Figure 4 are combined with the original random locus values for 1MM steps in `equifinality-2-small`:
+
+![Figure 4:  1 million, 4 million, and 8 million steps for random and all locus models](/images/combined-excess-richness.png)
+
+Two things are apparent.  
+
+1.  There is definitely more variation in random locus models, probably because it takes longer for any given allele to drift out given that not all loci are replaced by a copying event.  
+
+1.  1MM steps is not enough -- the 4 and 8 million step models have clearly reached stationarity, but 1MM and 4MM aren't close, so somewhere between 1MM and 4MM steps is the stationarity point.  There is little change in the location or slope of the trends between 4MM and 8MM.  
+
+### Next Steps ###
+
+The next step is to repeat `equifinality-2` across all four models, using 4MM steps per simulation run, and then repeat the random forest analysis.  
+
+I plan to run `equifinality-3` as a full model run, with 25,000 samples per model, for a total of 100,000 data points.  I'm going to run it on a StarCluster with 4 instances of c3.4xlarge type, for a total of 64 vCPUs.  This should take between 3 and 4 days, with an initial cost estimate of about $300.  
 
 
 ### References Cited ###
