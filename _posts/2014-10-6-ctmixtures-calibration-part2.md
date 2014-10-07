@@ -16,13 +16,13 @@ But there's so many variants in the population, even given the difference in per
 
 The distribution of Slatkin test values, when I use the raw per-locus values, those for the neutral models look well distributed (this is the distribution of outcomes from the "Chinese restaurant process", which is equivalent to the Ewens Sampling Formula).  
 
-![slatkin-per-locus](/images/ctmixtures-eq2-slatkin-neutral.png) 
+![Figure 1:  Slatkin exact test values per dimension/locus](/images/ctmixtures-eq2-slatkin-neutral.png) 
 
 So this suggests that looking at summary statistics for the Slatkin values was misleading.  Perhaps the neutral model is functioning just fine. 
 
 And, which might be interesting from a research perspective, that intersecting traits and looking at the Slatkin tests of the configuration frequencies doesn't give you a uniform distribution of Slatkin test values even with a neutral model:
 
-![slatkin-configuration](/images/ctmixtures-eq2-config-slatkin.png)
+![Figure 2:  Slatkin exact test values for configurations of all dimensions/loci](/images/ctmixtures-eq2-config-slatkin.png)
 
 I also looked at the per-locus richness values, not the mean/min/max summaries, but just the raw richness values.  My package library [mmadsenr](https://github.com/mmadsen/mmadsenr) has a function for applying Equation 4 from Ewens [-@ewens1972sampling].  We can compare the expected number of traits given the Wright-Fisher infinite alleles model (which will differ from the Moran model by a small factor), to the simulated samples, with the following R code:
 
@@ -43,7 +43,7 @@ plt <- ggplot(data=eq2s.rich.neutral, aes(x=innovation_rate, y=richness_locus_va
 plt + xlab("Scaled Innovation Rate") + ylab("Number of Traits at a Dimension/Locus")
 ```
 
-![expected-k-and-observed](/images/eq2s-richness-neutral-expectedk.png)
+![Figure 3:  Observed richness versus predicted population richness per dimension/locus](/images/eq2s-richness-neutral-expectedk.png)
 
 
 ### Analysis ###
