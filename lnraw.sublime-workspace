@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2014-09-22-ctmixtures-model-calibration.md",
-			"settings":
-			{
-				"buffer_size": 4803,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -64,13 +56,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mark/Dropbox/Research/websites/lnraw",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts"
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-10-6-ctmixtures-calibration-part2.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-22-ctmixtures-model-calibration.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-18-equifinality-initial-analysis.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/equifinality-initial-analysis.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-17-equifinality-data-export.md",
@@ -196,9 +189,7 @@
 		"/Users/mark/Desktop/meiland-deck-siding-comment.txt",
 		"/Users/mark/Desktop/sax",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-30-medium-data.md",
-		"/Users/mark/Dropbox/Systematics in Prehistory - Scrivener/Draft/10 Science -53-.rtf",
-		"/Users/mark/Desktop/EDC-summit-notes.txt",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.md"
+		"/Users/mark/Dropbox/Systematics in Prehistory - Scrivener/Draft/10 Science -53-.rtf"
 	],
 	"find":
 	{
@@ -244,37 +235,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2014-09-22-ctmixtures-model-calibration.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4803,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4776,
-								4776
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 857.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -342,7 +304,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/ctmixtures.sublime-project"
+				"~/Dropbox/Research/Dissertation Project/manuscripts/dissertation/madsen-dissertation.sublime-workspace"
 			]
 		],
 		"width": 380.0
@@ -360,7 +322,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 359.0,
