@@ -12,7 +12,7 @@ categories:
 
 Given the results of [calibration experiments](/project:coarse%20grained%20model/model:ctmixtures/experiment:experiment-ctmixtures/2014/10/06/ctmixtures-calibration-part2.html), I ran 100,000 simulations (25K for each of four models), on a StarCluster of 4 instances, each with 16 vCPUs, for a total of 64 cores.  The time estimate was low by a bit, and the experimental run cost almost $500 instead of $300, which means I need better cost estimation.  
 
-The raw data for `equifinality-3` are stored on [Amazon S3, here](https://madsen-dissertation.s3.amazonaws.com/experiment-ctmixtures/), and the analysis, scripts, and paper on [Github, here](https://github.com/mmadsen/experiment-ctmixtures).
+The raw data for `equifinality-3` are stored on [Amazon S3, here](https://madsen-dissertation.s3.amazonaws.com/), and the analysis, scripts, and paper on [Github, here](https://github.com/mmadsen/experiment-ctmixtures).
 
 Currently, I've exported population census and sampled data, and am working on exporting the time averaged and sampled data correctly.  
 
@@ -42,9 +42,6 @@ Thus, in one set of analyses, I separate data with different sample sizes (and, 
 Separating parameter values also allows us to examine how classifier performance (and thus equifinality) scale with sample size and duration, for a particular class of observable statistics (e.g., census, time averaged samples).  
 
 But the classifier can also be trained on the combined parameter values, without including the parameters themselves in the classifier.  I expect degraded classification performance, but perhaps not by much compared to the "pure" case.
-
-
-
 
 ### References Cited ###
 
