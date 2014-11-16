@@ -37,11 +37,9 @@ I should note that the training and tuning process is extremely time consuming g
 
 Most of the time, of course, real-world samples will come from a variety of population sizes, sample sizes, time averaging durations, etc.  But the most rigorous test for **irreducible** equifinalities occurs when we hold all of the parameters constant and examine our ability to construct a classifier which correctly identifies cases stemming from different transmission models.  
 
-Thus, in one set of analyses, I separate data with different sample sizes (and, if relevant, time averaging durations) and analyze classifier performance separately.  This is the reason for having a large simulation data set, like 25,000 simulations from each model.  Each model is thus represented by synchronic sampled data over 2 sample sizes (12,500 simulations each), and for 8 combinations of sample size and time averaging duration, 3125 samples for each parameter combination.  Using fewer total simulations would be problematic when I analyze each parameter combination separately.  
+Thus, in one set of analyses, I separate data with different sample sizes (and, if relevant, time averaging durations) and analyze classifier performance separately.  Since all 8 combinations of sample size and TA duration are taken from each simulation run during data recording, there are actually 800,000 rows of data in the time averaged and sampled data set, giving a full 100,000 data points for each combination, retaining comparability of the analysis when we try to compare classifier performance from the population census data against sampled against time averaged & sampled data.  
 
-Separating parameter values also allows us to examine how classifier performance (and thus equifinality) scale with sample size and duration, for a particular class of observable statistics (e.g., census, time averaged samples).  
-
-But the classifier can also be trained on the combined parameter values, without including the parameters themselves in the classifier.  I expect degraded classification performance, but perhaps not by much compared to the "pure" case.
+We can also evaluate the classifier performance on mixed combinations of sample size and time averaging duration, by not taking subsets of the data set, and training across the entire data set.  We might do a stratified random downsample in order to make sample sizes comparable between this analysis and the population and sampled data sets.  
 
 ### References Cited ###
 
