@@ -22,6 +22,22 @@
 				"buffer_size": 4450,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
+			"settings":
+			{
+				"buffer_size": 3869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-11-28-more-temporal-networks-python.md",
+			"settings":
+			{
+				"buffer_size": 3644,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -71,6 +87,7 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/plos_template.tex",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-10-17-how-washingtonians-might-enforce-mccleary.md",
 		"/Volumes/ResearchBk/sim/src/an-al-wm.json",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
@@ -197,8 +214,7 @@
 		"/Users/mark/Desktop/graph.gml",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory",
 		"/Users/mark/Dropbox/Research/Notes/graph-orbits-in-GAP-grape.txt",
-		"/Users/mark/Dropbox/Research/manuscripts/papers/Encyclopedia-social-behavioral-sciences-2014/encyclopedia-soc-beh-sci-evolutionary-approaches.md",
-		"/Users/mark/Desktop/meiland-deck-siding-comment.txt"
+		"/Users/mark/Dropbox/Research/manuscripts/papers/Encyclopedia-social-behavioral-sciences-2014/encyclopedia-soc-beh-sci-evolutionary-approaches.md"
 	],
 	"find":
 	{
@@ -244,7 +260,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -260,8 +276,8 @@
 						"selection":
 						[
 							[
-								4422,
-								4422
+								1191,
+								1197
 							]
 						],
 						"settings":
@@ -270,6 +286,64 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 313.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								940,
+								948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 61.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2014-11-28-more-temporal-networks-python.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3612,
+								3612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
