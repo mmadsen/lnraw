@@ -16,26 +16,18 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
+			"file": "_posts/2014-12-04-ctmixtures-splitting-analysis.md",
 			"settings":
 			{
-				"buffer_size": 4450,
+				"buffer_size": 2700,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
+			"file": "_posts/2014-12-07-equifinality-4-todo.md",
 			"settings":
 			{
-				"buffer_size": 3869,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2014-11-28-more-temporal-networks-python.md",
-			"settings":
-			{
-				"buffer_size": 3644,
+				"buffer_size": 1785,
 				"line_ending": "Unix"
 			}
 		}
@@ -87,10 +79,13 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-28-more-temporal-networks-python.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
 		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/plos_template.tex",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-10-17-how-washingtonians-might-enforce-mccleary.md",
 		"/Volumes/ResearchBk/sim/src/an-al-wm.json",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-10-6-ctmixtures-calibration-part2.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-22-ctmixtures-model-calibration.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-18-equifinality-initial-analysis.md",
@@ -208,13 +203,10 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_site/categories.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-11-opalco-broadband-initiative.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/css/syntax.css",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
 		"/Users/mark/src/axelrod-ct/axelrod-graph-error.txt",
 		"/Users/mark/Desktop/graph.graphml",
 		"/Users/mark/Desktop/graph.gml",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory",
-		"/Users/mark/Dropbox/Research/Notes/graph-orbits-in-GAP-grape.txt",
-		"/Users/mark/Dropbox/Research/manuscripts/papers/Encyclopedia-social-behavioral-sciences-2014/encyclopedia-soc-beh-sci-evolutionary-approaches.md"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/.Rhistory"
 	],
 	"find":
 	{
@@ -260,24 +252,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
+					"file": "_posts/2014-12-04-ctmixtures-splitting-analysis.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4450,
+						"buffer_size": 2700,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1191,
-								1197
+								2699,
+								2699
 							]
 						],
 						"settings":
@@ -285,65 +277,35 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 313.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3869,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								940,
-								948
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 61.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "_posts/2014-11-28-more-temporal-networks-python.md",
+					"buffer": 1,
+					"file": "_posts/2014-12-07-equifinality-4-todo.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3644,
+						"buffer_size": 1785,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3612,
-								3612
+								1785,
+								1785
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
