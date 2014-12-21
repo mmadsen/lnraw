@@ -27,7 +27,7 @@
 			"file": "_posts/2014-12-07-equifinality-4-todo.md",
 			"settings":
 			{
-				"buffer_size": 1785,
+				"buffer_size": 2656,
 				"line_ending": "Unix"
 			}
 		}
@@ -289,15 +289,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1785,
+						"buffer_size": 2656,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1785,
-								1785
+								2656,
+								2656
 							]
 						],
 						"settings":
