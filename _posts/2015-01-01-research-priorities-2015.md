@@ -26,11 +26,11 @@ This remains the major theoretical modeling question I'm involved in solving.  O
 
 ### Continuity vs. Unimodality Seriation ###
 
-TBD
+In preparing our IDSS seriation paper, Carl Lipo and I debated whether to include discussion of different criteria for forming seriations.  Unimodality was a **choice**, not a necessity, and given an approach to seriation which is theory-driven rather than based upon common-sensical generalizations, we can choose other criteria.  One such criterion is the smoothness or continuity of frequency changes.  Our software already forms such seriations, but we need to explore the criterion further and its relationship to traditional seriation.  Our feeling is that the combination of the two are useful for helping understand the relationship between time, space, and inheritance/cultural transmission.  
 
 ### Relation of Seriation Methods to Cladistics ###
 
-TBD
+Phylogenetic methods construct hypotheses about the relatedness of assemblages/units/taxa given a set of traits/characters/classes.  They do so by applying a criterion like parsimony (i.e., minimizing the number of state changes), in conjunction with principles that provide an "ordering" to state changes (e.g., outgroups tell us whether states are synapomorphic or symplesiomorphic).  Because they are purely formal and not spatiotemporal, phylogenetic models are very useful at the macroevolutionary level of analysis, but they also work at finer scales.  Seriations are inherently spatiotemporal models of state changes, and are often quantitative rather than qualitative.  It would be very useful to establish a concordance between seriation models and cladistic models, such that we can move between representations and use both to describe evolutionary change.  
 
 
 ### Why? ###
@@ -50,10 +50,6 @@ Within archaeology, at least, most of the cultural transmission-related work see
 I think there's a different moral to our investigations of time averaging:  that one should not try to directly fit micro-causal models to meso or macro-scale data.  
 
 Hence, the overarching attempt to (a) find good methods of describing change in coarse grained data, and (b) find appropriately scaled theoretical models for those data.  
-
-
-**Why Is Seriation A Good Link?**
-
 
 
 ### References Cited ###
