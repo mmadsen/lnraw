@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2015-01-01-research-priorities-2015.md",
-			"settings":
-			{
-				"buffer_size": 7255,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -67,10 +59,14 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts"
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-02-15-ctmixtures-docker-container.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-01-01-research-priorities-2015.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-12-04-ctmixtures-splitting-analysis.md",
@@ -173,7 +169,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-05-24-ctmixture-experiment-planning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-cg-problems.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-open-structured-problems.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel_auto.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
@@ -196,9 +191,7 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_site/publications.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_site/categories.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-11-opalco-broadband-initiative.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/css/syntax.css",
-		"/Users/mark/src/axelrod-ct/axelrod-graph-error.txt",
-		"/Users/mark/Desktop/graph.graphml"
+		"/Users/mark/Dropbox/Research/websites/lnraw/css/syntax.css"
 	],
 	"find":
 	{
@@ -244,37 +237,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2015-01-01-research-priorities-2015.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7255,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4417,
-								4417
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 506.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -363,7 +327,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 359.0,
+	"side_bar_width": 389.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
