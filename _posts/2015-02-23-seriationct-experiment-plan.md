@@ -8,6 +8,8 @@ categories:
 - experiment:experiment-seriationct
 ---
 
+Authors:  Mark E. Madsen and Carl P. Lipo
+
 ### Overview ###
 
 Experiment `seriationct-1` is a first try at producing true frequency seriations from a regional cultural transmission model.  The experiment combines:
