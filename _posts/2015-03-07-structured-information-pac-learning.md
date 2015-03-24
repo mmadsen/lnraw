@@ -1,6 +1,6 @@
 ---
 layout: essay
-title: Structured Information Transmission, Prerequisites, and PAC Learning
+title: PLACEHOLDER - Structured Information Transmission, Prerequisites, and PAC Learning
 tags: [structured information, cultural transmission,PAC,learningtheory]
 categories: 
 - essays
@@ -8,9 +8,7 @@ categories:
 - model:axelrod-ct
 ---
 
-###  ###
-
-CONTENT
+Coming soon after SAA's in April....
 
 
 ### References Cited ###
