@@ -24,13 +24,10 @@
 			}
 		},
 		{
-			"contents": "---\nlayout: essay\ntitle: Presentations for the 2015 SAA Conference\ntags: [SAA2015, open science, reproducible science, simulation, seriation, cultural transmission, dissertation]\ncategories: \n- essays\n---\n\nAbstracts are in for the Society for American Archaeology meetings next year in San Francisco.  Carl Lipo and I are collaborating on two papers, one on our continuing work mating cultural transmission models with diachronic seriations and fitting them to archaeological data, and one on reproducible science and simulation methods.  \n\nHere are the submitted abstracts for each of the two papers, and the sessions to which they contribute.  \n\n--------\n\n### Tools for Transparency and Replicability of Simulation in Archaeology ###\n\n__Mark E. Madsen and Carl P. Lipo__\n\n>Simulation is an increasingly central tool across many theoretical frameworks but especially in evolutionary archaeology. Simulation and numerical analysis is routinely employed in hypothesis tests and model development. Simulations, however, have a well-deserved reputation as difficult to replicate and test, and it is rare that researchers beyond the authors can build upon a previously published simulation study. To improve replicability, and to make our work accessible, we employ standard tools and scripted analyses, and engage a standard software development toolchain. We describe our workflow as a contribution to best practices for simulation in archaeology.\n\n__Session:  Marwick - Open methods in archaeology: how to encourage reproducible research as the default practice__\n\n\n--------\n\n### An Approach to Fitting Transmission Models to Seriations for Regional-Scale Analysis ###\n\n__Carl P. Lipo and Mark E. Madsen__\n\n> At scales where individual copying events are not measurable but the regional archaeological record is rich enough to support models more detailed than phylogenies, seriation can play a unique role as a diachronic measurement tool for linking cultural transmission models to data composed of assemblages of artifact class frequencies. As a first step towards fitting cultural transmission models to regional-scale transmission scenarios, we develop a iterative deterministic seriation algorithm.  We then implement summary statistics suitable for fitting models to seriations using an Approximate Bayesian Computation (ABC) approach.\n\n__Session:  Premo and Bentley - Evolutionary Theory Part 1__\n",
 			"file": "_posts/2015-04-11-saa2015-papers.md",
-			"file_size": 2400,
-			"file_write_time": 130732723420000000,
 			"settings":
 			{
-				"buffer_size": 2404,
+				"buffer_size": 3017,
 				"line_ending": "Unix"
 			}
 		}
@@ -302,15 +299,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2404,
+						"buffer_size": 3017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								38
+								1035,
+								1035
 							]
 						],
 						"settings":
