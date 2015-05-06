@@ -24,34 +24,10 @@
 			}
 		},
 		{
-			"file": "_posts/2015-04-11-saa2015-papers.md",
+			"file": "_posts/2015-04-27-seriationct-next-steps.md",
 			"settings":
 			{
-				"buffer_size": 3017,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 10272,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/project_layout.html",
-			"settings":
-			{
-				"buffer_size": 10514,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_plugins/github_feed.rb",
-			"settings":
-			{
-				"buffer_size": 1488,
+				"buffer_size": 5524,
 				"line_ending": "Unix"
 			}
 		}
@@ -113,13 +89,14 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-04-11-saa2015-papers.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-02-23-seriationct-experiment-plan.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-02-15-ctmixtures-docker-container.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-01-01-research-priorities-2015.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-12-04-ctmixtures-splitting-analysis.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-12-07-equifinality-4-todo.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
@@ -239,8 +216,7 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-08-personal-history-personal-computing.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/lnraw.sublime-project",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_site/publications.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_site/categories.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-04-11-opalco-broadband-initiative.md"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_site/categories.md"
 	],
 	"find":
 	{
@@ -286,7 +262,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -314,24 +290,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2015-04-11-saa2015-papers.md",
+					"file": "_posts/2015-04-27-seriationct-next-steps.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3017,
+						"buffer_size": 5524,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								493,
-								505
+								5494,
+								5494
 							]
 						],
 						"settings":
@@ -339,97 +315,7 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_layouts/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10272,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9275,
-								9178
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2623.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_layouts/project_layout.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9411,
-								9411
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3034.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_plugins/github_feed.rb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1488,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 501.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -505,7 +391,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/Dissertation Project/manuscripts/dissertation/draft.sublime-project"
+				"~/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/ctmixtures.sublime-project"
 			]
 		],
 		"width": 380.0
