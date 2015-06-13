@@ -30,6 +30,33 @@
 				"buffer_size": 5524,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "---\nlayout: essay\ntitle: The State of Cultural Transmission Research, From the Long-Term Perspective\ntags: [cultural transmission, philosophy of biology, evolutionary theory]\ncategories:\n- cultural transmission\n- theory\n- essays\n---\n\n\n\n\n\n\n[@godfrey2009darwinian] uses a specific distinction between \"Darwinian\" explanations, and merely \"populational\" explanations, that is different than I'd always thought about [@Lewontin1974; @Lewontin1970], but is useful. And he questions whether cultural phenomena are uniformly subject to Darwinian explanations, or even populational ones.\n\n### References Cited ###\n\n\n\n",
+			"file": "_posts/2015-05-26-state-of-ct-research.md",
+			"file_size": 4205,
+			"file_write_time": 130771723780000000,
+			"settings":
+			{
+				"buffer_size": 609,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-06-14-open-structured-problems.md",
+			"settings":
+			{
+				"buffer_size": 1279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2015-05-14-seriationct-sample-size-experiments.md",
+			"settings":
+			{
+				"buffer_size": 2500,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -262,7 +289,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -290,7 +317,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -306,8 +333,8 @@
 						"selection":
 						[
 							[
-								5494,
-								5494
+								5495,
+								5495
 							]
 						],
 						"settings":
@@ -315,10 +342,94 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 501.0,
+						"translation.y": 417.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2015-05-26-state-of-ct-research.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/2014-06-14-open-structured-problems.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_posts/2015-05-14-seriationct-sample-size-experiments.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
