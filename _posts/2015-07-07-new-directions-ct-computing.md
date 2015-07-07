@@ -45,7 +45,7 @@ But we live in interesting times, and Intel's recent MIC architecture (embodied 
 
 The Phi cards shipping today offer an embedded Linux subsystem, with 61 cores capable of over 1 teraflops/sec of double precision floating point performance (if you can feed it enough data smoothly enough).  This means that a system with a single Xeon host processor and a Xeon Phi 5110P card, has the same floating point performance as the ASCI Red supercomputer which topped the Top500 supercomputer list in 1999 and 2000.  The computing power of a US National Laboratory ten years ago, but it fits on your desktop.  
 
-Naturally, I ordered exactly this configuration, and am waiting for [Puget Systems](http://www.pugetsystems.com) to deliver it this week or next.  
+Naturally, I ordered exactly this configuration, and am waiting for [Puget Systems](http://www.pugetsystems.com) to deliver it this week or next.  The best part?  Right now, a developer program with Intel will get you a Xeon Phi 5110P (passively cooled) coprocessor card for less than $500, along with a year's license for the Intel compiler stack and cluster computing tools, which normally are fairly expensive (although in the same realm as __Mathematica__ for academic use).  The downside is that the passively cooled Phi cards need some extra cooling and good system design and testing, unless you simply want to cook a $4-5000 computer down to slag fairly quickly.  That's where Puget Systems and their expertise come in -- sizing the power, selecting and testing the cooling system, and making sure that you're good to go.  Even if you pay them a small premium for integrating the box, the work they're doing is impressive and I think it's going to be well worth it.  
 
 How to use it?
 
@@ -61,6 +61,10 @@ And if you use R, switch to the RevolutionR Open version of the runtime, which i
 See, it's getting very interesting, isn't it?  
 
 I'm not sure how much of this automatic offloading will work "off the shelf" from Python, but given NumbaPro from the Anaconda folks, I don't imagine it'll be long before all of it will. And *anything* you write in C++ can be made to use the coprocessor immediately, so compute-critical sections in your Python code can always be linked via Cython or SWIG.  
+
+The future looks even more interesting.  The next generation of Phi chips starts shipping commercially in 2016, so I didn't go all out this time.  Next year, the "Knight's Landing" architecture will put the Phi in motherboard sockets, eliminating much of the time needed to move data over the PCI bus to the coprocessor card, and yielding a true 75 or 150 core server system.  Pair one of those systems with a box running 1 or 2 "normal" Haswell/Broadwell Xeon processors, and you've got a small 160-175 core cluster in the space it used to take for a couple of workstations.  
+
+### Next Steps ###
 
 So I'm bullish on the opportunity to drastically speed up cultural transmission simulations, seriation analyses, the use of "Approximate Bayesian Computation" for statistical inference on these complex models, and even phylogenetic analysis codes, in fairly short order.  
 
