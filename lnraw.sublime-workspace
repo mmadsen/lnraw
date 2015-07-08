@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_drafts/states-of-ct-research.md",
-			"settings":
-			{
-				"buffer_size": 652,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -81,6 +73,10 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/states-of-ct-research.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-07-07-new-directions-ct-computing.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/new-directions-ct-computing.md",
+		"/Users/mark/local-research/diss/experiments/experiment-seriationct-calibration/experiments/two-node-three-slice/two-node-three-slice-001.gml",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-03-07-structured-information-pac-learning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-05-26-state-of-ct-research.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-04-27-seriationct-next-steps.md",
@@ -204,11 +200,7 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-05-27-time-in-archaeology.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-05-psu-talk-presentation.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-10-time-perspectivism-annotated-bib.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-13-gabora2013-response-notes.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-11-duncan2013-conceptual-structure-qft.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-24-ct-definitions.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-26-saablogging-why-i-blog.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-22-metapopulation-models-diss.md"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-13-gabora2013-response-notes.md"
 	],
 	"find":
 	{
@@ -254,37 +246,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_drafts/states-of-ct-research.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 652,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								235,
-								235
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
