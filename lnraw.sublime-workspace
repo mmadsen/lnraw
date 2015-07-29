@@ -15,6 +15,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2015-07-27-simupop-performance-in-seriationct.md",
+			"settings":
+			{
+				"buffer_size": 7288,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -246,8 +254,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2015-07-27-simupop-performance-in-seriationct.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7259,
+								7259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1067.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
