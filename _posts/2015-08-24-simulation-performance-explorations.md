@@ -80,9 +80,65 @@ user    0m39.313s
 sys     0m0.811s
 ```
 
-The improvement with both is tiny over either approach alone.  I need to investigate the reasons for this, but a hotspot analysis with Intel's Vtune Amplifier XE profiler showed that the code, at this point, is constrained mainly by the speed of random number generation, not my copying or mutation code.  
+The improvement with both is tiny over either approach alone.  But this may be due to the small problem size.  
 
-What surprised me in this analysis wasn't the performance of paralellism (with or without vectorization), but the near equivalent performance of **just vectorizing** the code.  This suggests that instead of spending a lot of time working on parallelism, I could just ensure that code was vectorizing sufficiently, and then use many cores to run many processes representing many parameter sets, to add a huge factor to overall experiment throughput.  
+### Population Size 100,000 ###
+
+If we switch to a larger population size, here are the results:
+
+```
+No optimization - 6m38.924s
+
+Vec w/o Parallelism  - 2m4.405s
+
+Parallel w/o Vec   -   1m54.437s
+
+Vec and Parallelism  - 1m36.847s
+```
+
+Here we see the separate contributions of vectorization and parallelism.  The overall speedup is constant at 4.1x for both parallelism and vectorization, but this speedup is only achieved by having both.  With the larger problem size, vectorization alone achieves a 3.2x speedup, and parallelism alone about 3.5x.  As problem size grows, the importance of combining both approaches only grows (an intermediate problem size of 50K population size has intermediate results, for example).  
+
+The biggest challenge in optimizing this kind of simulation code, it seems, is handling random number generation, which now seems to be the major hotspot.  It is also complex enough that including a random generator call in a loop is sufficient to disqualify the loop from vectorization.  It is also not clear whether it is safe to use the C++11 random library from multiple threads without locking, and introducing explicit thread-local generators obviates some of the benefit of having OpenMP automatically do thread management and decide the optimal threading strategy.  
+
+The obvious way around this is to generate pools of random variates before going into a loop nest, so that the random variates are simply an array access like any other and thus can be used in vectorized, OpenMP parallelized loops.  The current code reflects this strategy for determining the individuals who will be cultural models (targets of copying) in each generation.  
+
+
+### Parallelized Random Number Generation ###
+
+Creating 100K random variates is still a fairly time-consuming step, and this may be an area where using a GPU (if available) is a good idea, since at least CUDA (if present) has a high performance random number library.  I hate to have hardware-specific code, though, especially if Apple moves away from NVIDIA cards in the Macbook Pros, which makes it hard to develop while mobile or away from home.  
+
+There's no good reason why I shouldn't be able to parallelize random number generation using OpenMP, however, as long as each thread has its own private engine variable, which is accomplished by initializing the engine and distributions inside the parallel region, instead of during object construction:
+
+```c++
+#pragma omp parallel shared(test_par)
+{
+        std::random_device rd;
+        std::mt19937_64 eng(rd());
+        std::uniform_int_distribution<int> uniform_int{0, test - 1};
+        num_threads = omp_get_num_threads();
+
+        #pragma omp for
+        for(i = 0; i < test; i++) {
+                test_par[i] = uniform_int(eng);
+        }
+}
+```
+
+The result with 100K individuals and 25K generations (comparable to the above timing experiments) is:
+
+```
+31.24 real       119.92 user         3.02 sys
+```
+
+which is a 12.76x speedup over the serial unvectorized code.  I'm not likely to push the performance experiments too much further, since I have a lot of other code to write, but it was a good experiment and now I have code modules to use in future simulations where I need the performance.  And, others are encouraged to start with it and adapt it to your own transmission simulations, since it's known to work and work quickly.
+
+
+
+
+
+
+
+
 
 
 
