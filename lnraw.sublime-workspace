@@ -22,6 +22,22 @@
 				"buffer_size": 7288,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "_posts/2015-08-24-simulation-performance-explorations.md",
+			"settings":
+			{
+				"buffer_size": 8281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2015-07-07-new-directions-ct-computing.md",
+			"settings":
+			{
+				"buffer_size": 10674,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -254,7 +270,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -281,10 +297,68 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1067.0,
+						"translation.y": 1009.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2015-08-24-simulation-performance-explorations.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8270,
+								8270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1978.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2015-07-07-new-directions-ct-computing.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 10674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								4
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -357,7 +431,7 @@
 		[
 			[
 				"",
-				"~/Dropbox/Research/Dissertation Project/manuscripts/dissertation/draft.sublime-project"
+				"~/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/ctmixtures.sublime-project"
 			]
 		],
 		"width": 380.0
