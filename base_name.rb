@@ -9,11 +9,11 @@ module Jekyll
     ## NOTE: post.dir gives the published directory path, e.g. 2013/02/02/ 
     # and post.base not valid  
     def generate(site)
-      site.posts.each do |post|
-        post.data['path'] = post.name
+      site.posts.docs.each do |post|
+        post.data['path'] = post.basename
       end
-      site.pages.each do |post|
-        post.data['path'] = post.name
+      site.pages.docs.each do |post|
+        post.data['path'] = post.basename
       end
     end
   end

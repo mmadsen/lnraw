@@ -128,13 +128,13 @@ module Jekyll
         maker.channel.link = site.config['url']
         maker.channel.description = site.config['description'] || "Essays RSS feed for #{site.config['name']}"
         maker.channel.author = site.config["author"]
-        maker.channel.updated = site.posts.map { |p| p.date  }.max
+        maker.channel.updated = site.posts.docs.map { |p| p.date  }.max
         maker.channel.copyright = site.config['copyright']
 
-        post_limit = (site.config['rss_post_limit'] - 1 rescue site.posts.count)
+        post_limit = (site.config['rss_post_limit'] - 1 rescue site.posts.docs.count)
 
-        site.posts.reverse[0..post_limit].each do |post|
-          next unless post.categories.include? "essays"
+        site.posts.docs.reverse[0..post_limit].each do |post|
+          next unless page.categories.include? "essays"
           post = post.dup
           post.render(site.layouts, site.site_payload)
           maker.items.new_item do |item|

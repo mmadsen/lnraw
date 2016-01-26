@@ -9,7 +9,7 @@
     <meta name="author" content="{{ site.author.name }}"/>
 
 	<!-- Get date last modified from git log. (Uses current time if file entry not found, e.g. projects/)  -->
-	{% capture modified %} {{ page.path | git_modified }} {% endcapture %}
+	{% capture modified %} {{ page.basename | git_modified }} {% endcapture %}
 
 
 	<!-- For posts, page.date is the date they are published under, which we use as their 'canonical' dc:date -->
@@ -140,8 +140,7 @@
               <li><a href="/labnotebook.html">About</a></li>
               <li><a href="http://about.me/mark.e.madsen">Contact</a></li>
               <li><a href="/blog.html">Essays</a></li>
-              <li><a href="/rss.xml">Full RSS Feed</a></li>
-              <li><a href="/essays-rss.xml">Essays Only RSS Feed</a></li>
+              <li><a href="/feed.xml">Atom/RSS Feed</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
