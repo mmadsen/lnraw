@@ -24,6 +24,7 @@ module Jekyll
         for i in 0 ... @count.to_i
           title = feed.entries[i].title
           next if title.include? "lnraw" or title.include? "mmadsen.github.io"
+          next if title.include? "starred"
           doc = Nokogiri::HTML.parse(feed.entries[i].content) # parse the content
           # Print title, content
           out = out + "<li>" +
