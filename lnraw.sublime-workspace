@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2015-09-06-saa2016-abstract.md",
-			"settings":
-			{
-				"buffer_size": 6184,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -74,36 +66,51 @@
 	"expanded_folders":
 	[
 		"/Users/mark/Dropbox/Research/websites/lnraw",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins"
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-07-07-new-directions-ct-computing.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-cluster-setup.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-02-coarse-graining-history-ctmodels.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-26-quantifying-similarity-seriations.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-24-neural-network-ami-for-ec2.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-28-more-temporal-networks-python.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-job-execution.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-30-unconference-future-statistics.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-01-slatkin-power-experiment.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-09-22-slatkin-test-error-power.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/tag_page.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/jekyll.tag-cloud.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rssgenerator.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-09-06-saa2016-abstract.md",
 		"/Users/mark/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-07-27-simupop-performance-in-seriationct.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-08-24-simulation-performance-explorations.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-05-14-seriationct-sample-size-experiments.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-09-01-idss-seration-version-2.3-released.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-09-06-saa2016-abstract.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/states-of-ct-research.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-07-07-new-directions-ct-computing.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts/new-directions-ct-computing.md",
 		"/Users/mark/local-research/diss/experiments/experiment-seriationct-calibration/experiments/two-node-three-slice/two-node-three-slice-001.gml",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-03-07-structured-information-pac-learning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-05-26-state-of-ct-research.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-04-27-seriationct-next-steps.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-04-11-saa2015-papers.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-02-23-seriationct-experiment-plan.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-02-15-ctmixtures-docker-container.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-01-01-research-priorities-2015.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rtm_feed.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-12-04-ctmixtures-splitting-analysis.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-12-07-equifinality-4-todo.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-28-more-temporal-networks-python.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/essay.html",
 		"/Users/mark/Dropbox/Research/projects/coarsegraining/experiment-ctmixtures/paper/plos_template.tex",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-10-17-how-washingtonians-might-enforce-mccleary.md",
@@ -115,20 +122,16 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-17-equifinality-data-export.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-16-equifinality-experiment-status.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-cluster-setup.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-15-ctmixtures-cost-analysis.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-12-evolutionary-narratives-inference-model-selection.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-job-execution.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-10-my_evolutionary_narrative.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-10-ctmixtures-experiment-design.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-31-seriationct-experiment-outline.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-29-saa2015-abstracts.md",
 		"/Users/mark/Dropbox/Research/Third-Party-Code/crema-2014-abc/example-run.log",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-08-10-ctmixtures-observables-parameters.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/software.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/tools.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rssgenerator.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-13-seriationct-temporal-model.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-28-implementing-temporal-networks-in-python.md",
 		"/Users/mark/Dropbox/Research/Dissertation Project/models/wrightfisher-twoallele.R",
@@ -145,10 +148,8 @@
 		"/Users/mark/Downloads/differencing numpy arrays.py",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/post.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/openproblems.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/tag_page.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/byexperiment.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/postcategory_filter.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/greycite_biblio.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/blog.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-09-ctmixtures-timeaveraging.md",
@@ -167,9 +168,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-02-23-renormalization.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2011-06-24-ct-tuplespace-artfacts.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-06-14-renormalization-theory-archy.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-09-22-slatkin-test-error-power.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-01-slatkin-power-experiment.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-02-coarse-graining-history-ctmodels.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-06-07-structured-info-notes.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-13-ctpy-classification-designs.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-07-20-ctpy-classifications-part2.md",
@@ -180,7 +178,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-11-semanticaxelrod-implementation.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-08-27-classification-research-questions.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-05-saa2014-abstract-draft.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-09-26-classification-experiment-data-cleaning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-10-23-semanticaxelrod-research-design.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-03-classification-eda.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-11-18-axelrod-to-semantic-model-notes.md",
@@ -201,11 +198,7 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/bymodel_auto.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/labnotebook.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/experiments.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-ci-travis.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-experiment.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/doc/adding-project.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-07-25-approaches-evolution-culture.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2013-03-31-darwinian-populational-models.md"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-14-ci-travis.md"
 	],
 	"find":
 	{
@@ -251,37 +244,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2015-09-06-saa2016-abstract.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								252,
-								252
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 21.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
