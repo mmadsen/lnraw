@@ -1,8 +1,19 @@
-gems: [jekyll-paginate, jekyll-feed]
+gems: [jekyll-paginate, jekyll-feed, jekyll-archives]
 exclude: [ _posts/source ]
 highlighter: pygments
 safe: false
 paginate: 6
+
+jekyll-archives:
+  enabled: [categories,tags]
+  layout: 'tag_page'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
 
 scholar:
   style: apa

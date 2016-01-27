@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div  class="span9">
-
+<!--
 <h2>Posts Tagged: "{{ page.tag }}"</h2>
 
 <table class="table table-condensed">
@@ -18,7 +18,20 @@ layout: default
 
 	{% endfor %}
 </table>
+-->
 	
+<h2>Posts and Essays Tagged: {{ page.tag }}</h2>
+
+<table class="table table-condensed">
+  {% for post in page.posts %}
+    <tr>
+    <td><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</td>
+    <td><a class="post-link" href="{{ post.url | slugify | prepend: site.baseurl }}">{{ post.title }}</a></td>
+    </tr>
+  {% endfor %}
+</table>
+
+
 	
 </div>
 

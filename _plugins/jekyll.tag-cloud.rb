@@ -77,9 +77,10 @@ module Jekyll
       # reduce the Array of [tag name, tag weight] pairs to HTML
       weight.reduce("") do |html, tag|
         name, weight = tag
+        slugged_name = Utils.slugify(name)
         size = size_min + ((size_max - size_min) * weight).to_f
         size = sprintf("%.#{@precision}f", size)
-        html << "<a style='font-size: #{size}#{unit}' href='/tag/#{name}.html'>#{name}</a>\n"
+        html << "<a style='font-size: #{size}#{unit}' href='/tag/#{slugged_name}.html'>#{name}</a>\n"
       end
     end
 
