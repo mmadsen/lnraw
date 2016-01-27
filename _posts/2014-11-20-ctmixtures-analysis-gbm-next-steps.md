@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CTMixtures Analysis -- RF to GBM and Next Steps
-tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
+tags: [cultural transmission, time averaging, coarse graining, ML, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories:
 - project:coarse grained model
 - model:ctmixtures

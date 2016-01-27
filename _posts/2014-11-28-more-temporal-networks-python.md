@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing temporal networks in Python, Part 2
-tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, temporal network]
+tags: [cultural transmission, coarse graining, simulation, ML, dissertation, seriation, temporal network]
 categories: 
 - project:coarse grained model
 - model:seriationct

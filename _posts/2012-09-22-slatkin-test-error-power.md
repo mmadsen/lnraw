@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slatkin Exact Test -- Error and Statistical Power
-tags: [cultural transmission, experiments, dissertation,neutral model, statistics]
+tags: [cultural transmission, ML, experiments, dissertation,neutral model, statistics]
 categories: 
 - project:coarse grained model
 - experiment:slatkin-power

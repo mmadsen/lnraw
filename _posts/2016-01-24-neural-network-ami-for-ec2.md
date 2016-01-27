@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Amazon EC2 AMI for deep neural networks and classification problems
-tags: [experiments, computing, aws, ec2, deep learning, classification, ami]
+tags: [experiments, computing, aws, ML, deep learning, HPC, classification]
 categories:
 - project:coarse grained model
 ---
@@ -29,5 +29,5 @@ The public AMI `ami-5cc6e636` is based upon Ubuntu 14.04, with the following add
 
 The image has a mounted EBS volume for data, and a 32GB root partition since there's a lot of stuff installed here.
 
-Fire this AMI up on an `g2.2xlarge` instance type for 8 CPU cores, 15GB of RAM, and a GPU with 1,536 CUDA cores.  I will try to keep an AMI with these specs up to date, and since the AMI ID will change, check [the tag `EC2`](http://notebook.madsenlab.org/tag/ec2.html) for updates.
+Fire this AMI up on an `g2.2xlarge` instance type for 8 CPU cores, 15GB of RAM, and a GPU with 1,536 CUDA cores.  I will try to keep an AMI with these specs up to date, and since the AMI ID will change, check [the tag `AWS`](http://notebook.madsenlab.org/tag/aws.html) for updates.
 

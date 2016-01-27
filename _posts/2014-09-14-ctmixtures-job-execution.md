@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CTMixtures Experiment Configuration and Execution
-tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
+tags: [cultural transmission, time averaging, coarse graining, ML, computational science, simulation, dissertation, open science, reproducible science, experiments, aws, experiment-ctmixture]
 categories: 
 - project:coarse grained model
 - model:ctmixtures

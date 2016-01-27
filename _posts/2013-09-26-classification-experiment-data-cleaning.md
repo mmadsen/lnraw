@@ -2,7 +2,7 @@
 
 layout: post
 title: Classification Experiment - Data Reduction and Cleaning
-tags: [cultural transmission, classification, coarse graining, simulation, ctpy, dissertation, experiments, experiment-classification]
+tags: [cultural transmission, classification, coarse graining, ML, simulation, ctpy, dissertation, experiments, experiment-classification]
 categories: 
 - project:coarse grained model
 - model:ctpy

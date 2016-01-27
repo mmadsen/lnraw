@@ -1,7 +1,7 @@
 ---
 layout: essay
 title: Changing Strategy for Cultural Transmission Computing
-tags: [cultural transmission, simulation, computing, HPC, seriation, computational science]
+tags: [cultural transmission, simulation, computing, HPC, seriation, ML, computational science]
 categories: 
 - essays
 ---

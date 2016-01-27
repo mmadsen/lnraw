@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CTMixtures Cluster Setup and Computing Environment
-tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
+tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture, ML, computational science, aws]
 categories: 
 - project:coarse grained model
 - model:ctmixtures

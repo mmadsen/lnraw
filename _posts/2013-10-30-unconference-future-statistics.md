@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simply Statistics Unconference on the Future of Statistics
-tags: [conference, statistics, data science, analytics, reading notes]
+tags: [conference, statistics, ML, computational science, data science, analytics, reading notes]
 category: "reading notes"
 ---
 
