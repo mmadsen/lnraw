@@ -28,7 +28,7 @@ There are several challenges in this work.  The first, which is described in a [
 
 The second challenge is then to find an inferential framework for model selection which allows one to measure the goodness-of-fit between the theoretical model's output, and specific empirical seriations like Figure 1.  
 
-This second challenge is perfectly suited to an Approximate Bayesian Computation approach [@Beaumont2002;Csillery2010;Marin2012;Toni2009], since while we can simulate data from each social learning model, writing down the likelihood function for each model is generally an intractable problem.   
+This second challenge is perfectly suited to an Approximate Bayesian Computation approach [@Beaumont2002;@Csillery2010;@Marin2012;@Toni2009], since while we can simulate data from each social learning model, writing down the likelihood function for each model is generally an intractable problem.   
 
 In brief, ABC model selection involves simulating a large number of synthetic data points from each model, calculating summary statistics from those data points, measuring the distance (losses) between summary statistics and observed data, and choosing the model whose losses are the smallest.  
 
