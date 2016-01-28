@@ -26,7 +26,7 @@ layout: default
   {% for post in page.posts %}
     <tr>
     <td><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</td>
-    <td><a class="post-link" href="{{ post.url | slugify | prepend: site.baseurl }}">{{ post.title }}</a></td>
+    <td><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
     </tr>
   {% endfor %}
 </table>
@@ -35,7 +35,7 @@ layout: default
 	
 </div>
 
-
+<!-- | prepend: site.baseurl  -->
 
 
 
