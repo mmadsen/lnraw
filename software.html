@@ -32,6 +32,9 @@ All of the research code that I write is available on GitHub under open source l
 <tr>
 <td><a href="https://github.com/mmadsen/mmadsenr">mmadsenr</a></td><td><img src="https://travis-ci.org/mmadsen/mmadsenr.svg?branch=master"/></td>
 </tr>
+<tr>
+<td><a href="https://github.com/mmadsen/seriationct">SeriationCT</a></td><td><img src="https://travis-ci.org/mmadsen/seriationct.svg?branch=master"/></td>
+</tr>
 </table>
 
 <h3>Miscellaneous Tools</h3>
@@ -40,6 +43,13 @@ All of the research code that I write is available on GitHub under open source l
 </p>
 
 <dl>
+<dt><a href="https://github.com/mmadsen/sklearn-mmadsen">Sklearn-MMadsen</a></dt>
+<dd>Modules and reusable classes for machine learning that conform to the scikit-learn API.</dd>
+
+<dt><a href="https://github.com/mmadsen/neutral-model-cpp">Neutral Model in C++</a></dt>
+<dd>Highly optimized C++ code, using OpenMP to simulate neutral genetic or cultural transmission.  With Makefiles for the Intel C++ compiler, Clang, and GCC 5.X.  Uses memory alignment and OpenMP directives to achieve high performance on Xeon processors.  This is meant to serve as an engine for generating neutral variation in Approximate Bayesian Computation simulations, as a building block.</dd>
+
+
 <dt><a href="https://github.com/mmadsen/slatkin-exact-tools">Slatkin Exact in Python</a></dt>
 <dd>A python interface to a modified version of Montgomery Slatkin's original code for testing a set of item/allele counts against the Ewens Sampling Distribution for evidence of neutrality.  Slatkin's original code has been modified only to render it suitable for use in a software library instead of a single-shot command line program (i.e., I worked on memory management and the data input interface).  This module should compile on any Linux system with GCC or clang installed, and on OS X if the Xcode command line tools are present.  Tested only against Python 2.7.  
 </dd>
@@ -54,6 +64,23 @@ All of the research code that I write is available on GitHub under open source l
 
 <p>Other software projects in my repository are specific to research projects.  Please see the README for each project.  Repositories starting with "<strong>experiment-</strong>" are generally analyses of data from specific simulation software (always located in a separate repository).  
 </p>
+
+
+<h3>Reproducible Research Tools</h3>
+
+Most of my research work involves a cycle of:
+
+* Defining a range of models whose behavior I intend to study
+* Generating model and simulation specifications for them
+* Simulating synthetic data from those models
+* Postprocessing the synthetic data sets
+* Performing statistical/ML analysis of those data
+* Preprocessing empirical data sets to match the format of synthetic data
+* Assess goodness of fit
+
+Once this loop is underway, there is usually a paper, and a presentation that accompany.
+
+The [experiment-template](https://github.com/mmadsen/experiment-template) repository is a ready-to-use setup for doing the above analysis loop.  Please use and customize as you see fit!
 
 
 <h3>Note about Microsoft Windows</h3>
