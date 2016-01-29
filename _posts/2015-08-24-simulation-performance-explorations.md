@@ -1,6 +1,6 @@
 ---
 layout: essay
-title: Improving Simulation Performance for CT Models
+title: Improving Simulation Performance for CT Models with C++ and OpenMP
 tags: [cultural transmission, simulation, computing, HPC, computational science]
 categories: 
 - essays
