@@ -16,18 +16,18 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2016-01-26-quantifying-similarity-seriations.md",
+			"file": "software.html",
 			"settings":
 			{
-				"buffer_size": 9399,
+				"buffer_size": 6924,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2013-06-13-gabora2013-response-notes.md",
+			"file": "_posts/2015-08-24-simulation-performance-explorations.md",
 			"settings":
 			{
-				"buffer_size": 15747,
+				"buffer_size": 8301,
 				"line_ending": "Unix"
 			}
 		}
@@ -82,14 +82,19 @@
 	"expanded_folders":
 	[
 		"/Users/mark/Dropbox/Research/websites/lnraw",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts"
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-26-quantifying-similarity-seriations.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/tag_page.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bio.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-07-07-new-directions-ct-computing.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-cluster-setup.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-02-coarse-graining-history-ctmodels.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-26-quantifying-similarity-seriations.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-24-neural-network-ami-for-ec2.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-28-more-temporal-networks-python.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
@@ -100,11 +105,8 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-01-slatkin-power-experiment.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-09-22-slatkin-test-error-power.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_config.yml",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/tag_page.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/jekyll.tag-cloud.rb",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/project_layout.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/index.html",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_layouts/default.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/rssgenerator.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_plugins/github_feed.rb",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-09-06-saa2016-abstract.md",
@@ -153,7 +155,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-17-eight-years-on-sanjuan.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-06-17-seriationct-requirements.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-07-16-experiment-template-openscience.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/bio.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/openscience.html",
 		"/Users/mark/Dropbox/Research/templates/experiment-template/README.md",
 		"/Users/mark/Dropbox/Research/templates/experiment-template/paper/paper.Rmd",
@@ -259,52 +260,52 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2016-01-26-quantifying-similarity-seriations.md",
+					"file": "software.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9399,
+						"buffer_size": 6924,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3611,
-								3611
+								5302,
+								5302
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2139.0,
+						"translation.y": 611.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2013-06-13-gabora2013-response-notes.md",
-					"semi_transient": true,
+					"file": "_posts/2015-08-24-simulation-performance-explorations.md",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15747,
+						"buffer_size": 8301,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								91,
+								91
 							]
 						],
 						"settings":
@@ -312,10 +313,10 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 829.0,
+						"translation.y": 2326.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
