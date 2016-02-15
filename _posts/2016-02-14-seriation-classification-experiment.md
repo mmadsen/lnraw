@@ -80,7 +80,35 @@ The details of classifier accuracy seem to show that we have better ability to c
 
 In the next experiment, I intend to see if different values of the k-Nearest Neighbor parameter affect this accuracy, but I expect that achieving higher accuracy might require augmenting the approach.  One possibility that bears exploration is to not simply use the spectral distance, but to instead use the Laplacian eigenvalues themselves (sorted in decreasing order) directly as features, in addition to other graph theoretic properties such as average degree and tree radius, and use a more traditional classifier like boosted decision trees.  That will probably be my third experiment.  
 
+### Second Attempt ###
 
+In a second run, I examined the effect of the number of nearest neighbors which "vote" on the label of the target seriation, still with leave-one-out cross validation.  The results seem to indicate that (at least for these models) that best performance is 3 nearest neighbors, with accuracy worsening for 5, 7, and 9 neighbors, and then plateauing a bit for 11 and 15 neighbors.  But with 3 neighbors, we achieve almost 80% accuracy, which is encouraging.  
+
+```python
+
+
+knn = [1, 3, 5, 7, 9, 11, 15]
+for nn in knn:
+    gclf = skm.GraphEigenvalueNearestNeighbors(n_neighbors=nn)
+    test_pred = []
+    for ix in range(0, len(train_graphs)):
+        train_loo_graphs, train_loo_labels, test_graph, test_label = leave_one_out_cv(ix, train_graphs, train_labels)
+        gclf.fit(train_loo_graphs, train_loo_labels)
+        test_pred.append(gclf.predict([test_graph])[0])
+    print("Accuracy on test for %s neighbors: %0.3f" % (nn, accuracy_score(train_labels, test_pred)))
+```
+
+Results:
+
+```    
+Accuracy on test for 1 neighbors: 0.788
+Accuracy on test for 3 neighbors: 0.798
+Accuracy on test for 5 neighbors: 0.768
+Accuracy on test for 7 neighbors: 0.747
+Accuracy on test for 9 neighbors: 0.758
+Accuracy on test for 11 neighbors: 0.788
+Accuracy on test for 15 neighbors: 0.788
+```
 
 
 ### References Cited ###
