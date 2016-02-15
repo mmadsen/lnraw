@@ -10,7 +10,7 @@ categories:
 
 ### Background ###
 
-In a [previous note], I described the problem of inferring the goodness of fit between a regional network model and the sampled output of cultural transmission on that regional network, as measured through seriations.  I am now ready with the simulation and inference code to start testing the spectral similarity metric I discussed in that note across pairs and sets of regional network models.  
+In a [previous note](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2016/01/26/quantifying-similarity-seriations.html), I described the problem of inferring the goodness of fit between a regional network model and the sampled output of cultural transmission on that regional network, as measured through seriations.  I am now ready with the simulation and inference code to start testing the spectral similarity metric I discussed in that note across pairs and sets of regional network models.  
 
 Here, I describe the first such comparison.
 
