@@ -14,7 +14,7 @@ In a [previous note], I described the problem of inferring the goodness of fit b
 
 Here, I describe the first such comparison.
 
-## Experiment:  SC-1 ##
+### Experiment:  SC-1 ###
 
 SC-1 is a simple contrast between two regional network models.  A regional network model is a time-transgressive description of the interaction patterns that existed among a set of subpopulations, described by an "interval temporal network" representation (see [note 2](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/11/28/more-temporal-networks-python.html) and [note 1](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html) about the implementation of such models).  
 
@@ -52,12 +52,36 @@ I then perform the following sampling steps:
 
 3.  Within the overall sample from each simulation run, comprised now of the time averaged class frequencies from 30 sampled communities, I examine the classes/types themselves, and drop any types (columns) which do not have data values for at least 3 communities.  This is standard pre-processing for seriation analyses (or was in the Fordian manual days of seriation analysis) since without more than 3 values, a column does not contribute to ordering the communities.  
 
-These final samples are contained in directories:
-
-* `slice-stratified-filtered-lineage-data`
-* `slice-stratified-filtered-linear-data`
-
 The [IDSS Seriation](https://github.com/clipo/idss-seriation) package is then used to seriate the stratified, filtered data files for each simulation run across the two models.  
+
+### First Classification Attempt ###
+
+For a first classification attempt, I did a "leave one out" cross validation run, in which each seriation graph was sequentially deleted from the training set of 99 seriations (one lineage graph had issues with duplicate frequencies and became stuck in frequency seriation), and the distance from the hold-out target graph to all others calculated using [Laplacian spectral distance](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2016/01/26/quantifying-similarity-seriations.html).  The label of the target graph was then predicted as the majority vote of the 5 nearest neighboring graphs.  No attempt was made to tune the number of nearest neighbors using a second cross validation pass, but that will be the next experiment.
+
+In general, the ability to predict the label (network model) which gave rise to the target seriation graph is decent:  76.8%.  
+
+```
+Classification Report:
+
+          predicted 0  predicted 1
+actual 0           41            9
+actual 1           14           35
+             precision    recall  f1-score   support
+
+          0       0.75      0.82      0.78        50
+          1       0.80      0.71      0.75        49
+
+avg / total       0.77      0.77      0.77        99
+
+Accuracy on test: 0.768
+```
+
+The details of classifier accuracy seem to show that we have better ability to correctly classify seriations which result from Model #1 ("linear") model than seriations originating from the lineage splitting Model #2.  In particular, we correctly identify instances of Model #1 82% of the time (recall), although there are clear issues with false positives.  The ability to identify instances of Model #2 is worse, with a considerable number of false negatives.  
+
+In the next experiment, I intend to see if different values of the k-Nearest Neighbor parameter affect this accuracy, but I expect that achieving higher accuracy might require augmenting the approach.  One possibility that bears exploration is to not simply use the spectral distance, but to instead use the Laplacian eigenvalues themselves (sorted in decreasing order) directly as features, in addition to other graph theoretic properties such as average degree and tree radius, and use a more traditional classifier like boosted decision trees.  That will probably be my third experiment.  
+
+
+
 
 ### References Cited ###
 
