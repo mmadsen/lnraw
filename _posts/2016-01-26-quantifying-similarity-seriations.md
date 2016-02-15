@@ -5,7 +5,7 @@ tags: [cultural transmission, coarse graining, simulation, dissertation, seriati
 categories:
 - project:coarse grained model
 - model:seriationct
-- experiment:experiment-seriationct
+- experiment:experiment-seriation-classification
 ---
 
 ### Background ###
