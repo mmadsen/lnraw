@@ -14,8 +14,6 @@ In a [previous note](http://notebook.madsenlab.org/project:coarse%20grained%20mo
 
 Here, I describe the first such comparison.
 
-The full Github repository for this and related seriation classification experiments is:  [seriation-classification](https://github.com/mmadsen/experiment-seriation-classification)
-
 ### Experiment:  SC-1 ###
 
 SC-1 is a simple contrast between two regional network models.  A regional network model is a time-transgressive description of the interaction patterns that existed among a set of subpopulations, described by an "interval temporal network" representation (see [note 2](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/11/28/more-temporal-networks-python.html) and [note 1](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html) about the implementation of such models).  
@@ -112,8 +110,13 @@ Accuracy on test for 11 neighbors: 0.788
 Accuracy on test for 15 neighbors: 0.788
 ```
 
+### Resources ###
 
-NOTE:  [Full iPython notebook and pickled data files available on Github](https://github.com/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1/sc-1-seriation-classification-analysis.ipynb).  
+The full Github repository for this and related seriation classification experiments is:  [experiment-seriation-classification](https://github.com/mmadsen/experiment-seriation-classification)
+
+[Full iPython notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1/sc-1-seriation-classification-analysis.ipynb).
+
+[Data Preparation Notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1/sc-1-eigenvalue-classification-dataprep.ipynb)
 
 
 
