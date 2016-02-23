@@ -15,9 +15,9 @@ Experiment `sc-2` was designed to examine the opposite question as `sc-1`; that 
 To test this, I set up four models which I believe to be very "close" to each other:
 
 1.  Lineage splitting where 1 lineage turns into 2 lineages, the split occurring 30% of the way through the time sequence ("early split")
-2.  Lineage splitting where 1 $\rarrow$ 2 lineages, split occurring 70% of the way through the time sequence ("late split")
+2.  Lineage splitting where 1 $\rightarrow$ 2 lineages, split occurring 70% of the way through the time sequence ("late split")
 3.  Lineage coalescence where 2 lineages turn into a single linage, the event occurring 30% of the way through the sequence ("early coalescence")
-4.  Lineage coalescence where 2 $\rarrow$ 1 lineages, split occuring 70% of the way through the time sequence ("late coalescence")
+4.  Lineage coalescence where 2 $\rightarrow$ 1 lineages, split occuring 70% of the way through the time sequence ("late coalescence")
 
 In all other respects, simulation of cultural transmission across these regional networks was identical, using the same prior distributions for innovation and migration rates, population sizes, and so on. 
 
