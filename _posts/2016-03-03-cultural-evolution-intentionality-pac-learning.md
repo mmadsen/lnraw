@@ -1,6 +1,6 @@
 ---
 layout: essay
-title: Intentionality and Cultural Evolution -- Towards a Generalized Learning Theory Account
+title: Intentionality and Cultural Evolution - Towards a Generalized Learning Theory Account
 tags: [intentionality,cultural transmission,PAC,learning theory, statistical query learning]
 categories: 
 - essays
