@@ -1,12 +1,12 @@
 ---
 layout: essay
-title: Intentionality and Cultural Evolution:  Towards a Constrained Learning Theory Account
+title: Intentionality and Cultural Evolution -- Towards a Generalized Learning Theory Account
 tags: [intentionality,cultural transmission,PAC,learning theory, statistical query learning]
 categories: 
 - essays
 ---
 
-Among those who object to framing cultural evolution as a Darwinian theory, one of the most important reasons for objection is the evident importance of intentionality in human behavior (and among many animal species).  Liane Gabora has perhaps been one of the most persistent advocates that while culture evolves, it does so by mechanisms other than natural selection, since natural selection requires variation to be "random." [@Gabora2013a]
+Among those who object to framing cultural evolution as a Darwinian theory, one of the most important reasons for objection is the evident importance of intentionality in human behavior (and among many animal species).  Liane Gabora has perhaps been one of the most persistent advocates that while culture evolves, it does so by mechanisms other than natural selection, since natural selection requires variation to be "random" [@Gabora2013a].
 
 ### Generation of Variation in Darwinian Processes ###
 
