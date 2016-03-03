@@ -60,7 +60,7 @@ def graphs_to_eigenvalue_matrix(graph_list, num_eigenvalues = None):
 
 ### Resources ###
 
-[Full analysis notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1/sc-1-seriation-feature-engineering.ipynb) on NBViewer, from the Github repository.
+[Full analysis notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1-3/sc-1-seriation-feature-engineering.ipynb) on NBViewer, from the Github repository.
 
 Github Repository:  [experiment-seriation-classification](https://github.com/mmadsen/experiment-seriation-classification) 
 

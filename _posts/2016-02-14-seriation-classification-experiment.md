@@ -114,9 +114,9 @@ Accuracy on test for 15 neighbors: 0.788
 
 The full Github repository for this and related seriation classification experiments is:  [experiment-seriation-classification](https://github.com/mmadsen/experiment-seriation-classification)
 
-[Full iPython notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1/sc-1-seriation-classification-analysis.ipynb).
+[Full iPython notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1-3/sc-1-seriation-classification-analysis.ipynb).
 
-[Data Preparation Notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1/sc-1-eigenvalue-classification-dataprep.ipynb)
+[Data Preparation Notebook](http://nbviewer.jupyter.org/github/mmadsen/experiment-seriation-classification/blob/master/analysis/sc-1-3/sc-1-eigenvalue-classification-dataprep.ipynb)
 
 
 
