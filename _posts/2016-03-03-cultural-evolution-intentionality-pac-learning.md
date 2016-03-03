@@ -6,7 +6,7 @@ categories:
 - essays
 ---
 
-(__the following is a continuation and completion of a [post begun in 2013](http://notebook.madsenlab.org/cultural%20transmission/theory/essays/2013/06/13/gabora2013-response-notes.html)__)
+(__the following is a continuation and completion of a [post begun in 2013](http://notebook.madsenlab.org/cultural%20transmission/theory/essays/2013/06/13/gabora2013-response-notes.html), stimulated by a recent article by D.S. Wilson__)
 
 Among those who object to framing cultural evolution as a Darwinian theory, one of the most important reasons for objection is the evident importance of intentionality in human behavior (and among many animal species).  Liane Gabora has perhaps been one of the most persistent advocates that while culture evolves, it does so by mechanisms other than natural selection, since natural selection requires variation to be "random" [@Gabora2013a].
 
