@@ -15,6 +15,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2016-03-20-saa2016-paper-draft.md",
+			"settings":
+			{
+				"buffer_size": 2707,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-03-22-seriation-classification-next-steps.md",
+			"settings":
+			{
+				"buffer_size": 2852,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-03-22-evos-seminar-series-binghamton.md",
+			"settings":
+			{
+				"buffer_size": 1943,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2013-04-10-psu-talk-notes.md",
+			"settings":
+			{
+				"buffer_size": 8015,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -67,7 +99,9 @@
 	[
 		"/Users/mark/Dropbox/Research/websites/lnraw",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts"
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects",
+		"/Users/mark/Dropbox/Research/websites/lnraw/projects/structuredinfo"
 	],
 	"file_history":
 	[
@@ -244,8 +278,121 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2016-03-20-saa2016-paper-draft.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2255,
+								2281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2016-03-22-seriation-classification-next-steps.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2852,
+								2852
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2016-03-22-evos-seminar-series-binghamton.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1938,
+								1938
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/2013-04-10-psu-talk-notes.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
