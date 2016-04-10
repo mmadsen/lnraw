@@ -98,7 +98,7 @@ These are questions which arise when we describe the regional structure of socia
 1.  How does assemblage sample size in concert with innovation rates affect classification accuracy?   
 
 
-
+### References Cited ###
 
 
 
