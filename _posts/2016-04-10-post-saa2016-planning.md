@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: essay
 title: Research Priorities for 2016
 tags: [dissertation,research, cultural transmission, coarse graining, seriation]
 categories: 
+- essays
 - project:coarse grained model
 ---
 
