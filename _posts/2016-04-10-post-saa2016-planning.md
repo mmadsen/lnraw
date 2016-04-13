@@ -76,8 +76,7 @@ Of course, there is a small literature on polymorphic characters in seriation, b
 
 So really, various types of occurrence or character-state seriation are comparable to cladistics, as "macroevolutionary" methods, and frequency seriation is "mesoevolutionary" at a finer level of analysis.  
 
-There's also some good stuff to discuss in terms of synapomorphies in material culture, but that will have to wait since my flight is going below 10,000 feet....
-
+TODO:  discuss synapomorphies in cultural traits
 
 ### Continuity HBES Paper ###
 
