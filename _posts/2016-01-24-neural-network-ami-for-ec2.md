@@ -6,6 +6,10 @@ categories:
 - project:coarse grained model
 ---
 
+
+**UPDATE: 5-23-2016**:  I have updated the public AMI to upgrade various dependencies, and to add Open Grid Engine to facilitate parallel job execution on a multiple core or multiple instance cluster.  The NEW AMI is `ami-07f80f6a` with the name "Simulation-DNN-GridEngine Linux".  Thanks to Israel Malkin for pointing out that I hadn't made the new AMI public after creating it, that's now fixed.  
+
+
 ### AMI for Deep Neural Networks ###
 
 Given the increasing quality of libraries for building deep neural network architectures, I've been exploring whether DNNs can improve my accuracy in distinguishing between the empirical signatures of cultural transmission models.  I started out with Lasagne driving Theano, since Theano itself is pretty nuts and bolts and I occasionally find getting the right tensor shapes a bit baffling.  I quickly found Keras, which is another (and very well designed) wrapper around **both** TensorFlow and Theano, which also allows one to switch between backends.  Keras is designed for quick prototyping and research, which is perfect for this context.  
