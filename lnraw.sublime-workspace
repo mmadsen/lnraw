@@ -16,10 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2016-01-24-neural-network-ami-for-ec2.md",
+			"file": "_posts/2016-06-30-HBES-papers.md",
 			"settings":
 			{
-				"buffer_size": 3158,
+				"buffer_size": 947,
 				"line_ending": "Unix"
 			}
 		}
@@ -81,13 +81,14 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-24-neural-network-ami-for-ec2.md",
+		"/Users/mark/Dropbox/Research/websites/lnraw/bio.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-04-10-post-saa2016-planning.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-03-22-evos-seminar-series-binghamton.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-03-22-seriation-classification-next-steps.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-03-20-saa2016-paper-draft.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-04-07-saa-paper-slides.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-03-03-cultural-evolution-intentionality-pac-learning.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/bio.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/tools.html",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-02-14-seriation-classification-experiment.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-02-16-feature-engineering-seriation-classification.md",
@@ -101,7 +102,6 @@
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2015-07-07-new-directions-ct-computing.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-09-14-ctmixtures-cluster-setup.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2012-10-02-coarse-graining-history-ctmodels.md",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2016-01-24-neural-network-ami-for-ec2.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-28-more-temporal-networks-python.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-20-ctmixtures-analysis-gbm-next-steps.md",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_posts/2014-11-07-ctmixtures-analysis-randomforests.md",
@@ -259,19 +259,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2016-01-24-neural-network-ami-for-ec2.md",
+					"file": "_posts/2016-06-30-HBES-papers.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3158,
+						"buffer_size": 947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								616,
-								616
+								943,
+								943
 							]
 						],
 						"settings":
