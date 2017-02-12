@@ -9,6 +9,7 @@ jekyll-crosspost_to_medium:
   cache: .jekyll-crosspost_to_medium
   status: draft
   license: cc-40-by-nc-sa
+  text: '<p><i>This article was originally posted <a href=\"#{url}\" rel=\"canonical\">on Mark Madsen's Online Lab Notebook</a>.</i></p>'
   backdate: true 
 
 
