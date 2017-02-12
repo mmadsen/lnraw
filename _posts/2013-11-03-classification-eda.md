@@ -3,9 +3,9 @@ layout: post
 title: Classification Experiment - Exploratory Data Analysis
 tags: [cultural transmission, classification, coarse graining, simulation, ctpy, dissertation, experiments, experiment-classification]
 categories: 
-- project:coarse grained model
-- model:ctpy
-- experiment:experiment-classification
+- project-coarse grained model
+- model-ctpy
+- experiment-experiment-classification
 ---
 
 ### Data Storage ###

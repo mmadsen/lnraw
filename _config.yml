@@ -1,8 +1,16 @@
-gems: [jekyll-paginate, jekyll-feed, jekyll-archives]
+gems: [jekyll-paginate, jekyll-feed, jekyll-archives, jekyll-crosspost-to-medium]
 exclude: [ _posts/source ]
 highlighter: pygments
 safe: false
 paginate: 6
+
+jekyll-crosspost_to_medium:
+  enabled: true | false
+  cache: .jekyll-crosspost_to_medium
+  status: draft
+  license: cc-40-by-nc-sa
+  backdate: true 
+
 
 jekyll-archives:
   enabled: [categories,tags]

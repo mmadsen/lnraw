@@ -3,9 +3,9 @@ layout: post
 title: CTMixtures Experiment Design
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, experiments, experiment-ctmixture]
 categories: 
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Goals ###

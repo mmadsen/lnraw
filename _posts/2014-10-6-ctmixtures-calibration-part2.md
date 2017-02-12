@@ -3,16 +3,16 @@ layout: post
 title: CTMixtures Equifinality - Calibration Experiment and Conclusions
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories: 
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Excess Variation? ###
 
 About a week ago, I ran `equifinality-2-small`, which simulated 1000 samples from each of the 4 models.  I'm not sure what I think about the data.  A random forest classifier is clearly able to distinguish neutral from all biased models, given synchronic population statistics.  
 
-But there's so many variants in the population, even given the difference in per-locus versus whole trait set copying rules I [discussed in the previous note](/project:coarse%20grained%20model/model:ctmixtures/experiment:experiment-ctmixtures/2014/09/22/ctmixtures-model-calibration.html). 
+But there's so many variants in the population, even given the difference in per-locus versus whole trait set copying rules I [discussed in the previous note](/project-coarse%20grained%20model/model-ctmixtures/experiment-experiment-ctmixtures/2014/09/22/ctmixtures-model-calibration.html). 
 
 The distribution of Slatkin test values, when I use the raw per-locus values, those for the neutral models look well distributed (this is the distribution of outcomes from the "Chinese restaurant process", which is equivalent to the Ewens Sampling Formula).  
 
@@ -20,7 +20,7 @@ The distribution of Slatkin test values, when I use the raw per-locus values, th
 
 So this suggests that looking at summary statistics for the Slatkin values was misleading.  Perhaps the neutral model is functioning just fine. 
 
-And, which might be interesting from a research perspective, that intersecting traits and looking at the Slatkin tests of the configuration frequencies doesn't give you a uniform distribution of Slatkin test values even with a neutral model:
+And, which might be interesting from a research perspective, that intersecting traits and looking at the Slatkin tests of the configuration frequencies doesn't give you a uniform distribution of Slatkin test values even with a neutral model-
 
 ![Figure 2:  Slatkin exact test values for configurations of all dimensions/loci](/images/ctmixtures-eq2-config-slatkin.png)
 

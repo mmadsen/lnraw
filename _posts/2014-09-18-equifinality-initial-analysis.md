@@ -3,9 +3,9 @@ layout: post
 title: CTMixtures Equifinality Analysis - Initial Ideas
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories: 
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Rough Test 1:  Population Data ###

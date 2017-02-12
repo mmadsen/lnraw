@@ -3,9 +3,9 @@ layout: post
 title: CTMixtures Status for Batch Equifinality-1
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories: 
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### First Batch:  Equifinality-1 ###

@@ -3,7 +3,7 @@ layout: post
 title: Rough notes on structured information in CT models
 tags: [cultural transmission, structured information,dissertation, recipes]
 categories: 
-- project:structured information
+- project-structured information
 ---
 
 

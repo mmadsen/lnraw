@@ -3,9 +3,9 @@ layout: post
 title: Time Averaging and the CT Mixture Model
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, experiments, experiment-ctmixture]
 categories: 
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Adding Time Averaging to the CT Mixtures Model ###

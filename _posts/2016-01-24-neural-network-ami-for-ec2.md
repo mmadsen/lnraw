@@ -3,7 +3,7 @@ layout: post
 title: Amazon EC2 AMI for deep neural networks and classification problems
 tags: [experiments, computing, aws, ML, deep learning, HPC, classification]
 categories:
-- project:coarse grained model
+- project-coarse grained model
 ---
 
 

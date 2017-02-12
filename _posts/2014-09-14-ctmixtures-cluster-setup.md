@@ -3,9 +3,9 @@ layout: post
 title: CTMixtures Cluster Setup and Computing Environment
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture, ML, computational science, aws]
 categories: 
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Overview ###
@@ -116,7 +116,7 @@ Terminating the cluster removes the instances from your instance list, but in th
 When you have NO running instances, you should have no volumes associated with this cluster and image, but there should be a 10GB and 200GB snapshot which form part of the AMI itself.  These will be stored long-term but the cost is minimal.  
 
 
-**FOR PART 2, SEE [CTMixtures Experiment Configuration and Execution](/project:coarse%20grained%20model/model:ctmixtures/experiment:experiment-ctmixtures/2014/09/14/ctmixtures-job-execution.html)**
+**FOR PART 2, SEE [CTMixtures Experiment Configuration and Execution](/project-coarse%20grained%20model/model-ctmixtures/experiment-experiment-ctmixtures/2014/09/14/ctmixtures-job-execution.html)**
 
 
 

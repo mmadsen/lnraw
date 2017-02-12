@@ -3,9 +3,9 @@ layout: post
 title: TODO for Semantic Axelrod project
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod]
 categories: 
-- project:coarse grained model
-- model:axelrod-ct
-- experiment:experiment-semanticaxelrod
+- project-coarse grained model
+- model-axelrod-ct
+- experiment-experiment-semanticaxelrod
 ---
 
 ### Update ###

@@ -3,9 +3,9 @@ layout: post
 title: Classification Experiment Notes
 tags: [cultural transmission, classification, coarse graining, simulation, ctpy, dissertation, experiments, experiment-classification]
 categories: 
-- project:coarse grained model
-- model:ctpy
-- experiment:experiment-classification
+- project-coarse grained model
+- model-ctpy
+- experiment-experiment-classification
 ---
 ### Setup and Raw Simulations ###
 

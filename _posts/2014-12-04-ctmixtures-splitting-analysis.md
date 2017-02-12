@@ -3,9 +3,9 @@ layout: post
 title: CTMixtures Analysis -- Splitting the Analysis
 tags: [cultural transmission, time averaging, coarse graining, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories:
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Splitting the Analysis in Two ###

@@ -3,9 +3,9 @@ layout: post
 title: Experiment Plan for seriationct-1
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 Authors:  Mark E. Madsen and Carl P. Lipo

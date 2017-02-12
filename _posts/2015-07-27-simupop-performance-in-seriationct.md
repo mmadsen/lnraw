@@ -3,9 +3,9 @@ layout: post
 title: Performance of simuPOP in SeriationCT Across Platforms
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 ### Background ###

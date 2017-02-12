@@ -3,9 +3,9 @@ layout: post
 title: Classification in CTPy (Part 1)
 tags: [cultural transmission, classification, dissertation,coarse graining, simulation, ctpy]
 categories: 
-- project:coarse grained model
-- model:ctpy
-- experiment:experiment-classification
+- project-coarse grained model
+- model-ctpy
+- experiment-experiment-classification
 --- 
 
 ### Background ###

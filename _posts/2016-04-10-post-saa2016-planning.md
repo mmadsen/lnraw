@@ -4,7 +4,7 @@ title: Research Priorities for 2016
 tags: [dissertation,research, cultural transmission, coarse graining, seriation]
 categories: 
 - essays
-- project:coarse grained model
+- project-coarse grained model
 ---
 
 I am somewhat remiss in discussing research goals for the year, because of some family issues which have taken much of my time.  But I'm on a flight back from Orlando from the Society for American Archaeology annual meetings, and I've accumulated notes and ideas over the last three days about where my research stands and what my next steps are.  I also want to evaluate how I did 

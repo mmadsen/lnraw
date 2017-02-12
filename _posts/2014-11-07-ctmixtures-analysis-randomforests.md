@@ -3,14 +3,14 @@ layout: post
 title: CTMixtures Analysis -- Equifinality 3 Notes
 tags: [cultural transmission, time averaging, coarse graining, ML, simulation, dissertation, open science, reproducible science, experiments, experiment-ctmixture]
 categories:
-- project:coarse grained model
-- model:ctmixtures
-- experiment:experiment-ctmixtures
+- project-coarse grained model
+- model-ctmixtures
+- experiment-experiment-ctmixtures
 ---
 
 ### Equifinality-3 ###
 
-Given the results of [calibration experiments](/project:coarse%20grained%20model/model:ctmixtures/experiment:experiment-ctmixtures/2014/10/06/ctmixtures-calibration-part2.html), I ran 100,000 simulations (25K for each of four models), on a StarCluster of 4 instances, each with 16 vCPUs, for a total of 64 cores.  The time estimate was low by a bit, and the experimental run cost almost $500 instead of $300, which means I need better cost estimation.  
+Given the results of [calibration experiments](/project-coarse%20grained%20model/model-ctmixtures/experiment-experiment-ctmixtures/2014/10/06/ctmixtures-calibration-part2.html), I ran 100,000 simulations (25K for each of four models), on a StarCluster of 4 instances, each with 16 vCPUs, for a total of 64 cores.  The time estimate was low by a bit, and the experimental run cost almost $500 instead of $300, which means I need better cost estimation.  
 
 The raw data for `equifinality-3` are stored on [Amazon S3, here](https://madsen-dissertation.s3.amazonaws.com/), and the analysis, scripts, and paper on [Github, here](https://github.com/mmadsen/experiment-ctmixtures).
 

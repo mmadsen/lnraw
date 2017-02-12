@@ -3,9 +3,9 @@ layout: post
 title: Next Steps for Classifying Seriations to Temporal Network Models 
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, algorithms, ML]
 categories:
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriation-classification
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriation-classification
 ---
 
 ### Where Things Stand ###

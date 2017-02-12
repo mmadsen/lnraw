@@ -3,9 +3,9 @@ layout: post
 title: SeriationCT Next Steps
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 ### Network Models ###

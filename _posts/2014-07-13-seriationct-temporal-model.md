@@ -3,14 +3,14 @@ layout: post
 title: Temporal Networks in SeriationCT
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 ### Overview ###
 
-In my [description of the SeriationCT model](/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/06/17/seriationct-requirements.html), I refer to controlling the connections and interaction intensity between communities by a diachronic "regional interaction model."  This note formalizes the way I handle specifying such models, using one type of "temporal network" formalism [@holme2012temporal].  
+In my [description of the SeriationCT model](/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/06/17/seriationct-requirements.html), I refer to controlling the connections and interaction intensity between communities by a diachronic "regional interaction model."  This note formalizes the way I handle specifying such models, using one type of "temporal network" formalism [@holme2012temporal].  
 
 Two types of temporal network model are in general use today.  The first records the time at which events occur, where events are represented by the appearance and deletion of edges between vertices.  Such "instantaneous" temporal networks are useful for modeling time series data for events whose duration is small compared to the overall dynamics.  Examples include text messages between individuals or conversations at a party.  The second type of temporal network model (an "interval" network) records the pattern of vertices and edges over __intervals__.  During each interval, the adjacency matrix is assumed to be static, changing at specific time indices.  This type of model is represented by an integer-indexed sequence of full adjacency matrices, and is useful for representing an evolving situation or context upon which some __other__ dynamics plays out.  In other words, interval networks are perfect for representing ongoing CT in a more slowly changing context of local community formation, contact, isolation, and abandonment.  
 

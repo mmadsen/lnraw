@@ -3,9 +3,9 @@ layout: post
 title: Limits of model resolution for seriation classification 
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, algorithms, ML]
 categories:
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriation-classification
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriation-classification
 ---
 
 ### Model Resolution and Equifinality ###
@@ -26,7 +26,7 @@ My expectation going in was that the lineage splitting and coalescence models sh
 
 ### Initial SC-2 Analysis ###
 
-The analysis of `sc-2` followed the method used in the [second trial of `sc-1`](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriation-classification/2016/02/16/feature-engineering-seriation-classification.html), calculating the Laplacian eigenvalue spectrum of the final seriation solution graphs (specifically, the `minmax-by-weight` solutions for continuity seriation), and using the sorted eigenvalues as features for a gradient boosted classifier.  
+The analysis of `sc-2` followed the method used in the [second trial of `sc-1`](http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriation-classification/2016/02/16/feature-engineering-seriation-classification.html), calculating the Laplacian eigenvalue spectrum of the final seriation solution graphs (specifically, the `minmax-by-weight` solutions for continuity seriation), and using the sorted eigenvalues as features for a gradient boosted classifier.  
 
 The initial results seem indicative of real trouble telling these models apart.  For guidance, class labels are as follows:
 

@@ -3,20 +3,20 @@ layout: post
 title: Identifying Metapopulation Models from Simulated CT and Seriations 
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, algorithms, ML]
 categories:
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriation-classification
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriation-classification
 ---
 
 ### Background ###
 
-In a [previous note](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2016/01/26/quantifying-similarity-seriations.html), I described the problem of inferring the goodness of fit between a regional network model and the sampled output of cultural transmission on that regional network, as measured through seriations.  I am now ready with the simulation and inference code to start testing the spectral similarity metric I discussed in that note across pairs and sets of regional network models.  
+In a [previous note](http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2016/01/26/quantifying-similarity-seriations.html), I described the problem of inferring the goodness of fit between a regional network model and the sampled output of cultural transmission on that regional network, as measured through seriations.  I am now ready with the simulation and inference code to start testing the spectral similarity metric I discussed in that note across pairs and sets of regional network models.  
 
 Here, I describe the first such comparison.
 
 ### Experiment:  SC-1 ###
 
-SC-1 is a simple contrast between two regional network models.  A regional network model is a time-transgressive description of the interaction patterns that existed among a set of subpopulations, described by an "interval temporal network" representation (see [note 2](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/11/28/more-temporal-networks-python.html) and [note 1](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html) about the implementation of such models).  
+SC-1 is a simple contrast between two regional network models.  A regional network model is a time-transgressive description of the interaction patterns that existed among a set of subpopulations, described by an "interval temporal network" representation (see [note 2](http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/11/28/more-temporal-networks-python.html) and [note 1](http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html) about the implementation of such models).  
 
 Both models are composed of 10 time slices.
 
@@ -56,7 +56,7 @@ The [IDSS Seriation](https://github.com/clipo/idss-seriation) package is then us
 
 ### First Classification Attempt ###
 
-For a first classification attempt, I did a "leave one out" cross validation run, in which each seriation graph was sequentially deleted from the training set of 99 seriations (one lineage graph had issues with duplicate frequencies and became stuck in frequency seriation), and the distance from the hold-out target graph to all others calculated using [Laplacian spectral distance](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2016/01/26/quantifying-similarity-seriations.html).  The label of the target graph was then predicted as the majority vote of the 5 nearest neighboring graphs.  No attempt was made to tune the number of nearest neighbors using a second cross validation pass, but that will be the next experiment.
+For a first classification attempt, I did a "leave one out" cross validation run, in which each seriation graph was sequentially deleted from the training set of 99 seriations (one lineage graph had issues with duplicate frequencies and became stuck in frequency seriation), and the distance from the hold-out target graph to all others calculated using [Laplacian spectral distance](http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2016/01/26/quantifying-similarity-seriations.html).  The label of the target graph was then predicted as the majority vote of the 5 nearest neighboring graphs.  No attempt was made to tune the number of nearest neighbors using a second cross validation pass, but that will be the next experiment.
 
 In general, the ability to predict the label (network model) which gave rise to the target seriation graph is decent:  76.8%.  
 

@@ -3,9 +3,9 @@ layout: post
 title: Description of the SeriationCT Model
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 ### Overview ###
@@ -23,7 +23,7 @@ Formally, then, my goals are:
 ### Regional Interaction Models ###
 
 Interaction within a deme is assumed to be well-mixed, and in general given the 
-[effects of coarse graining on mixtures of social learning rules](/project:coarse%20grained%20model/model:ctmixtures/experiment:experiment-ctmixtures/2014/04/26/ct-mixture-experiment-design.html), transmission is modeled as unbiased copying.   
+[effects of coarse graining on mixtures of social learning rules](/project-coarse%20grained%20model/model-ctmixtures/experiment-experiment-ctmixtures/2014/04/26/ct-mixture-experiment-design.html), transmission is modeled as unbiased copying.   
 
 Interaction of individuals between demes occurs according to a diachronic model which specifies:
 
@@ -44,7 +44,7 @@ In this simple example, I show clusters of communities spread along a river (lik
 
 The red vertices represent a set of sampled assemblages which give us time-averaged trait information from the duration of occupation of each locality.  Note that we have some samples whose duration is mostly early, others mostly late, and one sample whose duration spans the entire sequence.  
 
-See [Note:  Temporal Networks in SeriationCT](/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/07/13/seriationct-temporal-model.html) for more details on exactly how the temporal network model represents this type of evolving regional interaction.
+See [Note:  Temporal Networks in SeriationCT](/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/07/13/seriationct-temporal-model.html) for more details on exactly how the temporal network model represents this type of evolving regional interaction.
 
 ### Sampling ###
 

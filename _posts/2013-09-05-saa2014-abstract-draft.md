@@ -3,9 +3,9 @@ layout: post
 title: SAA 2014 Abstract Draft
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiment-semanticaxelrod, blogarch]
 categories: 
-- project:structured information
-- model:axelrod-ct
-- experiment:experiment-semanticaxelrod
+- project-structured information
+- model-axelrod-ct
+- experiment-experiment-semanticaxelrod
 ---
 
 ### Paper Title ###

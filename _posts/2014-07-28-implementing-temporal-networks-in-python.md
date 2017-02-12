@@ -3,14 +3,14 @@ layout: post
 title: Implementing temporal networks in Python
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, temporal network]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 ### Overview ###
 
-The goal here is to prototype a smooth and efficient way of evolving a `NetworkX` graph object, given a more compact specification of a "interval" temporal network, as discussed in [Temporal Networks in SeriationCT](/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/07/13/seriationct-temporal-model.html).  
+The goal here is to prototype a smooth and efficient way of evolving a `NetworkX` graph object, given a more compact specification of a "interval" temporal network, as discussed in [Temporal Networks in SeriationCT](/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/07/13/seriationct-temporal-model.html).  
 
 In the following, I assume either that a compact configuration, or a random network generating process (NGP), produces a sequence of `numpy` matrices which are indexed by a time coordinate.  The task, then, is to examine differences in the sequence of matrices, and produce corresponding changes to a `NetworkX` graph object, without simply destroying and reformulating the graph object.  
 

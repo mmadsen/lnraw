@@ -3,14 +3,14 @@ layout: post
 title: Implementing temporal networks in Python, Part 2
 tags: [cultural transmission, coarse graining, simulation, ML, dissertation, seriation, temporal network]
 categories: 
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriationct
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriationct
 ---
 
 ### Overview ###
 
-In [Part 1](/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html) (a few months back), I started making notes about implementing "interval" style temporal networks in Python, using NumPy and NetworkX.  This note continues that thinking, as Carl and I begin serious work on the [SeriationCT](https://github.com/mmadsen/seriationct) for our SAA paper in San Francisco.  
+In [Part 1](/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html) (a few months back), I started making notes about implementing "interval" style temporal networks in Python, using NumPy and NetworkX.  This note continues that thinking, as Carl and I begin serious work on the [SeriationCT](https://github.com/mmadsen/seriationct) for our SAA paper in San Francisco.  
 
 The goal is to use interval temporal networks ("ITN") as a representation for the history of cultural transmission intensity (or "regional transmission model" or "RTM") between a shifting set of nucleated communities in a region, where:
 

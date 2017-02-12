@@ -3,7 +3,7 @@ layout: essay
 title: CT Models Incorporating Artifacts and the Record Via Tuple Spaces
 tags: [transmissionframework, simulation, niche construction, tuplespace models, open problems]
 categories:
-- project:niche construction
+- project-niche construction
 - essays
 - open problems
 ---

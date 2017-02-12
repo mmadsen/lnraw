@@ -3,9 +3,9 @@ layout: post
 title: Loss Functions for ABC Model Selection with Seriation Graphs as Data
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, algorithms, ML, ABC]
 categories:
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriation-classification
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriation-classification
 ---
 
 ### Background ###
@@ -24,7 +24,7 @@ Frequently, one assemblage or data point will occur in multiple solutions, and w
 
 My current research is aimed at developing ways of treating IDSS seriation solution graphs as data points in machine learning algorithms, with the goal of fitting coarse grained, regional models of cultural transmission and information diffusion to our data.  Seriations are the perfect tool for capturing regional-scale social influences that are time-transgressive.  
 
-There are several challenges in this work.  The first, which is described in a [previous post](http://localhost:4000/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriationct/2014/06/17/seriationct-requirements.html) is to create regional metapopulation models with cultural transmission that yield seriations, rather than just type or variant frequencies, as their observable output.  
+There are several challenges in this work.  The first, which is described in a [previous post](http://localhost:4000/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/06/17/seriationct-requirements.html) is to create regional metapopulation models with cultural transmission that yield seriations, rather than just type or variant frequencies, as their observable output.  
 
 The second challenge is then to find an inferential framework for model selection which allows one to measure the goodness-of-fit between the theoretical model's output, and specific empirical seriations like Figure 1.  
 

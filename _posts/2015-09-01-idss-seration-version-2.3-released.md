@@ -3,7 +3,7 @@ layout: post
 title: IDSS Seriation Software Version 2.3 released
 tags: [cultural transmission, coarse graining, seriation]
 categories: 
-- project:coarse grained model
+- project-coarse grained model
 ---
 
 Today, Carl Lipo and I released [Version 2.3](https://github.com/clipo/idss-seriation/releases/tag/v2.3) of our [IDSS seriation software](https://github.com/clipo/idss-seriation), described in our [recent PLoS One article](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124942).  

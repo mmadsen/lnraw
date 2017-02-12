@@ -3,14 +3,14 @@ layout: post
 title: Feature Engineering for Seriation Classification 
 tags: [cultural transmission, coarse graining, simulation, dissertation, seriation, algorithms, ML]
 categories:
-- project:coarse grained model
-- model:seriationct
-- experiment:experiment-seriation-classification
+- project-coarse grained model
+- model-seriationct
+- experiment-experiment-seriation-classification
 ---
 
 ### Feature Engineering ###
 
-In my [previous note](http://notebook.madsenlab.org/project:coarse%20grained%20model/model:seriationct/experiment:experiment-seriation-classification/2016/02/14/seriation-classification-experiment.html), I used the graph spectral distance (i.e., the euclidean distance between Laplacian eigenvalue spectra from two seriation solutions) in a kNN classifer to predict which regional network model generated a seriation graph.  This achieved accuracy around 80% with 3 nearest neighbors.  
+In my [previous note](http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriation-classification/2016/02/14/seriation-classification-experiment.html), I used the graph spectral distance (i.e., the euclidean distance between Laplacian eigenvalue spectra from two seriation solutions) in a kNN classifer to predict which regional network model generated a seriation graph.  This achieved accuracy around 80% with 3 nearest neighbors.  
 
 Doing better meant changing approaches, and giving the classifier a larger space within which to draw decision boundaries.  My first thought was to not reduce the Laplacian spectrum to distances, but instead of use the spectra themselves as numeric features.  This would require that, say, column 1 represented the largest eigenvalue in each graph's spectrum, column 2 the second largest, etc, which is easily accomplished.  
 

@@ -3,9 +3,9 @@ layout: post
 title: Issues with Tree Structured Axelrod
 tags: [SAA2014, axelrod model, structured information, cultural transmission, dissertation,experiments,  experiment-semanticaxelrod]
 categories: 
-- project:structured information
-- model:axelrod-ct
-- experiment:experiment-semanticaxelrod
+- project-structured information
+- model-axelrod-ct
+- experiment-experiment-semanticaxelrod
 ---
 
 ### Issues ###
@@ -18,7 +18,7 @@ Currently, the tree structured model is implemented as follows:
 1.  Each trait tree has identical branching factor and depth (for the moment)
 1.  Individuals are initialized with random traits and their prereqs in the tree
 
-Given this infrastructure, the copying rule is a modification of the extensible model:
+Given this infrastructure, the copying rule is a modification of the extensible model-
 
 ```python
 f = getRandomAgent()
