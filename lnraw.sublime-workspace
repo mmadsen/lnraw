@@ -22,6 +22,14 @@
 				"buffer_size": 947,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "publications.html",
+			"settings":
+			{
+				"buffer_size": 817,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -75,7 +83,6 @@
 	[
 		"/Users/mark/Dropbox/Research/websites/lnraw",
 		"/Users/mark/Dropbox/Research/websites/lnraw/_drafts",
-		"/Users/mark/Dropbox/Research/websites/lnraw/_posts",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects",
 		"/Users/mark/Dropbox/Research/websites/lnraw/projects/structuredinfo"
 	],
@@ -254,7 +261,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -270,13 +277,41 @@
 						"selection":
 						[
 							[
-								943,
-								943
+								947,
+								947
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "publications.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
