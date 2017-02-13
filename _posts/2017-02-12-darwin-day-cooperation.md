@@ -1,10 +1,10 @@
 ---
 layout: essay
+crosspost_to_medium: true
 title: The Key Role of Cooperation in Evolution and Political Economy
 tags: [evolutionary theory, cooperation, economics, political economy, darwin day]
 categories: 
 - essays
-crosspost_to_medium: true
 ---
 
 Darwin's birthday is a good opportunity to reflect on the larger significance of evolutionary thinking in our common life.  This is especially important as we head into a period of history in which competition and the "war of nature" appear poised to replace communal action and empathy for the plight of those our politics leaves behind.  Our national discussions over immigration, race, and the rising distrust of the "other" by much of white America highlight this shift, but no less significant is a decades-long trend to replace the New Deal consensus on economic fairness, common infrastructure, and political equality with the individualist, anti-cooperative rhetoric of libertarian and conservative economists and politicians.  

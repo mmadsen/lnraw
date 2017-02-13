@@ -4,15 +4,6 @@ highlighter: pygments
 safe: false
 paginate: 6
 
-jekyll-crosspost_to_medium:
-  enabled: true | false
-  cache: .jekyll-crosspost_to_medium
-  status: draft
-  license: cc-40-by-nc-sa
-  text: '<p><i>This article was originally posted <a href=\"#{url}\" rel=\"canonical\">on Mark Madsen's Online Lab Notebook</a>.</i></p>'
-  backdate: true 
-
-
 jekyll-archives:
   enabled: [categories,tags]
   layout: 'tag_page'
@@ -23,6 +14,9 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
+jekyll-crosspost-to-medium:
+  enabled: true
+  status: draft
 
 scholar:
   style: apa
