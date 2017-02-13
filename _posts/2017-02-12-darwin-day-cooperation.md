@@ -41,5 +41,5 @@ It seems appropriate to close by quoting a slightly later Darwin, in his 1871 bo
 
 > There can be no doubt that the tribe including many members who are always ready to give aid to each other, and to sacrifice themselves for the common good, would be victorious over other tribes. And this would be natural selection.
 
-Happy Darwin Day!
+Happy Darwin Day!   
 
