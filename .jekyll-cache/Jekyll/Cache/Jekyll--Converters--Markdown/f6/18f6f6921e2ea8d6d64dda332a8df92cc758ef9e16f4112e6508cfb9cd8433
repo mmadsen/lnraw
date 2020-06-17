@@ -1,0 +1,67 @@
+I"% <h3 id="rough-test-1-population-data">Rough Test 1: Population Data</h3>
+<p>I’m not finished with the data export program yet, working out how to flatten multiple loci and other list/nested data structures. This is particularly important since some elements are measured only once (e.g., configurations or classes) while others are measured on a per-locus basis. At the same time, there’s an element of feature selection and engineering occurring, which is happening via a trial random forest classification.</p>
+<p>The population census data are fairly easy and finite, so I’ve already got them exported with an initial cut at the program, with the following predictors for the four model class labels:</p>
+<ul>
+<li>Slatkin exact test for the configuration or class counts in the population census</li>
+<li>Number of configurations in the population at sample time</li>
+<li>Per-locus Shannon entropy of trait frequencies</li>
+<li>Per-locus IQV diversity of trait frequencies</li>
+<li>Per-locus richness of traits</li>
+<li>Kandler-Shennan traits surviving after 50 generations</li>
+</ul>
+<p>A very quick random forest fit on 80% of the data as training data (with typical classification values) shows that there’s a lot of error correctly classifying data points, and thus good hints of equifinality.</p>
+<pre><code>Call:
+ randomForest(formula = factor(model_class_label) ~ ., data = train,      ntree = 1000, nodesize = 1, mtry = 3) 
+               Type of random forest: classification
+                     Number of trees: 1000
+No. of variables tried at each split: 3
+
+        OOB estimate of  error rate: 48.24%
+Confusion matrix:
+             allneutral mixantidom mixconfdom mixconfequal class.error
+allneutral        27560       1515       1986         1014   0.1407638
+mixantidom         1659      14881       6724         8700   0.5344450
+mixconfdom         2006       7925      13822         8173   0.5670613
+mixconfequal       1665      10860       9526         9984   0.6883409</code></pre>
+<p>Prediction error on the remaining 20% of the data is 0.516. But there’s an interesting pattern here, and some issues with the data export.</p>
+<p>First, it doesn’t seem nearly as hard to tell neutral models from biased models, as it is to tell different bias models apart, as you’d expect. Perhaps this should be the expectation given synchronic population census. We’ll see how this plays out in synchronic sampled data, and of course TA and sampled data. But I should also do a binary classification, lumping the bias models together, and simply predicting neutral vs. bias.</p>
+<p>But second, some of the values are repeated in each row, since a row represents a locus, not a simulation run. I should do further feature engineering and have only one row per simulation run in the data export, and use variables like min/max/median richness, entropy, etc. This will apply to all multilocus data.</p>
+<h3 id="rough-test-2-more-variables-and">Rough Test 2: More Variables and</h3>
+<p>I recoded the export script, and stopped exploding each locus into a data row. Instead, for each primary predictor, I calculate min and max (e.g., min richness and max richness) across the number of loci present. For a single locus simulation, obviously these will be the same value and we’d only use one of the two predictors and relabel them, but in <code>equifinality-1</code> we have 4 loci.</p>
+<p>The random forest improves a little bit, but the overall pattern still looks the same.</p>
+<p>But, the neutral data are worrying me. In <code>equifinality-1</code> I used the “all loci” copying rule, and I’m also turning the single scaled innovation rate into a per-locus innovation rate. I think there’s an issue here somewhere. Granted, with the Moran dynamics, I can’t expect that the expected number of alleles will exactly match the Wright Fisher dynamics, but the observed numbers seem high. Also, the distribution of Slatkin rest results seems skewed.<br />
+<img src="/images/ctmixtures-equifinality-neutral.png" alt="equifinality-1 slatkin configuration distribution" /></p>
+<p>We have many different innovation rates represented here, but still, there should be many more values towards the center.</p>
+<p>I’m wondering about several possible sources of issues before I go any further:</p>
+<ol type="1">
+<li>Is the innovation rate algorithm working properly?</li>
+<li>Is the all-locus copying the way to go?</li>
+</ol>
+<p>The distribution of theta values looks good, when I did a histogram.</p>
+<h3 id="analysis-code">Analysis Code</h3>
+<p>The short script I used for the explorations here:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">library</span>(randomForest)</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">library</span>(miscTools)</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4">df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;~/local-research/diss/experiments/experiment-ctmixtures/equifinality-population-data.csv&quot;</span>, <span class="dt">header=</span>T)</a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co"># we don&#39;t want to treat the sim run ID as one of the predictors...</span></a>
+<a class="sourceLine" id="cb2-6" title="6">drops &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;simulation_run_id&#39;</span>)</a>
+<a class="sourceLine" id="cb2-7" title="7">dataset &lt;-<span class="st"> </span>df[,<span class="op">!</span>(<span class="kw">names</span>(df) <span class="op">%in%</span><span class="st"> </span>drops)]</a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="co"># shuffle the data frame row-wise so that we can randomly sample test and training data from it</span></a>
+<a class="sourceLine" id="cb2-10" title="10">shuffled_df &lt;-<span class="st"> </span>dataset[<span class="kw">sample</span>(<span class="kw">nrow</span>(dataset)),]</a>
+<a class="sourceLine" id="cb2-11" title="11">indexes =<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(shuffled_df), <span class="dt">size=</span><span class="fl">0.2</span><span class="op">*</span><span class="kw">nrow</span>(shuffled_df))</a>
+<a class="sourceLine" id="cb2-12" title="12">test =<span class="st"> </span>shuffled_df[indexes,]</a>
+<a class="sourceLine" id="cb2-13" title="13">train =<span class="st"> </span>shuffled_df[<span class="op">-</span>indexes,]</a>
+<a class="sourceLine" id="cb2-14" title="14"></a>
+<a class="sourceLine" id="cb2-15" title="15"></a>
+<a class="sourceLine" id="cb2-16" title="16">fit &lt;-<span class="st"> </span><span class="kw">randomForest</span>(<span class="kw">factor</span>(model_class_label) <span class="op">~</span><span class="st"> </span>., <span class="dt">data=</span>train, <span class="dt">ntree=</span><span class="dv">1000</span>, <span class="dt">nodesize =</span> <span class="dv">1</span>, <span class="dt">mtry=</span><span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb2-17" title="17"><span class="kw">print</span>(fit)</a>
+<a class="sourceLine" id="cb2-18" title="18"><span class="co">#varImpPlot(fit)</span></a>
+<a class="sourceLine" id="cb2-19" title="19"></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="co"># evaluate on test data</span></a>
+<a class="sourceLine" id="cb2-21" title="21"><span class="kw">table</span>(test<span class="op">$</span>model_class_label, <span class="kw">predict</span>(fit, test[<span class="kw">names</span>(shuffled_df)]))</a>
+<a class="sourceLine" id="cb2-22" title="22"></a>
+<a class="sourceLine" id="cb2-23" title="23"><span class="co"># test error</span></a>
+<a class="sourceLine" id="cb2-24" title="24"><span class="kw">sum</span>(test<span class="op">$</span>model_class_label<span class="op">==</span><span class="kw">predict</span>(fit, test[<span class="kw">names</span>(shuffled_df)])) <span class="op">/</span><span class="st"> </span><span class="kw">nrow</span>(test)</a></code></pre></div>
+:ET

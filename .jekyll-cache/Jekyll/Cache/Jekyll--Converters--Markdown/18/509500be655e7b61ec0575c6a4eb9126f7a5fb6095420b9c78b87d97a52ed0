@@ -1,0 +1,88 @@
+I"<p><a href="http://simplystatistics.org/unconference/">Simply Statistics - FOS Unconference</a></p>
+<h3 id="hadley-wickham">Hadley Wickham</h3>
+<ul>
+<li>Future of statistical software</li>
+<li>What should statistical software do?</li>
+<li>questions and data lead to tidying</li>
+<li>then cycle between munge, visualize, model</li>
+<li>every real analysis iterates through the cycle</li>
+</ul>
+<p>Where are the bottlenecks?</p>
+<ul>
+<li><p>Cognitive</p></li>
+<li><p>Computational</p></li>
+<li><p>Small data = cognition time <span class="math inline">\(\gg\)</span> computation time</p></li>
+<li><p>Big data = computation time <span class="math inline">\(\gg\)</span> cognitive time</p></li>
+</ul>
+<p>Most software optimized for cognitive or computational challenges. Can we have both?</p>
+<p>Current projects:</p>
+<ul>
+<li>dplyr</li>
+<li>ggvis</li>
+</ul>
+<p>Future Directions:</p>
+<ul>
+<li>PDF moving to HTML</li>
+<li>Latex to markdown</li>
+<li>static to interactive</li>
+<li>Openness: open source, science, research</li>
+<li>R repositories on Github - over 6K, only about 2K packages</li>
+</ul>
+<h3 id="daniela-witten">Daniela Witten</h3>
+<p>UW Biostatistics</p>
+<p>One huge area of growth is development of statistical machine learning for large data sets.<br />
+Last 10 years, very good at making predictions based upon data.</p>
+<p>Frontier is moving to inference from prediction. We’re good at saying, “based on what you buy, we predict you’ll buy X”. But asking, “how certain are we that you’ll buy X?” is inference.</p>
+<p>Sometimes we don’t care about inference, but often we do want confidence intervals, we might want to understand underlying relationships.</p>
+<p>Inference methods for machine learning is under developed. Why is it hard? Inference is pretty basic in statistics.</p>
+<p>For example, the lasso is very useful for regression for predictions in high dimensional problems with more variables than observations. We only sort of understand the theory behind the lasso. But the basic question about p-values and conf intervals for the variables selected by the lasso is unknown. Just scratching the surface.</p>
+<h3 id="joe-blitzstein">Joe Blitzstein</h3>
+<p>Undergrad probability: too many classes where it’s taught like a calculus class. problems are out of context, and we need people to understand the core of probability and how to look at the world probabilistically. Emphasize the stories behind the famous distributions - what problems stimulated their development?</p>
+<p>More integration with computer science in the education process. Teaching data science</p>
+<p>Stat110.net - good examples of problems online. CS109.org - co taught at Harvard with Hans-Peter, whole cycle Hadley talked about</p>
+<p>Graduate: do we need a full year of measure theory? no. but you need some measure theory. we need more of the parts of math that are about “seeing structure,” less about proving edge cases – let mathematicians themselves do that. More emphasis on matrices, and the major distributions, and how they’re connected. Hoping that the reconcilation between frequentists and bayesians continues. We can be both – compatibilists. Good arguments for using both perspectives.</p>
+<h3 id="hongkai-ji">Hongkai Ji</h3>
+<p>Future of statistics in biology</p>
+<p>Biological sciences played huge role in shaping the history of statistics. Fisher - ANOVA and design of experiments came from agriculture and genetics (Wright).</p>
+<p>Similarly, high dimensional data in genomics is driving lots of method development today. Real scientific problems stimulate statistical theory and method development. But methods also feed back, and we can address new problems because of them.</p>
+<p>Trends - rapid devel of high throughput tech, often leads to a wave of new methods as the capacity increases. 20 years ago, microarrays, now, next-gen sequencing.</p>
+<p>Vast amounts of data publicly avail - GEO: more than 1MM samples. ENCODE, cancer genomic atlas, roadmap of epigenomics, etc.</p>
+<p>Natural question - can we use these data? Can we do things that people previously could not do?</p>
+<p>Human genome - about 1400 TF’s, each controls 100s to 10K’s of other genes.<br />
+Current tech - study single TF’s at a time. But we need to study all TF’s at a time.<br />
+Network is dynamic, changes from cell type to cell type Thousands of cell types and across time points</p>
+<p>But can we do this via analytics?<br />
+cross data type predictions both predictors and outcome variables are high dimensional</p>
+<p>Histone modfication and TF binding Expression and TF binding Expression and DNA methylation</p>
+<h3 id="sinan-aral">Sinan Aral</h3>
+<p>MIT Sloan</p>
+<p>Importance of causal inference</p>
+<p>We now have timestamped granular observations of human behavior</p>
+<p>Need to focus on experimental controls. Prediction is incredibly valuable.</p>
+<p>But we need causal inference – what will happen if we intervene?</p>
+<p>Milgram etc ran experiments on hundreds of people. We can do it on millions, hundreds of millions.</p>
+<p>the advantage of scale over smaller experiments - treatment of heterogeneity, not just main treatment effects. We can estimate treatment effects across heterogenous classes with good power. Enables us to develop personalized or tailored policies. Average treatment effects allow blanket policies. Heterogeneity allows us to target policy differently to different people.</p>
+<p>And scale allows us to understand causal mechanisms – why does an intervention work?</p>
+<p>Scale allows us to pick up subtle but important effects - not just big obvious ones.</p>
+<p>Challenges - bias here on network data given his own work.</p>
+<p>Data are not IID. All the data we thought were IID, aren’t. At least with human data sets. No such thing as independence. Methods for dealing with non-IID data, robustly, at scale, are incredibly important. Some models deal well with interdependent data, but not at scale.</p>
+<p>Sampling - recruitment strategies for large-scale experiments. How do you avoid selection bias? Respondent driven sampling creates biases.</p>
+<p>Interference - treated nodes connected to nontreated nodes via complex network structures. Treatments interfere with one another - hard to “separate” treatment groups. A couple of approaches - design strategies, inference strategies. Exposure models - base inference on the exposure model, but you have to assume that the exposure model is correct, and testing it is hard.</p>
+<h3 id="hilary-mason">Hilary Mason</h3>
+<p>Business and statistics</p>
+<ul>
+<li>data scientists can do statistics</li>
+<li>data scientists can write code - ranging from tidying real world data to building production systems</li>
+<li>data scientists interpret business problems and tell stories from data so that original business problem is answerable to biz consumers without the analysis and stats themselves.</li>
+</ul>
+<p>Harlan Harrison - what people do</p>
+<ul>
+<li>Business analytics - more realtime version of traditional BI</li>
+<li>Products - tons of things like predictions, recommender systems (doesn’t think we’re as good at predictions as some of the speakers claim)</li>
+<li>Research enabling new capabilities - using tech and data, what new opportunities can we open up?<br />
+Need tools not just for stats or data scientists, but for business folks. most data are still analyzed in Excel. Like to see a similar set of tools but with robust data analysis to all jobs.</li>
+</ul>
+<p>Bit.ly - most analysis in python, rewrote in python, rewrite again in C or Go, wait until it breaks, fix, redeploy. Need to develop ways to implement algorithms in ways that we don’t have to keep reimplementing all the time.</p>
+<h3 id="questions">Questions</h3>
+<p>How to teach reproducible research to undergraduates? Hadley - Rpubs and Rmarkdown for homework make it easy. Easier than doing homework by hand, actually.</p>
+:ET

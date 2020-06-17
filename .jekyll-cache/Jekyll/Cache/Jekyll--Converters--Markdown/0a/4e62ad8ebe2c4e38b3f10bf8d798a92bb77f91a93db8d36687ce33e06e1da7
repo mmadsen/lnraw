@@ -1,0 +1,42 @@
+I"9<h3 id="what-is-an-experiment-template">What is an “Experiment Template”?</h3>
+<p>In an effort to render the analysis of simulation results more easily reproducible, I’ve been evolving a standard directory structure and various scripts for standardizing the way data are cleaned, imported, and analyzed. In addition, the template includes a paper manuscript and directory for presentations.</p>
+<p>My current template is <a href="https://github.com/mmadsen/experiment-template">available on Github</a>.</p>
+<h3 id="why-use-a-template">Why Use a Template?</h3>
+<p>An experiment template like this serves a couple of purposes:</p>
+<ol type="1">
+<li>Allowing anyone a way to repeat a data analysis easily</li>
+<li>Allowing ME a way to repeat an analysis, while making controlled changes (e.g., while writing a paper, I might need a different visualization or additional statistics)</li>
+<li>The template also allows me to carry over tools and best practices between experiments, and not reinvent the wheel. My work becomes more efficient as the tools and scripts accumulate</li>
+</ol>
+<h3 id="how-i-use-the-template">How I Use the Template</h3>
+<p>To start a new experiment, I do the following:</p>
+<ol type="1">
+<li>Clone the Github repository into a location where you want to do your work</li>
+<li>Change the name of the directory to whatever you like (e.g., “experiment1”)</li>
+<li>Inside the new experiment directory, delete the <code>.git</code> subdirectory to cut the link to the original Github repository: <code>rm -rf .git</code></li>
+<li>Add the experiment directory to whatever version control system you’re using. If you’re staying with Git, you’d just do <code>git init</code>.</li>
+</ol>
+<p>At this point, I can start working. I do these steps <strong>after</strong> I’ve written and tested the simulation software I’m going to be using, but <strong>before</strong> I’ve done any of the simulation runs for the experiment.</p>
+<p>An experiment then proceeds roughly like this (possibly with some returns through various steps):</p>
+<ol type="1">
+<li>Build configurations for the simulation runs I want to do, putting these in the <code>simulations</code> directory. In this directory are also an evolving set of scripts for starting EC2 instances, and checking the progress of simulation runs running on these instances.</li>
+<li>Perform simulation runs</li>
+<li>Export raw data from all the simulation runs. Copy the raw data to suitable file formats (e.g., CSV) in the <code>analysis/data</code> directory, if you can.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If not, copy the raw data to another local directory, outside the experiment, and then archive it somewhere accessible, like an S3 bucket, in order to provide open access.<br />
+</li>
+<li>Perform data cleaning and preparation, putting all of these steps into scripts stored in <code>analysis</code>. If you do these steps in R, there is already a script in this directory you can extend or change. I often do some steps in Python, some in Apache Pig (particularly if I’m summarizing and merging many large raw data files), and then I do the last preparation steps in R to produce a “clean” data set for analysis.<br />
+</li>
+<li>Perform data analysis. I tend to do all of my analyses as RMarkdown documents, so that I have analysis and explanation of the analysis in a single file. Graphics are saved to PDF files in the <code>analysis/figure</code> directory.</li>
+</ol>
+<p>I should note that the <code>analysis.Rmd</code> file that contains R analyses is <strong>not</strong> a paper. The text portions of this file are notes about the analysis and my thinking.</p>
+<p>At points in the analysis, I might need to test an idea or generate some ideas about how to approach something. Sometimes I might noodle around in iPython notebooks, or Mathematica. If these activities are not part of the analysis chain itself, I put such materials in the <code>explorations</code> directory. Sometimes this directory has nothing in it. Sometimes it’s full of little Mathematica notebooks or R files. An example of something that might go in this directory are calculations for how many simulation runs I might need to do, or calculations for how large a graph or tree I can work with before the simulation runs out of memory. These examples are crucial to the experiment, but not the chain of calculations that turns data into final statistics and graphs. But it’s useful and important to keep track of them, so they stay with the data and analysis and are version controlled.</p>
+<p>Once I’m ready to write up the experiment, I start working on an outline for the paper in the <code>outline</code> directory, and the paper itself in the <code>paper</code> directory.</p>
+<h3 id="making-it-your-own">Making It Your Own</h3>
+<p>In the <code>paper</code> directory, my name and contact information exists in the <code>xelatex-template.tex</code> file. If you’re going to use the existing paper system, turning RMarkdown into a PDF, you should edit that file and change the title, author, and contact information. Otherwise you don’t need to touch that file. There is also my name and information in the <code>outline</code> directory in <code>outline.tex</code>.</p>
+<h3 id="references-cited">References Cited</h3>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Github doesn’t allow files bigger than 100MB, or repositories larger than 1GB. Raw data from many simulation runs are often larger than this.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+</ol>
+</section>
+:ET

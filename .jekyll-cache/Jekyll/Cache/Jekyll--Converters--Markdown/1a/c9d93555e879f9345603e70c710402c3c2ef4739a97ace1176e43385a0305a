@@ -1,0 +1,60 @@
+I"h"<h3 id="excess-variation">Excess Variation?</h3>
+<p>About a week ago, I ran <code>equifinality-2-small</code>, which simulated 1000 samples from each of the 4 models. I’m not sure what I think about the data. A random forest classifier is clearly able to distinguish neutral from all biased models, given synchronic population statistics.</p>
+<p>But there’s so many variants in the population, even given the difference in per-locus versus whole trait set copying rules I <a href="/project-coarse%20grained%20model/model-ctmixtures/experiment-experiment-ctmixtures/2014/09/22/ctmixtures-model-calibration.html">discussed in the previous note</a>.</p>
+<p>The distribution of Slatkin test values, when I use the raw per-locus values, those for the neutral models look well distributed (this is the distribution of outcomes from the “Chinese restaurant process”, which is equivalent to the Ewens Sampling Formula).</p>
+<figure>
+<img src="/images/ctmixtures-eq2-slatkin-neutral.png" alt="Figure 1: Slatkin exact test values per dimension/locus" /><figcaption>Figure 1: Slatkin exact test values per dimension/locus</figcaption>
+</figure>
+<p>So this suggests that looking at summary statistics for the Slatkin values was misleading. Perhaps the neutral model is functioning just fine.</p>
+<p>And, which might be interesting from a research perspective, that intersecting traits and looking at the Slatkin tests of the configuration frequencies doesn’t give you a uniform distribution of Slatkin test values even with a neutral model-</p>
+<figure>
+<img src="/images/ctmixtures-eq2-config-slatkin.png" alt="Figure 2: Slatkin exact test values for configurations of all dimensions/loci" /><figcaption>Figure 2: Slatkin exact test values for configurations of all dimensions/loci</figcaption>
+</figure>
+<p>I also looked at the per-locus richness values, not the mean/min/max summaries, but just the raw richness values. My package library <a href="https://github.com/mmadsen/mmadsenr">mmadsenr</a> has a function for applying Equation 4 from Ewens <span class="citation" data-cites="ewens1972sampling">(1972)</span>. We can compare the expected number of traits given the Wright-Fisher infinite alleles model (which will differ from the Moran model by a small factor), to the simulated samples, with the following R code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># pull in the per-locus richness data, this can be compared to Ewens 1972, equation 4</span></a>
+<a class="sourceLine" id="cb1-2" title="2">eq2s.rich &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="dt">file=</span><span class="st">&quot;eq2s-pop-richness-locus-data.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3">eq2s.rich.neutral &lt;-<span class="st"> </span><span class="kw">filter</span>(eq2.rich, model_class_label <span class="op">==</span><span class="st"> &#39;allneutral&#39;</span>)</a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5">popsize &lt;-<span class="st"> </span><span class="dv">100</span></a>
+<a class="sourceLine" id="cb1-6" title="6">innov_rates_for_abline &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">1.0</span>, <span class="fl">2.0</span>, <span class="fl">3.0</span>, <span class="fl">4.0</span>, <span class="fl">5.0</span>)</a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co"># expected K for innovation rates</span></a>
+<a class="sourceLine" id="cb1-8" title="8">expected_k &lt;-<span class="st"> </span><span class="kw">numeric</span>(<span class="kw">length</span>(innov_rates_for_abline))</a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(innov_rates_for_abline)) { expected_k[i] &lt;-<span class="st"> </span><span class="kw">expected_k_pop</span>(popsize, innov_rates_for_abline[i])}</a>
+<a class="sourceLine" id="cb1-10" title="10">expected_k_abline &lt;-<span class="st"> </span><span class="kw">data.frame</span>(innov_rates_for_abline, expected_k)</a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="co"># plot</span></a>
+<a class="sourceLine" id="cb1-13" title="13">plt &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data=</span>eq2s.rich.neutral, <span class="kw">aes</span>(<span class="dt">x=</span>innovation_rate, <span class="dt">y=</span>richness_locus_value)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">alpha=</span><span class="dv">1</span><span class="op">/</span><span class="dv">2</span>,<span class="dt">size=</span><span class="dv">1</span>) <span class="op">+</span><span class="st"> </span><span class="kw">geom_abline</span>(<span class="dt">data=</span>expected_k_abline, <span class="dt">color=</span><span class="st">&quot;red&quot;</span>)</a>
+<a class="sourceLine" id="cb1-14" title="14">plt <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Scaled Innovation Rate&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Number of Traits at a Dimension/Locus&quot;</span>)</a></code></pre></div>
+<figure>
+<img src="/images/eq2s-richness-neutral-expectedk.png" alt="Figure 3: Observed richness versus predicted population richness per dimension/locus" /><figcaption>Figure 3: Observed richness versus predicted population richness per dimension/locus</figcaption>
+</figure>
+<h3 id="possible-causes">Possible Causes</h3>
+<ol type="1">
+<li>The neutral process is functioning just fine, and the distribution of richness is what you’d expect from a single locus copying process.<br />
+</li>
+<li>The neutral process is functioning just fine, but the process hasn’t washed out the initial level of variation and reached equilibrium by 1MM steps.<br />
+</li>
+<li>There’s something wrong with the neutral model.</li>
+</ol>
+<p>The last seems unlikely given the spot-on distribution of Slatkin values on a per locus basis, but I’d like to have better calibration on how much variation to expect in this per-locus copying model, instead of the whole genome copying model.</p>
+<p>I might need to convince myself that the rest of the machinery is working by doing some samples from the whole-traitset copying version of neutrality, because the abline ought to lay over the distribution in that case.</p>
+<h3 id="both-copying-models-and-multiple-simulation-lengths">Both Copying Models and Multiple Simulation Lengths</h3>
+<p>Today, I looked at “all locus” versus “random locus” models, and also varied the maximum length of the simulation, doing “all locus” models for 4 and 8 million steps. The results in Figure 4 are combined with the original random locus values for 1MM steps in <code>equifinality-2-small</code>:</p>
+<figure>
+<img src="/images/combined-excess-richness.png" alt="Figure 4: 1 million, 4 million, and 8 million steps for random and all locus models" /><figcaption>Figure 4: 1 million, 4 million, and 8 million steps for random and all locus models</figcaption>
+</figure>
+<p>Two things are apparent.</p>
+<ol type="1">
+<li><p>There is definitely more variation in random locus models, probably because it takes longer for any given allele to drift out given that not all loci are replaced by a copying event.</p></li>
+<li><p>1MM steps is not enough – the 4 and 8 million step models have clearly reached stationarity, but 1MM and 4MM aren’t close, so somewhere between 1MM and 4MM steps is the stationarity point. There is little change in the location or slope of the trends between 4MM and 8MM.</p></li>
+</ol>
+<h3 id="next-steps">Next Steps</h3>
+<p>The next step is to repeat <code>equifinality-2</code> across all four models, using 4MM steps per simulation run, and then repeat the random forest analysis.</p>
+<p>I plan to run <code>equifinality-3</code> as a full model run, with 25,000 samples per model, for a total of 100,000 data points. I’m going to run it on a StarCluster with 4 instances of c3.4xlarge type, for a total of 64 vCPUs. This should take between 3 and 4 days, with an initial cost estimate of about $300.</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-ewens1972sampling">
+<p>Ewens, W.J. 1972. “The Sampling Theory of Selectively Neutral Alleles.” <em>Theoretical Population Biology</em> 3 (1). Elsevier: 87–112.</p>
+</div>
+</div>
+:ET

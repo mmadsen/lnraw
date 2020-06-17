@@ -1,0 +1,28 @@
+I"�<h3 id="from-random-forests-to-gradient-boosted-machines">From Random Forests to Gradient Boosted Machines</h3>
+<p>I didn’t find any problems with random forests, but the time needed to do a properly tuned model fit using <code>caret</code> and a reasonable grid of <code>mtry</code> values, on 100K, 200K, or 800K data points pretty prohibitive, especially if you’re doing repeated CV to find the best tuned model fit on the training set. A model fit and tuning was taking 24 to 36 hours, even when parallelized on 4 cores. Since I’m doing many analyses, the options seemed to boil down to (1) run every analysis on large EC2 instances with 16 or 32 cores, hoping to shave down the analytic time to something reasonable, or (2) find a classifier with high accuracy but a shorter runtime.</p>
+<p>Boosted classification trees are always among the top classifier algorithms, and in Friedman’s gradient boosting version, achieve extremely high accuracy while mostly avoiding overfitting, and providing measures of predictor importance. Gradient boosted machines, like random forests, break the classic tradeoff between bias and variance, allowing us (within limits) to optimize both <span class="citation" data-cites="AlexeyNatekin:2013ew hastie2009elements">(Alexey Natekin 2013; Hastie et al. 2009)</span>. They do so by combining several approaches to randomization and aggregation:</p>
+<ol type="1">
+<li>Applying “shrinkage” to each boosting iteration to dampen the effect of each gradient step, forcing slow convergence of the model to an averaged estimate of the class for each data point.</li>
+<li>Out-of-bag testing internal to the algorithm.</li>
+<li>Sequential reweighting of data points in determining classification trees, giving misclassified points greater weight in determining the tree splits.</li>
+</ol>
+<p>Using the superb <code>caret</code> package from Max Kuhn allows an easy switch between classifiers without changing most of the analysis code, so the change was simple. By default, the <code>gbm</code> package through <code>caret</code> uses bootstrap resampling with a small number of boosting iterations, which is sufficient for seeing how the package works, but not a real analysis. Currently, I am using the following tuning parameters:</p>
+<ul>
+<li>interaction depth: <span class="math inline">\([2, 4, 6, 8, 10, 12]\)</span></li>
+<li>number of trees: <span class="math inline">\([25, 50, 75, 100, 125, 150, 175, 200, 225, 250]\)</span></li>
+<li>shrinkage: 0.05</li>
+<li>tuning method: repeated 10-fold cross validation, 5 repeats</li>
+</ul>
+<p>In my initial tests, plots of CV accuracy tend to plateau after 100 iterations, with larger interaction depth, so technically I don’t really need to include smaller values in the tuning parameters. But the <code>gbm + caret</code> package optimizes by fitting the largest models, can derive the smaller ones from the full model without recalculation, so the execution time is largely controlled by the largest values of the tuning parameters and the number of repeated CV folds and repeats.</p>
+<p>In most cases, a model fit to 100K data points, with 20% held out as a strict test set, takes between 80 and 90 minutes, with 4 cores on a Retina MBP. That’s acceptable, although I’ve put some effort into ensuring that all of my analyses can be run on the command line via a Makefile, automatically storing their results in <code>.Rdata</code> files for later interpretation and use. That way, I can do final runs on a server instance.</p>
+<p>The quality of the classifications is comparable to, and even slightly higher than, the random forest classifications of these data. The difference is very small and likely not significant, so for present purposes, I would consider GBM and RF to be equivalent and acceptable methods for attacking equifinality issues between cultural transmission models.</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-AlexeyNatekin:2013ew">
+<p>Alexey Natekin, Alois Knoll. 2013. “Gradient boosting machines, a tutorial.” <em>Frontiers in Neurorobotics</em> 7. Frontiers Media SA: 21. <a href="https://doi.org/10.3389/fnbot.2013.00021">https://doi.org/10.3389/fnbot.2013.00021</a>.</p>
+</div>
+<div id="ref-hastie2009elements">
+<p>Hastie, Trevor, Robert Tibshirani, Jerome Friedman, T Hastie, J Friedman, and R Tibshirani. 2009. <em>The Elements of Statistical Learning</em>. Vol. 2. 1. Springer.</p>
+</div>
+</div>
+:ET

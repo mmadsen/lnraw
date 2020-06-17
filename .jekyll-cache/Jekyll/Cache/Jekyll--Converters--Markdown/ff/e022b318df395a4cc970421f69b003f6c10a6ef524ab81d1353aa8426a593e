@@ -1,0 +1,55 @@
+I"�<h3 id="what-is-time-perspectivism">What is Time Perspectivism?</h3>
+<p>(definition, Bailey, with some Binford etc)</p>
+<p>Time perspectivism (TP) treats the archaeological record as a series of time averaged samples of artifacts, which do not necessarily share the same depositional and post-depositional histories <span class="citation" data-cites="stern2008time stein1987deposits">(Stern 2008; Stein 1987)</span>. The consequences of this kind of view are significant for the kind of synchronic, functionalist product characteristic of most archaeological research today (especially since the New Archaeology) <span class="citation" data-cites="paynter2002time">(Paynter 2002)</span>. DeBoer uses the parallel between taphonomic studies in paleontology and formation processes in archaeology to argue that there simply cannot be an isomorphism between the archaeological and systemic contexts <span class="citation" data-cites="schiffer1972archaeological deboer1983archaeological">(Schiffer 1972; DeBoer 1983)</span>. Quite simply, even without the serious epistemological issues which plague behavioral or “lifeways” reconstruction in archaeology, the combination of TP, geoarchaeology, and formation process studies tell us that synchronic reconstructionism is doomed to failure as a testable scientific endeavor (and hence it involved speculative interpretivism, no different than any other interpretive theory or stance in the social sciences).</p>
+<p>Given Dunnell’s materialist, historical metaphysic for archaeology, TP is almost the default position we should take when we consider the temporality of the archaeological record (although RCD never used the term) <span class="citation" data-cites="dunnell1980evolutionary dunnell1982harvey dunnell1992archaeology">(Dunnell 1980, 1982, 1992)</span>.</p>
+<h3 id="theory-and-research-questions">Theory and Research Questions</h3>
+<ul>
+<li>Isaac</li>
+<li>Bailey</li>
+<li>Foley</li>
+<li>Binford</li>
+</ul>
+<h3 id="effects-of-time-averaging">Effects of Time Averaging</h3>
+<p>Most of the ways we deal with coarse-graining a time series in statistics involve taking averages over blocks of values: hence the idea of a “time average.” <span class="citation" data-cites="delange2008time stern2008time">(De Lange 2008; Stern 2008)</span> both point out that time averaged archaeological deposits are not “averages in time” of artifact deposition. Earlier, <span class="citation" data-cites="grayson1998 lyman2003influence">(Grayson and Delpech 1998; Lyman 2003)</span> made similar observations, that time averaged deposits are actually summations of materials potentially derived from a variety of different behavioral episodes and even groups of people.</p>
+<p>My own work suggests that formally, time averaged samples (of artifact class abundances or frequencies) are actually the cumulative sum of depositional events, and thus represent a kind of “extreme value” process coarse-graining the detailed process of artifact creation, use, and deposition <span class="citation" data-cites="madsen2012ta">(Madsen 2012)</span>. But more work needs to be done to understand the different statistical effects that time averaging can have on different measures of artifact class abundance and diversity.</p>
+<p>(discuss the paleobiological literature here)</p>
+<h3 id="references-cited-above" class="unnumbered">References Cited Above</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-deboer1983archaeological">
+<p>DeBoer, Warren R. 1983. “The Archaeological Record as Preserved Death Assemblage.” <em>Archaeological Hammers and Theories, Academic Press, New York</em>, 19–36.</p>
+</div>
+<div id="ref-delange2008time">
+<p>De Lange, Josara. 2008. “Time Perspectivism and the Structure of Archaeological Records: A Case Study.” In <em>Time in Archaeology: Time Perspectivism Revisited</em>, edited by S Holdaway and L Wandsnider, 149–60. University of Utah Press Utah.</p>
+</div>
+<div id="ref-dunnell1980evolutionary">
+<p>Dunnell, R.C. 1980. “Evolutionary Theory and Archaeology.” <em>Advances in Archaeological Method and Theory</em> 3. JSTOR: 35–99.</p>
+</div>
+<div id="ref-dunnell1982harvey">
+<p>———. 1982. “The Harvey Lecture Series. Science, Social Science, and Common Sense: The Agonizing Dilemma of Modern Archaeology.” <em>Journal of Anthropological Research</em>. JSTOR, 1–25.</p>
+</div>
+<div id="ref-dunnell1992archaeology">
+<p>———. 1992. “Archaeology and Evolutionary Science.” <em>Quandaries and Quests: Visions of Archaeologys Future, Occasional Paper</em>, no. 20: 209–21.</p>
+</div>
+<div id="ref-grayson1998">
+<p>Grayson, D.K., and F. Delpech. 1998. “Changing Diet Breadth in the Early Upper Paleolithic of Southwestern France.” <em>Journal of Archaeological Science</em> 25: 1119–29.</p>
+</div>
+<div id="ref-lyman2003influence">
+<p>Lyman, R.L. 2003. “The Influence of Time Averaging and Space Averaging on the Application of Foraging Theory in Zooarchaeology.” <em>Journal of Archaeological Science</em> 30 (5). Elsevier: 595–610.</p>
+</div>
+<div id="ref-madsen2012ta">
+<p>Madsen, Mark E. 2012. “Unbiased Cultural Transmission in Time-Averaged Archaeological Assemblages.” <em>ArXiv E-Prints</em> 1204.2043 (April). <a href="http://arxiv.org/abs/1204.2043">http://arxiv.org/abs/1204.2043</a>.</p>
+</div>
+<div id="ref-paynter2002time">
+<p>Paynter, Robert. 2002. “Time in the Valley: Narratives About Rural New England 1.” <em>Current Anthropology</em> 43 (S4). JSTOR: S85–S101.</p>
+</div>
+<div id="ref-schiffer1972archaeological">
+<p>Schiffer, Michael B. 1972. “Archaeological Context and Systemic Context.” <em>American Antiquity</em>. JSTOR, 156–65.</p>
+</div>
+<div id="ref-stein1987deposits">
+<p>Stein, J.K. 1987. “Deposits for Archaeologists.” <em>Advances in Archaeological Method and Theory</em> 11. JSTOR: 337–95.</p>
+</div>
+<div id="ref-stern2008time">
+<p>Stern, Nicola. 2008. “Time-Averaging and the Structure of Late Pleistocene Archaeological Deposits in South West Tasmania.” <em>Time and Archaeology</em>, 134–48.</p>
+</div>
+</div>
+:ET

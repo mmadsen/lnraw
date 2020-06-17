@@ -1,0 +1,102 @@
+I"�<h3 id="data-description">Data Description</h3>
+<p>The classification experiment simulation runs encompassed 48 combinations of innovation rates and population sizes, which were performed in 10 replicates per combination, for the Wright-Fisher infinite-alleles (WFIA) model of cultural transmission without bias or natural selection.</p>
+<p>Each combination was additionally run at a variety of trait-space dimensionalities, and sampled at a variety of sample sizes. Once each simulation run had achieved stationarity, 10 samples were taken from each replicate at 100 generation intervals.</p>
+<p>The full parameter space used to run the experiment is as follows:</p>
+<table>
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Simulation Parameter</th>
+<th style="text-align: left;">Value or Values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Trait and classification dimensionalities</td>
+<td style="text-align: left;">2, 3, 4, 6, 8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Classification coarseness levels (modes per dimension)</td>
+<td style="text-align: left;">2, 3, 4, 8, 16, 32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of traits per dimension for initializing population</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Innovation rates</td>
+<td style="text-align: left;">0.0001, 0.00025, 0.0005, 0.001, 0.0025, 0.005, 0.01, 0.025</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Replicate random classifications per coarseness level</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Num samples taken after stationarity, per run</td>
+<td style="text-align: left;">10000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Population sizes</td>
+<td style="text-align: left;">500, 1000, 2500, 5000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Replicate simulation runs at each parameter combination</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sample sizes taken at each sampling interval</td>
+<td style="text-align: left;">25, 50, 100, 200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Interval in generations for samples after stationarity</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Length of simulation run after stationarity</td>
+<td style="text-align: left;">10000</td>
+</tr>
+</tbody>
+</table>
+<p>These primary data comprise 144,000 samples of the following metrics, calculated upon the raw trait counts:</p>
+<ul>
+<li>Trait richness per dimension</li>
+<li>Shannon entropy per dimension</li>
+<li>IQV per dimension</li>
+<li>Mean trait richness over all dimensions</li>
+<li>Shannon entropy over dimensions</li>
+<li>IQV over dimensions</li>
+<li>Slatkin-Ewens-Watterson test of neutrality over all dimensions</li>
+</ul>
+<p>The 144K samples were then “observed” through 66 classifications, with the classification dimensionality equal to the trait space dimensionality (there were, in total, 330 classifications, 66 for each of the dimensionality levels). The classifications were of two types: EVEN partitions of dimensions into modes (with six levels of coarseness), and RANDOM partitions of dimensions into modes (with the same six levels of coarseness). For random partitions, 10 different random partitions were made for each level of coarseness. This yields 66 classifications for each level of dimensionality. Neutrality tests were also performed for class counts as a whole.</p>
+<p>Observing the 144,000 samples of the raw trait space through 66 classifications yielded 9,504,000 samples of class statistics in the “postclassification” sample.</p>
+<h3 id="data-projection">Data Projection</h3>
+<p>Prior to analysis in R, the data samples went through several cleaning and reduction steps, outlined here.</p>
+<p>Raw simulation samples are stored in MongoDB by the CTPy/simuPOP simulation code, and the initial post-processing is also done in Python by projecting MongoDB tables into new data collections. These steps include:</p>
+<ol type="1">
+<li>Projecting the raw simulation runs to encompass the full set of dimensionalities and sample sizes.</li>
+<li>Calculating trait-space statistics from the samples of individual agents, given the cartesian product of dimensionalities and sample sizes.</li>
+<li>Identifying raw samples of individuals to each of the 66 classifications, and recording classification level statistics for each time slice (per-generation statistics).</li>
+<li>Calculating any statistics that require looking at temporal spans or sample paths (planned but not currently implements).</li>
+</ol>
+<p>The output of these sampling and classification operations are stored in a single MongoDB collection for the experiment. A Python script is then used to export CSV data for further processing. This script selects a subset of fields from each table, and uses the <code>mongoexport</code> program to produce the CSV files, for speed.</p>
+<p>These exports are copied to the <code>rawdata</code> directory of the <a href="https://github.com/mmadsen/experiment-classification">experiment and analysis</a> repository, for data cleaning and reduction.</p>
+<h3 id="data-reduction">Data Reduction</h3>
+<p>Once exported from MongoDB, I use a set of Apache Pig scripts to merge data files together, remove duplicate columns, and perform aggregation across replicates in the dataset. The end result of these processing steps is a single CSV file with columns for each key value in the data set, and mean/sd statistics for each observable value (e.g., class or trait entropy, richness).</p>
+<p>The processing steps and scripts are all contained in the Github repository for the <a href="https://github.com/mmadsen/experiment-classification">experiment and analysis</a>. The <code>README.md</code> file in that repository contains detailed instructions on how to replicate the data cleaning and reduction steps using the supplied scripts.</p>
+<p>The basic replication factor in this experiment is 100 replicates per classified sample – 10 simuPOP replicate populations, and 10 samples per sample path. So the final dataset for analysis should contain 95,040 samples. For each metric, the <code>average-replicates.pig</code> script returns a data set with 95,040 rows, with mean and standard deviations for each of the classified and raw trait metrics gathered above.</p>
+<p>The unaveraged data are retained for analyses where we may want them. This data set is the aggregated output of the script <code>clean-numerics.pig</code>.</p>
+<p>Once completed, the CSV files resulting from the Pig scripts are copied to the <code>data</code> directory of the experiment repository, as the files:</p>
+<ul>
+<li><code>classification-experiment-neutral-dataset-fullrows.csv</code></li>
+<li><code>classification-experiment-neutral-dataset-grouped.csv</code></li>
+</ul>
+<p>Once imported to R via the <code>R/load-datasets.r</code> script, the CSV files will not be imported unless the binary data objects (for speed) are deleted. Thus, hereafter we operate upon the objects:</p>
+<ul>
+<li><code>classification-full.rda</code></li>
+<li><code>classification-grouped.rda</code></li>
+</ul>
+<p><strong>IMPORTANT</strong> The full dataset, either in CSV or RDA format, is too big to include in the Github repository, and too large to upload to Figshare. As the <code>README.md</code> in the experiment repository notes, if you do not want to regenerate these files by running the simulations yourself (which can take awhile, especially for the post-simulation classification step), contact me and we can arrange something for getting you copies of the raw data files (approx. 2GB file download).</p>
+:ET

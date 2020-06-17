@@ -1,0 +1,43 @@
+I"�<h3 id="background">Background</h3>
+<p>The research problem is to understand how the dynamics of cultural transmission processes are altered if we observe transmitted information through a classificatory filter rather than tabulating the actual copying events themselves.</p>
+<p>I did a first implementation of this in <a href="http://github.com/mmadsen/transmissionframework">TransmissionFramework</a>, but even with a single classification and a couple of dimensions of underlying variation, performance really sucked. Mainly because I was acting like a good Java programmer and writing to interfaces, using generic classes so that my framework was configurable and generic and….you get the idea. I tried some experiments with <a href="http://simupop.sourceforge.net">simuPOP</a> earlier this year, and the performance is excellent. And I’ve figured out how to do much of what I need for dissertation simulations, which is all I need.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>But for the <a href="/projects/coarsegraining/">coarse graining project</a> it’ll work well. Hence, I’ve started coding <a href="http://github.com/mmadsen/ctpy">CTPy</a>, a library of Python functions and classes written to the simuPOP API for performing cultural transmission simulations.</p>
+<h3 id="requirements">Requirements</h3>
+<p>The design goal is to overlay arbitrary paradigmatic classifications on top of the variation being evolved in a simuPOP simulation, and then produce class counts and richness values as we do for the raw variation itself. General requirements:</p>
+<ul>
+<li>Many different classifications need to be overlaid on each set of simulation results. These classifications will usually have the same dimensionality as the number of loci held by individuals, but will differ in how modes map to allelic partitions for each dimension.<br />
+</li>
+<li>The ability to generate random partitions of a dimension is critical, by specifying the number of modes desired, but having the “boundaries” of the allelic partitions differ. There is code in TF which worked well for this, and could be translated, given a solution to problems described below.<br />
+</li>
+<li>Classification does not replace the original allelic data. I envision that there is a data collection which carries the same simulation metadata, but reclassifies individual samples to a given classification. More than one classification would be present for each simulation run ID.<br />
+</li>
+<li>Calculation of the class identity for individuals, given a classification, should not occur during simulation runtime. This will allow classification to occur in parallel, reading data from the database, and writing new database entries.</li>
+</ul>
+<h3 id="design-notes">Design Notes</h3>
+<p>The main issue is mapping the allele space to modes. In TF and my dissertation proposal <span class="citation" data-cites="madsen2012proposal">(Madsen 2012)</span>, I modeled trait dimensions as the unit interval <span class="math inline">\([0,1]\)</span>, with traits taking real-valued locations on the interval. This offered an infinite-alleles model of mutation (it’s always possible to distinguish two values, at least for a very large number of values given 64 bits), but a constrained method of doing allelic partitions for modes. An example of chopping a dimension into three modes might be:</p>
+<p><span class="math inline">\([0, 0.4) [0.4, 0.7) [0.7, 1.0]\)</span></p>
+<p>Obviously, a trait with value <span class="math inline">\(0.3576\)</span> would be identified to Mode 1 in this dimension. Simple. Generating random partitions was also easy, or doing a hierarchy of classification levels.</p>
+<p>In simuPOP, the KAllelesMutator I’m using operates with LONG integer values, so it’s not truly infinite alleles, just many more than you’ll need unless you have a giant population and a very long simulation run. So we set the maximum allelic value (MAXVAL) when we construct the mutator, and then it seems to choose new alleles uniformly from <span class="math inline">\([0, MAXVAL]\)</span>.</p>
+<p>What we don’t have is a good allelic distribution of initial variants – variants appear to be sequential and taken from zero. Either we ought to have initial alleles chosen randomly from the permissible space, or we simply have to wait until all the initial alleles are gone before we start recording data.</p>
+<p>Then, we can specify random partitions as fractions of MAXVAL. Classifications could also be specified manually in the same way I did it in TF, and simply interpreted as fractions of MAXVAL. MAXVAL itself could be calculated somehow, based on popsize and length of simulation run and mutation rate. Or it could be set to a very large number. Either way, it simply needs to be recorded as part of the simulation run info.</p>
+<h3 id="tasks">Tasks</h3>
+<ol type="1">
+<li>Initialize KAllelesMutator with a variable, which is recorded as part of the simulation data schema to MongoDB.</li>
+<li>Configure classification(s) as partitions of the unit interval</li>
+<li>Mode boundaries are determined by partition values * MAXVAL</li>
+<li>Need a data collection for storing the classifications and their modes</li>
+<li>Need a data collection for storing individual samples post classification, with a field for the classification ID used.</li>
+</ol>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-madsen2012proposal">
+<p>Madsen, Mark. 2012. “Dissertation Proposal: Empirical Sufficiency and Neutral Theory: Building Seriation and Classification into Archaeological Models of Cultural Transmission.” <a href="http://dx.doi.org/10.6084/m9.figshare.745321">http://dx.doi.org/10.6084/m9.figshare.745321</a>.</p>
+</div>
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>I doubt simuPOP is the appropriate tool for some of my other <a href="/research.html">projects</a>, in particular looking at structured information, so I may explore a lightweight discrete event simulator in Python before starting that project.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+</ol>
+</section>
+:ET

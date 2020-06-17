@@ -1,0 +1,38 @@
+I"4<h3 id="overview">Overview</h3>
+<p>In <a href="/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/07/28/implementing-temporal-networks-in-python.html">Part 1</a> (a few months back), I started making notes about implementing “interval” style temporal networks in Python, using NumPy and NetworkX. This note continues that thinking, as Carl and I begin serious work on the <a href="https://github.com/mmadsen/seriationct">SeriationCT</a> for our SAA paper in San Francisco.</p>
+<p>The goal is to use interval temporal networks (“ITN”) as a representation for the history of cultural transmission intensity (or “regional transmission model” or “RTM”) between a shifting set of nucleated communities in a region, where:</p>
+<ol type="1">
+<li>Vertices represent a nucleated community</li>
+<li>Vertices have origin times, and may go away during the time interval being modeled.<br />
+</li>
+<li>Edges between vertices represent a measurable degree of interaction between two communities, whether by trade, simple communication, or residential movement and marriage patterns.<br />
+</li>
+<li>Edge weights represent a measure of the intensity of that interaction, and can be binary, ordinal, or real valued rates.</li>
+</ol>
+<p>In Part 1, I proposed using NumPy matrices to perform all the comparisons between the graphs representing each subinterval. This is a sound strategy, both because all the operations are fast given NumPy’s matrix code, but because I can rely upon well coded algorithms instead of risk errors in trying to write my own versions directly on top of NetworkX.</p>
+<p>There is a “gotcha” that we have to keep in mind in using the matrix representation: vertices don’t have a unique identifier other than their column and row position. So deleting a vertex, to represent a community which has exited our model, has to be done carefully. We cannot, in fact, delete it from the NetworkX object, because that would delete it from the underlying matrix, shifting all the columns and rows <strong>after</strong> that index by one:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> networkx <span class="im">as</span> nx</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="im">import</span> numpy <span class="im">as</span> np</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5">t1 <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>]])</a>
+<a class="sourceLine" id="cb1-6" title="6">g <span class="op">=</span> nx.to_networkx_graph(t1)</a>
+<a class="sourceLine" id="cb1-7" title="7">g.add_node(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb1-8" title="8">g.add_edge(<span class="dv">1</span>,<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb1-9" title="9">m1 <span class="op">=</span> nx.to_numpy_matrix(g)</a>
+<a class="sourceLine" id="cb1-10" title="10">g.remove_node(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb1-11" title="11">m2 <span class="op">=</span> nx.to_numpy_matrix(g)</a></code></pre></div>
+<p>When we look at <code>m1</code>, with 5 vertices, we see the following matrix:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">[[ <span class="fl">1.</span>  <span class="fl">3.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>]</a>
+<a class="sourceLine" id="cb2-2" title="2"> [ <span class="fl">3.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>]</a>
+<a class="sourceLine" id="cb2-3" title="3"> [ <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>]</a>
+<a class="sourceLine" id="cb2-4" title="4"> [ <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>]</a>
+<a class="sourceLine" id="cb2-5" title="5"> [ <span class="fl">0.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>  <span class="fl">0.</span>  <span class="fl">0.</span>]]</a></code></pre></div>
+<p>While <code>m2</code>, after we delete node 3, is the following:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">[[ <span class="fl">1.</span>  <span class="fl">3.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>]</a>
+<a class="sourceLine" id="cb3-2" title="2"> [ <span class="fl">3.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>]</a>
+<a class="sourceLine" id="cb3-3" title="3"> [ <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>]</a>
+<a class="sourceLine" id="cb3-4" title="4"> [ <span class="fl">0.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>  <span class="fl">0.</span>]]</a></code></pre></div>
+<p>It is always alright to add a vertex to the graph; in the NumPy matrix representation this always results in a new row and column with the index equal to the integer ID of the vertex itself. It is never alright, however, to actually remove a vertex from the graph. When we “delete” a community from the regional transmission model, we have to leave the vertex in the graph object, but flip an attribute that we use to track “active” vertices. Of course, at that point, the vertex participates in no edges, so its column and row in the matrix is all zeros. We do not simply use this fact to represent “inactive” vertices, however, because an isolated community with no interactions would also show up the same way, should we need to model one in a RTM.</p>
+<h3 id="references-cited">References Cited</h3>
+:ET

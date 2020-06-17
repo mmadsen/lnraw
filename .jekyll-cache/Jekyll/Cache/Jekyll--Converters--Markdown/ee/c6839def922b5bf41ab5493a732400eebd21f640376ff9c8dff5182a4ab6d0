@@ -1,0 +1,13 @@
+I"<h3 id="data-storage">Data Storage</h3>
+<p>The post processed data for this experiment are now uploaded to Amazon S3 for long-term storage. Here are the two binary R data files:</p>
+<ul>
+<li><a href="https://madsen-dissertation.s3.amazonaws.com/experiment-classification/postprocessed-data/classification-full.rda">classification-full.rda</a></li>
+<li><a href="https://madsen-dissertation.s3.amazonaws.com/experiment-classification/postprocessed-data/classification-grouped.rda">classification-grouped.rda</a></li>
+</ul>
+<p>And here are the post-processed CSV files (much larger, 4.72GB for the full rows):</p>
+<ul>
+<li><a href="https://madsen-dissertation.s3.amazonaws.com/experiment-classification/postprocessed-data/classification-experiment-neutral-dataset-fullrows.csv">classification-experiment-neutral-dataset-fullrows.csv</a></li>
+<li><a href="https://madsen-dissertation.s3.amazonaws.com/experiment-classification/postprocessed-data/classification-experiment-neutral-dataset-grouped.csv">classification-experiment-neutral-dataset-grouped.csv</a></li>
+<li><a href="https://madsen-dissertation.s3.amazonaws.com/experiment-classification/postprocessed-data/classification-experiment-neutral-dataset-preslatkin.csv">classification-experiment-neutral-dataset-preslatkin.csv</a></li>
+</ul>
+:ET

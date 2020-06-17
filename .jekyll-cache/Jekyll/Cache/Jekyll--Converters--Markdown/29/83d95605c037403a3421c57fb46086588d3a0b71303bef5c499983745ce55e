@@ -1,0 +1,17 @@
+I"<p>This note described implementation notes and questions about using simuPOP and CTPy for the <a href="/structured%20information%20project/2013/07/24/semantic-axelrod.html">Semantic Axelrod</a> model.</p>
+<h3 id="semantic-axelrod-in-simupop">Semantic Axelrod in simuPOP</h3>
+<p>The Axelrod model has a trait space of <span class="math inline">\(F\)</span> features, each of which can take <span class="math inline">\(q\)</span> states. This is easily modeled in simuPOP with a standard integer genotype, with <code>numloci = F</code> and <code>k = q</code>.</p>
+<p>Noise needs some work. The standard <code>KAllelesMutator</code> acts to mutate each locus with the given probability, and what we want in the Axelrod case is to select <em>one</em> locus and give it a random mutation, so that the noise rate is actually a population event rate. So it looks like a custom mutator will be needed, which selects an individual in the population, selects a feature, and randomizes that feature. That’s easy.</p>
+<p>Since Axelrod is a model which defines “cultures” as spatially cohesive groups of individuals who have no incentive to change their cultural repertoire (either because of consensus or a frozen disordered state), we need a population structure. The original model was studied on a lattice, but the model can easily be implemented on any graph. So a big part of the implementation time will be putting simuPOP individuals on a graph. Surely this has been previously done, so the first step is to start looking for examples.</p>
+<p>The heart of the Axelrod implementation lies in a custom mating function, which:</p>
+<ol type="1">
+<li>Selects an individual in the population, and a random neighbor for the focal individual.<br />
+</li>
+<li>Assesses homophily given the rules or a threshold value for the pair,</li>
+<li>Given suitable compatibility, copies a feature state between individuals in the pair.</li>
+</ol>
+<h3 id="observables">Observables</h3>
+<p>The tough part is crafting suitable observables inside a simuPOP environment, since the system is mostly set up to do population statistics. We can easily have simuPOP do “subpopulation” statistical counts automatically, but we need to have a way to automatically code individuals as belonging to a subpopulation based upon their cultural genotype so we can do so.</p>
+<p>Axelrod defines individuals as sharing the same “culture” if they have the same states for all cultural features. This is easy to determine, simply by doing a hash of the genotype, and giving individuals either a subpopulation code or a custom attribute based on this. The statistics of subpouplations or that custom attribute would then reflect the statistics of groups sharing exact genotypes.</p>
+<p>Spatial pattern might be a bit harder. Need to think about that.</p>
+:ET

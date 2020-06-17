@@ -1,0 +1,81 @@
+I"�1<h3 id="status">Status</h3>
+<p>I think I have the right algorithm now to represent:</p>
+<ul>
+<li>Nearest-neighbor transmission</li>
+<li>Where cultural traits are arranged in strict trees</li>
+<li>Where parents of a trait in a tree represent a “prerequisite” for a trait/concept</li>
+<li>With individual learning of prerequisites an agent lacks, at some rate</li>
+<li>With occasional loss of traits by chance, at some rate</li>
+<li>With the probability of two agents interacting is governed by their similarity (i.e., homophily)</li>
+</ul>
+<p>One observation is that I still have not seen any polycultural solutions; this version of the model either converges to a monoculture, or it cycles around and the number of active links is always a significant fraction of the graph.</p>
+<p>Convergence, in fact, requires a very low rate of loss and innovation (and presumably learning rate, but I haven’t tweaked that much). But I’m not sure converged solutions are the only things we can study here. We certainly study quasi-stationary equilibria with the WFIA, so really we can study snapshots of the population once the process here is well mixed.</p>
+<p><strong>Proposition</strong>: if I track the time series of active link percentages, I should be able to see a long-term average for a process which isn’t converging, and I could then wait some suitably long time and take a snapshot at some time when the process was within some <span class="math inline">\(\delta\)</span> of its time average.</p>
+<h3 id="trait-structure-and-population-initialization">Trait Structure and Population Initialization</h3>
+<p>Currently, the model is initialized with a specific and fully symmetric trait space, represented as <span class="math inline">\(N_t\)</span> balanced trees with branching factor <span class="math inline">\(r\)</span> and depth <span class="math inline">\(h\)</span>. This gives rise to <span class="math inline">\(\sum_{i=0}^{h} r^i\)</span> total nodes in <strong>each</strong> of <span class="math inline">\(N_t\)</span> trait trees.</p>
+<p>Individuals are initialized by giving them a random number of “assignments,” taken uniformly between 1 and <em>maxinittraits</em> (often 8 or 16). Each “assignment” is a random trait <strong>and</strong> that trait’s prerequisites in a given trait tree. In other words, we initialize individuals with some number of rooted paths from the set of trait trees.</p>
+<p>Initial paths are biased twoards the root of the trees, to represent an initial state with “basic” knowledge, and we expect the population to have more “derived” or specialized knowledge over time. The implementation is to decide how “deep” the initial path go with a <em>Poisson</em> distribution with <span class="math inline">\(\lambda = 0.5\)</span>.</p>
+<h3 id="copying-algorithm">Copying Algorithm</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">f <span class="op">=</span> getRandomAgent()</a>
+<a class="sourceLine" id="cb1-2" title="2">n <span class="op">=</span> getRandomNeighborForAgent(f)</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="cf">if</span> n <span class="op">=</span> f <span class="kw">or</span> n.isdisjoint(f) <span class="kw">or</span> n.issubset(f):</a>
+<a class="sourceLine" id="cb1-5" title="5">    exit  <span class="co"># no interaction possible</span></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">prob <span class="op">=</span> jaccardIndex(n,f)</a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="cf">if</span> RandomUniform() <span class="op">&lt;</span> prob:</a>
+<a class="sourceLine" id="cb1-9" title="9">    traits <span class="op">=</span> neighbor.get_differing_traits(agent)</a>
+<a class="sourceLine" id="cb1-10" title="10">    neighbor_trait <span class="op">=</span> random.choice(traits)</a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="cf">if</span> f.hasPrerequisitesForTrait(neighbor_trait) <span class="op">==</span> <span class="va">False</span>:</a>
+<a class="sourceLine" id="cb1-13" title="13">        <span class="cf">if</span> RandomUniform() <span class="op">&lt;</span> learning_rate:</a>
+<a class="sourceLine" id="cb1-14" title="14">            needed_prereq <span class="op">=</span> DeepestRequiredPrerequisiteOf(neighbor_trait)</a>
+<a class="sourceLine" id="cb1-15" title="15">            f.add(needed_prereq)</a>
+<a class="sourceLine" id="cb1-16" title="16">    <span class="cf">else</span>:  <span class="co"># has prereqs</span></a>
+<a class="sourceLine" id="cb1-17" title="17">        f.add_or_replace(neighbor_trait)</a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="co"># now we look at the whole population and see if there is a </span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="co"># random loss or innovation</span></a>
+<a class="sourceLine" id="cb1-21" title="21"></a>
+<a class="sourceLine" id="cb1-22" title="22"><span class="cf">if</span> RandomUniform() <span class="op">&lt;</span> loss_rate:</a>
+<a class="sourceLine" id="cb1-23" title="23">    f2 <span class="op">=</span> getRandomAgent()</a>
+<a class="sourceLine" id="cb1-24" title="24">    loss_trait <span class="op">=</span> random.choice(f2.traits)</a>
+<a class="sourceLine" id="cb1-25" title="25">    f2.removeTrait(loss_trait)</a>
+<a class="sourceLine" id="cb1-26" title="26"></a>
+<a class="sourceLine" id="cb1-27" title="27"><span class="cf">if</span> RandomUniform() <span class="op">&lt;</span> innovation_rate:</a>
+<a class="sourceLine" id="cb1-28" title="28">    f3 <span class="op">=</span> getRandomAgent()</a>
+<a class="sourceLine" id="cb1-29" title="29">    innov_trait <span class="op">=</span> getRandomTraitNotPossessedByAgent(f3.traits)</a>
+<a class="sourceLine" id="cb1-30" title="30">    trait_and_prereqs <span class="op">=</span> getPrerequisiteChainForTrait(innov_trait)</a>
+<a class="sourceLine" id="cb1-31" title="31">    f3.addTrait(trait_and_prereqs)</a></code></pre></div>
+<h3 id="trait-tree-measures">Trait Tree Measures</h3>
+<p>In those instances when the model runs to convergence, the resulting trait trees are considerably “thinned” out in comparison to the starting configuration. I expect this to be the case – we begin with the “entire design space” represented and determine how much variation with what structure is retained in the population at quasi-stationary or stationary equilibrium.</p>
+<p>At least in the converged “final” trait trees, the copying algorithm guarantees that “leaf” traits will not be disconnected from the root (this could happen temporarily given the random trait loss rate). Thus, the final state of a population is one or more “configurations” of trait trees, each of which is unbalanced (but derived from a maximal <span class="math inline">\((r,h)\)</span> balanced tree).</p>
+<p>Thus, for each trait tree in a configuration, we can examine:</p>
+<ul>
+<li>What fraction of a balanced <span class="math inline">\((r,h)\)</span> tree remains? (order)</li>
+<li>What average branching factor and depth does the remaining tree possess? <span class="math inline">\((\bar{r},\bar{h})\)</span></li>
+<li>What is the “shape” of resulting tree?</li>
+</ul>
+<p>The latter question is most interesting because many different trees will have the same “order,” and probably the same <span class="math inline">\((\bar{r},\bar{h})\)</span>. The symmetries of a graph capture its “shape” up to a chosen set of symmetries. For example, if we demand that each vertex have the same edges to the same vertices, then we’re looking for <em>isomorphisms</em> of the graph. This is too restrictive, since the vertices here are arbitrary and simply play roles at a given level in the tree. What we want are the symmetries resulting from <em>automorphisms</em> of the graph: functions which rearrange the graph but retain adjacency (and thus vertex and edge count).</p>
+<p>Each graph <span class="math inline">\(G\)</span> is associated with an <strong>automorphism group</strong> <span class="math inline">\(\textit{Aut}(G)\)</span>, which gives the collection of ways in which the vertices of the graph can be permuted without altering adjacency. The automorphism groups of different graphs can then be compared to determine if and how their structure differs <span class="citation" data-cites="macarthur2008symmetry">(MacArthur, Sánchez-Garcı'a, and Anderson 2008)</span>.</p>
+<p><span class="math inline">\(\text{P\&#39;{o}lya}\)</span> showed that the automorphism groups of trees are the class of groups which contain symmetric groups and are closed under direct and wreath products of such groups <span class="citation" data-cites="godsil2001algebraic">(Godsil and Royle 2001)</span>. Brendan MacKay’s <a href="http://pallini.di.uniroma1.it/index.html"><code>nauty</code> program</a> can perform the product decomposition of <span class="math inline">\(\textit{Aut}(G)\)</span> for most graphs <span class="citation" data-cites="McKay201494">(McKay and Piperno 2014)</span>. With limited values of <span class="math inline">\((r,h)\)</span> for our trees, however, the product decomposition of trees is likely to be less informative than the <strong>orbit</strong> structure of the graph.</p>
+<p>The <strong>orbit</strong> of a vertex <span class="math inline">\(v\)</span> is the set of vertices into which <span class="math inline">\(v\)</span> can be mapped by automorphisms from <span class="math inline">\(\textit{Aut}(G)\)</span>. In other words, orbits partition the vertex set into equivalence classes where vertices can be permuted into exactly the same adjacency relationships. In a rooted tree like this, we would expect that the <em>full</em> trait tree would partition into three orbits: the root (which has <span class="math inline">\(r\)</span> incident edges), leaves (which have <span class="math inline">\(1\)</span> incident edge), and vertices in the “middle” of the tree, which possess <span class="math inline">\(r+1\)</span> incident edges.</p>
+<p>A thinned tree will have a different degree distribution, and thus a different set of orbit equivalence classes. The frequency distribution of orbits in a cultural configuration is thus a good abstract measure of the “shape” of a set of trait trees, and is usable in the quasi-stationary context when we do not have a converged trait configuration and are sampling the population over time.</p>
+<h3 id="software-for-measuring-orbit-structure">Software For Measuring Orbit Structure</h3>
+<p>At the moment, I’m investigating Brendan MacKay’s <code>nauty</code> program, and the computational group theory software <code>GAP</code>. In addition, <code>Mathematica 9</code> can do the calculations. The tough thing with <code>nauty</code> is its reliance on the <code>Graph6</code> file format, for which I’m not seeing a good converter from other formats (<code>networkx</code> can read it, but not write it). <code>Graph6</code> is incredibly opaque and it’s not clear how to write an arbitrary graph in it (it seems designed to compactly represent standard graphs like the Petersen graph, etc).</p>
+<p>So I either need a converter chain, or I need to do the orbit analysis in Mathematica in a loop, reading trait graphs and then writing the results to a file, or learn enough GAP to write a program and save the results.</p>
+<p>Oh, there’s also <code>bliss</code>, which reads the <code>DIMACS</code> format, and also does orbit calculations. <code>Conauto</code> may also output orbits in addition to testing for isomorphism and calculating the automorphism group.</p>
+<p><a href="http://pallini.di.uniroma1.it/Links.html">links</a></p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-godsil2001algebraic">
+<p>Godsil, Christopher David, and Gordon Royle. 2001. <em>Algebraic Graph Theory</em>. Vol. 8. Springer New York.</p>
+</div>
+<div id="ref-macarthur2008symmetry">
+<p>MacArthur, Ben D, Rubén J Sánchez-Garcı'a, and James W Anderson. 2008. “Symmetry in Complex Networks.” <em>Discrete Applied Mathematics</em> 156 (18). Elsevier: 3525–31.</p>
+</div>
+<div id="ref-McKay201494">
+<p>McKay, Brendan D., and Adolfo Piperno. 2014. “Practical Graph Isomorphism, {Ii}.” <em>Journal of Symbolic Computation</em> 60 (0): 94–112. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jsc.2013.09.003">https://doi.org/http://dx.doi.org/10.1016/j.jsc.2013.09.003</a>.</p>
+</div>
+</div>
+:ET

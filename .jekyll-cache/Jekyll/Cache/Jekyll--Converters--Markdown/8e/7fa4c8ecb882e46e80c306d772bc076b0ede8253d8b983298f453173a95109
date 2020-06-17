@@ -1,0 +1,27 @@
+I"x<h3 id="planning-ct-mixtures-and-identifiability">Planning: CT Mixtures and Identifiability</h3>
+<h4 id="features">Features</h4>
+<ol type="1">
+<li>Configuring a population with any number of interaction rules, given by proportions of the population to which they apply.<br />
+</li>
+<li>Random assignment of those configuration rules to agents, given proportions.</li>
+<li>Location of agents on a network of some kind (currently defaulting to a square lattice).</li>
+<li>Separate configuration of conformism and anticonformism “strengths”.</li>
+<li>Global innovation using the “infinite alleles” model.</li>
+<li>Multiple loci evolve simultaneously, but only one change per tick (i.e., Moran or discrete-approximation-to-continuous) dynamics.</li>
+<li>Tracking of both allele frequencies, and multiple locus “configurations” (i.e., the genomes).</li>
+<li>Sampling calculates richness, evenness, slatkin exact tests per locus and for configuration counts among the whole population.</li>
+</ol>
+<h4 id="limitations">Limitations</h4>
+<ol type="1">
+<li>Parameters like conformism, innovation rates, are “global” and not assigned on a per-agent basis. This is conventional in most published work, but it’s time to start incorporating such heterogeneity in our models.<br />
+</li>
+<li>Still have to ensure that population size correct as a perfect square, to ensure that it’s easy to make a square lattice. I could automatically round it, but then it would be easier to accidentally run different simulations at different sample sizes, when you intended them to be the same. Probably will not fix this.<br />
+</li>
+<li>I do not have time averaging built in, and it’s hard to do it by post-processing. This might need to be the next extension.</li>
+</ol>
+<h4 id="experiments">Experiments</h4>
+<p>After I finalize some data format issues, the following experiments:</p>
+<ol type="1">
+<li></li>
+</ol>
+:ET

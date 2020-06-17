@@ -1,0 +1,39 @@
+I"|<h3 id="goals">Goals</h3>
+<p>The overall goal is to understand the degree to which samples of class or trait frequencies are identifiable to models, or conversely, the degree to which models which differ in the mode of CT or parameterizations are equifinal, especially given sample size and time averaging factors.</p>
+<h3 id="an-approach-to-equifinality">An Approach to Equifinality</h3>
+<p>A weak test of equifinality is to look at the empirical distribution of observable variables, and test their overlap across models and parameterizations. This is an important measure of equifinality for situations where we have already published data, or no access to raw frequencies from which to calculate statistics. Some work along these lines already exists with neutrality tests in <span class="citation" data-cites="madsen2012ta premo2014cultural Porcic2014-ta">(Madsen 2012; Premo 2014; Porcic 2014)</span>.</p>
+<p>But the strongest examination of equifinality will come from treating model identification as a classification problem with multiple predictors. Given all the observable statistics we can calculate or simulate from a given CT model, can we find any combination of the predictors that allows us to accurately predict the model class? This allows us to include interactions between observables. Even if these may not make sense in terms of the underlying diffusion theory, our job here is simply to find any accurate separation of the models.</p>
+<p>Analysis options include SVM or logistic regression for a problem setup where we want to distinguish between two different “models.” In general, equifinality will be indicated by an inability to separate different models, even in the training data, even with free combinations of any and all predictors.</p>
+<p>A good general experiment is to start with a two-class regression, and if we can accurately differentiate neutral versus heterogeneous models (as a group), then move on to distinguishing between specific heterogeneous models with multinomial LR or a GLM.</p>
+<p>We can also generate test data from the desired models (e.g., mixtures of copying rules) but with slightly different parameters for innovation or population size, to test prediction accuracy with a true out-of-sample test.</p>
+<h3 id="generating-test-data">Generating Test Data</h3>
+<p>Instead of generating specific combinations of parameter values, I believe I’m going to switch to the same framework as an ABC analysis. The following is a batch mode algorithm for generating the test and training data sets.</p>
+<ol type="1">
+<li>Identify the model set (in this case, a pure neutral versus a conformist/anticonformist mixture).<br />
+</li>
+<li>Determine the parallelism with which you’ll run the simulations (<span class="math inline">\(P\)</span>).</li>
+<li>Establish prior distributions for each parameter in each model (basically, uniform distributions over the range of values that formerly were drawn from the configuration files)</li>
+<li>Establish a total number of samples desired for the training data set, and a total number for test data (<span class="math inline">\(N_{train}\)</span> and <span class="math inline">\(N_{test}\)</span>).</li>
+<li>Foreach <span class="math inline">\(N_{train,test}\)</span>, draw a model at random from the model set.</li>
+<li>For that model, draw random parameters from the prior distributions for that model</li>
+<li>Record the configuration parameters for that simulation run (or the actual command used to run that simulation) in a rotating set of files of <span class="math inline">\(P\)</span>.</li>
+</ol>
+<p>Since each simulation run records the model under which it was run, we end up having <span class="math inline">\(N_{train} + N_{test}\)</span> simulations from the total set.</p>
+<p>Run those simulations, and then split the resulting data into training and test data, before moving onto the SVN or logistic regression analysis.</p>
+<p>This will improve coverage of the parameter space.</p>
+<h3 id="is-identifiability-improved-if-we-know-some-parameters">Is Identifiability Improved If We Know (Some) Parameters?</h3>
+<p>In general, the goal is to determine equifinality without reference to any unobservable parameters. We rarely, in samples from real populations, have measurements (or even estimates) of population size, or innovation rates, or the prevalence of different modes of transmission in the population.</p>
+<p>But there may be certain situations where one or more parameters (but not, perhaps, all), are known for the population of interest. For example, Jon Scholnick’s data on New England gravestones has a fairly good enumeration of gravestone carvers during the period of interest. In such a situation, we have at least an estimate of N for certain models (we may not know the population buying the gravestones, however). In this situation, is identifiability improved if we can include population size as a predictor in our multi-logistic regression or classification procedure?</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-madsen2012ta">
+<p>Madsen, Mark E. 2012. “Unbiased Cultural Transmission in Time-Averaged Archaeological Assemblages.” <em>ArXiv E-Prints</em> 1204.2043 (April). <a href="http://arxiv.org/abs/1204.2043">http://arxiv.org/abs/1204.2043</a>.</p>
+</div>
+<div id="ref-Porcic2014-ta">
+<p>Porcic, Marko. 2014. “Exploring the Effects of Assemblage Accumulation on Diversity and Innovation Rate Estimates in Neutral, Conformist, and Anti-Conformist Models of Cultural Transmission.” <em>Journal of Archaeological Method and Theory</em>. Springer US, 1–22. <a href="https://doi.org/10.1007/s10816-014-9217-8">https://doi.org/10.1007/s10816-014-9217-8</a>.</p>
+</div>
+<div id="ref-premo2014cultural">
+<p>Premo, LS. 2014. “Cultural Transmission and Diversity in Time-Averaged Assemblages.” <em>Current Anthropology</em> 55 (1). JSTOR: 105–14.</p>
+</div>
+</div>
+:ET

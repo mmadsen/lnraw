@@ -1,0 +1,34 @@
+I"e<p><span class="citation" data-cites="godfrey2009darwinian">(Godfrey-Smith 2009)</span> uses a specific distinction between “Darwinian” explanations, and merely “populational” explanations, that is different than I’d always thought about <span class="citation" data-cites="Lewontin1974 Lewontin1970">(Lewontin 1974, 1970)</span>, but is useful. And he questions whether cultural phenomena are uniformly subject to Darwinian explanations, or even populational ones.</p>
+<p>He makes a great point, and this is related to my recent criticism of <span class="citation" data-cites="Gabora2013a">(Gabora 2013)</span>. Her article (and much of her collected theoretical work), is aimed at claiming that while culture is an <strong>evolutionary</strong> phenomenon, it’s not a <strong>selectionist</strong> phenomenon. In GS terms, that culture is a <strong>populational</strong> phenomenon, it’s not a <strong>Darwinian</strong> one. I’m sort of shocked she doesn’t cite this work (possibly hasn’t read it), because GS has much better arguments on this score. And he’s not black-and-white about it. GS thinks that some cultural phenomena are Darwinian, others are merely populational, and some are not even populational and require some other structure for explanation. This is probably the right way to think about it. Sterelny seems to fall along these lines in his latest book, arguing that there are situations where social learning and niche construction are non-Darwinian in dynamics, but can set up a Darwinian dynamic, which can persist either for a time, or over the long-term. Again, the presence of a true Darwinian dynamic as opposed to a populational dynamic, is situational and spatiotemporal, not universal.</p>
+<p>From a disciplinary perspective, this would be a way of thinking about it which would break the cycle of theory polemics. There is a role for non-D and even non-P mechanisms in an overall populational model of cultural change.</p>
+<p>This does jive with the final paragraph of our criticism of <span class="citation" data-cites="Gabora2013a">(Gabora 2013)</span>:</p>
+<p><strong>Clearly, not all cultural variation will be subject to selection,</strong> but some is. Our role as scientists is to understand how, when, and why cultural variants are, or are not, under selection. And further, to understand how selection … interacts with the cognitive and linguistic capabilities we possess as humans to produce those aspects of Darwinian evolution that may be unique, or shared with only a few of our close phylogenetic relatives.</p>
+<h2 id="what-roles-do-ct-models-play">What Role(s) Do CT Models Play?</h2>
+<p>Given this ecumenical division of labor between D, P, and non-P explanations, the question for me is where, and how, formal models of CT play a role.</p>
+<ul>
+<li>Clearly, CT models are the default framework for modeling Darwinian processes within culture, and modeling the effects of selection. Even if the CT models we need are more sophisticated and rich than the ones we’ve got.</li>
+<li>CT models are also the default, but not only, framework for modeling populational phenomena. Here, we have connections to other “local interactionist” modeling frameworks: statistical physics, epidemiology, etc. And these are merging into one interdisciplinary framework (led by the statistical physicists) for studying macro patterns arising from micro processes given complexity and heterogeneity.</li>
+<li>The hard part is figuring out how non-populational processes interact with the above….more on this later <span class="citation" data-cites="sterelny2012evolved">(Sterelny 2012)</span>.</li>
+</ul>
+<p>But CT models also may be the way we do coarse-graining of mixed micro-level processes, to understand their large-scale and long-term spatiotemporal consequences. Again, this is a statistical physics perspective on the issue. We may end up with theory for long-term or large-scale patterns that don’t have details about the micro-level stuff, and where the populational abstraction is the core framework for describing the world and explaining observations.</p>
+<p>Which would lead to questions which can only be answered in specific situations, not generally: &gt; Under what circumstances would underlying D or non-D,non-P processes show up in coarse-grained P models?</p>
+<p><strong>Conjecture</strong>: at some scale of coarse-graining, everything looks like a diffusion model.</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-Gabora2013a">
+<p>Gabora, Liane. 2013. “An Evolutionary Framework for Cultural Change: Selectionism Versus Communal Exchange.” <em>Physics of Life Reviews</em> 10 (2): 117–45. <a href="https://doi.org/10.1016/j.plrev.2013.03.006">https://doi.org/10.1016/j.plrev.2013.03.006</a>.</p>
+</div>
+<div id="ref-godfrey2009darwinian">
+<p>Godfrey-Smith, Peter. 2009. <em>Darwinian Populations and Natural Selection</em>. Oxford University Press.</p>
+</div>
+<div id="ref-Lewontin1974">
+<p>Lewontin, Richard. 1974. <em>The Genetic Basis of Evolutionary Change</em>. Columbia University Press.</p>
+</div>
+<div id="ref-Lewontin1970">
+<p>Lewontin, Richard C. 1970. “The Units of Selection.” <em>Annual Reviews of Ecology and Systematics</em> 1: 1–18.</p>
+</div>
+<div id="ref-sterelny2012evolved">
+<p>Sterelny, Kim. 2012. <em>The Evolved Apprentice</em>. The MIT Press.</p>
+</div>
+</div>
+:ET

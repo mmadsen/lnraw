@@ -1,0 +1,49 @@
+I"<h3 id="overview">Overview</h3>
+<p>The goal here is to prototype a smooth and efficient way of evolving a <code>NetworkX</code> graph object, given a more compact specification of a “interval” temporal network, as discussed in <a href="/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriationct/2014/07/13/seriationct-temporal-model.html">Temporal Networks in SeriationCT</a>.</p>
+<p>In the following, I assume either that a compact configuration, or a random network generating process (NGP), produces a sequence of <code>numpy</code> matrices which are indexed by a time coordinate. The task, then, is to examine differences in the sequence of matrices, and produce corresponding changes to a <code>NetworkX</code> graph object, without simply destroying and reformulating the graph object.</p>
+<p>The latter requirement is important because each vertex in the graph object will also be a container, holding a subpopulation of agents which are engaged in social learning. Vertices will thus represent demes of individuals, and our observable samples in the <code>seriationct</code> model will be derived as time-averaged samples of traits from each vertex.</p>
+<h3 id="prototyping">Prototyping</h3>
+<p>For simplicity, I start with the complete graph <span class="math inline">\(C4\)</span> on four vertices, with one link having a link weight</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">    <span class="im">import</span> numpy <span class="im">as</span> np</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="im">import</span> networkx <span class="im">as</span> nx</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="co"># start with C4, the complete graph on four vertices, with uniform weights</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    t1 <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>]])</a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8">    g <span class="op">=</span> nx.to_networkx_graph(t1)</a></code></pre></div>
+<p>At step 2, we imagine that two links are lost, indicated by their weight going to zero in the adjacency matrix.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">    <span class="co"># step 1 - loss of two links</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    t2 <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>],[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>],[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>]])</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4">    g2 <span class="op">=</span> nx.to_networkx_graph(t2)</a></code></pre></div>
+<p>We can tell which edges change by looking at the nonzero elements of the upper triangular portion of the <strong>difference</strong> of the two matrices:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">    t2 <span class="op">-</span> t1</a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="co"># array([[ 0, -3,  0,  0],</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="co">#       [-3,  0,  0,  0],</span></a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="co">#       [ 0,  0,  0, -1],</span></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="co">#       [ 0,  0, -1,  0]])</span></a>
+<a class="sourceLine" id="cb3-7" title="7"></a>
+<a class="sourceLine" id="cb3-8" title="8">    np.nonzero(np.triu(t2 <span class="op">-</span> t1))</a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="co"># (array([0, 2]), array([1, 3]))</span></a>
+<a class="sourceLine" id="cb3-11" title="11"></a>
+<a class="sourceLine" id="cb3-12" title="12">    changed <span class="op">=</span> t2 <span class="op">-</span> t1</a>
+<a class="sourceLine" id="cb3-13" title="13">    changed_edges <span class="op">=</span> np.nonzero(np.triu(changed))</a>
+<a class="sourceLine" id="cb3-14" title="14">    <span class="co"># (array([0, 2]), array([1, 3]))</span></a></code></pre></div>
+<p><code>changed_edges</code> reports those elements which are different between the two matrices, in the upper triangular portion of the matrix. We are mainly interested in off-diagonal elements at the moment. The data structure is a tuple composed of two lists, the row and then the column coordinates. This unusual structure is the reason for the use of <code>zip</code> in the enumeration below.</p>
+<p>Weight changes to existing edges are simply the difference between the two matrix elements, already reflected in the <code>changed</code> matrix entry, and we can detect edges that go away entirely by a weight change which complete offsets the <code>t1</code> weight at <code>t2</code>. If an edge goes away, we remove it. If the weight changes, we alter the weight property for the edge</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">    <span class="cf">for</span> i,j <span class="kw">in</span> <span class="bu">zip</span>(changed_edges[<span class="dv">0</span>], changed_edges[<span class="dv">1</span>]):</a>
+<a class="sourceLine" id="cb4-2" title="2">        weight_delta <span class="op">=</span> changed[i,j]</a>
+<a class="sourceLine" id="cb4-3" title="3">        removed <span class="op">=</span> <span class="va">False</span> <span class="cf">if</span> t1[i,j] <span class="op">+</span> changed[i,j] <span class="cf">else</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb4-4" title="4">        <span class="bu">print</span> <span class="st">&quot;changed edge at </span><span class="sc">%s</span><span class="st">,</span><span class="sc">%s</span><span class="st"> - weight delta: </span><span class="sc">%s</span><span class="st"> remove? </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (i,j, weight_delta, removed)</a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="cf">if</span> removed:</a>
+<a class="sourceLine" id="cb4-6" title="6">            g.remove_edge(i,j)</a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-8" title="8">            g[i][j][<span class="st">&#39;weight&#39;</span>] <span class="op">+=</span> weight_delta</a>
+<a class="sourceLine" id="cb4-9" title="9"></a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="co"># changed edge at 0,1 - weight delta: -3 remove? True</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="co"># changed edge at 2,3 - weight delta: -1 remove? True</span></a></code></pre></div>
+<h3 id="references-cited">References Cited</h3>
+:ET

@@ -1,0 +1,29 @@
+I"r<h3 id="identifiability-of-mixtures-of-ct-modes">Identifiability of Mixtures of CT Modes</h3>
+<p>A growing literature (especially in archaeology and anthropology) uses statistical signatures from various social learning models to identify data samples as originating from populations who practiced various forms of biased cultural transmission. Luke Premo and I have independently analyzed problems with identifiability in time averaged assemblages <span class="citation" data-cites="madsen2012ta premo2014cultural">(Madsen 2012; Premo 2014)</span>, although Kandler’s <span class="citation" data-cites="kandler2013non">(2013)</span> work on time-transgressive estimates is a partial and promising solution.</p>
+<p>But most work to date has focused on analytic or simulation models of “pure” populations of social learners, in which the population exhibits one mode of cultural transmission. Although researchers universally recognize that real populations are heterogeneous in the way social learning occurs, both among individuals and over time and subject within an individual’s behavioral repertoire, we do not yet understand the statistical identifiability of mixed, heterogenous populations.</p>
+<p>In this study, I examine identifiability for mixtures of commonly studied social learning models: conformism, Axelrod-style homophily, and anti-conformism. The study is organized around a central conjecture: <strong>The prevalence of apparently neutral or “drift-like” phenomena across many classes of cultural traits is a consequence of the mixture of individual social learning behavior which is heterogeneous.</strong></p>
+<p>If true, this conjecture implies that:</p>
+<ol type="1">
+<li>Unbiased social learning will often be a useful “effective theory” for examining cultural transmission phenomena at large, macroscopic scales without the need to consider more detailed cognitive and individual-level models.<br />
+</li>
+<li>Research whose focus is identifying the mode of social learning from data samples will need to take care in doing so, unless there are clear spatiotemporal scales below which models are still identifiable.</li>
+</ol>
+<h3 id="requirements">Requirements</h3>
+<ol type="1">
+<li>Copying error/noise and no noise</li>
+<li>Spatial lattices for population, including small world lattices</li>
+<li>Metapopulation structure</li>
+</ol>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-kandler2013non">
+<p>Kandler, Anne, and Stephen Shennan. 2013. “A Non-Equilibrium Neutral Model for Analysing Cultural Change.” <em>Journal of Theoretical Biology</em> 330. Elsevier: 18–25.</p>
+</div>
+<div id="ref-madsen2012ta">
+<p>Madsen, Mark E. 2012. “Unbiased Cultural Transmission in Time-Averaged Archaeological Assemblages.” <em>ArXiv E-Prints</em> 1204.2043 (April). <a href="http://arxiv.org/abs/1204.2043">http://arxiv.org/abs/1204.2043</a>.</p>
+</div>
+<div id="ref-premo2014cultural">
+<p>Premo, LS. 2014. “Cultural Transmission and Diversity in Time-Averaged Assemblages.” <em>Current Anthropology</em> 55 (1). JSTOR: 105–14.</p>
+</div>
+</div>
+:ET

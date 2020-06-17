@@ -1,0 +1,118 @@
+I"1<p>UPDATE: After finding a bug in the timing of innovation/mutation, I’m not using any of the previous data.</p>
+<h3 id="deprecated-simulation-runs">Deprecated Simulation Runs</h3>
+<h4 id="saa-5-server-sa1">SAA-5 – server sa1</h4>
+<p>Designed to allow comparison of innovation rate + learning/prereq vs just learning/prereq. Learning rates are the same as saa-2, but a smaller set of trait spaces are examined (dropping the 4/4 pair).</p>
+<ul>
+<li>Learning rate: 0.025, 0.05, 0.1, 0.2, 0.3, 0.4</li>
+<li>Population size: 100 for all runs</li>
+<li>Replications: 10</li>
+<li>Trait trees: 8, 16</li>
+<li>Branching factor: 3, 4, 6</li>
+<li>Depth factor: 3, 4, 6</li>
+<li>Max init traits: 8, 16</li>
+<li>Innovation rate: 0.000025</li>
+</ul>
+<p>2160 total runs</p>
+<p>332 on the restart, Weds 3/26</p>
+<h4 id="saa-6-server-sa5">SAA-6 – server sa5</h4>
+<p>Intended to get more samples for an overlap of SAA-5 and SAA-2. Only the largest and smallest trait space sizes are used, but all the learning rates, and both mutation and no mutation cases. For these parameter combinations, we will end up with 30 replications per param combo.</p>
+<ul>
+<li>Learning rate: 0.025, 0.05, 0.1, 0.2, 0.3, 0.4</li>
+<li>Population size: 100 for all runs</li>
+<li>Replications: 20</li>
+<li>Trait trees: 4, 16</li>
+<li>Branching factor: 3, 6</li>
+<li>Depth factor: 3, 6</li>
+<li>Max init traits: 8</li>
+<li>Innovation rate: 0.000025, 0.0</li>
+</ul>
+<p>1920 total runs</p>
+<p>1190 runs at 6:45pm Weds 3/26</p>
+<h4 id="saa-9-server-sa8">SAA-9 – server sa8</h4>
+<p>SAA-8 finished quickly, so I’m going to explore larger population sizes. If I can examine the effects both of creating high-fidelity learning AND demography, that will be interesting.</p>
+<ul>
+<li>Learning rate: 0.5, 0.6, 0.7, 0.8, 0.75, 0.85, 0.90, 0.95</li>
+<li>Population size: 225, 400</li>
+<li>Replications: 40</li>
+<li>Trait trees: 4, 16</li>
+<li>Branching factor: 3</li>
+<li>Depth factor: 3</li>
+<li>Max init traits: 8</li>
+<li>Innovation rate: 0.000025, 0.0</li>
+</ul>
+<p>2560 runs</p>
+<p>Started 8:35am Sunday 3/30</p>
+<h3 id="simulations-completed">Simulations COMPLETED</h3>
+<h4 id="saa-2">SAA-2</h4>
+<ul>
+<li>Learning rate: 0.025, 0.05, 0.1, 0.2, 0.3, 0.4</li>
+<li>Population size: 100 for all runs</li>
+<li>Replications: 10</li>
+<li>Trait trees: 4, 8, 16</li>
+<li>Branching factor: 3, 4, 6</li>
+<li>Depth factor: 3, 4, 6</li>
+<li>Max init traits: 4, 8, 16</li>
+</ul>
+<p>Data moved back to Kimura in <code>~/local-research/semanticaxelrod/rawdata/</code></p>
+<h4 id="saa-3-server-sa3">SAA-3 – server sa3</h4>
+<p>Smaller sample size experiment, duplicates learning rates and other param values from SAA-2</p>
+<ul>
+<li>Population size: 49, 64</li>
+</ul>
+<p><strong>Completed early morning Thursday 3/20.</strong></p>
+<h4 id="saa-4-server-sa4">SAA-4 – server sa4</h4>
+<p>Larger sample size experiment, duplicates other param values from SAA-2</p>
+<ul>
+<li>Population size: 225, 400</li>
+<li>Learning rate: 0.1, 0.2, 0.4</li>
+</ul>
+<p>4860 total runs</p>
+<p>Killed it, and used just the 2430 runs for popsize 225.</p>
+<h4 id="saa-7-server-sa7">SAA-7 – server sa7</h4>
+<p>Intended to test whether graphs really do change at high learning rates – testing whether learning environment really changes the cumulation of cultural information</p>
+<ul>
+<li>Learning rate: 0.5, 0.6, 0.7, 0.8</li>
+<li>Population size: 100 for all runs</li>
+<li>Replications: 20</li>
+<li>Trait trees: 4, 16</li>
+<li>Branching factor: 3, 6</li>
+<li>Depth factor: 3, 6</li>
+<li>Max init traits: 8</li>
+<li>Innovation rate: 0.000025, 0.0</li>
+</ul>
+<p>1280 total runs</p>
+<h4 id="saa-8-server-sa8">SAA-8 – server sa8</h4>
+<p>Given interesting phenomena at 0.7 and mainly 0.8 learning rates, I’m testing more of the high learning rates. The small state spaces are most sensitive because everything gets lost in the vastness of larger state spaces.</p>
+<ul>
+<li>Learning rate: 0.5, 0.6, 0.7, 0.8, 0.75, 0.85, 0.90, 0.95</li>
+<li>Population size: 100 for all runs</li>
+<li>Replications: 40</li>
+<li>Trait trees: 4, 16</li>
+<li>Branching factor: 3</li>
+<li>Depth factor: 3</li>
+<li>Max init traits: 8</li>
+<li>Innovation rate: 0.000025, 0.0</li>
+</ul>
+<p>1280 runs</p>
+<p>Started 9:50pm Sat 3/29</p>
+<h3 id="code">Code</h3>
+<ol type="1">
+<li>Finish the DOT export code so I can give it a file with ID’s – for getting, say, all of the graphs that have the same learning rate, or state-space configuration.</li>
+</ol>
+<h3 id="analyses">Analyses</h3>
+<p>For finalized runs only:</p>
+<ol type="1">
+<li>Symmetry at a given trait-space size, by learning rate</li>
+<li>Symmetry at a given trait-space size, by learning and innovation rate</li>
+<li>Symmetry at different population sizes</li>
+</ol>
+<h3 id="graphstables">Graphs/Tables</h3>
+<p>TBD</p>
+<h3 id="documentation-bits">Documentation Bits</h3>
+<p>Creating a movie from a bunch of DOT files works like this:</p>
+<pre><code>analytics/export-traitgraph-to-graphviz.py --experiment saa-2 --action sample --ssize 100 --directory tmp
+
+for d in `ls *.dot`; do ( dot -Tpng $d -o $d.png; echo &quot;$d.png 300&quot; &gt;&gt; build ); done
+
+~/bin/makeQuickTime.py build test.mov</code></pre>
+:ET

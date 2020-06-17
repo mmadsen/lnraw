@@ -1,4 +1,10 @@
-gems: [jekyll-paginate, jekyll-feed, jekyll-archives, jekyll-crosspost-to-medium]
+gems: 
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-crosspost-to-medium
+  - jekyll-pandoc
+plugins: [jekyll-paginate, jekyll-pandoc]
 exclude: [ _posts/source ]
 highlighter: pygments
 safe: false
@@ -31,9 +37,8 @@ tag_page_dir: tag
 markdown: Pandoc
 pandoc:
   extensions: 
-    - smart
     - mathjax
-    - bibliography: /Users/mark/lnraw/biblio/labnotebook.bib
+    - bibliography: /Users/mark/Research/websites/lnraw/biblio/labnotebook.bib
     
 
 author:

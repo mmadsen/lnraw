@@ -1,0 +1,41 @@
+I"�<h3 id="research-questions">Research Questions</h3>
+<p>At a minimum, what we can observe in the archaeological record about a past CT process are its effects upon the richness and diversity of artifact classes, perhaps the rate at which new variants are introduced, and how long variants last.</p>
+<p>Class diversity implies the use of an archaeological classification to construct discrete categories of variation from the continuous variation present in any collection of objects. Rate observations imply an understanding of how our samples are time averaged (which will be the subject of the next experiment, combining classification and temporal aggregation).</p>
+<p>Thus, the purpose of the classification experiment is to explore how statistical measures of richness and diversity from cultural transmission models “scale” when traits are observed through classifications of the type employed by archaeologists. Such classifications are assumed to be coarse with respect to the variation actually transmitted between individuals during transmission, and thus classification is a “coarse-graining” process.</p>
+<h3 id="representing-classifications">Representing Classifications</h3>
+<p>In the underlying CT model (and its instantiation through simulation), transmitted variation is represented as a set of dimensions which can take an unbounded number of values. In other words, I employ the standard “alleles at loci” representation from population genetics, interpreting loci as generic dimensions of cultural variability (e.g., pottery surface treatment, or vessel rim thickness), and alleles as either discrete or continuous variants for that dimension (e.g., unslipped surface treatment, or a vessel with 5.5mm thick rim).</p>
+<p>One limitation with the current study is that I do not represent classifications with arbitrary dimensions, with respect to the loci that evolve under transmission. It would be desirable in a future study to form the “classification space” as oriented arbitrarily with respect to the transmitted trait space, so that we can study classifications which are wholly arbitrary with respect to the underlying information transmission – but representing this is a hard problem.</p>
+<p>For the moment, loci correspond to classification dimensions, and what can vary about a classification is the way we “slice” those dimensions of variation into modes or classes for observation. Again, this is a coarse-graining process, so we might have a continuous dimension of variation, which is sliced into three or four categories for observation. Or we might lump together discrete variants (e.g., mode of application of surface treatments) which are difficult to distinguish observationally from the resulting sherds but were learned as distinctly different modes of construction by the creators of the ceramic vessels we study.</p>
+<p>All classifications in this experiment are strictly <em>paradigmatic</em> <span class="citation" data-cites="Dunnell1971">(Dunnell 1971)</span>. Future experiments may focus upon hybrids or hierarchical classifications, since these are common when using previously collected data from published sources.</p>
+<p>In the simulation models, classifications are represented as sets of dimensions, having the same dimensionality as a given simulation uses for the number of loci. Each dimension is then cut into <span class="math inline">\(n\)</span> modes – this number is the <em>coarseness</em> of the dimension. Furthermore, dimensions can be partitioned into <span class="math inline">\(n\)</span> modes in two ways: <em>even</em> partitions, and <em>random</em> partitions.</p>
+<p>Random partitions allow us to examine situations where archaeologists create discrete modes which may cover the underlying variation unevenly, with respect to how it was learned, or with respect to how new variants or copying errors were constructed during transmission.</p>
+<p>Even partitions, on the other hand, should be a pure “rescaling” of the quantitative relationships at the underlying “trait” level into the classification.</p>
+<h3 id="regressions">Regressions</h3>
+<p>In this simulation experiment, I want to establish the nature of the following scaling relationships. The ideal result would be an equation for each mapping, or at least a statistical model which describes how to predict each side from the other.</p>
+<ol type="1">
+<li><code>Mean Trait richness per dimension</code> <span class="math inline">\(\leftrightarrow\)</span> <code>Mean mode richness per dimension</code></li>
+<li>Fraction of filled classification space, as coarseness is altered<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li><code>Mean Trait evenness per dimension</code> <span class="math inline">\(\leftrightarrow\)</span> <code>Mean mode evenness per dimension</code></li>
+<li><code>Mean Trait evenness across dimensions</code> <span class="math inline">\(\leftrightarrow\)</span> <code>Mean class evenness</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li><code>Mean Trait innovation rate</code> <span class="math inline">\(\leftrightarrow\)</span> <code>Mean mode or class innovation rate</code><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+</ol>
+<p>These relationships are conditioned by variables such as <span class="math inline">\(\theta\)</span>, the combination of innovation rate and population size (<span class="math inline">\(2N\mu\)</span>).</p>
+<p>I also want to know how the method of breaking a dimension into classification modes (<code>EVEN</code> or <code>RANDOM</code>) affects the distribution of observable richness and evenness metrics. The basic analysis here should be to do a curve fit for each observable, at specific mutation rates. In particular, it’ll be interesting to see how wide the confidence envelope around the <code>RANDOM</code> classifications is….</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-Dunnell1971">
+<p>Dunnell, Robert C. 1971. <em>Systematics in Prehistory</em>. New York: Free Press.</p>
+</div>
+<div id="ref-wilcox1973indices">
+<p>Wilcox, A.R. 1973. “Indices of Qualitative Variation and Political Measurement.” <em>The Western Political Quarterly</em> 26 (2). JSTOR: 325–43.</p>
+</div>
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Since the underlying trait space is infinite (in theory, although the simulated trait space is finite but much larger than will be explored given the length of the simulation run and innovation rate), it’s difficult to talk about how much “volume” is occupied in the trait space. But there should be a measure here, since statistical physics has the same problem talking about volumes in phase space.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+<li id="fn2" role="doc-endnote"><p>I measure evenness in two ways: <a href="http://en.wikipedia.org/wiki/Diversity_index">Shannon entropy</a> and the “Index of Qualitative Variation,” <span class="citation" data-cites="wilcox1973indices">(Wilcox 1973)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩</a></p></li>
+<li id="fn3" role="doc-endnote"><p>The mean trait innovation rate is actually a <em>parameter</em> for each simulation run, and does not need to be measured. But the mean rate at which novel <em>modes</em> or <em>classes</em> appear in the data set, <em>given</em> a particular underlying trait innovation rate, is important especially since it may represent one of the few ways of estimating innovation rates with only observable data.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩</a></p></li>
+</ol>
+</section>
+:ET

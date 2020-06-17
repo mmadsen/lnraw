@@ -1,0 +1,54 @@
+I"�<h3 id="axelrod-model">Axelrod Model</h3>
+<p>Currently, I’ve got a good framework for Axelrod-style models of cultural influence and homophily. The code is available on Github as <a href="https://github.com/mmadsen/axelrod-ct">axelrod-ct</a>. The framework stores simulation run statistics in a MongoDB database instance, and has a single simulation running and a parallel batch runner. The code is a generic evolution of the <a href="https://github.com/mmadsen/ctpy">CTPy</a> but without the dependency upon <code>simuPOP</code>.</p>
+<h3 id="adding-semantic-models">Adding Semantic Models</h3>
+<p>The next tasks revolve around the “trait model” we use, giving traits relational structure, and any modifications to the Axelrod rules themselves to accomodate these structural changes. Specifically, I think the steps involve:</p>
+<ol type="1">
+<li>Allow the definition of the features to be “extensible” for individuals. In other words, <code>F</code> features might be present, but the initial configuration of individuals will be random and possibly less than <code>F</code>. Individuals might gain new features by copying, but overlap will still initially calculated in a “traditional” manner.<br />
+</li>
+<li>Add statistics for the “size” of an individual’s feature list. The resulting model will be a useful “neutral” bridge where copying is unbiased+homophily but no structure to the traits themselves.<br />
+</li>
+<li>Add structure to the traits themselves, in the form of a directed graph, and rules by which copying is possible given the presence of upstream prerequisites.</li>
+</ol>
+<h3 id="extensible-trait-lists">Extensible Trait Lists</h3>
+<p>Most cultural transmission models have followed the “loci and alleles” paradigm, where there is a fixed set of features (loci), which can have a limited or (practically speaking) unlimited number of alleles. The simplest models, of course, have one feature/locus, and two possible traits.</p>
+<p>Some CT models don’t follow this pattern, and allow the accumulation of information over time. This is what we want to model because in addition to population size and demographic structure, the growth of cultural knowledge (i.e., growth in <code>F</code> over time per person) is a key ingredient in long-term enrichment of the cultural endowment of human populations. So it’s essential to model unfixed <code>F</code>.</p>
+<p>This means that copying rules can no longer be easily written as “pick a feature, copy the target agent’s trait” – which is how most CT models are written, as was the original Axelrod model for homophily.</p>
+<h3 id="implementation-of-extensible-traits">Implementation of Extensible Traits</h3>
+<p>Looking at the existing Axelrod models, there are several operations on/with single traits or sets of traits that I need to reimplement in such a way that two individuals may have different numbers of features, without “locus/allele” structure.</p>
+<p>The following are notes about how each requirement might be implemented with a Set rather than a list of integers. In the following I do not assume that traits have any specific structure among themselves. Some will exist as sets of alternatives along a dimension, but I make no assumption about individuals being able to adopt only one of a set of alternatives in this model. I’m not worrying about initialization here because it doesn’t need to be efficient, it just needs to work.</p>
+<p><strong>Requirements</strong></p>
+<ol type="1">
+<li>replace a trait or set of traits with new ones</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> random</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co"># assume &quot;agent_traits&quot; is an object of type set()</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># this case comes up in drift, for example</span></a>
+<a class="sourceLine" id="cb1-5" title="5">t_new <span class="op">=</span> select_random_trait()</a>
+<a class="sourceLine" id="cb1-6" title="6">t_old <span class="op">=</span> random.choice(agent_traits)</a>
+<a class="sourceLine" id="cb1-7" title="7">agent_traits.remove(t_old)</a>
+<a class="sourceLine" id="cb1-8" title="8">agent_traits.add(t_new)</a></code></pre></div>
+<ol start="2" type="1">
+<li>initiatize an agent with a random set of traits, perhaps with a random number of traits</li>
+<li>generate a unique representation of a set of traits, for stats, and coloring diagrams</li>
+<li>calculation of overlap between trait sets</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># since the sets can vary in size, the overlap is simply the Jaccard coefficient</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co"># while the probability of interaction is the Jaccard distance</span></a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4">overlap <span class="op">=</span> <span class="bu">len</span>(focal.intersection(neighbor)) <span class="op">/</span> <span class="bu">len</span>(focal.union(neighbor))</a>
+<a class="sourceLine" id="cb2-5" title="5">prob <span class="op">=</span> <span class="bu">len</span>(focal.symmetric_difference(neighbor)) <span class="op">/</span> <span class="bu">len</span>(focal.union(neighbor))</a></code></pre></div>
+<ol start="5" type="1">
+<li>find list of traits which differ between two agents</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># trick here is that we need two things:  first, the traits in the focal agent which </span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="co"># differ with the target agent (set difference), and then we need the target&#39;s traits which </span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co"># differ from the focal agent.  We choose a random differing trait in the focal, to replace</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co"># with a random differing trait from the target.  This is true to the spirit of the Axelrod </span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="co"># model without requiring a specific set of loci/alleles (features/traits)</span></a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7">focal_uniq <span class="op">=</span> focal.difference(neighbor)</a>
+<a class="sourceLine" id="cb3-8" title="8">neighbor_uniq <span class="op">=</span> neighbor.difference(focal)</a>
+<a class="sourceLine" id="cb3-9" title="9">focal_to_replace <span class="op">=</span> random.choice(focal_uniq)</a>
+<a class="sourceLine" id="cb3-10" title="10">neighbor_to_adopt <span class="op">=</span> random.choice(neighbor_uniq)</a></code></pre></div>
+:ET

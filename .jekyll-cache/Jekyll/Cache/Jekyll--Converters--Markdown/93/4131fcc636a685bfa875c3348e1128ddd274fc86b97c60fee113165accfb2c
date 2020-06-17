@@ -1,0 +1,50 @@
+I"s"<h3 id="brief-summary">Brief Summary</h3>
+<p>In my <a href="/structured%20information%20project/2014/01/11/semantic-axelrod-prerequisites.html">last note</a>, I ended by talking about how to measure the symmetries and structure of the trait tree which result from our tree-structured Axelrod model.</p>
+<p>Because the traits here are abstract (and thus exchangeable, except for their structural roles within the trait networks), we are not interested in exact trees. Instead, what we want is a measure of “classes of shapes” of trees during and after the social learning process. This is captured by understanding the symmetries of trees of traits, and in particular the “equivalance classes” of vertices that have the same number of children, given a single parent in the tree structure. This notion is captured by the “orbit structure” of the automorphism group of the graph of traits <span class="citation" data-cites="godsil2001algebraic">(Godsil and Royle 2001)</span>.</p>
+<p>In this note, I delve into (some of) the details of this, and establish the measures I will use for simulations for our SAA paper and Springer volume paper.</p>
+<h3 id="initial-situation">Initial Situation</h3>
+<p>As I mentioned before, for simplicity and a good null comparison, I start with a trait “universe” (or design space, sensu <span class="citation" data-cites="o2010cultural">(O’Brien et al. 2010)</span>) which is composed of <span class="math inline">\(T\)</span> different fully balanced trees with <span class="math inline">\((r,h)\)</span> branches and height. The root of each tree represents some basal prerequisite skill or concept for each of the traits below it in the tree, and each parent represents a prerequisite for the traits below it.</p>
+<p>To make this concrete, as in many of my early simulations, I work with a branching factor <span class="math inline">\(r\)</span> of 4, and a height <span class="math inline">\(h\)</span> of 4. This constructs an initial trait tree of 341 traits, with 256 traits at the leaves (<span class="math inline">\(4^4 = 256\)</span>). If we consider this set of traits to be individually unique, there are an enormous number of combinations of traits that any one individual could possess. (For reference, the number of permutations of 341 elements is on the order of <span class="math inline">\(10^{717}\)</span>).</p>
+<p>Continuing the focus on a “full” initial trait tree (keeping in mind that the simulation uses <span class="math inline">\(T\)</span> of these in a population, to represent differing sets of concepts/skills/traits), each tree is fully balanced, which means it starts out with the same number of traits at each level, and the same depth on each branch. This means that each vertex at each level is “equivalent” to its siblings at the same level – structurally, it possesses the same number of children and one parent, and thus is symmetric and interchangeable (ignoring its actual semantics) with other vertices at its level.</p>
+<p>What this means formally, is that there is an <em>automorphism</em> from vertex <span class="math inline">\(X\)</span> at level <span class="math inline">\(h\)</span> to all other vertices at the same level, and thus the vertices at a particular level <span class="math inline">\(h\)</span> belong to the same equivalance class. This means that the automorphism group <span class="math inline">\(\textit{Aut}(G)\)</span> for the initial trait graph has <span class="math inline">\(h+1\)</span> or 5 <em>orbits</em>. This is confirmed by feeding one of the initial trait graphs to the <code>nauty</code> program <code>dreadnaut</code> and asking for the basic summary and orbit structure <span class="citation" data-cites="McKay201494">(McKay and Piperno 2014)</span>.</p>
+<p>Sample output for a full initial trait graph looks like this (all but the last four lines removed):</p>
+<pre><code>level 1:  5 orbits; 21 fixed; index 64
+5 orbits; grpsize=2.079483819622e117; 255 gens; 30388 nodes; maxlev=205
+cpu time = 0.04 seconds
+ 0; 1:4 (4); 5:20 (16); 21:84 (64); 85:340 (256);</code></pre>
+<p>As we can see from the last line, the vertices at each level are equivalent to each other, but not equivalent across heights in the tree. The root is its own equivalance class, there are <span class="math inline">\(r=4\)</span> vertices in the level directly below the root, and so on.</p>
+<p>Thus, the initial condition for the simulation will always be that each of <span class="math inline">\(T\)</span> trait graphs has 5 orbits among 341 vertices. We would expect that the tree-structured Axelrod graph, as it winnows this initial design space, will end up with trait configurations that are:</p>
+<ul>
+<li>Much more asymmetric, and</li>
+<li>Much richer in vertices with specific symmetries at a given level</li>
+</ul>
+<p>and thus, will have more orbits with fewer vertices in each orbit.</p>
+<p>Furthermore, two trait trees with the same orbit structure and number of vertices are an <em>equivalent</em> outcome to the simulation process, despite the stochastic nature of the copying rules.</p>
+<h3 id="winnowed-graphs">Winnowed Graphs</h3>
+<p>I’m still writing the code to automatically sample trait graphs through the simulation (without killing its performance) and calculate their symmetries and orbit structure, but I captured a couple of graphs at final convergence, and this is what one looks like:</p>
+<pre><code>20 orbits; grpsize=1152; 9 gens; 53 nodes; maxlev=9
+cpu time = 0.00 seconds
+ 0; 1; 2; 3; 4; 5; 6 7 (2); 8; 9; 10; 11 13 (2); 12; 14; 15:17 (3); 18:21
+    (4); 22; 23; 24:26 (3); 27 30 (2); 28 29 (2);</code></pre>
+<p>Note that there are only 30 vertices left; this was a simulation run with very low rates for innovation and individual learning, but slightly higher random loss of traits. The resulting graph (which, sadly, did not render well in Graphviz), showed a “spindly” structure with a few ramified trees down to the roots and a few “shoots” with single paths leading from the root to the leaves.</p>
+<p>This is reflected in the statistics: 20 orbits instead of 5, and most orbits have 1 vertex in them, a few with 2, 3, or 4 equivalent vertices.</p>
+<p><strong>Why is this a good compact description of the structure?</strong> Well, there are 30 vertices left in the trait graph, and 17 of the vertices are “leaf” or terminal nodes. The <em>Narayana number</em> for such graphs describes the number of ordered trees with <span class="math inline">\(n\)</span> vertices and <span class="math inline">\(k\)</span> leaves, and is:</p>
+<p><span class="math inline">\(|S_{n,k}| = \frac{\binom{n-2}{k-1}\binom{n-1}{k-1}}{k}\)</span></p>
+<p>This number, for 30 vertices and 17 leaves, is on the order of <span class="math inline">\(10^{14}\)</span>. Still a very large number of possibilities. Of these, we are concerned only with a small fraction which possess 20 orbits and the orbit structure given above. The latter is like a “fingerprint” for the symmetry structure of the resulting trait trees, picking out a tiny fraction of the possible trees as the result of a particular social learning and drift process.</p>
+<h3 id="measures">Measures</h3>
+<p>Thus, in addition to the relatively crude ratio of actual to total possible vertices in a sampled trait graph, we can divide the sampled trait graphs into equivalance classes which measure their “shape” in terms of symmetries which preserve graph structure. These will be the basic structures that I measure in a final converged simulation, and which I count for frequency distribution in the quasi-stationary but transient portion of simulation runs.</p>
+<p>The distribution of orbit structures is, therefore, the abstract measure of the “structure of knowledge” that the “tree structured” Semantic Axelrod model has as its outcomes.</p>
+<p>More when the simulation runs have finished running….</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-godsil2001algebraic">
+<p>Godsil, Christopher David, and Gordon Royle. 2001. <em>Algebraic Graph Theory</em>. Vol. 8. Springer New York.</p>
+</div>
+<div id="ref-McKay201494">
+<p>McKay, Brendan D., and Adolfo Piperno. 2014. “Practical Graph Isomorphism, {Ii}.” <em>Journal of Symbolic Computation</em> 60 (0): 94–112. <a href="https://doi.org/http://dx.doi.org/10.1016/j.jsc.2013.09.003">https://doi.org/http://dx.doi.org/10.1016/j.jsc.2013.09.003</a>.</p>
+</div>
+<div id="ref-o2010cultural">
+<p>O’Brien, M.J., R.L. Lyman, A. Mesoudi, and T.L. VanPool. 2010. “Cultural Traits as Units of Analysis.” <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> 365 (1559). The Royal Society: 3797–3806.</p>
+</div>
+</div>
+:ET

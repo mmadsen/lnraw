@@ -1,0 +1,28 @@
+I"�<h3 id="adding-time-averaging-to-the-ct-mixtures-model">Adding Time Averaging to the CT Mixtures Model</h3>
+<p>At present (v1.0, May 2014), the <a href="https://github.com/mmadsen/ctmixtures"><code>ctmixtures</code></a> model performs the following sampling of the evolving population:</p>
+<ol type="1">
+<li>Counts and frequencies of traits for <span class="math inline">\(M\)</span> features/loci across the population.</li>
+<li>Counts and frequencies of traits for <span class="math inline">\(M\)</span> features/loci at a list of sample sizes (e.g., 20, 50, 100)</li>
+<li>Trait survival analysis for an interval <span class="math inline">\(T\)</span>, calculated for the last <span class="math inline">\(T * N\)</span> ticks of the simulation, given population size of <span class="math inline">\(N\)</span>.</li>
+</ol>
+<p>What version 1.0 did not include is:</p>
+<ol type="1">
+<li>Time averaged observations of trait counts and frequencies over a list of durations</li>
+<li>Calculation of trait survival for an interval <span class="math inline">\(T\)</span>, where the starting and finishing samples are both time averaged.</li>
+</ol>
+<h3 id="simulation-event-timing">Simulation Event Timing</h3>
+<p>The following diagram shows how time averaging is integrated into the simulation event stream. Time runs from top (start of simulation) to bottom (end of simulation). Between simulation start time and the start of sampling, the population is evolving from its initial condition to quasi-stationarity. Sampling start time is calculated to occur at a multiple of the expected mixing time, to ensure that the population is at quasi-equilibrium.</p>
+<p>In the center of the diagram is an interval, marked with a dotted vertical line, depicting the interval over which we track the survival of traits given <span class="citation" data-cites="kandler2013non">(Kandler and Shennan 2013)</span>.</p>
+<p>Above this fixed interval, we take one sample (of duration 1 tick) to begin the survival analysis, and below the interval, a sample of duration 1 to complete it. This sample is directly comparable to the analysis performed in Kandler and Shennan’s paper (although run with Moran versus Wright-Fisher dynamics).</p>
+<p>Expanding away from this interval on both sides are a series of samples taken with greater duration. The first is a sample of duration 25, to start and finish the survival analysis, then 50 ticks, 100, and finally 200 ticks. Each pair of samples measures the trait survival when the samples are necessarily of non-trivial duration (and thus time averaged).</p>
+<p>In addition, for the “ending” time averaged sample, I also record raw trait counts, frequencies, and other assemblage statistics, as I do with non-time averaged samples.</p>
+<figure>
+<img src="/images/time-averaging-with-kandler-sampling.png" alt="simulation event timing" /><figcaption>simulation event timing</figcaption>
+</figure>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-kandler2013non">
+<p>Kandler, Anne, and Stephen Shennan. 2013. “A Non-Equilibrium Neutral Model for Analysing Cultural Change.” <em>Journal of Theoretical Biology</em> 330. Elsevier: 18–25.</p>
+</div>
+</div>
+:ET

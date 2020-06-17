@@ -1,0 +1,17 @@
+I" 	<h3 id="data-consolidation">Data Consolidation</h3>
+<p>At the conclusion of the simulation runs, each of the 8 compute nodes had a separate MongoDB database with identically named databases and collections, but separate rows of data.</p>
+<p>Each MongoDB instance was stopped, and the contents of the <code>/sim/data</code> directory containing the raw MongoDB files was archived and compressed, and copied to a local machine so that the cluster could be terminated (stopping the cost of running it).</p>
+<p>On a local database, a new database called <code>equifinality-1-merged</code> was created, and each nodeâ€™s database was copied into it via a pair of <code>mongoexport</code> and <code>mongoimport</code> calls. The original MongoDB binary files, in <code>tar.gz</code> format, are archived on S3, as will a merged JSON export format. This is handy in addition to CSV files so that database operations can be used to operate on the dataset, which in datasets much larger than this is preferable to doing it within R or Python on a row-wise basis.</p>
+<h3 id="data-export">Data Export</h3>
+<p>The <code>ctmixtures v2.3</code> simulation code records one data record in a MongoDB database for each simulation run. Since that record contains nested data structures corresponding to different sample sizes and time averaging durations, this note records how the record is unpacked into raw data files which archive the results of simulation, and form the basis of further analysis.</p>
+<p>The script <code>analytics/ctmixtures-export-data.py</code> is used against the MongoDB instance on each running compute cluster node, to produce CSV files, which are then centralized and combined to form the full raw data set from a simulation experiment. The program generates four raw data files:</p>
+<ol type="1">
+<li>general simulation information: random seeds, configuring classes, all model parameters</li>
+<li>population census statistics, model class label, simulation id</li>
+<li>sampled statistics, model class label, simulation id</li>
+<li>time averaged and sampled statistics, model class label, simulation id</li>
+</ol>
+<p>In these data export files, I am not exporting lists of trait counts or frequencies. These will remain in the original database for future queries and analysis, but are not used in the equifinality analysis.</p>
+<h3 id="data-export-process">Data Export Process</h3>
+<p>TBD - exact StarCluster steps for performing the data export</p>
+:ET
