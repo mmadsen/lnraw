@@ -5,7 +5,6 @@ tags: [transmissionframework, simulation, niche construction, tuplespace models,
 categories:
 - project-niche construction
 - essays
-- open problems
 ---
 
 The basic idea here:  we cannot model cultural transmission, as it is really implemented in humans, by acting like traits are alleles at genetic loci.  Such models were important, because they gave us a _modeling framework_ within which we can analyze CT models, but neutral Wright-Fisher or the SIS/contact model are not CT.  

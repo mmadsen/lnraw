@@ -4,7 +4,6 @@ title: Coarse Graining for Structured Information
 tags: [coarse graining, structured information, cultural transmission, open problems]
 categories: 
 - project-coarse grained model
-- open problems
 ---
 
 ### Open Problem ###
