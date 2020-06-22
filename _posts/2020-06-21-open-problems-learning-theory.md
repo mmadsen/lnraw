@@ -8,7 +8,7 @@ categories:
 
 In this post, by "learning theory" I really mean "statistical learning theory," rather than what social scientists mean by "social learning".  In machine learning and computer science, a large amount of research is going into creating models of how to "learn from data".  A key lesson from Boyd and Richerson is the interplay between "social" learning (or "cultural transmission") from peers and conspecifics, and "guided variation" or "individual learning".  Across a variety of disciplines, and especially in evolutionary biology, social psychology, economics, and anthropology, there is a large literature on the circumstances that govern when it is advantageous to learn via trial and error in the environment versus imitate peers.  
 
-Leslie Valiant (1984, 2013) built the mathematical framework for understanding the conditions under which a model can "learn" a concept or target from data.  That framework, "probably approximately correct" or "PAC" learning, is the foundation for statistical learning theory, which in turn underpins the "predictive" branch of statistics and machine learning.  In PAC learning, the learner/agent selects a hypothesis (algorithm/model) from among a permissible space of models that has low generalization error (the "approximately correct" part) with high probability (the "probably correct" part).  Valiant (2013) then took a stab at connecting this with evolution in his popular exposition of PAC learning theory, with variable success.
+Leslie Valiant [@valiant1984theory,@valiant2013probably] built the mathematical framework for understanding the conditions under which a model can "learn" a concept or target from data.  That framework, "probably approximately correct" or "PAC" learning, is the foundation for statistical learning theory, which in turn underpins the "predictive" branch of statistics and machine learning.  In PAC learning, the learner/agent selects a hypothesis (algorithm/model) from among a permissible space of models that has low generalization error (the "approximately correct" part) with high probability (the "probably correct" part).  Valiant (2013) then took a stab at connecting this with evolution in his popular exposition of PAC learning theory, with variable success.
 
 How do we do this right?  Some version of PAC learning is occurring at two scales in the case of cultural evolution:
 
@@ -28,6 +28,11 @@ Why do we go to all this trouble?
 Fundamentally the issue is how we get "thicker" models for social learning, but retain the ability to do statistical modeling with them.  Population genetics models are sort of a dead end for this task.  Statistical learning theory is probably the best way to model the "evo-devo" of cultural transmission, in a stochastic context, with realistic "targets" and variation.  Then we just need to coarse-grain it to the evolutionary scale with a population-level process on top.  
 
 There is a massive amount of work here, but if this approach can be outlined with real exemplars in a couple of studies, there is a new paradigm here, and one supported by a vast amount of real work and available software to work with.
+
+### Previous Notes ###
+
+* From 2016:  [Intentionality and Cultural Evolution - Towards a Generalized Learning Theory Account]({{ site.baseurl }}{% post_url 2016-03-03-cultural-evolution-intentionality-pac-learning %})
+
 
 
 ### References Cited ###
