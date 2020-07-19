@@ -14,7 +14,7 @@ This is a good thing to keep in mind -- how do we know we have a clean, minimal,
 
 ### Connections ###
  
-* [Gauge Symmetry and Structure]({% post_url 2020-07-19-gauge-symmetry-and-structure})
+* [Gauge Symmetry and Structure]({% post_url 2020-07-19-gauge-symmetry-and-structure %})
 
 ### References Cited ###
 
