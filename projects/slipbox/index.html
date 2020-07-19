@@ -1,0 +1,41 @@
+---
+layout: project_layout
+title: Research Notes:  The Slipbox
+tags: [reading notes, research notes]
+date: 2020-07-19 00:00:00
+---
+
+<h2>{{ page.title }}</h2>
+
+<table class="table table-condensed">
+{% for post in site.categories["project-slipbox"] %}
+
+
+	<tr>
+	<td>{{ post.date | date_to_string }}</td>
+	<td><a href="{{ post.url }}">{{post.title}}</a></td>
+	</tr>
+
+
+{% endfor %}
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
