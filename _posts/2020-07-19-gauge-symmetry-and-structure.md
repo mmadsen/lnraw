@@ -27,6 +27,8 @@ This seems to be a very good way of separating issues.  Most of our classificato
 
 Whereas it is unclear, and a separate theoretical issue, whether we have global symmetries that require the full covariant treatment.  
 
+Where this connects with [@north2009structure]:  North argues that Hamiltonians are more "fundamental" than Lagrangian descriptions because it uses only necessary structure.  Schwichtenberg (p. 31) uses an example of a marble rolling along a circle.  Since the marble is confined to the circle, it only has one degree of freedom.  A fundamental description is $\phi$, or the angle along the circle (although even here, we might have a gauge symmetry that allows us to specify different "zero" reference points for measuring the angle!).  If we use Cartesian or rectangular coordinates, we use two coordinates to describe position, but clearly there is still one degree of freedom even with the two coordinates.  The Cartesian description contains redundancy because of the rotational symmetry of the system.  The rotational symmetry is "global" and part of the system but our choice of ways of measuring $\phi$ is purely "internal" and local and not part of the system.  We can make our **description** minimal and fundamental by transforming coordinates to polar.  
+
 
 ### Connections ###
 
