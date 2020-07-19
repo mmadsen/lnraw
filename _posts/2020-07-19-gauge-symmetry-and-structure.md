@@ -6,7 +6,7 @@ categories:
 - project-slipbox
 ---
 
-From reading Jakob Schwichtenerg [@schwichtenberg2019demystifying]: Demystifying Gauge Symmetry:
+From reading [@schwichtenberg2019demystifying]: Demystifying Gauge Symmetry:
 
 Core idea here (similar to his argument in "Physics from Symmetry" but more strongly expressed, is that:
 
@@ -32,9 +32,9 @@ Where this connects with [@north2009structure]:  North argues that Hamiltonians 
 
 ### Connections ###
 
-[[2020-07-19-how-much-structure]]
-Ilinski, Physics of Finance
-Schwichtenberg, Physics From Symmetry
+* [[2020-07-19-how-much-structure]]
+* Ilinski, Physics of Finance
+* Schwichtenberg, Physics From Symmetry
 
 
 
