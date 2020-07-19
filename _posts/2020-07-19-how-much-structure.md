@@ -12,5 +12,9 @@ North argues that despite the Lagrangian and Hamiltonian frameworks in classical
 
 This is a good thing to keep in mind -- how do we know we have a clean, minimal, classification or empirical model for a phenomenon?  This is clearly an "Occam's razor" idea for structure and theoretical description, but it's well done by North in the context.  You might need a mathematical formalism with more-than-minimal structure in order to solve a practical problem, but the fundamental description will have only the minimal structure required.  
 
+### Connections ###
+ 
+* [Gauge Symmetry and Structure]({% post_url 2020-07-19-gauge-symmetry-and-structure})
+
 ### References Cited ###
 
