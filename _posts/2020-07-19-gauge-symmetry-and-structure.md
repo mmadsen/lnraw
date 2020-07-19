@@ -6,7 +6,7 @@ categories:
 - project-slipbox
 ---
 
-From reading Jakob Schwichtenerg (2019): Demystifying Gauge Symmetry:
+From reading Jakob Schwichtenerg [@schwichtenberg2019demystifying]: Demystifying Gauge Symmetry:
 
 Core idea here (similar to his argument in "Physics from Symmetry" but more strongly expressed, is that:
 
