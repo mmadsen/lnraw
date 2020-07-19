@@ -3,7 +3,7 @@ layout: post
 title: How Much Structure Is Needed?
 tags: [classification, systematics2021, theories, physics]
 categories: 
-- project:slipbox
+- project-slipbox
 ---
 
 From Jill North:  "The 'Structure' of Physics:  A Case Study" [@north2009structure].
