@@ -1,4 +1,4 @@
-I"<p>From reading Jakob Schwichtenerg <span class="citation" data-cites="schwichtenberg2019demystifying">(Schwichtenberg 2019)</span>: Demystifying Gauge Symmetry:</p>
+I"<p>From reading <span class="citation" data-cites="schwichtenberg2019demystifying">(Schwichtenberg 2019)</span>: Demystifying Gauge Symmetry:</p>
 <p>Core idea here (similar to his argument in “Physics from Symmetry” but more strongly expressed, is that:</p>
 <ul>
 <li>Local gauge symmetry is just redudancy in description (“gauge redundancy”)</li>
@@ -13,7 +13,11 @@
 <p>Whereas it is unclear, and a separate theoretical issue, whether we have global symmetries that require the full covariant treatment.</p>
 <p>Where this connects with <span class="citation" data-cites="north2009structure">(North 2009)</span>: North argues that Hamiltonians are more “fundamental” than Lagrangian descriptions because it uses only necessary structure. Schwichtenberg (p. 31) uses an example of a marble rolling along a circle. Since the marble is confined to the circle, it only has one degree of freedom. A fundamental description is <span class="math inline">\(\phi\)</span>, or the angle along the circle (although even here, we might have a gauge symmetry that allows us to specify different “zero” reference points for measuring the angle!). If we use Cartesian or rectangular coordinates, we use two coordinates to describe position, but clearly there is still one degree of freedom even with the two coordinates. The Cartesian description contains redundancy because of the rotational symmetry of the system. The rotational symmetry is “global” and part of the system but our choice of ways of measuring <span class="math inline">\(\phi\)</span> is purely “internal” and local and not part of the system. We can make our <strong>description</strong> minimal and fundamental by transforming coordinates to polar.</p>
 <h3 id="connections">Connections</h3>
-<p>[[2020-07-19-how-much-structure]] Ilinski, Physics of Finance Schwichtenberg, Physics From Symmetry</p>
+<ul>
+<li>[[2020-07-19-how-much-structure]]</li>
+<li>Ilinski, Physics of Finance</li>
+<li>Schwichtenberg, Physics From Symmetry</li>
+</ul>
 <h3 id="references-cited" class="unnumbered">References Cited</h3>
 <div id="refs" class="references" role="doc-bibliography">
 <div id="ref-north2009structure">
