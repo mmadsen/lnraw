@@ -1,0 +1,52 @@
+I"�<p>Authors: Mark E. Madsen and Carl P. Lipo</p>
+<h3 id="overview">Overview</h3>
+<p>Experiment <code>seriationct-1</code> is a first try at producing true frequency seriations from a regional cultural transmission model. The experiment combines:</p>
+<ol type="1">
+<li>A metapopulation model of unbiased cultural transmission</li>
+<li>A temporal network model describing the evolution of demes within the metapopulation and their interaction intensities</li>
+<li>The <a href="https://github.com/clipo/idss-seriation">IDSS</a> seriation algorithm</li>
+</ol>
+<h3 id="cultural-transmission-model">Cultural Transmission Model</h3>
+<p>The CT model involves:</p>
+<ul>
+<li>Neutral copying of individual trait repertoires given Wright-Fisher dynamics</li>
+<li>Multiple local populations in a regional metapopulation</li>
+<li>Time-varying contact network within the metapopulation</li>
+<li>Well-mixed interaction within each deme</li>
+<li>Multiple dimensions of variation in the design space</li>
+<li>Standard “infinite alleles” innovation for each trait dimension</li>
+<li>Tracking both of dimension variants, and the intersection (classes) of dimensions</li>
+</ul>
+<p>The source code for the model is available in the <a href="https://github.com/mmadsen/seriationct">seriationct</a> repository, and is written in Python on top of the superb <a href="http://simupop.sourceforge.net/">simuPOP</a> population genetics simulation framework by Bo Peng. Data are stored in a standard <a href="http://www.mongodb.org/">MongoDB</a> database, for ease of evolving the data schema as the experiment proceeds.</p>
+<h3 id="temporal-network">Temporal Network</h3>
+<p>The CT model takes a interval-style “temporal network” model <span class="citation" data-cites="holme2012temporal">(Holme and Saramäki 2012)</span>, which describes an evolving contact network as a series of network “slices” that are valid for a duration of time. Vertices represent local populations, edges represent movement of individuals between populations, and edge weights represent the intensity of that movement and thus the potential for cultural traits to flow between subpopulations.</p>
+<p>The overall model is composed of a series of GML files which describe weighted graphs, with textual labels uniquely identifying subpopulations that carry over (potentially) between slices. The GML files become a sequence of <code>NetworkX</code> graph objects, assigned to time indices after the CT model has achieved a quasi-stationary equilibrium (“burn-in”) and before the end of the simulation run. At the time index that each slice is assigned:</p>
+<ol type="1">
+<li>Demes that are not listed in the new slice are removed from the metapopulation; this models a community being abandoned or going extinct.<br />
+</li>
+<li>Demes that are newly listed in the slice are added to the metapopulation by fission from one of the neighboring demes connected by an edge; individuals are seeded from that subpopulation’s trait population by sampling with replacement.<br />
+</li>
+<li>The edge weights are converted into a “migration matrix” which gives the probability that an individual from subpopulation A will migrate to subpopulation B in any given simulation step (there is a configurable probability that individuals stay put, typically large).</li>
+</ol>
+<h3 id="experimental-setup">Experimental Setup</h3>
+<p>The goals of <code>seriationct-1</code> are twofold:</p>
+<ol type="1">
+<li><p>Does this combination of factors: regional, structured transmission, plus time averaged observations, plus classification of multiple trait dimensions into a design space of classes, yield the frequency patterns seen in archaeological seriations?</p></li>
+<li><p>Given two different patterns of regional interaction, do the resulting seriations display distinct enough solution characteristics that we can identify the interaction pattern from seriation solutions?</p></li>
+</ol>
+<p>The two regional interaction models examined here are:</p>
+<ol type="1">
+<li>Simple distance-decay: interaction is less frequent and likely the further away two subpopulations are from one another.</li>
+<li>Hierarchical interaction: interaction is strongest to “hubs” and less dependent upon simple distance.</li>
+</ol>
+<p>For each model, we generate multiple random instances of graphs with the specified topology, so that results are independent of the particulars of a single graph realization. We then simulate cultural transmission on each temporal network instance, with replications.</p>
+<p>For each simulation run, we gather class counts from each subpopulation existing at each simulation step after burn-in. For analysis, we aggregate all of the counts over time from each subpopulation, and then calculate the time-averaged frequency of classes. These form the “assemblages” which are input to the IDSS seriation algorithm.</p>
+<p>The resulting output is an IDSS frequency seriation graph for each replication of each simulation run on each temporal network model.</p>
+<p>The analysis then involves studying the graph properties of these seriation solutions, and determining whether a classifier model can accurately predict which regional interaction model generated a given seriation solution. The data set will be split 80/20 into a training and test set, balanced across the temporal network models and simulation parameters, and the ability to predict the interaction model assessed only on the test set.</p>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-holme2012temporal">
+<p>Holme, Petter, and Jari Saramäki. 2012. “Temporal Networks.” <em>Physics Reports</em> 519 (3). Elsevier: 97–125.</p>
+</div>
+</div>
+:ET

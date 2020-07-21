@@ -1,0 +1,21 @@
+I"�<p><strong>UPDATE: 5-23-2016</strong>: I have updated the public AMI to upgrade various dependencies, and to add Open Grid Engine to facilitate parallel job execution on a multiple core or multiple instance cluster. The NEW AMI is <code>ami-07f80f6a</code> with the name “Simulation-DNN-GridEngine Linux”. Thanks to Israel Malkin for pointing out that I hadn’t made the new AMI public after creating it, that’s now fixed.</p>
+<h3 id="ami-for-deep-neural-networks">AMI for Deep Neural Networks</h3>
+<p>Given the increasing quality of libraries for building deep neural network architectures, I’ve been exploring whether DNNs can improve my accuracy in distinguishing between the empirical signatures of cultural transmission models. I started out with Lasagne driving Theano, since Theano itself is pretty nuts and bolts and I occasionally find getting the right tensor shapes a bit baffling. I quickly found Keras, which is another (and very well designed) wrapper around <strong>both</strong> TensorFlow and Theano, which also allows one to switch between backends. Keras is designed for quick prototyping and research, which is perfect for this context.</p>
+<p>Being able to switch backends also turns out to be fairly handy if you develop on OS X, because if you’ve got Yosemite and the current version of Xcode (7.1), the CLANG compiler toolchain is not compatible with Theano and the CUDA nvcc compiler. Which meant that I’d been developing in an Ubuntu 15.10 virtual machine on my laptop, which was sufficient for testing, and then pushing code to a box with an NVIDIA GPU. By switching the Keras backend to TensorFlow, I can test the main body of my model code on the Mac, and then switch it back to Theano to run on a box with a GPU (since Theano on GPU on Linux is generally thought to be better performing than TensorFlow in general right now).</p>
+<p>I looked around a bit for AMIs to quickly spin up an EC2 instance, and mostly found a lot of broken links to AMIs that weren’t available in my default <code>us-east-1</code> availability zone. So, I spent a couple of hours today building one with everything I needed.</p>
+<p>The public AMI <code>ami-5cc6e636</code> is based upon Ubuntu 14.04, with the following added:</p>
+<ul>
+<li>Caffe direct from Github bleeding edge</li>
+<li>cuDNN v3.0 from NVIDIA</li>
+<li>CUDA 7.0, with driver built for the Linux 3.13 kernel that Ubuntu 14.04 uses</li>
+<li>Anaconda Python 2.7</li>
+<li>Theano from bleeding edge, which means 0.8 at this point in time</li>
+<li>Lasagne from bleeding edge, which means 0.2 at this point</li>
+<li>Keras, from <code>pip install</code></li>
+<li>nolearn, from <code>pip install</code></li>
+<li>Seaborn for visualization, from <code>pip install</code></li>
+<li>Graphviz</li>
+</ul>
+<p>The image has a mounted EBS volume for data, and a 32GB root partition since there’s a lot of stuff installed here.</p>
+<p>Fire this AMI up on an <code>g2.2xlarge</code> instance type for 8 CPU cores, 15GB of RAM, and a GPU with 1,536 CUDA cores. I will try to keep an AMI with these specs up to date, and since the AMI ID will change, check <a href="http://notebook.madsenlab.org/tag/aws.html">the tag <code>AWS</code></a> for updates.</p>
+:ET

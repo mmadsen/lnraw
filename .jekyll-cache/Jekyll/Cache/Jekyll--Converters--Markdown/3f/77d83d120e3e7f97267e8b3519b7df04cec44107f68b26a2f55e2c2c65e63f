@@ -1,0 +1,72 @@
+I"�<h3 id="model-resolution-and-equifinality">Model Resolution and Equifinality</h3>
+<p>Experiment <code>sc-2</code> was designed to examine the opposite question as <code>sc-1</code>; that is, when do we lose the ability to distinguish between regional interaction models by examining the structure of seriations from cultural traits transmitted through those interaction networks? This is a question of equifinality of models: do different models have empirical consequences which are indistinguishable given a particular observation technique?</p>
+<p>To test this, I set up four models which I believe to be very “close” to each other:</p>
+<ol type="1">
+<li>Lineage splitting where 1 lineage turns into 2 lineages, the split occurring 30% of the way through the time sequence (“early split”)</li>
+<li>Lineage splitting where 1 <span class="math inline">\(\rightarrow\)</span> 2 lineages, split occurring 70% of the way through the time sequence (“late split”)</li>
+<li>Lineage coalescence where 2 lineages turn into a single linage, the event occurring 30% of the way through the sequence (“early coalescence”)</li>
+<li>Lineage coalescence where 2 <span class="math inline">\(\rightarrow\)</span> 1 lineages, split occuring 70% of the way through the time sequence (“late coalescence”)</li>
+</ol>
+<p>In all other respects, simulation of cultural transmission across these regional networks was identical, using the same prior distributions for innovation and migration rates, population sizes, and so on.</p>
+<p>My expectation going in was that the lineage splitting and coalescence models should generate seriations which are almost indistinguishable from one another, except for their temporal orientation, and with the paired early/late comparisons, it may be difficult to tell any of these models from one another without additional feature information. In particular, I expected roughly chance performance on classification unless we could provide temporal orientation, and even then, we may only be able to tell coalescence from splitting models.</p>
+<h3 id="initial-sc-2-analysis">Initial SC-2 Analysis</h3>
+<p>The analysis of <code>sc-2</code> followed the method used in the <a href="http://notebook.madsenlab.org/project-coarse%20grained%20model/model-seriationct/experiment-experiment-seriation-classification/2016/02/16/feature-engineering-seriation-classification.html">second trial of <code>sc-1</code></a>, calculating the Laplacian eigenvalue spectrum of the final seriation solution graphs (specifically, the <code>minmax-by-weight</code> solutions for continuity seriation), and using the sorted eigenvalues as features for a gradient boosted classifier.</p>
+<p>The initial results seem indicative of real trouble telling these models apart. For guidance, class labels are as follows:</p>
+<ol start="0" type="1">
+<li>Early splitting</li>
+<li>Early coalescence</li>
+<li>Late split</li>
+<li>Late coalescence</li>
+</ol>
+<p>Given a hold-out test set, we see the following performance:</p>
+<pre><code>
+          predicted 0  predicted 1  predicted 2  predicted 3
+actual 0            3            2            0            0
+actual 1            1            1            0            0
+actual 2            0            0            2            2
+actual 3            0            0            4            5
+             precision    recall  f1-score   support
+
+          0       0.75      0.60      0.67         5
+          1       0.33      0.50      0.40         2
+          2       0.33      0.50      0.40         4
+          3       0.71      0.56      0.63         9
+
+avg / total       0.61      0.55      0.57        20
+
+Accuracy on test: 0.550</code></pre>
+<p>The overall accuracy is low, but the pattern of misclassifications is key here. We never see “early” models misclassified as “late” models, but we do see splitting misclassified as coalescence (possibly because we have no orienting information). So while overall accuracy is low, we actually have perfect discrimination along one dimension of the models: when events that alter lineage structure occur, in relative terms. Not bad, considering how “close” in structure these regional interaction models are.</p>
+<h3 id="optimizing-classification-performance">Optimizing Classification Performance</h3>
+<p>The above was conducted with “reasonable” hyperparameters for the gradient boosted classifier, but I want to understand our best performance in separating these models. This is accomplished by setting the hyperparameters through cross-validation. In this case, I used a grid search of the following variables and parameters for the learning rate penalty, and the number of boosting rounds (number of estimators):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">     <span class="co">&#39;clf__learning_rate&#39;</span>: [<span class="fl">5.0</span>,<span class="fl">2.0</span>,<span class="fl">1.0</span>, <span class="fl">0.75</span>, <span class="fl">0.5</span>, <span class="fl">0.25</span>, <span class="fl">0.1</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>, <span class="fl">0.005</span>],</a>
+<a class="sourceLine" id="cb2-2" title="2">     <span class="co">&#39;clf__n_estimators&#39;</span>: [<span class="dv">10</span>,<span class="dv">25</span>,<span class="dv">50</span>,<span class="dv">100</span>,<span class="dv">250</span>,<span class="dv">500</span>,<span class="dv">1000</span>]</a></code></pre></div>
+<p>Using 5-fold cross validation, this produced 350 different fits of the classifer, with the following results:</p>
+<pre><code>Best score: 0.593
+Best parameters:
+param: clf__learning_rate: 1.0
+param: clf__n_estimators: 50</code></pre>
+<p>Some improvement is seen on overall training set accuracy, but the real surprise is test performance on the hold-out data, using the optimal hyperparameters:</p>
+<pre><code>          predicted 0  predicted 1  predicted 2  predicted 3
+actual 0            3            2            0            0
+actual 1            1            1            0            0
+actual 2            0            0            3            1
+actual 3            0            0            3            6
+             precision    recall  f1-score   support
+
+          0       0.75      0.60      0.67         5
+          1       0.33      0.50      0.40         2
+          2       0.50      0.75      0.60         4
+          3       0.86      0.67      0.75         9
+
+avg / total       0.71      0.65      0.66        20
+
+Accuracy on test: 0.650</code></pre>
+<p>Overall accuracy is greatly improved, which is unusual (normally I would expect test accuracy to be less than training accuracy, but the test set is small). But we can see that we improved mainly because of our ability to predict classes 2 and 3, although the overall pattern is still the same: we have misclassification within early and within late, but perfect discrimination between the two.</p>
+<h3 id="summary">Summary</h3>
+<p>Given how close these models were, I expected to have great trouble in identifying them from seriations. What I found is that I can identify part of the model class with great accuracy, and that the other modeling dimension (coalescence/splitting) with much less accuracy. This leads me to suspect that I could predict both dimensions with very high accuracy if I were to find a way to encode temporal orientation as a feature.</p>
+<p>I will pursue this, since we often have at least <strong>some</strong> information on temporal orientation, perhaps by knowing that one assemblage in a set is much earlier or later than the rest. The challenge is finding a way to provide this kind of hint for the synthetic seriation graphs. More soon on this.</p>
+<h3 id="resources">Resources</h3>
+<p><a href="http://nbviewer.jupyter.org/gist/anonymous/f6a18712ee1077d1a329">Full analysis notebook</a> on NBViewer, from the Github repository.</p>
+<p>Github Repository: <a href="https://github.com/mmadsen/experiment-seriation-classification">experiment-seriation-classification</a></p>
+<h3 id="references-cited">References Cited</h3>
+:ET

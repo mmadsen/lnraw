@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Much Structure Is Needed?
+title: Systematics Preface 2002 notes
 tags: [classification, systematics2021]
 categories: 
 - project-slipbox
