@@ -21,6 +21,21 @@ module Jekyll
 			url
 		end
 
+		def labnotes_posts(posts)
+			filtered = []
+			for post in posts 
+				filtered.push(post) if post.categories & ["project-slipbox", "essays"]== []
+			end
+			filtered
+		end
+
+		def slipbox_posts(posts)
+			filtered = []
+			for post in posts
+				filtered.push(post) if post.categories.include? "project-slipbox"
+			end
+			filtered
+		end
 
 		def posts_without_essays(posts)
 			filtered = []

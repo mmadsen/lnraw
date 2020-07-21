@@ -27,6 +27,23 @@ layout: default
 				{% endfor %}
 				</table>
 
+			<h3>Slipbox Research Notes</h3>
+
+				{% assign slipboxposts = site.posts | slipbox_posts %}
+
+				<table class="table table-condensed">
+
+				{% for post in slipboxposts limit:15 | sort:'date' %}
+
+					<tr>
+					<td>{{ post.date | date_to_string }}</td>
+					<td><a href="{{ post.url }}">{{post.title}}</a></td>
+					</tr>
+
+				{% endfor %}
+				</table>
+
+
 
 			<h3>Recent Lab Notes</h3>
 
@@ -36,7 +53,7 @@ layout: default
 					<th>Date</th>
 					<th>Title</th>
 				</tr>
-				{% assign nonessays = site.posts | posts_without_essays %}
+				{% assign nonessays = site.posts | labnotes_posts %}
 				{% for post in nonessays limit:15 | sort:'date' %}
 
 					{% assign category = post.categories | get_project_category %}
