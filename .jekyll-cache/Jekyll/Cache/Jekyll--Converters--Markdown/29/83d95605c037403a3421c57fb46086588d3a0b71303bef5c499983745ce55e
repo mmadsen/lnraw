@@ -14,4 +14,4 @@
 <p>The tough part is crafting suitable observables inside a simuPOP environment, since the system is mostly set up to do population statistics. We can easily have simuPOP do “subpopulation” statistical counts automatically, but we need to have a way to automatically code individuals as belonging to a subpopulation based upon their cultural genotype so we can do so.</p>
 <p>Axelrod defines individuals as sharing the same “culture” if they have the same states for all cultural features. This is easy to determine, simply by doing a hash of the genotype, and giving individuals either a subpopulation code or a custom attribute based on this. The statistics of subpouplations or that custom attribute would then reflect the statistics of groups sharing exact genotypes.</p>
 <p>Spatial pattern might be a bit harder. Need to think about that.</p>
-:ET
+:EF

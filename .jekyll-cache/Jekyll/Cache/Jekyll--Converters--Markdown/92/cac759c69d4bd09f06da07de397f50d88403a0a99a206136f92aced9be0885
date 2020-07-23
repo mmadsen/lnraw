@@ -68,4 +68,4 @@ Vec and Parallelism  - 1m36.847s</code></pre>
 <p>The result with 100K individuals and 25K generations (comparable to the above timing experiments) is:</p>
 <pre><code>31.24 real       119.92 user         3.02 sys</code></pre>
 <p>which is a 12.76x speedup over the serial unvectorized code. I’m not likely to push the performance experiments too much further, since I have a lot of other code to write, but it was a good experiment and now I have code modules to use in future simulations where I need the performance. And, others are encouraged to start with it and adapt it to your own transmission simulations, since it’s known to work and work quickly.</p>
-:ET
+:EF

@@ -64,4 +64,4 @@ mixconfequal       1665      10860       9526         9984   0.6883409</code></p
 <a class="sourceLine" id="cb2-22" title="22"></a>
 <a class="sourceLine" id="cb2-23" title="23"><span class="co"># test error</span></a>
 <a class="sourceLine" id="cb2-24" title="24"><span class="kw">sum</span>(test<span class="op">$</span>model_class_label<span class="op">==</span><span class="kw">predict</span>(fit, test[<span class="kw">names</span>(shuffled_df)])) <span class="op">/</span><span class="st"> </span><span class="kw">nrow</span>(test)</a></code></pre></div>
-:ET
+:EF

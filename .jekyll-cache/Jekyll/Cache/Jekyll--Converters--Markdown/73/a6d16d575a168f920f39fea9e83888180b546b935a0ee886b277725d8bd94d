@@ -5,4 +5,4 @@
 <p>So I need to think more about situations where the power-law exponent does seem to be useful, and check how Premo calculated it, because in theory it seems to be robust to time averaging effects, but it’s possible that this is because it’s only calculable on large amounts of aggregate data. Carl Lipo suggested something along these lines in conversation recently.</p>
 <h3 id="analysis-run">Analysis Run</h3>
 <p>I started <code>equifinality-4</code> on data re-exported (with the V2.5 data export script) from the <code>equifinality-3</code> database, on 12/13/14. The analysis is occurring on two EC2 16-core instances, and should be complete in just over 24 hours.</p>
-:ET
+:EF

@@ -45,4 +45,4 @@
 <a class="sourceLine" id="cb2-15" title="15">            f.add(needed_prereq)</a>
 <a class="sourceLine" id="cb2-16" title="16">    <span class="cf">else</span>:  <span class="co"># has prereqs</span></a>
 <a class="sourceLine" id="cb2-17" title="17">        f.add_or_replace(neighbor_trait)</a></code></pre></div>
-:ET
+:EF

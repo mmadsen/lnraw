@@ -6,4 +6,4 @@
 <p><code>saa-experiment-1</code> ran for two weeks and did not finish. One of the problems is that the simulation undergoes a drastic slowdown when the number of active links is very very low, possibly because we do nothing but check for active links in a tight loop without finding any.</p>
 <p>But the bigger problem is that the code for creating <code>dreadnaut</code> format graphs for the <code>nauty</code> algorith had a bug, and was capable of scrozzling the graphs. I found and fixed this, and also changed from doing tree-by-tree analysis to analyzing the entire trait tree, <a href="/structured%20information%20project/2014/03/10/symmetries-multiple-tree-components.html">given some analysis</a>.</p>
 <p>In manual experiments, I’m seeing variation in the groupsizes, orbit numbers, and orbit multiplicities (I’m also calculating and storing the max and mean multiplicities for each forest). So now the task is to see what the real range of variation is over learning rates, and state space sizes.</p>
-:ET
+:EF

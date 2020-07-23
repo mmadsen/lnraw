@@ -20,7 +20,6 @@ Notes from the Introduction to **Systematics in Prehistory** [@Dunnell1971]
 
 
 ### Connections ###
- 
 
 
 ### References Cited ###

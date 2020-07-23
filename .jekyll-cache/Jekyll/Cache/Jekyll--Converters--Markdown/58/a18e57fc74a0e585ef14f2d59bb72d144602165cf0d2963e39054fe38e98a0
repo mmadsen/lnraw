@@ -99,4 +99,4 @@
 <li><code>classification-grouped.rda</code></li>
 </ul>
 <p><strong>IMPORTANT</strong> The full dataset, either in CSV or RDA format, is too big to include in the Github repository, and too large to upload to Figshare. As the <code>README.md</code> in the experiment repository notes, if you do not want to regenerate these files by running the simulations yourself (which can take awhile, especially for the post-simulation classification step), contact me and we can arrange something for getting you copies of the raw data files (approx. 2GB file download).</p>
-:ET
+:EF

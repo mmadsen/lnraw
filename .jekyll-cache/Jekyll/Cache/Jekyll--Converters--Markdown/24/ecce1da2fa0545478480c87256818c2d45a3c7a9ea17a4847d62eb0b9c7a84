@@ -26,4 +26,4 @@
 <p>Thus, in one set of analyses, I separate data with different sample sizes (and, if relevant, time averaging durations) and analyze classifier performance separately. Since all 8 combinations of sample size and TA duration are taken from each simulation run during data recording, there are actually 800,000 rows of data in the time averaged and sampled data set, giving a full 100,000 data points for each combination, retaining comparability of the analysis when we try to compare classifier performance from the population census data against sampled against time averaged &amp; sampled data.</p>
 <p>We can also evaluate the classifier performance on mixed combinations of sample size and time averaging duration, by not taking subsets of the data set, and training across the entire data set. We might do a stratified random downsample in order to make sample sizes comparable between this analysis and the population and sampled data sets.</p>
 <h3 id="references-cited">References Cited</h3>
-:ET
+:EF

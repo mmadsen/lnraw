@@ -11,4 +11,4 @@
 <p>Traits: list Creator: agentID</p>
 <p>We might have rules, for example, that allow individuals to query their own artifacts out of tuplespace, and copy them, or perhaps to query everybody else’s artifacts, or neighbor’s artifacts. This would allow adjustment of rules about copying.</p>
 <p>We need three sets of observables: stats on traits held by individuals, traits in artifacts, and the combination of both.</p>
-:ET
+:EF

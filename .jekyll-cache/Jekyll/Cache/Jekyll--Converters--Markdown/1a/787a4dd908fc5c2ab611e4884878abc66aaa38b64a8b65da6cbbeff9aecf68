@@ -40,4 +40,4 @@ The latter offers the possibility of offloading work from libraries like scikit-
 <p>So I’m bullish on the opportunity to drastically speed up cultural transmission simulations, seriation analyses, the use of “Approximate Bayesian Computation” for statistical inference on these complex models, and even phylogenetic analysis codes, in fairly short order.</p>
 <p>Which is good, because the social sciences are getting more and more computationally complex, and we have less and less funding for buying time on large clusters or renting time from major cloud services.</p>
 <p>I’ll report back when I have some code up and running.</p>
-:ET
+:EF

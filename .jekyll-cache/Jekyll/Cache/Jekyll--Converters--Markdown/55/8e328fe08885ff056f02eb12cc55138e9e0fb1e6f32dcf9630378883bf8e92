@@ -18,4 +18,4 @@
 </ul>
 <p>The image has a mounted EBS volume for data, and a 32GB root partition since there’s a lot of stuff installed here.</p>
 <p>Fire this AMI up on an <code>g2.2xlarge</code> instance type for 8 CPU cores, 15GB of RAM, and a GPU with 1,536 CUDA cores. I will try to keep an AMI with these specs up to date, and since the AMI ID will change, check <a href="http://notebook.madsenlab.org/tag/aws.html">the tag <code>AWS</code></a> for updates.</p>
-:ET
+:EF

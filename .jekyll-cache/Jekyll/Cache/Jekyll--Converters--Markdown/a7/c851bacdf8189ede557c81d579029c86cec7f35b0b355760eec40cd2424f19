@@ -46,4 +46,4 @@
 </ol>
 <p>The latter is what I’ve been doing on StarCluster in previous projects, so it’s a familiar and easily scriptable protocol. And, if I work with large population sizes at some point, the native threading in simuPOP could pay off, but otherwise, it’s best ignored for most of the work I’m doing.</p>
 <h3 id="references-cited">References Cited</h3>
-:ET
+:EF

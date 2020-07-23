@@ -40,4 +40,4 @@
 <li id="fn1" role="doc-endnote"><p>The idea here is to standarize the gross “amount” of innovation across population sizes for statistical comparison of the observables. The simulation system calculates a per-individual, per-locus rate of innovations from this parameter value using population size and the number of features/dimensions.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
 </ol>
 </section>
-:ET
+:EF

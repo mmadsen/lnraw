@@ -1,6 +1,0 @@
-I"�<h3 id="seriation-graphs">Seriation Graphs</h3>
-<h4 id="how-large-is-the-space-of-laplacian-spectra-on-unlabelled-trees-with-n-vertices">How large is the space of Laplacian spectra on unlabelled trees with N vertices?</h4>
-<p>Cayley’s theorem tells us the number of possible unlabelled trees on <span class="math inline">\(N\)</span> vertices: <span class="math inline">\(n^{n-2}\)</span>. This can be very large (e.g., for <span class="math inline">\(n=20\)</span>, around <span class="math inline">\(10^{23}\)</span>). But the number of distinguishable Laplacian spectra may be much smaller. It is worth understanding how large this state space of spectra may be for different numbers of assemblages.</p>
-<h4 id="is-there-a-useful-notion-of-the-spectrum-of-a-time-varying-graph">Is there a useful notion of the “spectrum” of a time varying graph?</h4>
-<h3 id="references-cited">References Cited</h3>
-:ET

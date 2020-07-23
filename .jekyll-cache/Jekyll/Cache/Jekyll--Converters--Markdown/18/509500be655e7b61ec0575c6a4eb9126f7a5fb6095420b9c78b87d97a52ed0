@@ -85,4 +85,4 @@ Need tools not just for stats or data scientists, but for business folks. most d
 <p>Bit.ly - most analysis in python, rewrote in python, rewrite again in C or Go, wait until it breaks, fix, redeploy. Need to develop ways to implement algorithms in ways that we don’t have to keep reimplementing all the time.</p>
 <h3 id="questions">Questions</h3>
 <p>How to teach reproducible research to undergraduates? Hadley - Rpubs and Rmarkdown for homework make it easy. Easier than doing homework by hand, actually.</p>
-:ET
+:EF

@@ -35,4 +35,4 @@
 <a class="sourceLine" id="cb3-4" title="4"> [ <span class="fl">0.</span>  <span class="fl">1.</span>  <span class="fl">0.</span>  <span class="fl">0.</span>]]</a></code></pre></div>
 <p>It is always alright to add a vertex to the graph; in the NumPy matrix representation this always results in a new row and column with the index equal to the integer ID of the vertex itself. It is never alright, however, to actually remove a vertex from the graph. When we “delete” a community from the regional transmission model, we have to leave the vertex in the graph object, but flip an attribute that we use to track “active” vertices. Of course, at that point, the vertex participates in no edges, so its column and row in the matrix is all zeros. We do not simply use this fact to represent “inactive” vertices, however, because an isolated community with no interactions would also show up the same way, should we need to model one in a RTM.</p>
 <h3 id="references-cited">References Cited</h3>
-:ET
+:EF

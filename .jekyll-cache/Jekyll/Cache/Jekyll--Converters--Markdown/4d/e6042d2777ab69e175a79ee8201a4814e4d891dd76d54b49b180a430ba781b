@@ -4,4 +4,4 @@
 <h3 id="ultrametric-distances">Ultrametric distances</h3>
 <p>Distances on a tree follow a metric called the “ultrametric” distance. The discrete metric (e.g., on nominal categories) is also an ultrametric. It has properties different than Euclidean distances, and a host of theorems that prove useful in phylogenetic reconstruction methods, etc.</p>
 <p>I should learn more about ultrametricity and its applications, while taking a look at the semantic axelrod model again.</p>
-:ET
+:EF
