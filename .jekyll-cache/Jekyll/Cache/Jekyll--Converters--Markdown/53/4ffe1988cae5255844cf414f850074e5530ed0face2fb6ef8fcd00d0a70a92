@@ -1,0 +1,14 @@
+I"G<p>From Jill North: “The ‘Structure’ of Physics: A Case Study” <span class="citation" data-cites="north2009structure">(North 2009)</span>.</p>
+<p>North argues that despite the Lagrangian and Hamiltonian frameworks in classical mechanics giving identical equations of motion, they are different theories of the world that imply different “structure”. In this case, structure means “conceptual machinery needed to describe the world”. So there’s a sense in which “less structure” implies a “more fundamental theory” and a “simpler” account of the empirical phenomena. North convincingly argues that the Lagrangian formulation requires just a bit more “structure” mathematically than the Hamiltonian framework, and thus that the Hamiltonian framework is, in a sense, more fundamental since it has no “extra moving parts” than those required to exactly describe the equations of motion.</p>
+<p>This is a good thing to keep in mind – how do we know we have a clean, minimal, classification or empirical model for a phenomenon? This is clearly an “Occam’s razor” idea for structure and theoretical description, but it’s well done by North in the context. You might need a mathematical formalism with more-than-minimal structure in order to solve a practical problem, but the fundamental description will have only the minimal structure required.</p>
+<h3 id="connections">Connections</h3>
+<ul>
+<li><a href="/project-slipbox/2020/07/19/gauge-symmetry-and-structure.html">Gauge Symmetry and Structure</a></li>
+</ul>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-north2009structure">
+<p>North, Jill. 2009. “The" Structure" of Physics: A Case Study.” <em>The Journal of Philosophy</em> 106 (2). JSTOR: 57–88.</p>
+</div>
+</div>
+:ET

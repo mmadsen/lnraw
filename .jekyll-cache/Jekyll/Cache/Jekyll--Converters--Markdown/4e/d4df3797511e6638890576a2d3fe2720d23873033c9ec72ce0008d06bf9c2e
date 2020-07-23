@@ -39,4 +39,4 @@
 <h3 id="separate-processes">Separate Processes</h3>
 <p>This is related to separating scales, actually. Think about Susskind’s example of the two atoms interacting. Ideally the Hamiltonian is composed of a sum of terms, referring to the effects of different processes or components, and we can make a decision about whether a given process is part of the “fast” or “slow” stuff, and renormalize it out accordingly.</p>
 <p>So the point here is simply that we have to watch our theory-building carefully and try not to have terms in the Hamiltonian which combine fast and slow things into the same term, this can make it hard to renormalize (I’m pretty sure, I’m inferring that given what I know at this stage of the game).</p>
-:EF
+:ET

@@ -34,7 +34,7 @@ Where this connects with [@north2009structure]:  North argues that Hamiltonians 
 
 * [How Much Structure Is Needed?]({% post_url 2020-07-19-how-much-structure %})
 * Ilinski, Physics of Finance
-* Schwichtenberg, Physics From Symmetry
+* [@schwichtenberg2018physics]
 
 
 

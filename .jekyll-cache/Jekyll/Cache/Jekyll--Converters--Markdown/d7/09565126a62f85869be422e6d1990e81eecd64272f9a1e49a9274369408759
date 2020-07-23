@@ -27,4 +27,4 @@
 <li>More samples of simulations per network model (or model class)</li>
 </ul>
 <p>While I develop more network models, I will probably start doing the second and third for the existing four models, but with PNN models collapsed down to a single model. I don’t have the formal infrastructure yet for doing multiple realizations of a single network model, so that’s the first step.</p>
-:EF
+:ET

@@ -14,4 +14,4 @@
 <p>In these data export files, I am not exporting lists of trait counts or frequencies. These will remain in the original database for future queries and analysis, but are not used in the equifinality analysis.</p>
 <h3 id="data-export-process">Data Export Process</h3>
 <p>TBD - exact StarCluster steps for performing the data export</p>
-:EF
+:ET

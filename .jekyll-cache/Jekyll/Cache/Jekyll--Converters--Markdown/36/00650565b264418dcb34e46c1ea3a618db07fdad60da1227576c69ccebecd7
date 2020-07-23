@@ -1,0 +1,33 @@
+I"�<p>From reading <span class="citation" data-cites="schwichtenberg2019demystifying">(Schwichtenberg 2019)</span>: Demystifying Gauge Symmetry:</p>
+<p>Core idea here (similar to his argument in “Physics from Symmetry” but more strongly expressed, is that:</p>
+<ul>
+<li>Local gauge symmetry is just redudancy in description (“gauge redundancy”)</li>
+<li>Global gauge symmetry expresses a real feature of nature (“gauge symmetry”)</li>
+</ul>
+<p>The local gauge is used purely to provide invariance across “coodinate transformations” and allow different viewpoint/descriptions. The “connections” between gauge dimensions act purely to allow those descriptive transformations but change nothing about the dynamics of the system. Schwichtenberg uses the “toy money model” again to describe this with exchange rates – the exchange rates provide simple local units unless there is an equation of motion that links the local coordinates to real world units (e.g., commodity prices). “Arbitrage” in this model is a situation where a local pricing change connects to exchange rates to yield a global gain when trading in a “loop”.</p>
+<p>When there is a global symmetry or “arbitrage,” then the connections themselves are connected to a dynamical law or equation of motion – and stop being mere “coordinate transformations”.</p>
+<p>This difference is shown by looking at special vs. general relativity. You can write the equations of motion for a particle in a single coordinate system – and you get Newtonian equations of motion. Add the symmetry group for the Lorentz transformations and you get a “covariant” description which allows you to see the motion in any coordinate system. You can, for example, view it in curved coordinates or curved space…but the cuved space does not “affect” the motion.</p>
+<p>Only when you move to general relativity and the curvature <strong>affects</strong> the motion do you get the globally covariant form, and the curvature becomes a “force” (gravity).</p>
+<p>Schwichtenberg notes (p. 30) in the “Little Group argument” that the Poincare group gives you the full description of a particle including the Lorentz transformations, but the actual physical attributes of the particle come from the “little group” of the particle which is a subgroup of the Poincare group: for a photon this is E(2), which is Euclidean group giving you SO(2) rotations and two-dimesional translations.</p>
+<p>This seems to be a very good way of separating issues. Most of our classificatory problems are really about <strong>local</strong> redundancies. We want a way to describe things that is not dependent on the way we construct the classification, so that we can transform the classification in specified ways but still get invariant descriptions of things like richness and diversity, for example.</p>
+<p>Whereas it is unclear, and a separate theoretical issue, whether we have global symmetries that require the full covariant treatment.</p>
+<p>Where this connects with <span class="citation" data-cites="north2009structure">(North 2009)</span>: North argues that Hamiltonians are more “fundamental” than Lagrangian descriptions because it uses only necessary structure. Schwichtenberg (p. 31) uses an example of a marble rolling along a circle. Since the marble is confined to the circle, it only has one degree of freedom. A fundamental description is <span class="math inline">\(\phi\)</span>, or the angle along the circle (although even here, we might have a gauge symmetry that allows us to specify different “zero” reference points for measuring the angle!). If we use Cartesian or rectangular coordinates, we use two coordinates to describe position, but clearly there is still one degree of freedom even with the two coordinates. The Cartesian description contains redundancy because of the rotational symmetry of the system. The rotational symmetry is “global” and part of the system but our choice of ways of measuring <span class="math inline">\(\phi\)</span> is purely “internal” and local and not part of the system. We can make our <strong>description</strong> minimal and fundamental by transforming coordinates to polar.</p>
+<h3 id="connections">Connections</h3>
+<ul>
+<li><a href="/project-slipbox/2020/07/19/how-much-structure.html">How Much Structure Is Needed?</a></li>
+<li>Ilinski, Physics of Finance</li>
+<li><span class="citation" data-cites="schwichtenberg2018physics">(Schwichtenberg 2018)</span></li>
+</ul>
+<h3 id="references-cited" class="unnumbered">References Cited</h3>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-north2009structure">
+<p>North, Jill. 2009. “The" Structure" of Physics: A Case Study.” <em>The Journal of Philosophy</em> 106 (2). JSTOR: 57–88.</p>
+</div>
+<div id="ref-schwichtenberg2018physics">
+<p>Schwichtenberg, Jakob. 2018. <em>Physics from Symmetry</em>. Springer.</p>
+</div>
+<div id="ref-schwichtenberg2019demystifying">
+<p>———. 2019. “Demystifying Gauge Symmetry.” <em>arXiv Preprint arXiv:1901.10420</em>.</p>
+</div>
+</div>
+:ET

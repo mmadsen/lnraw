@@ -9,4 +9,4 @@
 <h3 id="aws-instance-profile">AWS Instance Profile</h3>
 <p>|——————————|—————————————-|————————————| | Instance Type Used | c3.xlarge | c3.xlarge | | vCPUs per instance | 4 | 4 | | Cost per instance/hour | $0.21 | $0.21 | |——————————|—————————————-|————————————|</p>
 <p>The <a href="https://github.com/mmadsen/experiment-ctmixtures/blob/master/explorations/timing-analysis.xlsx">spreadsheet containing the original analysis</a> is located on GitHub.</p>
-:EF
+:ET

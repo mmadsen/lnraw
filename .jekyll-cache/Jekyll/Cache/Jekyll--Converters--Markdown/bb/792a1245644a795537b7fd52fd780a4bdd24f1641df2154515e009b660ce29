@@ -68,4 +68,4 @@ $ sh install-slatkin-tools.sh</code></pre>
 <p>Terminating the cluster removes the instances from your instance list, but in the current configuration it <strong>DOES NOT remove the 200 GB EBS volumes you created</strong>. Do this manually after you terminate the instances if you do not want to be charged for the EBS storage. I’m sure there’s an instance and volume setting to have the volumes auto-delete, but I haven’t set that up yet.</p>
 <p>When you have NO running instances, you should have no volumes associated with this cluster and image, but there should be a 10GB and 200GB snapshot which form part of the AMI itself. These will be stored long-term but the cost is minimal.</p>
 <p><strong>FOR PART 2, SEE <a href="/project-coarse%20grained%20model/model-ctmixtures/experiment-experiment-ctmixtures/2014/09/14/ctmixtures-job-execution.html">CTMixtures Experiment Configuration and Execution</a></strong></p>
-:EF
+:ET

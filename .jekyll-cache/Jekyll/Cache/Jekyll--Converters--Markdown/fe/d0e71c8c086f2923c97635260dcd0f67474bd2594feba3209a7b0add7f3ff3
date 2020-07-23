@@ -20,4 +20,4 @@
 <h2 id="coarse-graining-and-ct-models">Coarse Graining and CT Models</h2>
 <p>If detailed models of social learning are what we usually want to study, we need to understand what happens when we change the “zoom level” – and in particular, we need to understand if we still end up with one-to-one mappings to macroscopic behavior, or whether there is convergence to “universality classes” as we zoom out.</p>
 <p>There are good reasons for assuming the latter, at least with fairly simple models of population structure and social learning. Such models have much of the same mathematical structure as some of their physical counterparts, which isn’t surprising since we construct simple models to be be tractable first, and realistic second.</p>
-:EF
+:ET

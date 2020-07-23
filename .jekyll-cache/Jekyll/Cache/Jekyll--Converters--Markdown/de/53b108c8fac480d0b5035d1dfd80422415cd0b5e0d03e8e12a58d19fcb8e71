@@ -29,4 +29,4 @@ Assemblages not part of final solution:
 Time elapsed for completion of program: 83 seconds</code></pre>
 <p>and several graph windows will pop up. The “minmax” graph shows the best solution with branching to show how different partial seriations relate. There will be an “output” directory with full output.</p>
 <p>Please contact me or Carl Lipo if you have questions about IDSS and this release!</p>
-:EF
+:ET
