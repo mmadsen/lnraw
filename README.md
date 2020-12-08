@@ -70,6 +70,15 @@ _config.yml
 
 
 
+## LICENSE ##
+
+This repository combines three elements, which carry specific licensing provisions.  
+
+First, the core software elements rely on the open-source Jekyll content management system, which is licensed under the MIT Public License. 
+
+Second, I wrote several plugins which are not part of the Jekyll core, and which are licensed for open source use under the Apache Public License.  
+
+Third, content in the HTML files and _posts directory are licensed under the Creative Commons Non-Commercial ShareAlike license, as indicated on the page http://notebook.madsenlab.org/openscience.html.  
 
 
 
